@@ -1,0 +1,114 @@
+{
+  "updated_at": "2026-10-05T18:55:00+08:00",
+  "mode": "validated snapshot; official source link remains the authority",
+  "items": [
+    {
+      "code": "US",
+      "country": "United States",
+      "level": "Level 4 — Do Not Travel",
+      "normalized": "Very high",
+      "source_name": "U.S. Department of State",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/destination.cod.html",
+      "checked": "2026-10-05"
+    },
+    {
+      "code": "GB",
+      "country": "United Kingdom",
+      "level": "Regional FCDO advice",
+      "normalized": "High / region-dependent",
+      "source_name": "UK FCDO",
+      "url": "https://www.gov.uk/foreign-travel-advice/democratic-republic-of-the-congo",
+      "checked": "2026-10-05"
+    },
+    {
+      "code": "AU",
+      "country": "Australia",
+      "level": "Do not travel",
+      "normalized": "Very high",
+      "source_name": "Smartraveller",
+      "url": "https://www.smartraveller.gov.au/destinations/africa/democratic-republic-congo",
+      "checked": "2026-10-05"
+    },
+    {
+      "code": "CA",
+      "country": "Canada",
+      "level": "Check official advisory",
+      "normalized": "Official source",
+      "source_name": "Government of Canada",
+      "url": "https://travel.gc.ca/destinations/congo-kinshasa",
+      "checked": "source link configured"
+    },
+    {
+      "code": "JP",
+      "country": "Japan",
+      "level": "Check official advisory",
+      "normalized": "Official source",
+      "source_name": "MOFA Japan",
+      "url": "https://www.anzen.mofa.go.jp/",
+      "checked": "source link configured"
+    },
+    {
+      "code": "TW",
+      "country": "Taiwan",
+      "level": "Check official advisory",
+      "normalized": "Official source",
+      "source_name": "MOFA Taiwan",
+      "url": "https://www.boca.gov.tw/sp-trwa-list-1.html",
+      "checked": "source link configured"
+    },
+    {
+      "code": "KR",
+      "country": "South Korea",
+      "level": "Check official advisory",
+      "normalized": "Official source",
+      "source_name": "MOFA Korea",
+      "url": "https://www.0404.go.kr/",
+      "checked": "source link configured"
+    },
+    {
+      "code": "FR",
+      "country": "France",
+      "level": "Check official advisory",
+      "normalized": "Official source",
+      "source_name": "France Diplomatie",
+      "url": "https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/",
+      "checked": "source link configured"
+    },
+    {
+      "code": "ES",
+      "country": "Spain",
+      "level": "Check official advisory",
+      "normalized": "Official source",
+      "source_name": "MAEC Spain",
+      "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Recomendaciones-de-viaje.aspx",
+      "checked": "source link configured"
+    },
+    {
+      "code": "PT",
+      "country": "Portugal",
+      "level": "Check official advisory",
+      "normalized": "Official source",
+      "source_name": "Portal das Comunidades Portuguesas",
+      "url": "https://portaldascomunidades.mne.gov.pt/pt/conselhos-aos-viajantes",
+      "checked": "source link configured"
+    },
+    {
+      "code": "TH",
+      "country": "Thailand",
+      "level": "Check official advisory",
+      "normalized": "Official source",
+      "source_name": "Thailand Ministry of Foreign Affairs",
+      "url": "https://www.mfa.go.th/",
+      "checked": "source link configured"
+    },
+    {
+      "code": "SG",
+      "country": "Singapore",
+      "level": "Check official advisory",
+      "normalized": "Official source",
+      "source_name": "Singapore MFA",
+      "url": "https://www.mfa.gov.sg/Countries-Regions",
+      "checked": "source link configured"
+    }
+  ]
+}
