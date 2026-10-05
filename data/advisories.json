@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T18:55:00+08:00",
+  "updated_at": "2026-10-05T19:20:00+08:00",
   "mode": "validated snapshot; official source link remains the authority",
   "items": [
     {
@@ -39,33 +39,6 @@
       "checked": "source link configured"
     },
     {
-      "code": "JP",
-      "country": "Japan",
-      "level": "Check official advisory",
-      "normalized": "Official source",
-      "source_name": "MOFA Japan",
-      "url": "https://www.anzen.mofa.go.jp/",
-      "checked": "source link configured"
-    },
-    {
-      "code": "TW",
-      "country": "Taiwan",
-      "level": "Check official advisory",
-      "normalized": "Official source",
-      "source_name": "MOFA Taiwan",
-      "url": "https://www.boca.gov.tw/sp-trwa-list-1.html",
-      "checked": "source link configured"
-    },
-    {
-      "code": "KR",
-      "country": "South Korea",
-      "level": "Check official advisory",
-      "normalized": "Official source",
-      "source_name": "MOFA Korea",
-      "url": "https://www.0404.go.kr/",
-      "checked": "source link configured"
-    },
-    {
       "code": "FR",
       "country": "France",
       "level": "Check official advisory",
@@ -93,22 +66,114 @@
       "checked": "source link configured"
     },
     {
+      "code": "CN",
+      "country": "China (Mainland)",
+      "region": "East Asia",
+      "level": "Official consular reminders / destination-specific notices",
+      "normalized": "Official source",
+      "source_name": "Ministry of Foreign Affairs of the PRC / China Consular Service",
+      "url": "https://cs.mfa.gov.cn/",
+      "checked": "2026-10-05",
+      "validation": "source registry; destination parser pending"
+    },
+    {
+      "code": "HK",
+      "country": "Hong Kong SAR",
+      "region": "East Asia",
+      "level": "Outbound Travel Alert — DRC",
+      "normalized": "Official alert",
+      "source_name": "Security Bureau, HKSAR",
+      "url": "https://www.sb.gov.hk/eng/ota/note-Congo.html",
+      "checked": "2026-10-05",
+      "validation": "official page verified"
+    },
+    {
+      "code": "MO",
+      "country": "Macao SAR",
+      "region": "East Asia",
+      "level": "Travel Alert / Ebola special reminders",
+      "normalized": "Official alert",
+      "source_name": "Macao Government Tourism Office",
+      "url": "https://ep.macaotourism.gov.mo/travelAlert/travelalert.php?country_code=CD&lang=en",
+      "checked": "2026-10-05",
+      "validation": "official page verified"
+    },
+    {
+      "code": "TW",
+      "country": "Taiwan",
+      "region": "East Asia",
+      "level": "Level 4 Red — Leave as soon as possible",
+      "normalized": "Very high",
+      "source_name": "Bureau of Consular Affairs, MOFA Taiwan",
+      "url": "https://www.boca.gov.tw/sp-trwa-content-3100-f3f00-1.html",
+      "checked": "2026-10-05",
+      "validation": "official level verified"
+    },
+    {
+      "code": "JP",
+      "country": "Japan",
+      "region": "East Asia",
+      "level": "Regional Levels 1–4; Level 4 in multiple DRC provinces",
+      "normalized": "Region-dependent / very high areas",
+      "source_name": "MOFA Japan Overseas Safety",
+      "url": "https://www.anzen.mofa.go.jp/info/pcinfectionspothazardinfo_103.html",
+      "checked": "2026-10-05",
+      "validation": "official regional levels verified"
+    },
+    {
+      "code": "KR",
+      "country": "South Korea",
+      "region": "East Asia",
+      "level": "Regional travel ban / departure recommendation / special advisory",
+      "normalized": "Region-dependent / very high areas",
+      "source_name": "MOFA Korea Overseas Safety",
+      "url": "https://0404.go.kr/ntnSafetyInfo/215/detail",
+      "checked": "2026-10-05",
+      "validation": "official regional status verified"
+    },
+    {
       "code": "TH",
       "country": "Thailand",
-      "level": "Check official advisory",
+      "region": "Southeast Asia",
+      "level": "Check current official notice",
       "normalized": "Official source",
       "source_name": "Thailand Ministry of Foreign Affairs",
       "url": "https://www.mfa.go.th/",
-      "checked": "source link configured"
+      "checked": "2026-10-05",
+      "validation": "official source registry; DRC parser pending"
+    },
+    {
+      "code": "MY",
+      "country": "Malaysia",
+      "region": "Southeast Asia",
+      "level": "Check current official notice",
+      "normalized": "Official source",
+      "source_name": "Ministry of Foreign Affairs Malaysia",
+      "url": "https://www.kln.gov.my/",
+      "checked": "2026-10-05",
+      "validation": "official source registry; DRC parser pending"
     },
     {
       "code": "SG",
       "country": "Singapore",
-      "level": "Check official advisory",
-      "normalized": "Official source",
-      "source_name": "Singapore MFA",
-      "url": "https://www.mfa.gov.sg/Countries-Regions",
-      "checked": "source link configured"
+      "region": "Southeast Asia",
+      "level": "Defer all non-essential travel to DRC",
+      "normalized": "High",
+      "source_name": "Ministry of Foreign Affairs Singapore",
+      "url": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/democratic-republic-of-congo/",
+      "checked": "2026-10-05",
+      "validation": "official Ebola advisory verified"
     }
+  ],
+  "priority_regions": [
+    "China (Mainland)",
+    "Hong Kong SAR",
+    "Macao SAR",
+    "Taiwan",
+    "Japan",
+    "South Korea",
+    "Thailand",
+    "Malaysia",
+    "Singapore"
   ]
 }
