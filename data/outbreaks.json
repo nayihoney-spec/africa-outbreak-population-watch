@@ -1,0 +1,107 @@
+{
+  "updated_at": "2026-10-05",
+  "definition": "Event-level outbreak totals for DRC from 2016 onward. Cross-year outbreaks are stored as single events; missing years are not converted to zero.",
+  "events": [
+    {
+      "id": "2017-bas-uele",
+      "start": "2017",
+      "end": "2017",
+      "location": "Bas-Uélé",
+      "species": "Ebola virus (EBOV)",
+      "cases": 8,
+      "deaths": 4,
+      "source": "WHO"
+    },
+    {
+      "id": "2018-equateur",
+      "start": "2018",
+      "end": "2018",
+      "location": "Équateur",
+      "species": "Ebola virus (EBOV)",
+      "cases": 54,
+      "deaths": 33,
+      "source": "WHO"
+    },
+    {
+      "id": "2018-2020-kivu",
+      "start": "2018",
+      "end": "2020",
+      "location": "North Kivu / Ituri / South Kivu",
+      "species": "Ebola virus (EBOV)",
+      "cases": 3470,
+      "deaths": 2287,
+      "source": "WHO"
+    },
+    {
+      "id": "2020-equateur",
+      "start": "2020",
+      "end": "2020",
+      "location": "Équateur",
+      "species": "Ebola virus (EBOV)",
+      "cases": 130,
+      "deaths": 55,
+      "source": "WHO"
+    },
+    {
+      "id": "2021-nk-1",
+      "start": "2021-02",
+      "end": "2021-05",
+      "location": "North Kivu",
+      "species": "Ebola virus (EBOV)",
+      "cases": 12,
+      "deaths": 6,
+      "source": "WHO"
+    },
+    {
+      "id": "2021-beni",
+      "start": "2021-10",
+      "end": "2021-12",
+      "location": "Beni / North Kivu",
+      "species": "Ebola virus (EBOV)",
+      "cases": 11,
+      "deaths": 6,
+      "source": "WHO"
+    },
+    {
+      "id": "2022-mbandaka",
+      "start": "2022-04",
+      "end": "2022-07",
+      "location": "Mbandaka / Équateur",
+      "species": "Ebola virus (EBOV)",
+      "cases": 5,
+      "deaths": 5,
+      "source": "WHO"
+    },
+    {
+      "id": "2022-beni",
+      "start": "2022-08",
+      "end": "2022-09",
+      "location": "Beni / North Kivu",
+      "species": "Ebola virus (EBOV)",
+      "cases": 1,
+      "deaths": 1,
+      "source": "WHO"
+    },
+    {
+      "id": "2025-kasai",
+      "start": "2025",
+      "end": "2025",
+      "location": "Kasai / Bulape",
+      "species": "Ebola virus (EBOV)",
+      "cases": 64,
+      "deaths": 45,
+      "source": "WHO"
+    },
+    {
+      "id": "2026-bundibugyo",
+      "start": "2026",
+      "end": "2026",
+      "location": "DRC multi-province",
+      "species": "Bundibugyo virus (BDBV)",
+      "cases": 8442,
+      "deaths": 4080,
+      "source": "WHO",
+      "as_of": "2026-10-02"
+    }
+  ]
+}
