@@ -1,1 +1,143 @@
-{"generated_at":"2026-10-05","outbreaks":[{"year":2016,"cases":null,"deaths":null,"as_of":"2016"},{"year":2017,"cases":8,"deaths":4,"as_of":"2017"},{"year":2018,"cases":54,"deaths":33,"as_of":"2018"},{"year":2019,"cases":null,"deaths":null,"as_of":"2019"},{"year":2020,"cases":130,"deaths":55,"as_of":"2020"},{"year":2021,"cases":23,"deaths":12,"as_of":"2021"},{"year":2022,"cases":5,"deaths":5,"as_of":"2022"},{"year":2023,"cases":null,"deaths":null,"as_of":"2023"},{"year":2024,"cases":null,"deaths":null,"as_of":"2024"},{"year":2025,"cases":64,"deaths":45,"as_of":"2025-12-01"},{"year":2026,"cases":8442,"deaths":4080,"confirmed_cases":8442,"confirmed_deaths":4080,"as_of":"2026-10-02"}],"travel_advisories":[{"country":"United States","original_level":"Level 4 — Do Not Travel","normalized_risk":"Very high","updated_at":"seed snapshot — pipeline validation pending"},{"country":"United Kingdom","original_level":"Regional FCDO advice","normalized_risk":"High / region-dependent","updated_at":"seed snapshot — pipeline validation pending"},{"country":"Australia","original_level":"Do not travel","normalized_risk":"Very high","updated_at":"seed snapshot — pipeline validation pending"}],"sources":[{"name":"WHO","status":"authoritative outbreak source","last_checked":"2026-10-05"},{"name":"ReliefWeb","status":"humanitarian source","last_checked":"2026-10-05"},{"name":"UN World Population Prospects","status":"population baseline","last_checked":"2026-10-05"},{"name":"Official government travel advisories","status":"travel source family","last_checked":"2026-10-05"}]}
+{
+  "generated_at": "2026-10-05T18:00:00Z",
+  "outbreaks": [
+    {
+      "year": 2016,
+      "cases": null,
+      "deaths": null,
+      "as_of": "2016"
+    },
+    {
+      "year": 2017,
+      "cases": 8,
+      "deaths": 4,
+      "as_of": "2017"
+    },
+    {
+      "year": 2018,
+      "cases": 54,
+      "deaths": 33,
+      "as_of": "2018"
+    },
+    {
+      "year": 2019,
+      "cases": null,
+      "deaths": null,
+      "as_of": "2019"
+    },
+    {
+      "year": 2020,
+      "cases": 130,
+      "deaths": 55,
+      "as_of": "2020"
+    },
+    {
+      "year": 2021,
+      "cases": 23,
+      "deaths": 12,
+      "as_of": "2021"
+    },
+    {
+      "year": 2022,
+      "cases": 5,
+      "deaths": 5,
+      "as_of": "2022"
+    },
+    {
+      "year": 2023,
+      "cases": null,
+      "deaths": null,
+      "as_of": "2023"
+    },
+    {
+      "year": 2024,
+      "cases": null,
+      "deaths": null,
+      "as_of": "2024"
+    },
+    {
+      "year": 2025,
+      "cases": 64,
+      "deaths": 45,
+      "as_of": "2025-12-01"
+    },
+    {
+      "year": 2026,
+      "cases": 8442,
+      "deaths": 4080,
+      "confirmed_cases": 8442,
+      "confirmed_deaths": 4080,
+      "as_of": "2026-10-02",
+      "verification_status": "Primary-source verified",
+      "primary_source": "WHO Alert and Response",
+      "primary_source_as_of": "2026-10-02",
+      "cfr_percent": 48,
+      "recovered": 2213
+    }
+  ],
+  "travel_advisories": [
+    {
+      "country": "United States",
+      "country_code": "US",
+      "original_level": "Level 4 — Do Not Travel",
+      "normalized_risk": "Very high",
+      "updated_at": "2026-09-17",
+      "advisory_date": "2026-07-15",
+      "verification_status": "Primary-source verified",
+      "official_url": "https://travel.state.gov/en/international-travel/travel-advisories/destination.cod.html"
+    },
+    {
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "original_level": "Regional FCDO advice",
+      "normalized_risk": "Region-dependent",
+      "updated_at": null,
+      "verification_status": "Single authoritative source — live parser pending",
+      "official_url": "https://www.gov.uk/foreign-travel-advice/democratic-republic-of-the-congo"
+    },
+    {
+      "country": "Australia",
+      "country_code": "AU",
+      "original_level": "Do not travel",
+      "normalized_risk": "Very high",
+      "updated_at": "2026-07-06",
+      "current_at": "2026-09-30",
+      "verification_status": "Primary-source verified",
+      "official_url": "https://www.smartraveller.gov.au/destinations/africa/democratic-republic-congo"
+    }
+  ],
+  "sources": [
+    {
+      "name": "WHO",
+      "status": "authoritative outbreak source",
+      "last_checked": "2026-10-05"
+    },
+    {
+      "name": "ReliefWeb",
+      "status": "humanitarian source",
+      "last_checked": "2026-10-05"
+    },
+    {
+      "name": "UN World Population Prospects",
+      "status": "population baseline",
+      "last_checked": "2026-10-05"
+    },
+    {
+      "name": "Official government travel advisories",
+      "status": "travel source family",
+      "last_checked": "2026-10-05"
+    }
+  ],
+  "verification_policy": {
+    "publication_gate": true,
+    "minimum_rule": "Primary authoritative source required; independent provenance check where available",
+    "statuses": [
+      "Primary-source verified",
+      "Verified — independent provenance",
+      "Single authoritative source",
+      "Conflict — pending verification",
+      "Preliminary — not published"
+    ],
+    "missing_is_not_zero": true
+  }
+}
