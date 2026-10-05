@@ -1,17 +1,6 @@
-const fmt=n=>n==null?"—":Number(n).toLocaleString();
-async function loadHome(){
-  const status=document.getElementById("status");
-  try{
-    const d=await(await fetch("data/latest.json?t="+Date.now(),{cache:"no-store"})).json();
-    const latest=d.outbreaks.filter(x=>x.cases!=null).at(-1);
-    document.getElementById("cases").textContent=fmt(latest.confirmed_cases??latest.cases);
-    document.getElementById("deaths").textContent=fmt(latest.confirmed_deaths??latest.deaths);
-    document.getElementById("date").textContent="As of "+latest.as_of;
-    const a=await(await fetch("data/advisories.json?t="+Date.now(),{cache:"no-store"})).json();
-    document.getElementById("count").textContent=a.items.length;
-    if(status)status.textContent="Latest validated snapshot · "+(d.generated_at||"source timestamped");
-  }catch(e){
-    if(status)status.textContent="Snapshot temporarily unavailable";
-  }
-}
-loadHome();
+const fmt=n=>n==null?"—":Number(n).toLocaleString();let HOME_LATEST=null;
+function currentLang(){return localStorage.getItem("aopw-lang")||document.documentElement.lang||"en"}
+function homeText(key){const lang=currentLang();return (typeof T!=="undefined"&&T[lang]&&T[lang][key])||(typeof T!=="undefined"&&T.en&&T.en[key])||key}
+function renderHomeDate(){const el=document.getElementById("date");if(!el)return;if(!HOME_LATEST){el.textContent=homeText("loading");return}el.textContent=homeText("as_of")+" "+HOME_LATEST.as_of}
+async function loadHome(){try{const d=await(await fetch("data/latest.json?t="+Date.now(),{cache:"no-store"})).json();HOME_LATEST=d.outbreaks.filter(x=>x.cases!=null).at(-1);document.getElementById("cases").textContent=fmt(HOME_LATEST.confirmed_cases??HOME_LATEST.cases);document.getElementById("deaths").textContent=fmt(HOME_LATEST.confirmed_deaths??HOME_LATEST.deaths);renderHomeDate();const a=await(await fetch("data/advisories.json?t="+Date.now(),{cache:"no-store"})).json();document.getElementById("count").textContent=a.items.length}catch(e){const el=document.getElementById("date");if(el)el.textContent="—"}}
+window.addEventListener("aopw-language",renderHomeDate);renderHomeDate();loadHome();
