@@ -11,6 +11,18 @@ Open-source public-interest visualization for African outbreak events, demograph
 - Failed refreshes do not overwrite the last trusted snapshot.
 - Public-interest visualization only; not medical or travel advice.
 
+## Credits & acknowledgements
+This project openly documents its development stack and contributors.
+
+- **Developed by Hanni Cheng** — product concept, requirements, data-governance design and project direction.
+- **ChatGPT by OpenAI** — AI-assisted requirements refinement, code generation, documentation and implementation support.
+- **GitHub** — repository hosting and collaboration.
+- **GitHub Actions** — scheduled data-refresh and deployment workflows.
+- **GitHub Pages** — public static-site hosting.
+- **HTML / CSS / JavaScript / JSON / Python** — implementation stack.
+
+Public-health agencies, scientific organizations and data providers are credited as sources; attribution does **not** imply endorsement of this project.
+
 ## Sources
 WHO, ReliefWeb, UN World Population Prospects, UNHCR/IOM (planned), and official national travel-advisory authorities.
 
