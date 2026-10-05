@@ -1,1 +1,17 @@
-let D;const f=n=>n==null?'—':Number(n).toLocaleString();async function load(){try{D=await(await fetch('data/latest.json',{cache:'no-store'})).json();render()}catch(e){status.textContent='Data unavailable'}}function render(){const x=D.outbreaks.filter(x=>x.cases!=null).at(-1);cases.textContent=f(x.confirmed_cases||x.cases);deaths.textContent=f(x.confirmed_deaths||x.deaths);date.textContent='As of '+x.as_of;count.textContent=D.travel_advisories.length;bars(metric.value);advisories.innerHTML=D.travel_advisories.map(a=>'<div class="adv"><b>'+a.country+' · '+a.original_level+'</b><span>'+a.normalized_risk+' · '+a.updated_at+'</span></div>').join('');sources.innerHTML=D.sources.map(s=>'<div class="source"><b>'+s.name+'</b><br><small>'+s.status+' · '+s.last_checked+'</small></div>').join('')}function bars(m){let vs=D.outbreaks.map(x=>x[m]).filter(x=>x!=null),mx=Math.max(...vs,1);timeline.innerHTML=D.outbreaks.map(x=>{let v=x[m],h=v==null?3:Math.max(4,v/mx*255);return '<div class="bw"><div class="bar" style="height:'+h+'px"><span>'+f(v)+'</span></div><small>'+x.year+'</small></div>'}).join('')}metric.addEventListener('change',()=>bars(metric.value));load();
+const fmt=n=>n==null?"—":Number(n).toLocaleString();
+async function loadHome(){
+  const status=document.getElementById("status");
+  try{
+    const d=await(await fetch("data/latest.json?t="+Date.now(),{cache:"no-store"})).json();
+    const latest=d.outbreaks.filter(x=>x.cases!=null).at(-1);
+    document.getElementById("cases").textContent=fmt(latest.confirmed_cases??latest.cases);
+    document.getElementById("deaths").textContent=fmt(latest.confirmed_deaths??latest.deaths);
+    document.getElementById("date").textContent="As of "+latest.as_of;
+    const a=await(await fetch("data/advisories.json?t="+Date.now(),{cache:"no-store"})).json();
+    document.getElementById("count").textContent=a.items.length;
+    if(status)status.textContent="Latest validated snapshot · "+(d.generated_at||"source timestamped");
+  }catch(e){
+    if(status)status.textContent="Snapshot temporarily unavailable";
+  }
+}
+loadHome();
