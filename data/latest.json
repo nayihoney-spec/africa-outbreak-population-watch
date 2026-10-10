@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T22:35:52.102427+00:00",
+  "generated_at": "2026-10-10T05:47:53.948131+00:00",
   "outbreaks": [
     {
       "year": 2016,
@@ -110,17 +110,17 @@
     {
       "name": "WHO",
       "status": "reachable; parser/validation pipeline active",
-      "last_checked": "2026-10-09T22:35:52.102427+00:00"
+      "last_checked": "2026-10-10T05:47:53.948131+00:00"
     },
     {
       "name": "ReliefWeb",
       "status": "reachable; parser/validation pipeline active",
-      "last_checked": "2026-10-09T22:35:52.102427+00:00"
+      "last_checked": "2026-10-10T05:47:53.948131+00:00"
     },
     {
       "name": "UN World Population Prospects",
       "status": "fetch failed; retaining last trusted snapshot",
-      "last_checked": "2026-10-09T22:35:52.102427+00:00"
+      "last_checked": "2026-10-10T05:47:53.948131+00:00"
     },
     {
       "name": "Official government travel advisories",
