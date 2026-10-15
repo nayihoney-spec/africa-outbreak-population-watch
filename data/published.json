@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "revision": "d35028eb95226b70",
-  "published_at": "2026-10-15T15:36:56.629023+00:00",
+  "revision": "369aee4210c9432e",
+  "published_at": "2026-10-15T15:38:51.419013+00:00",
   "latest": {
-    "generated_at": "2026-10-15T15:36:56.629023+00:00",
+    "generated_at": "2026-10-15T15:38:51.419013+00:00",
     "outbreaks": [
       {
         "year": 2016,
@@ -145,7 +145,7 @@
     }
   },
   "outbreaks": {
-    "updated_at": "2026-10-15T15:36:56.629023+00:00",
+    "updated_at": "2026-10-15T15:38:51.419013+00:00",
     "definition": "Event-level outbreak totals for DRC from 2016 onward. Cross-year outbreaks are stored as single events; missing years are not converted to zero.",
     "events": [
       {
@@ -459,7 +459,7 @@
   },
   "verification": {
     "status": "verified",
-    "checked_at": "2026-10-15T15:36:56.629023+00:00",
+    "checked_at": "2026-10-15T15:38:51.419013+00:00",
     "scope": "DRC only; 2026 outbreak; confirmed cases and deaths",
     "method": "Two official publishers agree on counts; reporting dates retained separately. Shared upstream data is not independent epidemiological confirmation.",
     "sources": [
@@ -480,7 +480,7 @@
         "cases": 9144,
         "deaths": 4410,
         "evidence": "As of 13 October 2026, the Democratic Republic of the Congo (DRC) reported a total of 9 144 confirmed cases, including 4 410 related deaths (from data up until 12 October)",
-        "sha256": "f6fad418f4dfe3689f8c62cea4e148aa9d7619b372d11bb567bcde235cb89c1e"
+        "sha256": "e3ffb2cc20dfa13d144bb5fc3d3fa9ab6e9f17ec3c218bc66e2d6fd9a2c02509"
       }
     ]
   },

@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-15T15:36:56.629023+00:00",
+  "checked_at": "2026-10-15T15:38:51.419013+00:00",
   "status": "passed",
   "published_changed": true,
-  "revision": "d35028eb95226b70",
+  "revision": "369aee4210c9432e",
   "counts": {
     "cases": 9144,
     "deaths": 4410
