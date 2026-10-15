@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-15T15:36:56.629023+00:00",
+  "checked_at": "2026-10-15T17:08:19.883729+00:00",
   "status": "passed",
   "published_changed": true,
-  "revision": "cn-alert-20261015170633",
+  "revision": "c5d157295b9fef87",
   "counts": {
     "cases": 9144,
     "deaths": 4410
@@ -12,5 +12,5 @@
     "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda"
   ],
   "advisory_status": "blocked",
-  "advisory_checked_at": "2026-10-15T17:01:49.929741+00:00"
+  "advisory_checked_at": "2026-10-15T17:08:21.002604+00:00"
 }

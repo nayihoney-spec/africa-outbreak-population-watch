@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-10-15T17:01:49.929741+00:00",
+  "checked_at": "2026-10-15T17:08:21.002604+00:00",
   "passed": [
+    "GB",
+    "AU",
     "CA",
     "CN",
-    "GB",
-    "JP",
-    "SG",
     "TW",
-    "US"
+    "JP",
+    "SG"
   ],
   "blocked": {
-    "AU": "The read operation timed out"
+    "US": "HTTP Error 403: Forbidden"
   },
   "unconfigured": [
     "FR",
@@ -21,8 +21,5 @@
     "KR",
     "TH",
     "MY"
-  ],
-  "manual_reviewed": [
-    "AU"
   ]
 }
