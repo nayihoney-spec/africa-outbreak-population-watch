@@ -22,5 +22,8 @@ class Maintenance(unittest.TestCase):
  def test_reject_mixed_view_revision(self):
   self.b['outbreaks']['events'][-1]['cases']+=1
   with self.assertRaises(AssertionError):u.validate(self.b)
+ def test_primary_date_matches_cdc(self):
+  result=u.promote(self.b,self.sources,self.now)
+  self.assertEqual(result['latest']['outbreaks'][-1]['as_of'],self.sources[0]['report_as_of'])
  def test_published_consistent(self):self.assertTrue(u.validate(self.b))
 if __name__=='__main__':unittest.main()

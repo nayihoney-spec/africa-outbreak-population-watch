@@ -29,3 +29,7 @@ Run `python -m unittest discover -s tests -p 'test_*.py'`, `python scripts/updat
 ## Limits
 
 Counts can be delayed when official sources publish at different times; disagreement intentionally blocks automatic promotion. GitHub Actions schedules can be delayed by GitHub. Raw data connectivity can fail; fallback remains dated. Browser interaction QA was unavailable in the deployment environment; parser, failure gates, live HTTP data and asset checks are performed separately. No guarantee that upstream official data itself is error-free.
+
+## Primary reporting date and terminology
+
+The public current-outbreak as_of is CDC report_as_of, matching the primary current-situation page. ECDC retains its own report_as_of and data_through in verification.sources; do not relabel those as CDC dates. Current cards use DRC confirmed cases and confirmed deaths only. Historical counts follow CDC reported-event totals, with source links and case-basis notes. Site-derived cumulative sums, cumulative shares and ratios must always be labeled calculated; they are not official annual incidence. Virus species labels follow CDC taxonomy: Orthoebolavirus zairense and Orthoebolavirus bundibugyoense.

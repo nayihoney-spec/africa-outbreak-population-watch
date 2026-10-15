@@ -69,7 +69,7 @@ def promote(bundle,sources,now):
   age=(dt.date.fromisoformat(now[:10])-dt.date.fromisoformat(x['report_as_of'])).days
   if not 0<=age<=14:raise ValueError('Source date is future or older than 14 days')
  if (a['cases'],a['deaths'])!=(b['cases'],b['deaths']):raise ValueError('CDC/ECDC counts differ; retain published bundle for review')
- asof=min(x.get('data_through',x['report_as_of']) for x in sources)
+ asof=a['report_as_of']  # Primary CDC reporting date; secondary dates remain attached to evidence.
  out=copy.deepcopy(bundle);row=next(x for x in out['latest']['outbreaks'] if x['year']==2026)
  if asof<row['as_of']:raise ValueError('Source data date regressed')
  if a['cases']<row['cases'] or a['deaths']<row['deaths']:raise ValueError('Cumulative values decreased; correction requires documented review')

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "revision": "9f6ac8d1c005629e",
-  "published_at": "2026-10-15T16:30:42.453821+00:00",
+  "revision": "source-aligned-1792082276917",
+  "published_at": "2026-10-15T16:37:56.917Z",
   "latest": {
     "generated_at": "2026-10-15T16:30:42.453821+00:00",
     "outbreaks": [
@@ -71,11 +71,12 @@
         "deaths": 4410,
         "confirmed_cases": 9144,
         "confirmed_deaths": 4410,
-        "as_of": "2026-10-12",
+        "as_of": "2026-10-14",
         "verification_status": "Verified official-source comparison; shared upstream may exist",
         "primary_source": "CDC / ECDC",
-        "primary_source_as_of": "2026-10-12",
-        "cfr_percent": 48.23
+        "primary_source_as_of": "2026-10-14",
+        "cfr_percent": 48.23,
+        "as_of_basis": "CDC report_as_of; secondary reporting and data-through dates retained separately"
       }
     ],
     "travel_advisories": [
@@ -153,119 +154,128 @@
         "start": "2017",
         "end": "2017",
         "location": "Bas-Uélé",
-        "species": "Ebola virus (EBOV)",
+        "species": "Orthoebolavirus zairense",
         "cases": 8,
         "deaths": 4,
-        "source": "WHO",
+        "source": "CDC",
         "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
-        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
+        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only",
+        "source_checked_at": "2026-10-15T16:37:56.917Z"
       },
       {
         "id": "2018-equateur",
         "start": "2018",
         "end": "2018",
         "location": "Équateur",
-        "species": "Ebola virus (EBOV)",
+        "species": "Orthoebolavirus zairense",
         "cases": 54,
         "deaths": 33,
-        "source": "WHO",
+        "source": "CDC",
         "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
-        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
+        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only",
+        "source_checked_at": "2026-10-15T16:37:56.917Z"
       },
       {
         "id": "2018-2020-kivu",
         "start": "2018",
         "end": "2020",
         "location": "North Kivu / Ituri / South Kivu",
-        "species": "Ebola virus (EBOV)",
+        "species": "Orthoebolavirus zairense",
         "cases": 3470,
         "deaths": 2287,
-        "source": "WHO",
+        "source": "CDC",
         "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
-        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
+        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only",
+        "source_checked_at": "2026-10-15T16:37:56.917Z"
       },
       {
         "id": "2020-equateur",
         "start": "2020",
         "end": "2020",
         "location": "Équateur",
-        "species": "Ebola virus (EBOV)",
+        "species": "Orthoebolavirus zairense",
         "cases": 130,
         "deaths": 55,
-        "source": "WHO",
+        "source": "CDC",
         "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
-        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
+        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only",
+        "source_checked_at": "2026-10-15T16:37:56.917Z"
       },
       {
         "id": "2021-nk-1",
         "start": "2021-02",
         "end": "2021-05",
         "location": "North Kivu",
-        "species": "Ebola virus (EBOV)",
+        "species": "Orthoebolavirus zairense",
         "cases": 12,
         "deaths": 6,
-        "source": "WHO",
+        "source": "CDC",
         "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
-        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
+        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only",
+        "source_checked_at": "2026-10-15T16:37:56.917Z"
       },
       {
         "id": "2021-beni",
         "start": "2021-10",
         "end": "2021-12",
         "location": "Beni / North Kivu",
-        "species": "Ebola virus (EBOV)",
+        "species": "Orthoebolavirus zairense",
         "cases": 11,
         "deaths": 9,
-        "source": "WHO",
+        "source": "CDC",
         "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
-        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
+        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only",
+        "source_checked_at": "2026-10-15T16:37:56.917Z"
       },
       {
         "id": "2022-mbandaka",
         "start": "2022-04",
         "end": "2022-07",
         "location": "Mbandaka / Équateur",
-        "species": "Ebola virus (EBOV)",
+        "species": "Orthoebolavirus zairense",
         "cases": 5,
         "deaths": 5,
-        "source": "WHO",
+        "source": "CDC",
         "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
-        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
+        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only",
+        "source_checked_at": "2026-10-15T16:37:56.917Z"
       },
       {
         "id": "2022-beni",
         "start": "2022-08",
         "end": "2022-09",
         "location": "Beni / North Kivu",
-        "species": "Ebola virus (EBOV)",
+        "species": "Orthoebolavirus zairense",
         "cases": 1,
         "deaths": 1,
-        "source": "WHO",
+        "source": "CDC",
         "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
-        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
+        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only",
+        "source_checked_at": "2026-10-15T16:37:56.917Z"
       },
       {
         "id": "2025-kasai",
         "start": "2025",
         "end": "2025",
         "location": "Kasai / Bulape",
-        "species": "Ebola virus (EBOV)",
+        "species": "Orthoebolavirus zairense",
         "cases": 64,
         "deaths": 45,
-        "source": "WHO",
+        "source": "CDC",
         "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
-        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
+        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only",
+        "source_checked_at": "2026-10-15T16:37:56.917Z"
       },
       {
         "id": "2026-bundibugyo",
         "start": "2026",
         "end": "2026",
         "location": "DRC multi-province",
-        "species": "Bundibugyo virus (BDBV)",
+        "species": "Orthoebolavirus bundibugyoense",
         "cases": 9144,
         "deaths": 4410,
         "source": "CDC / ECDC",
-        "as_of": "2026-10-12",
+        "as_of": "2026-10-14",
         "source_url": "https://www.cdc.gov/ebola/situation-summary/index.html",
         "case_basis": "laboratory-confirmed cases and deaths; DRC only"
       }

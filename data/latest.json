@@ -67,11 +67,12 @@
       "deaths": 4410,
       "confirmed_cases": 9144,
       "confirmed_deaths": 4410,
-      "as_of": "2026-10-12",
+      "as_of": "2026-10-14",
       "verification_status": "Verified official-source comparison; shared upstream may exist",
       "primary_source": "CDC / ECDC",
-      "primary_source_as_of": "2026-10-12",
-      "cfr_percent": 48.23
+      "primary_source_as_of": "2026-10-14",
+      "cfr_percent": 48.23,
+      "as_of_basis": "CDC report_as_of; secondary reporting and data-through dates retained separately"
     }
   ],
   "travel_advisories": [
