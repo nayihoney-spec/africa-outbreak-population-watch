@@ -109,5 +109,19 @@
     "outbreak_nine_languages_and_math": "passed",
     "static_build": "passed"
   },
-  "publication_readback": "pending"
+  "publication_readback": {
+    "checked_at": "2026-10-15T18:54:29.581215+00:00",
+    "github_commit": "73c76d9b87603351f02f024b58e65ded8fe6bd37",
+    "github_exact_semantic_match": true,
+    "raw_main": {
+      "status": 200,
+      "cors": "*",
+      "revision": "6beebb48c7a70f79",
+      "semantic_match": true,
+      "checked_at": "2026-10-15T18:53:57.694257+00:00",
+      "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=d91d9723269041d6834c39cf19b53089"
+    },
+    "raw_commit_exact_semantic_match": true,
+    "propagation": "Initial branch raw response returned previous revision; retry returned exact newly published object."
+  }
 }
