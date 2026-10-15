@@ -2,7 +2,7 @@ name: Validate and refresh public-health data
 on:
   push:
     branches: [main]
-    paths: ["scripts/update_data.py", "tests/**", ".github/workflows/update-data.yml"]
+    paths: ["scripts/update_data.py", "scripts/update_advisories.py", "tests/**", ".github/workflows/update-data.yml"]
   schedule:
     - cron: "17 */6 * * *"
   workflow_dispatch:
@@ -29,6 +29,11 @@ jobs:
         id: refresh
         continue-on-error: true
         run: python scripts/update_data.py
+      - name: Read official travel alert levels and publication dates
+        id: advisories
+        if: success() || steps.refresh.outcome == 'failure'
+        continue-on-error: true
+        run: python scripts/update_advisories.py
       - name: Persist validated bundle or failed-check report
         if: always()
         run: |
@@ -38,7 +43,7 @@ jobs:
           git diff --cached --quiet || git commit -m "data: persist source comparison and maintenance status"
           git push
       - name: Surface blocked update
-        if: steps.refresh.outcome == 'failure'
+        if: steps.refresh.outcome == 'failure' || steps.advisories.outcome == 'failure'
         run: |
           echo "::error::Source refresh blocked. Previous published bundle retained. Inspect data/maintenance.json."
           exit 1

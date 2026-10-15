@@ -11,3 +11,23 @@ pt:{list_title:'Alertas para a RDC por país ou território',quick_country:'Sele
 };
 Object.entries(ADVISORY_LABELS).forEach(([language,labels])=>Object.assign(T[language],labels));
 apply(document.documentElement.lang);
+const ADVISORY_DATE_KEYS=['source_dates','date_published','date_updated','date_unavailable','sort_source_dates','official_level'];
+const ADVISORY_DATE_VALUES={
+en:['Official issued / updated date','Issued','Updated','Official date not verified','Official update: newest first','Official alert (original wording)'],
+'zh-Hant':['官方發布／更新日期','發布','更新','官方日期待核實','官方更新日期：由新至舊','官方警示等級（原文）'],
+'zh-Hans':['官方发布／更新日期','发布','更新','官方日期待核实','官方更新日期：由新到旧','官方警示等级（原文）'],
+ja:['公式発表・更新日','発表','更新','公式日付は未確認','公式更新日が新しい順','公式警戒レベル（原文）'],
+th:['วันที่ประกาศ／ปรับปรุงทางการ','ประกาศ','ปรับปรุง','ยังไม่ยืนยันวันที่ทางการ','วันที่ปรับปรุงล่าสุดก่อน','คำเตือนทางการ (ต้นฉบับ)'],
+ko:['공식 발표／갱신일','발표','갱신','공식 날짜 확인 대기','공식 갱신일 최신순','공식 경보 (원문)'],
+fr:['Date officielle de publication / mise à jour','Publication','Mise à jour','Date officielle à vérifier','Mise à jour officielle récente','Alerte officielle (texte original)'],
+es:['Fecha oficial de publicación / actualización','Publicación','Actualización','Fecha oficial pendiente','Actualización oficial reciente','Alerta oficial (texto original)'],
+pt:['Data oficial de publicação / atualização','Publicação','Atualização','Data oficial a verificar','Atualização oficial recente','Alerta oficial (texto original)']};
+Object.entries(ADVISORY_DATE_VALUES).forEach(([l,values])=>Object.assign(T[l],Object.fromEntries(ADVISORY_DATE_KEYS.map((key,i)=>[key,values[i]]))));
+apply(document.documentElement.lang);
+const ADVISORY_READ_BLOCKED={en:'Automatic read blocked; last verified record retained','zh-Hant':'自動讀取受阻，保留最近核實資料','zh-Hans':'自动读取受阻，保留最近核实数据',ja:'自動取得に失敗：直近の確認済みデータ',th:'อ่านอัตโนมัติไม่สำเร็จ เก็บข้อมูลที่ตรวจสอบล่าสุด',ko:'자동 조회 실패: 최근 확인 자료 유지',fr:'Lecture automatique bloquée : dernière vérification conservée',es:'Lectura automática bloqueada: última verificación conservada',pt:'Leitura automática bloqueada: última verificação mantida'};
+Object.entries(ADVISORY_READ_BLOCKED).forEach(([l,value])=>T[l].read_blocked=value);
+
+const EPIDEMIC_LABELS={en:['Epidemic risk level','Risk assessment date','Source portal'], 'zh-Hant':['疫情風險等級','風險評估日期','來源入口'],'zh-Hans':['疫情风险等级','风险评估日期','来源入口'],ja:['感染症リスクレベル','リスク評価日','情報源トップ'],th:['ระดับความเสี่ยงโรคระบาด','วันที่ประเมินความเสี่ยง','เว็บไซต์หน่วยงาน'],ko:['감염병 위험 수준','위험 평가일','출처 홈페이지'],fr:['Niveau de risque épidémique','Date d’évaluation du risque','Portail officiel'],es:['Nivel de riesgo epidémico','Fecha de evaluación','Portal oficial'],pt:['Nível de risco epidêmico','Data de avaliação','Portal oficial']};
+Object.entries(EPIDEMIC_LABELS).forEach(([l,v])=>Object.assign(T[l],{epidemic_risk:v[0],risk_assessed_at:v[1],source_portal:v[2]}));
+const ORIGINAL_ADVICE={en:'Official travel advice (original wording)','zh-Hant':'官方出行建議（原文）','zh-Hans':'官方出行建议（原文）',ja:'公式渡航助言（原文）',th:'คำแนะนำการเดินทางทางการ (ต้นฉบับ)',ko:'공식 여행 권고 (원문)',fr:'Conseil officiel (texte original)',es:'Consejo oficial (texto original)',pt:'Conselho oficial (texto original)'};
+Object.entries(ORIGINAL_ADVICE).forEach(([l,text])=>T[l].original_advice=text);

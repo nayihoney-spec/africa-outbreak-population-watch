@@ -33,3 +33,15 @@ Counts can be delayed when official sources publish at different times; disagree
 ## Primary reporting date and terminology
 
 The public current-outbreak as_of is CDC report_as_of, matching the primary current-situation page. ECDC retains its own report_as_of and data_through in verification.sources; do not relabel those as CDC dates. Current cards use DRC confirmed cases and confirmed deaths only. Historical counts follow CDC reported-event totals, with source links and case-basis notes. Site-derived cumulative sums, cumulative shares and ratios must always be labeled calculated; they are not official annual incidence. Virus species labels follow CDC taxonomy: Orthoebolavirus zairense and Orthoebolavirus bundibugyoense.
+
+## Official alert field extraction
+
+Run `python scripts/update_advisories.py` after the counts collector. Validated destination-specific adapters cover TW (BOCA table rows), US (issued date versus page update), AU (overall advice and update), GB (regional warning and update), CA (destination risk header and last-updated date), SG (dated advisory section, not site footer), and JP (dated regional danger information). Network reads retry once. A failed adapter retains its last verified alert and marks the attempt blocked; the UI expires alerts after 48 hours without successful verification.
+
+BOCA 發布/更新日期 is a combined field: store source_updated_at and source_date_kind=published_or_updated, with source_published_at=null; do not infer a first-publication date. Preserve the exact 警示等級 text. The public UI has distinct official-date and verification-time columns and separate sorting. Source-language alert text is explicitly labeled original wording. Never use the BOCA footer date or Singapore site footer as an alert date.
+
+Unconfigured authorities remain pending. In particular, a page offering dated reminders without an explicit alert classification does not authorize assigning a numeric or color level. Ask the owner to confirm whether to display a separate ungraded-advisory category before implementing that presentation.
+
+## Confirmed China mainland field mapping (owner instruction)
+
+For China mainland, the owner confirmed 疫情风险等级 may populate the official alert-level column. The selected official document is https://cs.mfa.gov.cn/zyxx/202607/t20260723_11990742.html ; preserve https://cs.mfa.gov.cn/ as registry_url. Extract 极高风险 and 发布时间 2026-05-29 14:17 from the article body, not the July date embedded in its URL. Mark alert_type=epidemic-risk, keep the WHO quotation attribution and DRC geographic scope, and retain the separate risk-assessment date and original non-essential-travel advice. This mapping is approved for CN only; it does not authorize invented numeric or color grades for other jurisdictions.
