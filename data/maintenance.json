@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-15T17:10:38.595240+00:00",
+  "checked_at": "2026-10-15T18:47:12.304384+00:00",
   "status": "passed",
   "published_changed": true,
-  "revision": "cf290b4ff72c350f",
+  "revision": "6beebb48c7a70f79",
   "counts": {
     "cases": 9144,
     "deaths": 4410
@@ -12,5 +12,118 @@
     "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda"
   ],
   "advisory_status": "blocked",
-  "advisory_checked_at": "2026-10-15T17:10:39.490526+00:00"
+  "advisory_checked_at": "2026-10-15T18:47:27.377310+00:00",
+  "cloud_audit": {
+    "checked_at": "2026-10-15T18:51:58.757755+00:00",
+    "status": "partial",
+    "base_revision": "cf290b4ff72c350f",
+    "revision": "6beebb48c7a70f79",
+    "counts": {
+      "status": "passed",
+      "changed": false,
+      "cases": 9144,
+      "deaths": 4410,
+      "primary_report_as_of": "2026-10-14",
+      "ecdc_report_as_of": "2026-10-13",
+      "ecdc_data_through": "2026-10-12",
+      "evidence": [
+        {
+          "name": "CDC",
+          "url": "https://www.cdc.gov/ebola/situation-summary/index.html",
+          "report_as_of": "2026-10-14",
+          "cases": 9144,
+          "deaths": 4410,
+          "evidence": "Democratic Republic of the Congo 9,144 confirmed cases 4,410 confirmed deaths",
+          "sha256": "7535d381a47e2c294f4ba307c6532c919f83717c5b859ff561c8226d59986ad7"
+        },
+        {
+          "name": "ECDC",
+          "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+          "report_as_of": "2026-10-13",
+          "data_through": "2026-10-12",
+          "cases": 9144,
+          "deaths": 4410,
+          "evidence": "As of 13 October 2026, the Democratic Republic of the Congo (DRC) reported a total of 9 144 confirmed cases, including 4 410 related deaths (from data up until 12 October)",
+          "sha256": "f6fad418f4dfe3689f8c62cea4e148aa9d7619b372d11bb567bcde235cb89c1e"
+        }
+      ]
+    },
+    "who_review": {
+      "url": "https://www.afro.who.int/countries/kenya/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-weekly-external-situation-report",
+      "data_as_of": "2026-10-11",
+      "cases": 9066,
+      "deaths": 4381,
+      "outcome": "Earlier reporting period; not a same-date count conflict. Page heading is inconsistent with report-22 image and body; original dates retained. Linked IRIS PDF returned HTTP 403."
+    },
+    "drc_review": {
+      "url": "https://insp.cd/sitrep-n152-mve-bdbv-13-10-2026/",
+      "published_at": "2026-10-15",
+      "report_date": "2026-10-13",
+      "outcome": "Newer local situation-report landing page found; PDF HTTP 403 prevents count extraction. Counts are pending and not substituted for the matched CDC/ECDC snapshot."
+    },
+    "reliefweb_review": {
+      "outcome": "Search returned no matching indexed official report; direct listing unavailable. No reposted numbers used."
+    },
+    "research_history_review": {
+      "url": "https://www.who.int/emergencies/situations/ebola-outbreak---drc-2026",
+      "outcome": "Official overview still states no vaccine or specific treatment for Bundibugyo species; no verified change requiring a research/history edit."
+    },
+    "advisories": {
+      "automated_passed": [
+        "US",
+        "GB",
+        "CA",
+        "CN",
+        "TW",
+        "JP",
+        "SG"
+      ],
+      "manual_verified": [
+        "AU"
+      ],
+      "automated_blocked": {
+        "AU": "Read operation timed out after retries"
+      },
+      "pending": {
+        "FR": "Configured URL is a general travel-advice registry; no DRC-specific level/date validated.",
+        "ES": "Configured registry fetch returned HTTP 403; DRC-specific level/date not validated.",
+        "PT": "Configured registry fetch returned HTTP 403; DRC-specific level/date not validated.",
+        "HK": "Configured destination page could not be fetched; level/date not validated.",
+        "MO": "Destination page contains dated reminders, not an explicit unified alert classification; ungraded display awaits owner decision.",
+        "KR": "Destination page lists regional exit advice, travel ban and special advisory with separately dated notices; no single effective date validated.",
+        "TH": "Configured ministry homepage did not expose a DRC-specific alert; no level/date validated.",
+        "MY": "Configured ministry homepage fetch timed out; DRC-specific level/date not validated."
+      },
+      "substantive_level_or_date_changes": [],
+      "recovered_source": "US direct parser now passed; previous cloud Actions attempt was HTTP 403."
+    },
+    "latest_actions_review": {
+      "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/38775113967",
+      "counts": "passed",
+      "advisory_block": "US HTTP 403",
+      "final_conclusion": "failure"
+    },
+    "live_path": {
+      "raw_before_status": 200,
+      "raw_cors": "*",
+      "source_loader_verified": true,
+      "deployed_version": 9,
+      "deployed_source_commit": "c6d64aba15fe6c279859d98e691e942fcf3c949e",
+      "site_audience": "public",
+      "site_status": "active",
+      "site_http_status": 403,
+      "site_asset_http_status": 403,
+      "runtime_csp_verified": false,
+      "outcome": "Raw JSON usable cross-origin; deployed source references canonical raw loader. Actual public Sites HTML/asset and response CSP could not be read from this environment."
+    },
+    "validation": {
+      "python_unit_tests": 15,
+      "javascript_syntax": "passed",
+      "data_client_behavior": "passed",
+      "advisory_filter_sort": "passed",
+      "outbreak_nine_languages_and_math": "passed",
+      "static_build": "passed"
+    },
+    "publication_readback": "pending"
+  }
 }
