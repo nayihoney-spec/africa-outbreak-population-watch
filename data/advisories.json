@@ -1,36 +1,45 @@
 {
-  "updated_at": "2026-10-05T19:20:00+08:00",
+  "updated_at": "2026-10-15T16:28:49.999Z",
   "mode": "validated snapshot; official source link remains the authority",
   "items": [
     {
       "code": "US",
       "country": "United States",
-      "level": "Check current official advisory",
-      "normalized": "Official source",
+      "level": "Level 4 — Do not travel",
+      "normalized": "Very high",
       "source_name": "U.S. Department of State",
       "url": "https://travel.state.gov/en/international-travel/travel-advisories/destination.cod.html",
-      "checked": "Not yet verified by automated maintenance",
-      "validation": "destination-specific level pending verification"
+      "checked": "2026-10-15T16:28:49.999Z",
+      "validation": "verified",
+      "source_published_at": "2026-07-15",
+      "evidence": "Level 4 - Do not travel",
+      "verified_at": "2026-10-15T16:28:49.999Z"
     },
     {
       "code": "GB",
       "country": "United Kingdom",
-      "level": "Check current official advisory",
-      "normalized": "Official source",
+      "level": "Against all travel / all but essential travel to parts of DRC",
+      "normalized": "Region-dependent",
       "source_name": "UK FCDO",
       "url": "https://www.gov.uk/foreign-travel-advice/democratic-republic-of-the-congo",
-      "checked": "Not yet verified by automated maintenance",
-      "validation": "destination-specific level pending verification"
+      "checked": "2026-10-15T16:28:49.999Z",
+      "validation": "verified",
+      "source_published_at": "2026-10-08",
+      "evidence": "FCDO regional warnings apply.",
+      "verified_at": "2026-10-15T16:28:49.999Z"
     },
     {
       "code": "AU",
       "country": "Australia",
-      "level": "Check current official advisory",
-      "normalized": "Official source",
+      "level": "Do not travel",
+      "normalized": "Very high",
       "source_name": "Smartraveller",
       "url": "https://www.smartraveller.gov.au/destinations/africa/democratic-republic-congo",
-      "checked": "Not yet verified by automated maintenance",
-      "validation": "destination-specific level pending verification"
+      "checked": "2026-10-15T16:28:49.999Z",
+      "validation": "verified",
+      "source_published_at": "2026-07-06",
+      "evidence": "Overall: Do not travel",
+      "verified_at": "2026-10-15T16:28:49.999Z"
     },
     {
       "code": "CA",

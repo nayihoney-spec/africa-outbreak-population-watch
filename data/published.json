@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "travel-20261015162849999",
+  "revision": "travel-20261015162849999-list",
   "published_at": "2026-10-15T16:28:49.999Z",
   "latest": {
     "generated_at": "2026-10-15T15:38:51.419013+00:00",
@@ -298,7 +298,7 @@
         "checked": "2026-10-15T16:28:49.999Z",
         "validation": "verified",
         "source_published_at": "2026-10-08",
-        "evidence": "FCDO advises against all travel to parts of Democratic Republic of the Congo.",
+        "evidence": "FCDO regional warnings apply.",
         "verified_at": "2026-10-15T16:28:49.999Z"
       },
       {

@@ -23,6 +23,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_*.py'
           node tests/test_data_client.cjs
+          node tests/test_advisory_list.cjs
       - name: Fetch CDC and ECDC, compare, then publish atomically
         id: refresh
         continue-on-error: true
