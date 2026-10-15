@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-15T15:36:56.629023+00:00",
+  "status": "passed",
+  "published_changed": true,
+  "revision": "d35028eb95226b70",
+  "counts": {
+    "cases": 9144,
+    "deaths": 4410
+  },
+  "sources": [
+    "https://www.cdc.gov/ebola/situation-summary/index.html",
+    "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda"
+  ]
+}

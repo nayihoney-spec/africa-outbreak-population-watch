@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T11:23:48.218732+00:00",
+  "generated_at": "2026-10-15T15:36:56.629023+00:00",
   "outbreaks": [
     {
       "year": 2016,
@@ -34,13 +34,13 @@
     {
       "year": 2021,
       "cases": 23,
-      "deaths": 12,
+      "deaths": 15,
       "as_of": "2021"
     },
     {
       "year": 2022,
-      "cases": 5,
-      "deaths": 5,
+      "cases": 6,
+      "deaths": 6,
       "as_of": "2022"
     },
     {
@@ -63,16 +63,15 @@
     },
     {
       "year": 2026,
-      "cases": 8442,
-      "deaths": 4080,
-      "confirmed_cases": 8442,
-      "confirmed_deaths": 4080,
-      "as_of": "2026-10-02",
-      "verification_status": "Primary-source verified",
-      "primary_source": "WHO Alert and Response",
-      "primary_source_as_of": "2026-10-02",
-      "cfr_percent": 48,
-      "recovered": 2213
+      "cases": 9144,
+      "deaths": 4410,
+      "confirmed_cases": 9144,
+      "confirmed_deaths": 4410,
+      "as_of": "2026-10-12",
+      "verification_status": "Verified official-source comparison; shared upstream may exist",
+      "primary_source": "CDC / ECDC",
+      "primary_source_as_of": "2026-10-12",
+      "cfr_percent": 48.23
     }
   ],
   "travel_advisories": [
@@ -109,22 +108,22 @@
   "sources": [
     {
       "name": "WHO",
-      "status": "reachable; parser/validation pipeline active",
+      "status": "source registry; validation tracked in published.json",
       "last_checked": "2026-10-15T11:23:48.218732+00:00"
     },
     {
       "name": "ReliefWeb",
-      "status": "reachable; parser/validation pipeline active",
+      "status": "source registry; validation tracked in published.json",
       "last_checked": "2026-10-15T11:23:48.218732+00:00"
     },
     {
       "name": "UN World Population Prospects",
-      "status": "fetch failed; retaining last trusted snapshot",
+      "status": "source registry; validation tracked in published.json",
       "last_checked": "2026-10-15T11:23:48.218732+00:00"
     },
     {
       "name": "Official government travel advisories",
-      "status": "travel source family",
+      "status": "source registry; validation tracked in published.json",
       "last_checked": "2026-10-05"
     }
   ],

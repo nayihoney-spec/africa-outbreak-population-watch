@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05",
+  "updated_at": "2026-10-15T15:36:56.629023+00:00",
   "definition": "Event-level outbreak totals for DRC from 2016 onward. Cross-year outbreaks are stored as single events; missing years are not converted to zero.",
   "events": [
     {
@@ -10,7 +10,9 @@
       "species": "Ebola virus (EBOV)",
       "cases": 8,
       "deaths": 4,
-      "source": "WHO"
+      "source": "WHO",
+      "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+      "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
     },
     {
       "id": "2018-equateur",
@@ -20,7 +22,9 @@
       "species": "Ebola virus (EBOV)",
       "cases": 54,
       "deaths": 33,
-      "source": "WHO"
+      "source": "WHO",
+      "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+      "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
     },
     {
       "id": "2018-2020-kivu",
@@ -30,7 +34,9 @@
       "species": "Ebola virus (EBOV)",
       "cases": 3470,
       "deaths": 2287,
-      "source": "WHO"
+      "source": "WHO",
+      "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+      "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
     },
     {
       "id": "2020-equateur",
@@ -40,7 +46,9 @@
       "species": "Ebola virus (EBOV)",
       "cases": 130,
       "deaths": 55,
-      "source": "WHO"
+      "source": "WHO",
+      "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+      "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
     },
     {
       "id": "2021-nk-1",
@@ -50,7 +58,9 @@
       "species": "Ebola virus (EBOV)",
       "cases": 12,
       "deaths": 6,
-      "source": "WHO"
+      "source": "WHO",
+      "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+      "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
     },
     {
       "id": "2021-beni",
@@ -59,8 +69,10 @@
       "location": "Beni / North Kivu",
       "species": "Ebola virus (EBOV)",
       "cases": 11,
-      "deaths": 6,
-      "source": "WHO"
+      "deaths": 9,
+      "source": "WHO",
+      "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+      "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
     },
     {
       "id": "2022-mbandaka",
@@ -70,7 +82,9 @@
       "species": "Ebola virus (EBOV)",
       "cases": 5,
       "deaths": 5,
-      "source": "WHO"
+      "source": "WHO",
+      "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+      "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
     },
     {
       "id": "2022-beni",
@@ -80,7 +94,9 @@
       "species": "Ebola virus (EBOV)",
       "cases": 1,
       "deaths": 1,
-      "source": "WHO"
+      "source": "WHO",
+      "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+      "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
     },
     {
       "id": "2025-kasai",
@@ -90,7 +106,9 @@
       "species": "Ebola virus (EBOV)",
       "cases": 64,
       "deaths": 45,
-      "source": "WHO"
+      "source": "WHO",
+      "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+      "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
     },
     {
       "id": "2026-bundibugyo",
@@ -98,10 +116,12 @@
       "end": "2026",
       "location": "DRC multi-province",
       "species": "Bundibugyo virus (BDBV)",
-      "cases": 8442,
-      "deaths": 4080,
-      "source": "WHO",
-      "as_of": "2026-10-02"
+      "cases": 9144,
+      "deaths": 4410,
+      "source": "CDC / ECDC",
+      "as_of": "2026-10-12",
+      "source_url": "https://www.cdc.gov/ebola/situation-summary/index.html",
+      "case_basis": "laboratory-confirmed cases and deaths; DRC only"
     }
   ]
 }

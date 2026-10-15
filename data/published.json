@@ -1,0 +1,488 @@
+{
+  "schema_version": 1,
+  "revision": "d35028eb95226b70",
+  "published_at": "2026-10-15T15:36:56.629023+00:00",
+  "latest": {
+    "generated_at": "2026-10-15T15:36:56.629023+00:00",
+    "outbreaks": [
+      {
+        "year": 2016,
+        "cases": null,
+        "deaths": null,
+        "as_of": "2016"
+      },
+      {
+        "year": 2017,
+        "cases": 8,
+        "deaths": 4,
+        "as_of": "2017"
+      },
+      {
+        "year": 2018,
+        "cases": 54,
+        "deaths": 33,
+        "as_of": "2018"
+      },
+      {
+        "year": 2019,
+        "cases": null,
+        "deaths": null,
+        "as_of": "2019"
+      },
+      {
+        "year": 2020,
+        "cases": 130,
+        "deaths": 55,
+        "as_of": "2020"
+      },
+      {
+        "year": 2021,
+        "cases": 23,
+        "deaths": 15,
+        "as_of": "2021"
+      },
+      {
+        "year": 2022,
+        "cases": 6,
+        "deaths": 6,
+        "as_of": "2022"
+      },
+      {
+        "year": 2023,
+        "cases": null,
+        "deaths": null,
+        "as_of": "2023"
+      },
+      {
+        "year": 2024,
+        "cases": null,
+        "deaths": null,
+        "as_of": "2024"
+      },
+      {
+        "year": 2025,
+        "cases": 64,
+        "deaths": 45,
+        "as_of": "2025-12-01"
+      },
+      {
+        "year": 2026,
+        "cases": 9144,
+        "deaths": 4410,
+        "confirmed_cases": 9144,
+        "confirmed_deaths": 4410,
+        "as_of": "2026-10-12",
+        "verification_status": "Verified official-source comparison; shared upstream may exist",
+        "primary_source": "CDC / ECDC",
+        "primary_source_as_of": "2026-10-12",
+        "cfr_percent": 48.23
+      }
+    ],
+    "travel_advisories": [
+      {
+        "country": "United States",
+        "country_code": "US",
+        "original_level": "Level 4 — Do Not Travel",
+        "normalized_risk": "Very high",
+        "updated_at": "2026-09-17",
+        "advisory_date": "2026-07-15",
+        "verification_status": "Primary-source verified",
+        "official_url": "https://travel.state.gov/en/international-travel/travel-advisories/destination.cod.html"
+      },
+      {
+        "country": "United Kingdom",
+        "country_code": "GB",
+        "original_level": "Regional FCDO advice",
+        "normalized_risk": "Region-dependent",
+        "updated_at": null,
+        "verification_status": "Single authoritative source — live parser pending",
+        "official_url": "https://www.gov.uk/foreign-travel-advice/democratic-republic-of-the-congo"
+      },
+      {
+        "country": "Australia",
+        "country_code": "AU",
+        "original_level": "Do not travel",
+        "normalized_risk": "Very high",
+        "updated_at": "2026-07-06",
+        "current_at": "2026-09-30",
+        "verification_status": "Primary-source verified",
+        "official_url": "https://www.smartraveller.gov.au/destinations/africa/democratic-republic-congo"
+      }
+    ],
+    "sources": [
+      {
+        "name": "WHO",
+        "status": "source registry; validation tracked in published.json",
+        "last_checked": "2026-10-15T11:23:48.218732+00:00"
+      },
+      {
+        "name": "ReliefWeb",
+        "status": "source registry; validation tracked in published.json",
+        "last_checked": "2026-10-15T11:23:48.218732+00:00"
+      },
+      {
+        "name": "UN World Population Prospects",
+        "status": "source registry; validation tracked in published.json",
+        "last_checked": "2026-10-15T11:23:48.218732+00:00"
+      },
+      {
+        "name": "Official government travel advisories",
+        "status": "source registry; validation tracked in published.json",
+        "last_checked": "2026-10-05"
+      }
+    ],
+    "verification_policy": {
+      "publication_gate": true,
+      "minimum_rule": "Primary authoritative source required; independent provenance check where available",
+      "statuses": [
+        "Primary-source verified",
+        "Verified — independent provenance",
+        "Single authoritative source",
+        "Conflict — pending verification",
+        "Preliminary — not published"
+      ],
+      "missing_is_not_zero": true
+    }
+  },
+  "outbreaks": {
+    "updated_at": "2026-10-15T15:36:56.629023+00:00",
+    "definition": "Event-level outbreak totals for DRC from 2016 onward. Cross-year outbreaks are stored as single events; missing years are not converted to zero.",
+    "events": [
+      {
+        "id": "2017-bas-uele",
+        "start": "2017",
+        "end": "2017",
+        "location": "Bas-Uélé",
+        "species": "Ebola virus (EBOV)",
+        "cases": 8,
+        "deaths": 4,
+        "source": "WHO",
+        "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
+      },
+      {
+        "id": "2018-equateur",
+        "start": "2018",
+        "end": "2018",
+        "location": "Équateur",
+        "species": "Ebola virus (EBOV)",
+        "cases": 54,
+        "deaths": 33,
+        "source": "WHO",
+        "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
+      },
+      {
+        "id": "2018-2020-kivu",
+        "start": "2018",
+        "end": "2020",
+        "location": "North Kivu / Ituri / South Kivu",
+        "species": "Ebola virus (EBOV)",
+        "cases": 3470,
+        "deaths": 2287,
+        "source": "WHO",
+        "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
+      },
+      {
+        "id": "2020-equateur",
+        "start": "2020",
+        "end": "2020",
+        "location": "Équateur",
+        "species": "Ebola virus (EBOV)",
+        "cases": 130,
+        "deaths": 55,
+        "source": "WHO",
+        "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
+      },
+      {
+        "id": "2021-nk-1",
+        "start": "2021-02",
+        "end": "2021-05",
+        "location": "North Kivu",
+        "species": "Ebola virus (EBOV)",
+        "cases": 12,
+        "deaths": 6,
+        "source": "WHO",
+        "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
+      },
+      {
+        "id": "2021-beni",
+        "start": "2021-10",
+        "end": "2021-12",
+        "location": "Beni / North Kivu",
+        "species": "Ebola virus (EBOV)",
+        "cases": 11,
+        "deaths": 9,
+        "source": "WHO",
+        "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
+      },
+      {
+        "id": "2022-mbandaka",
+        "start": "2022-04",
+        "end": "2022-07",
+        "location": "Mbandaka / Équateur",
+        "species": "Ebola virus (EBOV)",
+        "cases": 5,
+        "deaths": 5,
+        "source": "WHO",
+        "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
+      },
+      {
+        "id": "2022-beni",
+        "start": "2022-08",
+        "end": "2022-09",
+        "location": "Beni / North Kivu",
+        "species": "Ebola virus (EBOV)",
+        "cases": 1,
+        "deaths": 1,
+        "source": "WHO",
+        "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
+      },
+      {
+        "id": "2025-kasai",
+        "start": "2025",
+        "end": "2025",
+        "location": "Kasai / Bulape",
+        "species": "Ebola virus (EBOV)",
+        "cases": 64,
+        "deaths": 45,
+        "source": "WHO",
+        "source_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+        "case_basis": "reported outbreak total; not necessarily laboratory-confirmed only"
+      },
+      {
+        "id": "2026-bundibugyo",
+        "start": "2026",
+        "end": "2026",
+        "location": "DRC multi-province",
+        "species": "Bundibugyo virus (BDBV)",
+        "cases": 9144,
+        "deaths": 4410,
+        "source": "CDC / ECDC",
+        "as_of": "2026-10-12",
+        "source_url": "https://www.cdc.gov/ebola/situation-summary/index.html",
+        "case_basis": "laboratory-confirmed cases and deaths; DRC only"
+      }
+    ]
+  },
+  "advisories": {
+    "updated_at": "2026-10-05T19:20:00+08:00",
+    "mode": "validated snapshot; official source link remains the authority",
+    "items": [
+      {
+        "code": "US",
+        "country": "United States",
+        "level": "Check current official advisory",
+        "normalized": "Official source",
+        "source_name": "U.S. Department of State",
+        "url": "https://travel.state.gov/en/international-travel/travel-advisories/destination.cod.html",
+        "checked": "Not yet verified by automated maintenance",
+        "validation": "destination-specific level pending verification"
+      },
+      {
+        "code": "GB",
+        "country": "United Kingdom",
+        "level": "Check current official advisory",
+        "normalized": "Official source",
+        "source_name": "UK FCDO",
+        "url": "https://www.gov.uk/foreign-travel-advice/democratic-republic-of-the-congo",
+        "checked": "Not yet verified by automated maintenance",
+        "validation": "destination-specific level pending verification"
+      },
+      {
+        "code": "AU",
+        "country": "Australia",
+        "level": "Check current official advisory",
+        "normalized": "Official source",
+        "source_name": "Smartraveller",
+        "url": "https://www.smartraveller.gov.au/destinations/africa/democratic-republic-congo",
+        "checked": "Not yet verified by automated maintenance",
+        "validation": "destination-specific level pending verification"
+      },
+      {
+        "code": "CA",
+        "country": "Canada",
+        "level": "Check current official advisory",
+        "normalized": "Official source",
+        "source_name": "Government of Canada",
+        "url": "https://travel.gc.ca/destinations/congo-kinshasa",
+        "checked": "Not yet verified by automated maintenance",
+        "validation": "destination-specific level pending verification"
+      },
+      {
+        "code": "FR",
+        "country": "France",
+        "level": "Check current official advisory",
+        "normalized": "Official source",
+        "source_name": "France Diplomatie",
+        "url": "https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/",
+        "checked": "Not yet verified by automated maintenance",
+        "validation": "destination-specific level pending verification"
+      },
+      {
+        "code": "ES",
+        "country": "Spain",
+        "level": "Check current official advisory",
+        "normalized": "Official source",
+        "source_name": "MAEC Spain",
+        "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Recomendaciones-de-viaje.aspx",
+        "checked": "Not yet verified by automated maintenance",
+        "validation": "destination-specific level pending verification"
+      },
+      {
+        "code": "PT",
+        "country": "Portugal",
+        "level": "Check current official advisory",
+        "normalized": "Official source",
+        "source_name": "Portal das Comunidades Portuguesas",
+        "url": "https://portaldascomunidades.mne.gov.pt/pt/conselhos-aos-viajantes",
+        "checked": "Not yet verified by automated maintenance",
+        "validation": "destination-specific level pending verification"
+      },
+      {
+        "code": "CN",
+        "country": "China (Mainland)",
+        "region": "East Asia",
+        "level": "Check current official advisory",
+        "normalized": "Official source",
+        "source_name": "Ministry of Foreign Affairs of the PRC / China Consular Service",
+        "url": "https://cs.mfa.gov.cn/",
+        "checked": "Not yet verified by automated maintenance",
+        "validation": "destination-specific level pending verification"
+      },
+      {
+        "code": "HK",
+        "country": "Hong Kong SAR",
+        "region": "East Asia",
+        "level": "Check current official advisory",
+        "normalized": "Official source",
+        "source_name": "Security Bureau, HKSAR",
+        "url": "https://www.sb.gov.hk/eng/ota/note-Congo.html",
+        "checked": "Not yet verified by automated maintenance",
+        "validation": "destination-specific level pending verification"
+      },
+      {
+        "code": "MO",
+        "country": "Macao SAR",
+        "region": "East Asia",
+        "level": "Check current official advisory",
+        "normalized": "Official source",
+        "source_name": "Macao Government Tourism Office",
+        "url": "https://ep.macaotourism.gov.mo/travelAlert/travelalert.php?country_code=CD&lang=en",
+        "checked": "Not yet verified by automated maintenance",
+        "validation": "destination-specific level pending verification"
+      },
+      {
+        "code": "TW",
+        "country": "Taiwan",
+        "region": "East Asia",
+        "level": "Check current official advisory",
+        "normalized": "Official source",
+        "source_name": "Bureau of Consular Affairs, MOFA Taiwan",
+        "url": "https://www.boca.gov.tw/sp-trwa-content-3100-f3f00-1.html",
+        "checked": "Not yet verified by automated maintenance",
+        "validation": "destination-specific level pending verification"
+      },
+      {
+        "code": "JP",
+        "country": "Japan",
+        "region": "East Asia",
+        "level": "Check current official advisory",
+        "normalized": "Official source",
+        "source_name": "MOFA Japan Overseas Safety",
+        "url": "https://www.anzen.mofa.go.jp/info/pcinfectionspothazardinfo_103.html",
+        "checked": "Not yet verified by automated maintenance",
+        "validation": "destination-specific level pending verification"
+      },
+      {
+        "code": "KR",
+        "country": "South Korea",
+        "region": "East Asia",
+        "level": "Check current official advisory",
+        "normalized": "Official source",
+        "source_name": "MOFA Korea Overseas Safety",
+        "url": "https://0404.go.kr/ntnSafetyInfo/215/detail",
+        "checked": "Not yet verified by automated maintenance",
+        "validation": "destination-specific level pending verification"
+      },
+      {
+        "code": "TH",
+        "country": "Thailand",
+        "region": "Southeast Asia",
+        "level": "Check current official advisory",
+        "normalized": "Official source",
+        "source_name": "Thailand Ministry of Foreign Affairs",
+        "url": "https://www.mfa.go.th/",
+        "checked": "Not yet verified by automated maintenance",
+        "validation": "destination-specific level pending verification"
+      },
+      {
+        "code": "MY",
+        "country": "Malaysia",
+        "region": "Southeast Asia",
+        "level": "Check current official advisory",
+        "normalized": "Official source",
+        "source_name": "Ministry of Foreign Affairs Malaysia",
+        "url": "https://www.kln.gov.my/",
+        "checked": "Not yet verified by automated maintenance",
+        "validation": "destination-specific level pending verification"
+      },
+      {
+        "code": "SG",
+        "country": "Singapore",
+        "region": "Southeast Asia",
+        "level": "Check current official advisory",
+        "normalized": "Official source",
+        "source_name": "Ministry of Foreign Affairs Singapore",
+        "url": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/democratic-republic-of-congo/",
+        "checked": "Not yet verified by automated maintenance",
+        "validation": "destination-specific level pending verification"
+      }
+    ],
+    "priority_regions": [
+      "China (Mainland)",
+      "Hong Kong SAR",
+      "Macao SAR",
+      "Taiwan",
+      "Japan",
+      "South Korea",
+      "Thailand",
+      "Malaysia",
+      "Singapore"
+    ]
+  },
+  "verification": {
+    "status": "verified",
+    "checked_at": "2026-10-15T15:36:56.629023+00:00",
+    "scope": "DRC only; 2026 outbreak; confirmed cases and deaths",
+    "method": "Two official publishers agree on counts; reporting dates retained separately. Shared upstream data is not independent epidemiological confirmation.",
+    "sources": [
+      {
+        "name": "CDC",
+        "url": "https://www.cdc.gov/ebola/situation-summary/index.html",
+        "report_as_of": "2026-10-14",
+        "cases": 9144,
+        "deaths": 4410,
+        "evidence": "Democratic Republic of the Congo 9,144 confirmed cases 4,410 confirmed deaths",
+        "sha256": "0134c066d79e1c52ab56dbce15430bd0b01020c0af5e62558ef1965ebc735b90"
+      },
+      {
+        "name": "ECDC",
+        "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+        "report_as_of": "2026-10-13",
+        "data_through": "2026-10-12",
+        "cases": 9144,
+        "deaths": 4410,
+        "evidence": "As of 13 October 2026, the Democratic Republic of the Congo (DRC) reported a total of 9 144 confirmed cases, including 4 410 related deaths (from data up until 12 October)",
+        "sha256": "f6fad418f4dfe3689f8c62cea4e148aa9d7619b372d11bb567bcde235cb89c1e"
+      }
+    ]
+  },
+  "history_note": "Historical event totals may include confirmed and probable cases; the current outbreak uses confirmed cases only. Different outbreak definitions must not be treated as a homogeneous incidence series."
+}
