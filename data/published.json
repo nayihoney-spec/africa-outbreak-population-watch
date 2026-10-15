@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "revision": "travel-20261015162849999-list",
-  "published_at": "2026-10-15T16:28:49.999Z",
+  "revision": "9f6ac8d1c005629e",
+  "published_at": "2026-10-15T16:30:42.453821+00:00",
   "latest": {
-    "generated_at": "2026-10-15T15:38:51.419013+00:00",
+    "generated_at": "2026-10-15T16:30:42.453821+00:00",
     "outbreaks": [
       {
         "year": 2016,
@@ -145,7 +145,7 @@
     }
   },
   "outbreaks": {
-    "updated_at": "2026-10-15T15:38:51.419013+00:00",
+    "updated_at": "2026-10-15T16:30:42.453821+00:00",
     "definition": "Event-level outbreak totals for DRC from 2016 onward. Cross-year outbreaks are stored as single events; missing years are not converted to zero.",
     "events": [
       {
@@ -468,7 +468,7 @@
   },
   "verification": {
     "status": "verified",
-    "checked_at": "2026-10-15T15:38:51.419013+00:00",
+    "checked_at": "2026-10-15T16:30:42.453821+00:00",
     "scope": "DRC only; 2026 outbreak; confirmed cases and deaths",
     "method": "Two official publishers agree on counts; reporting dates retained separately. Shared upstream data is not independent epidemiological confirmation.",
     "sources": [
