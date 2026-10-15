@@ -45,5 +45,5 @@ jobs:
       - name: Surface blocked update
         if: steps.refresh.outcome == 'failure' || steps.advisories.outcome == 'failure'
         run: |
-          echo "::error::Source refresh blocked. Previous published bundle retained. Inspect data/maintenance.json."
+          echo "::error::Source update blocked in part. Failed sources retain their last verified records. Inspect data/maintenance.json and data/advisory-maintenance.json."
           exit 1
