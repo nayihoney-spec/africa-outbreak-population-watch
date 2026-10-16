@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-16T06:42:41.373674+00:00",
+  "checked_at": "2026-10-16T11:18:31.534993+00:00",
   "passed": [
-    "US",
     "GB",
+    "AU",
     "CA",
     "CN",
     "TW",
@@ -10,7 +10,7 @@
     "SG"
   ],
   "blocked": {
-    "AU": "The read operation timed out"
+    "US": "HTTP Error 403: Forbidden"
   },
   "unconfigured": [
     "FR",
@@ -21,21 +21,5 @@
     "KR",
     "TH",
     "MY"
-  ],
-  "cloud_review": {
-    "checked_at": "2026-10-16T06:44:53.866918+00:00",
-    "manual_verified": [
-      "AU"
-    ],
-    "pending_reasons": {
-      "FR": "General travel-advice registry; no DRC-specific grade/date validated.",
-      "ES": "Configured registry could not be retrieved; no DRC-specific grade/date validated.",
-      "PT": "Configured registry could not be retrieved; no DRC-specific grade/date validated.",
-      "HK": "Destination page readable; current OTA image is red.png and issued date is 21 May 2026. Remains pending under the unconfigured-authority rule; no grade normalization or publication without configured verification.",
-      "MO": "Dated reminders without an explicit unified grade; ungraded display still awaits owner decision.",
-      "KR": "Regional exit advice, travel ban and special advisory; separately dated notices require scope/date review.",
-      "TH": "Ministry homepage did not expose a DRC-specific alert.",
-      "MY": "Ministry homepage could not be retrieved; no DRC-specific grade/date validated."
-    }
-  }
+  ]
 }
