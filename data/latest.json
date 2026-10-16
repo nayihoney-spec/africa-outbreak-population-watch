@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T18:47:12.304384+00:00",
+  "generated_at": "2026-10-16T21:04:04.719515+00:00",
   "outbreaks": [
     {
       "year": 2016,
@@ -63,15 +63,15 @@
     },
     {
       "year": 2026,
-      "cases": 9144,
-      "deaths": 4410,
-      "confirmed_cases": 9144,
-      "confirmed_deaths": 4410,
+      "cases": 9277,
+      "deaths": 4478,
+      "confirmed_cases": 9277,
+      "confirmed_deaths": 4478,
       "as_of": "2026-10-14",
       "verification_status": "Verified official-source comparison; shared upstream may exist",
       "primary_source": "CDC / ECDC",
       "primary_source_as_of": "2026-10-14",
-      "cfr_percent": 48.23,
+      "cfr_percent": 48.27,
       "as_of_basis": "CDC report_as_of; secondary reporting and data-through dates retained separately"
     }
   ],
