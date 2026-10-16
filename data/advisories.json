@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T21:20:19.454386+00:00",
+  "updated_at": "2026-10-16T00:46:58.872822+00:00",
   "mode": "validated snapshot; official source link remains the authority",
   "items": [
     {
@@ -9,18 +9,18 @@
       "normalized": "Very high",
       "source_name": "U.S. Department of State",
       "url": "https://travel.state.gov/en/international-travel/travel-advisories/destination.cod.html",
-      "checked": "2026-10-15T18:47:27.377310+00:00",
+      "checked": "2026-10-16T00:44:25.421381+00:00",
       "validation": "verified",
       "source_published_at": "2026-07-15",
       "evidence": "Level 4 - Do not travel",
-      "verified_at": "2026-10-15T18:47:27.377310+00:00",
+      "verified_at": "2026-10-16T00:44:25.421381+00:00",
       "source_updated_at": "2026-09-17",
       "source_date_kind": "separate",
       "source_language": "en",
-      "source_content_sha256": "5fad2800ddf26a536e87c8cb6e91d3139f34d5c2d0bfb2e401d9095bdcedd981",
-      "last_attempt_status": "blocked",
-      "last_attempt_at": "2026-10-15T21:20:19.454386+00:00",
-      "last_attempt_error": "HTTP Error 403: Forbidden"
+      "source_content_sha256": "65e09d2bddb72c81a51f2ee534954ca0358804db286c298bb9c78f38539ac979",
+      "last_attempt_status": "passed",
+      "last_attempt_at": "2026-10-16T00:44:25.421381+00:00",
+      "verification_method": "destination-specific official page extraction"
     },
     {
       "code": "GB",
@@ -29,17 +29,18 @@
       "normalized": "Region-dependent",
       "source_name": "UK FCDO",
       "url": "https://www.gov.uk/foreign-travel-advice/democratic-republic-of-the-congo",
-      "checked": "2026-10-15T21:20:19.454386+00:00",
+      "checked": "2026-10-16T00:44:25.421381+00:00",
       "validation": "verified",
       "source_published_at": null,
       "evidence": "FCDO regional warnings apply.",
-      "verified_at": "2026-10-15T21:20:19.454386+00:00",
+      "verified_at": "2026-10-16T00:44:25.421381+00:00",
       "source_updated_at": "2026-10-08",
       "source_date_kind": "updated",
       "source_language": "en",
-      "source_content_sha256": "a6b83ab4e248c1b39e76a22b48b110f960119fd1ef6b4fa01dd400324b6f508a",
+      "source_content_sha256": "e45b3fb9a950aafd2b76faf4a90f674f1a2db499a70a03715b5a1b8c9df7fa21",
       "last_attempt_status": "passed",
-      "last_attempt_at": "2026-10-15T21:20:19.454386+00:00"
+      "last_attempt_at": "2026-10-16T00:44:25.421381+00:00",
+      "verification_method": "destination-specific official page extraction"
     },
     {
       "code": "AU",
@@ -48,19 +49,19 @@
       "normalized": "Very high",
       "source_name": "Smartraveller",
       "url": "https://www.smartraveller.gov.au/destinations/africa/democratic-republic-congo",
-      "checked": "2026-10-15T21:20:19.454386+00:00",
+      "checked": "2026-10-16T00:46:58.872822+00:00",
       "validation": "verified",
       "source_published_at": null,
-      "evidence": "Do not travel",
-      "verified_at": "2026-10-15T21:20:19.454386+00:00",
-      "last_attempt_status": "passed",
-      "last_attempt_at": "2026-10-15T21:20:19.454386+00:00",
+      "evidence": "Overall: Do not travel. Updated:06 July 2026",
+      "verified_at": "2026-10-16T00:46:58.872822+00:00",
+      "last_attempt_status": "blocked",
+      "last_attempt_at": "2026-10-16T00:44:25.421381+00:00",
       "source_updated_at": "2026-07-06",
       "source_date_kind": "updated",
       "source_language": "en",
       "verification_method": "official-page-text-review; direct transport timed out",
       "evidence_sha256": "bab1e9933666c290a3fbf446b17405a54422b76e5fb6f83cdb37ce446afffeb7",
-      "source_content_sha256": "dfac22fb16cf9fdf5a27b3103723332a31b6a3b047f438db6e62354e64e85699"
+      "last_attempt_error": "The read operation timed out"
     },
     {
       "code": "CA",
@@ -69,7 +70,7 @@
       "normalized": "Very high",
       "source_name": "Government of Canada",
       "url": "https://travel.gc.ca/destinations/congo-kinshasa",
-      "checked": "2026-10-15T21:20:19.454386+00:00",
+      "checked": "2026-10-16T00:44:25.421381+00:00",
       "validation": "verified",
       "source_published_at": null,
       "source_updated_at": "2026-09-28",
@@ -77,9 +78,10 @@
       "source_language": "en",
       "evidence": "AVOID ALL TRAVEL",
       "source_content_sha256": "c14e973aef9379e946d7d0c7ec1c8669d3de053939049f003af6e4c15af64c77",
-      "verified_at": "2026-10-15T21:20:19.454386+00:00",
+      "verified_at": "2026-10-16T00:44:25.421381+00:00",
       "last_attempt_status": "passed",
-      "last_attempt_at": "2026-10-15T21:20:19.454386+00:00"
+      "last_attempt_at": "2026-10-16T00:44:25.421381+00:00",
+      "verification_method": "destination-specific official page extraction"
     },
     {
       "code": "FR",
@@ -91,8 +93,8 @@
       "checked": "Not yet verified by automated maintenance",
       "validation": "pending",
       "last_attempt_status": "pending",
-      "last_attempt_at": "2026-10-15T18:51:58.757755+00:00",
-      "last_attempt_error": "Configured URL is a general travel-advice registry; no DRC-specific level/date validated."
+      "last_attempt_at": "2026-10-16T00:46:58.872822+00:00",
+      "last_attempt_error": "General travel-advice registry; no DRC-specific grade/date validated."
     },
     {
       "code": "ES",
@@ -104,8 +106,8 @@
       "checked": "Not yet verified by automated maintenance",
       "validation": "pending",
       "last_attempt_status": "pending",
-      "last_attempt_at": "2026-10-15T18:51:58.757755+00:00",
-      "last_attempt_error": "Configured registry fetch returned HTTP 403; DRC-specific level/date not validated."
+      "last_attempt_at": "2026-10-16T00:46:58.872822+00:00",
+      "last_attempt_error": "Registry HTTP 403; no DRC-specific grade/date validated."
     },
     {
       "code": "PT",
@@ -117,8 +119,8 @@
       "checked": "Not yet verified by automated maintenance",
       "validation": "pending",
       "last_attempt_status": "pending",
-      "last_attempt_at": "2026-10-15T18:51:58.757755+00:00",
-      "last_attempt_error": "Configured registry fetch returned HTTP 403; DRC-specific level/date not validated."
+      "last_attempt_at": "2026-10-16T00:46:58.872822+00:00",
+      "last_attempt_error": "Registry HTTP 403; no DRC-specific grade/date validated."
     },
     {
       "code": "CN",
@@ -128,7 +130,7 @@
       "normalized": "Very high",
       "source_name": "中国领事服务网",
       "url": "https://cs.mfa.gov.cn/zyxx/202607/t20260723_11990742.html",
-      "checked": "2026-10-15T21:20:19.454386+00:00",
+      "checked": "2026-10-16T00:44:25.421381+00:00",
       "validation": "verified",
       "source_published_at": "2026-05-29",
       "source_published_raw": "2026-05-29 14:17",
@@ -142,11 +144,11 @@
       "travel_advice": "谨慎前往，非必要不前往",
       "evidence": "疫情风险等级：极高风险",
       "registry_url": "https://cs.mfa.gov.cn/",
-      "verified_at": "2026-10-15T21:20:19.454386+00:00",
+      "verified_at": "2026-10-16T00:44:25.421381+00:00",
       "verification_method": "destination-specific official page extraction",
       "source_content_sha256": "3a329a503133818a461f0e8b09ef2caa45ac1d1a60372d6f7295aa719e2c3db7",
       "last_attempt_status": "passed",
-      "last_attempt_at": "2026-10-15T21:20:19.454386+00:00"
+      "last_attempt_at": "2026-10-16T00:44:25.421381+00:00"
     },
     {
       "code": "HK",
@@ -159,8 +161,8 @@
       "checked": "Not yet verified by automated maintenance",
       "validation": "pending",
       "last_attempt_status": "pending",
-      "last_attempt_at": "2026-10-15T18:51:58.757755+00:00",
-      "last_attempt_error": "Configured destination page could not be fetched; level/date not validated."
+      "last_attempt_at": "2026-10-16T00:46:58.872822+00:00",
+      "last_attempt_error": "Destination page timed out; grade/date not validated."
     },
     {
       "code": "MO",
@@ -173,8 +175,8 @@
       "checked": "Not yet verified by automated maintenance",
       "validation": "pending",
       "last_attempt_status": "pending",
-      "last_attempt_at": "2026-10-15T18:51:58.757755+00:00",
-      "last_attempt_error": "Destination page contains dated reminders, not an explicit unified alert classification; ungraded display awaits owner decision."
+      "last_attempt_at": "2026-10-16T00:46:58.872822+00:00",
+      "last_attempt_error": "Dated reminders without an explicit unified grade; ungraded display still awaits owner decision."
     },
     {
       "code": "TW",
@@ -184,7 +186,7 @@
       "normalized": "Very high",
       "source_name": "Bureau of Consular Affairs, MOFA Taiwan",
       "url": "https://www.boca.gov.tw/sp-trwa-content-3100-f3f00-1.html",
-      "checked": "2026-10-15T21:20:19.454386+00:00",
+      "checked": "2026-10-16T00:44:25.421381+00:00",
       "validation": "verified",
       "source_published_at": null,
       "source_updated_at": "2026-08-31",
@@ -195,10 +197,11 @@
         "警示等級"
       ],
       "evidence": "第四級：紅色儘速離境",
-      "source_content_sha256": "569e85aedef19d66a4beb7d6f92d87e361a91e80ddbe7c1d43b51de9ea5abcda",
-      "verified_at": "2026-10-15T21:20:19.454386+00:00",
+      "source_content_sha256": "fccbc2e8b38ed7888e51e2ae08ddf5f747e0537eb3efdbff15ef71e87935faf5",
+      "verified_at": "2026-10-16T00:44:25.421381+00:00",
       "last_attempt_status": "passed",
-      "last_attempt_at": "2026-10-15T21:20:19.454386+00:00"
+      "last_attempt_at": "2026-10-16T00:44:25.421381+00:00",
+      "verification_method": "destination-specific official page extraction"
     },
     {
       "code": "JP",
@@ -208,7 +211,7 @@
       "normalized": "Region-dependent",
       "source_name": "MOFA Japan Overseas Safety",
       "url": "https://www.anzen.mofa.go.jp/info/pcinfectionspothazardinfo_103.html",
-      "checked": "2026-10-15T21:20:19.454386+00:00",
+      "checked": "2026-10-16T00:44:25.421381+00:00",
       "validation": "verified",
       "source_published_at": null,
       "source_updated_at": "2026-04-08",
@@ -216,9 +219,10 @@
       "source_language": "ja",
       "evidence": "地域別の危険情報",
       "source_content_sha256": "95cb0d3418953173570b828ec7841d17eaca9848e4528b3dc5669451d33c53bc",
-      "verified_at": "2026-10-15T21:20:19.454386+00:00",
+      "verified_at": "2026-10-16T00:44:25.421381+00:00",
       "last_attempt_status": "passed",
-      "last_attempt_at": "2026-10-15T21:20:19.454386+00:00"
+      "last_attempt_at": "2026-10-16T00:44:25.421381+00:00",
+      "verification_method": "destination-specific official page extraction"
     },
     {
       "code": "KR",
@@ -231,8 +235,8 @@
       "checked": "Not yet verified by automated maintenance",
       "validation": "pending",
       "last_attempt_status": "pending",
-      "last_attempt_at": "2026-10-15T18:51:58.757755+00:00",
-      "last_attempt_error": "Destination page lists regional exit advice, travel ban and special advisory with separately dated notices; no single effective date validated."
+      "last_attempt_at": "2026-10-16T00:46:58.872822+00:00",
+      "last_attempt_error": "Regional exit advice, travel ban and special advisory; separately dated notices require scope/date review."
     },
     {
       "code": "TH",
@@ -245,8 +249,8 @@
       "checked": "Not yet verified by automated maintenance",
       "validation": "pending",
       "last_attempt_status": "pending",
-      "last_attempt_at": "2026-10-15T18:51:58.757755+00:00",
-      "last_attempt_error": "Configured ministry homepage did not expose a DRC-specific alert; no level/date validated."
+      "last_attempt_at": "2026-10-16T00:46:58.872822+00:00",
+      "last_attempt_error": "Ministry homepage did not expose a DRC-specific alert."
     },
     {
       "code": "MY",
@@ -259,8 +263,8 @@
       "checked": "Not yet verified by automated maintenance",
       "validation": "pending",
       "last_attempt_status": "pending",
-      "last_attempt_at": "2026-10-15T18:51:58.757755+00:00",
-      "last_attempt_error": "Configured ministry homepage fetch timed out; DRC-specific level/date not validated."
+      "last_attempt_at": "2026-10-16T00:46:58.872822+00:00",
+      "last_attempt_error": "Ministry homepage timed out; no DRC-specific grade/date validated."
     },
     {
       "code": "SG",
@@ -270,7 +274,7 @@
       "normalized": "High",
       "source_name": "Ministry of Foreign Affairs Singapore",
       "url": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/democratic-republic-of-congo/",
-      "checked": "2026-10-15T21:20:19.454386+00:00",
+      "checked": "2026-10-16T00:44:25.421381+00:00",
       "validation": "verified",
       "source_published_at": "2026-05-25",
       "source_updated_at": null,
@@ -278,9 +282,10 @@
       "source_language": "en",
       "evidence": "Defer all non-essential travel to the DRC",
       "source_content_sha256": "70aac4c2a77c800857e39f6d6f8ac9ac22e9b97b212c9f46de0e0251a8f5e8a0",
-      "verified_at": "2026-10-15T21:20:19.454386+00:00",
+      "verified_at": "2026-10-16T00:44:25.421381+00:00",
       "last_attempt_status": "passed",
-      "last_attempt_at": "2026-10-15T21:20:19.454386+00:00"
+      "last_attempt_at": "2026-10-16T00:44:25.421381+00:00",
+      "verification_method": "destination-specific official page extraction"
     }
   ],
   "priority_regions": [
