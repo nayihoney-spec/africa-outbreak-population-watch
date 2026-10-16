@@ -125,7 +125,61 @@
     "outbreak_nine_languages_and_math": "passed",
     "static_build": "passed"
   },
-  "publication_readback": "pending",
+  "publication_readback": {
+    "checked_at": "2026-10-16T18:52:12.736704+00:00",
+    "github_commit": "60c08e88c3febb61c09ad03d89a7e57e3aac2494",
+    "github_exact_semantic_match": true,
+    "legacy_advisories_exact_match": true,
+    "raw_commit": {
+      "semantic_match": true,
+      "revision": "89fca7e9ef5869e7",
+      "status": 200,
+      "cors": "*"
+    },
+    "raw_main": {
+      "status": 200,
+      "cors": "*",
+      "revision": "5a18c57db3b979cd",
+      "semantic_match": false,
+      "checked_at": "2026-10-16T18:51:53.967658+00:00",
+      "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=8fde6961d15249a380c7d0e1836b60c3"
+    },
+    "propagation_checks": [
+      {
+        "status": 200,
+        "cors": "*",
+        "revision": "5a18c57db3b979cd",
+        "semantic_match": false,
+        "checked_at": "2026-10-16T18:50:55.483842+00:00",
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=040fe3f821ba4bc6a8aa56eee5976174"
+      },
+      {
+        "status": 200,
+        "cors": "*",
+        "revision": "5a18c57db3b979cd",
+        "semantic_match": false,
+        "checked_at": "2026-10-16T18:51:15.019083+00:00",
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=05ce7bab123a4556a23a8e9f0762a0d8"
+      },
+      {
+        "status": 200,
+        "cors": "*",
+        "revision": "5a18c57db3b979cd",
+        "semantic_match": false,
+        "checked_at": "2026-10-16T18:51:34.558707+00:00",
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=fb5d596dd24c4824a9508eabf8ab59bc"
+      },
+      {
+        "status": 200,
+        "cors": "*",
+        "revision": "5a18c57db3b979cd",
+        "semantic_match": false,
+        "checked_at": "2026-10-16T18:51:53.967658+00:00",
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=8fde6961d15249a380c7d0e1836b60c3"
+      }
+    ],
+    "result": "partial: public branch raw still serves previous revision"
+  },
   "pending_source_evidence": {
     "HK": {
       "url": "https://www.sb.gov.hk/eng/ota/note-Congo.html",
