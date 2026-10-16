@@ -1,0 +1,152 @@
+{
+  "checked_at": "2026-10-16T18:50:23.596244+00:00",
+  "status": "partial",
+  "base_revision": "5a18c57db3b979cd",
+  "revision": "89fca7e9ef5869e7",
+  "counts": {
+    "status": "blocked",
+    "reason": "Both sources label report_as_of 2026-10-15 but DRC totals differ. ECDC explicitly states data through 2026-10-14; CDC supplies no separate cutoff in its count block. Cause not established; do not merge or promote.",
+    "observed_sources": [
+      {
+        "name": "CDC",
+        "url": "https://www.cdc.gov/ebola/situation-summary/index.html",
+        "report_as_of": "2026-10-15",
+        "cases": 9212,
+        "deaths": 4441,
+        "evidence": "Democratic Republic of the Congo 9,212 confirmed cases 4,441 confirmed deaths",
+        "sha256": "9daa42bc895c673207bb17152884ba0a8b49868ea47814cdba4392f362a3ec01"
+      },
+      {
+        "name": "ECDC",
+        "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+        "report_as_of": "2026-10-15",
+        "data_through": "2026-10-14",
+        "cases": 9277,
+        "deaths": 4478,
+        "evidence": "As of 15 October 2026, the Democratic Republic of the Congo (DRC) reported a total of 9 277 confirmed cases, including 4 478 related deaths (from data up until 14 October)",
+        "sha256": "1aa779aead0092ffa694292d293c037f6fe9552febd06be1d7cd70831f06bc81"
+      }
+    ],
+    "retained_cases": 9144,
+    "retained_deaths": 4410,
+    "retained_primary_date": "2026-10-14",
+    "verification_checked_at_preserved": "2026-10-15T18:47:12.304384+00:00"
+  },
+  "who_review": {
+    "url": "https://www.afro.who.int/countries/kenya/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-weekly-external-situation-report",
+    "data_as_of": "2026-10-11",
+    "cases": 9066,
+    "deaths": 4381,
+    "outcome": "Earlier reporting period, not a matching-date cross-check for the new CDC figures. Page heading and report-22 body/image remain inconsistent; no dates inferred."
+  },
+  "drc_review": {
+    "url": "https://insp.cd/sitrep-n153-mve-bdbv-14-10-2026/",
+    "published_at": "2026-10-16",
+    "report_date": "2026-10-14",
+    "pdf_check": {
+      "error": "HTTP Error 403: Forbidden",
+      "url": "https://insp.cd/wp-content/uploads/2026/10/SitRep_MVEBDB_153_14_10_2026.pdf"
+    },
+    "outcome": "New ECDC-linked INSP report landing page read; PDF numbers not substituted without validated extraction. Matched CDC/ECDC publication gate remains blocked."
+  },
+  "reliefweb_review": {
+    "outcome": "No matching recent official report found in indexed search; no reposted numbers used as independent confirmation."
+  },
+  "research_history_review": {
+    "url": "https://www.who.int/emergencies/situations/ebola-outbreak---drc-2026",
+    "outcome": "Overview still describes no vaccine or specific treatment for Bundibugyo; no verified change requiring a content edit."
+  },
+  "advisories": {
+    "automated_passed": [
+      "US",
+      "GB",
+      "CA",
+      "CN",
+      "TW",
+      "JP",
+      "SG"
+    ],
+    "manual_verified": [
+      "AU"
+    ],
+    "automated_blocked": {
+      "AU": "Read operation timed out after retries"
+    },
+    "pending": {
+      "FR": "General travel-advice registry; no DRC-specific grade/date validated.",
+      "ES": "Configured registry could not be retrieved; no DRC-specific grade/date validated.",
+      "PT": "Configured registry could not be retrieved; no DRC-specific grade/date validated.",
+      "HK": "Destination page readable; current OTA image is red.png and issued date is 21 May 2026. Remains pending under the unconfigured-authority rule; no grade normalization or publication without configured verification.",
+      "MO": "Dated reminders without an explicit unified grade; ungraded display still awaits owner decision.",
+      "KR": "Regional exit advice, travel ban and special advisory; separately dated notices require scope/date review.",
+      "TH": "Ministry homepage did not expose a DRC-specific alert.",
+      "MY": "Ministry homepage could not be retrieved; no DRC-specific grade/date validated."
+    },
+    "substantive_changes": []
+  },
+  "actions_review": {
+    "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/38933148900",
+    "conclusion": "failure",
+    "count_reason": "CDC/ECDC counts differ",
+    "advisory_reason": "US HTTP 403; direct extraction passed in this cloud audit"
+  },
+  "live_path": {
+    "http_checks": [
+      {
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=aab20e20fae4492f870720a43070b461",
+        "status": 200,
+        "cors": "*",
+        "csp": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+        "revision": "5a18c57db3b979cd",
+        "semantic_match": true
+      },
+      {
+        "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/pages/advisories.html",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/assets/data-client.js",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "native_site_status": "active",
+    "audience": "public",
+    "deployed_version": 9,
+    "deployed_source_commit": "c6d64aba15fe6c279859d98e691e942fcf3c949e",
+    "deployed_source_loader_verified": true,
+    "runtime_csp_verified": false,
+    "result": "Raw CORS enabled. Public Sites HTML and loader HTTP requests still return 403 from this environment; actual front-end load and CSP remain unverified."
+  },
+  "validation": {
+    "python_unit_tests": 15,
+    "javascript_syntax": "passed",
+    "data_client_behavior": "passed",
+    "advisory_filter_sort": "passed",
+    "outbreak_nine_languages_and_math": "passed",
+    "static_build": "passed"
+  },
+  "publication_readback": "pending",
+  "pending_source_evidence": {
+    "HK": {
+      "url": "https://www.sb.gov.hk/eng/ota/note-Congo.html",
+      "icon_url": "https://www.sb.gov.hk/assets/img/alert-icon/red.png",
+      "source_published_at": "2026-05-21",
+      "evidence": "Current OTA issued on : 21 May 2026",
+      "status": "pending; no canonical alert level published"
+    }
+  },
+  "comparison_with_previous_run": {
+    "count_mismatch": "changed: ECDC now reports 9277 cases and 4478 deaths, report_as_of 2026-10-15; CDC remains 9212 and 4441 with the same report_as_of. Unresolved.",
+    "site_http_403": "unchanged",
+    "raw_before_write_matches_current_github": true,
+    "hong_kong_destination_page": "readable; same pending status as previous audit"
+  },
+  "non_drc_evidence": {
+    "url": "https://www.afro.who.int/countries/kenya/news/who-supports-kenyas-ebola-response-third-case-found-early-quarantine",
+    "published_at": "2026-10-16",
+    "geography": "Kenya",
+    "cases": 3,
+    "deaths": 1,
+    "outcome": "Official WHO update reviewed; excluded from DRC statistics. Possible history addition remains pending content review; no page code changed."
+  }
+}
