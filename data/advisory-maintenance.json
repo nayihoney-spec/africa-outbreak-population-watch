@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-18T00:43:53.512925+00:00",
+  "checked_at": "2026-10-18T04:27:20.102103+00:00",
   "passed": [
-    "US",
     "GB",
+    "AU",
     "CA",
     "CN",
     "TW",
@@ -10,7 +10,7 @@
     "SG"
   ],
   "blocked": {
-    "AU": "The read operation timed out"
+    "US": "HTTP Error 403: Forbidden"
   },
   "unconfigured": [
     "FR",
@@ -21,21 +21,5 @@
     "KR",
     "TH",
     "MY"
-  ],
-  "cloud_review": {
-    "checked_at": "2026-10-18T00:45:11.883913+00:00",
-    "official_page_text_verified": [
-      "AU"
-    ],
-    "pending_reasons": {
-      "FR": "Configured general registry inspected; no destination-specific grade and effective date verified.",
-      "ES": "Configured registry retrieval failed; no destination-specific grade/date verified.",
-      "PT": "Configured registry retrieval failed; no destination-specific grade/date verified.",
-      "HK": "Destination page retrieval failed in this audit; authority remains unconfigured and pending, with no new grade/date or normalization published.",
-      "MO": "Destination page lists dated reminders without explicit unified classification; ungraded presentation still requires owner confirmation.",
-      "KR": "Destination page lists regional exit advice, travel ban and special advisory with separate notice dates; no single validated effective grade/date.",
-      "TH": "Configured ministry homepage exposed no usable DRC-specific advisory content.",
-      "MY": "Configured ministry homepage retrieval failed; no DRC-specific advisory verified."
-    }
-  }
+  ]
 }
