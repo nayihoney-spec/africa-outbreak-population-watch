@@ -216,7 +216,33 @@
       "native_site_status": "active",
       "audience": "public",
       "deployed_version": 9,
-      "result": "Audit HTTP requests returned public HTML and actual loader200. HTML and loader exact-match deployed source. Actual HTML CSP meta connect-src explicitly permits raw.githubusercontent.com; no extra CSP header observed. Canonical loader URL and raw CORS * verified. Browser execution/interaction remains unverified."
+      "result": "Audit HTTP requests returned public HTML and actual loader200. HTML and loader exact-match deployed source. Actual HTML CSP meta connect-src explicitly permits raw.githubusercontent.com; no extra CSP header observed. Canonical loader URL and raw CORS * verified. Browser execution/interaction remains unverified.",
+      "post_publication_inspection": {
+        "html": {
+          "status": 200,
+          "content_type": "text/html",
+          "sha256": "aed49bed41807d5ba3e76796da3a86dc3df12bbfe720582382f597a0f45df1fa",
+          "csp_headers": {},
+          "csp_meta": [
+            "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\">"
+          ],
+          "source_exact_match": true,
+          "script_sources": [
+            "assets/i18n.js",
+            "assets/data-client.js",
+            "assets/app.js"
+          ]
+        },
+        "loader": {
+          "status": 200,
+          "content_type": "text/javascript",
+          "sha256": "2d6e552e0b6300007b53b1b7012b39f315115f90e6c7ab3a41a56a6af420e598",
+          "csp_headers": {},
+          "csp_meta": [],
+          "source_exact_match": true,
+          "canonical_url_present": true
+        }
+      }
     },
     "validation": {
       "python_unit_tests": 15,
@@ -226,7 +252,63 @@
       "outbreak_nine_languages_and_math": "passed",
       "static_build": "passed"
     },
-    "publication_readback": "pending"
+    "publication_readback": {
+      "checked_at": "2026-10-20T06:51:57.921059+00:00",
+      "github_commit": "aeeb681359894e96db2b0846aa0e7ef8f316ac75",
+      "github_exact_semantic_match": true,
+      "legacy_copies_exact_match": true,
+      "raw_commit": {
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/aeeb681359894e96db2b0846aa0e7ef8f316ac75/data/published.json?t=1792479022.876187",
+        "checked_at": "2026-10-20T06:50:22.876243+00:00",
+        "status": 200,
+        "cors": "*",
+        "revision": "ee082d95992e1b96",
+        "semantic_match": true
+      },
+      "raw_main": {
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1792479096.2897534",
+        "checked_at": "2026-10-20T06:51:36.289766+00:00",
+        "status": 200,
+        "cors": "*",
+        "revision": "e60e8333d45b2e20",
+        "semantic_match": false
+      },
+      "propagation_checks": [
+        {
+          "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1792479026.5256934",
+          "checked_at": "2026-10-20T06:50:26.525701+00:00",
+          "status": 200,
+          "cors": "*",
+          "revision": "e60e8333d45b2e20",
+          "semantic_match": false
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1792479048.8187418",
+          "checked_at": "2026-10-20T06:50:48.818843+00:00",
+          "status": 200,
+          "cors": "*",
+          "revision": "e60e8333d45b2e20",
+          "semantic_match": false
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1792479072.4307199",
+          "checked_at": "2026-10-20T06:51:12.430732+00:00",
+          "status": 200,
+          "cors": "*",
+          "revision": "e60e8333d45b2e20",
+          "semantic_match": false
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1792479096.2897534",
+          "checked_at": "2026-10-20T06:51:36.289766+00:00",
+          "status": 200,
+          "cors": "*",
+          "revision": "e60e8333d45b2e20",
+          "semantic_match": false
+        }
+      ],
+      "result": "partial: main raw still returns previous revision; commit-pinned raw matches"
+    }
   },
   "last_successful_validation": {
     "status": "verified",
