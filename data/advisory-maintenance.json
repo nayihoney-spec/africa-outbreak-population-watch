@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-10-20T06:47:28.254338+00:00",
+  "checked_at": "2026-10-20T11:31:16.633136+00:00",
   "passed": [
-    "US",
     "GB",
+    "AU",
     "CA",
     "CN",
+    "TW",
     "JP",
     "SG"
   ],
   "blocked": {
-    "AU": "HTTP Error 503: Service Unavailable",
-    "TW": "Wrong BOCA destination"
+    "US": "HTTP Error 403: Forbidden"
   },
   "unconfigured": [
     "FR",
@@ -21,22 +21,5 @@
     "KR",
     "TH",
     "MY"
-  ],
-  "cloud_review": {
-    "checked_at": "2026-10-20T06:49:54.727035+00:00",
-    "official_page_text_verified": [
-      "AU",
-      "TW"
-    ],
-    "pending_reasons": {
-      "FR": "Configured general registry inspected; no destination-specific grade and effective date verified.",
-      "ES": "Configured registry retrieval failed; no destination-specific grade/date verified.",
-      "PT": "Configured registry retrieval failed; no destination-specific grade/date verified.",
-      "HK": "Destination page retrieved but authority remains unconfigured; no newly validated structured grade/date extraction or normalization published.",
-      "MO": "Destination page lists dated reminders without explicit unified classification; ungraded presentation still requires owner confirmation.",
-      "KR": "Destination page lists regional exit advice, travel ban and special advisory with separate notice dates; no single validated effective grade/date.",
-      "TH": "Configured ministry homepage exposed no usable DRC-specific advisory content.",
-      "MY": "Configured ministry homepage retrieval failed; no DRC-specific advisory verified."
-    }
-  }
+  ]
 }
