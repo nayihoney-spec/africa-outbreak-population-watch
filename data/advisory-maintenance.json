@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-20T16:59:29.717140+00:00",
+  "checked_at": "2026-10-20T18:46:31.582001+00:00",
   "passed": [
+    "US",
     "GB",
-    "AU",
     "CA",
     "CN",
     "TW",
@@ -10,7 +10,7 @@
     "SG"
   ],
   "blocked": {
-    "US": "HTTP Error 403: Forbidden"
+    "AU": "HTTP Error 503: Service Unavailable"
   },
   "unconfigured": [
     "FR",
@@ -21,5 +21,21 @@
     "KR",
     "TH",
     "MY"
-  ]
+  ],
+  "cloud_review": {
+    "checked_at": "2026-10-20T18:48:12.093092+00:00",
+    "official_page_text_verified": [
+      "AU"
+    ],
+    "pending_reasons": {
+      "FR": "General registry inspected; no destination-specific grade/effective date verified.",
+      "ES": "Configured registry retrieval HTTP403; no destination-specific grade/date verified.",
+      "PT": "Configured registry retrieval HTTP403; no destination-specific grade/date verified.",
+      "HK": "Destination page inspected; current OTA issued May21. Unconfigured grade extraction/normalization remains pending.",
+      "MO": "Dated reminders without explicit unified classification; ungraded presentation requires owner confirmation.",
+      "KR": "Regional exit advice/travel ban/special advisory have separate July9/September4 adjustment dates. New October20 safety notice observed, not treated as a new unified grade or effective date.",
+      "TH": "Configured ministry homepage returned no usable DRC-specific content.",
+      "MY": "Configured ministry homepage timed out; no DRC-specific advisory verified."
+    }
+  }
 }

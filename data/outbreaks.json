@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T16:59:28.439909+00:00",
+  "updated_at": "2026-10-20T18:46:02.330817+00:00",
   "definition": "Event-level outbreak totals for DRC from 2016 onward. Cross-year outbreaks are stored as single events; missing years are not converted to zero.",
   "events": [
     {
@@ -128,7 +128,7 @@
       "cases": 9552,
       "deaths": 4602,
       "source": "CDC / ECDC",
-      "as_of": "2026-10-18",
+      "as_of": "2026-10-20",
       "source_url": "https://www.cdc.gov/ebola/situation-summary/index.html",
       "case_basis": "laboratory-confirmed cases and deaths; DRC only"
     }
