@@ -227,7 +227,33 @@
     "native_site_status": "active",
     "audience": "public",
     "deployed_version": 9,
-    "result": "Actual public HTML and loader200; exact deployed source, canonical URL and CSP allowlist verified. RawCORS*. Browser execution/interaction remains unverified."
+    "result": "Actual public HTML and loader200; exact deployed source, canonical URL and CSP allowlist verified. RawCORS*. Browser execution/interaction remains unverified.",
+    "post_publication_inspection": {
+      "html": {
+        "status": 200,
+        "content_type": "text/html",
+        "sha256": "aed49bed41807d5ba3e76796da3a86dc3df12bbfe720582382f597a0f45df1fa",
+        "csp_headers": {},
+        "csp_meta": [
+          "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\">"
+        ],
+        "source_exact_match": true,
+        "script_sources": [
+          "assets/i18n.js",
+          "assets/data-client.js",
+          "assets/app.js"
+        ]
+      },
+      "loader": {
+        "status": 200,
+        "content_type": "text/javascript",
+        "sha256": "2d6e552e0b6300007b53b1b7012b39f315115f90e6c7ab3a41a56a6af420e598",
+        "csp_headers": {},
+        "csp_meta": [],
+        "source_exact_match": true,
+        "canonical_url_present": true
+      }
+    }
   },
   "validation": {
     "python_unit_tests": 15,
@@ -237,5 +263,61 @@
     "outbreak_nine_languages_and_math": "passed",
     "static_build": "passed"
   },
-  "publication_readback": "pending"
+  "publication_readback": {
+    "checked_at": "2026-10-20T18:50:06.679096+00:00",
+    "github_commit": "25f74467628554b56381b44db2282f0e4a9b060d",
+    "github_exact_semantic_match": true,
+    "legacy_copies_exact_match": true,
+    "raw_commit": {
+      "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/25f74467628554b56381b44db2282f0e4a9b060d/data/published.json?t=1792522111.2565665",
+      "checked_at": "2026-10-20T18:48:31.256581+00:00",
+      "status": 200,
+      "cors": "*",
+      "revision": "6395945dbb26f16b",
+      "semantic_match": true
+    },
+    "raw_main": {
+      "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1792522187.7595189",
+      "checked_at": "2026-10-20T18:49:47.759587+00:00",
+      "status": 200,
+      "cors": "*",
+      "revision": "6011386aea13fd7c",
+      "semantic_match": false
+    },
+    "propagation_checks": [
+      {
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1792522115.5418367",
+        "checked_at": "2026-10-20T18:48:35.541844+00:00",
+        "status": 200,
+        "cors": "*",
+        "revision": "6011386aea13fd7c",
+        "semantic_match": false
+      },
+      {
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1792522138.7139835",
+        "checked_at": "2026-10-20T18:48:58.713999+00:00",
+        "status": 200,
+        "cors": "*",
+        "revision": "6011386aea13fd7c",
+        "semantic_match": false
+      },
+      {
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1792522164.0297806",
+        "checked_at": "2026-10-20T18:49:24.029795+00:00",
+        "status": 200,
+        "cors": "*",
+        "revision": "6011386aea13fd7c",
+        "semantic_match": false
+      },
+      {
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1792522187.7595189",
+        "checked_at": "2026-10-20T18:49:47.759587+00:00",
+        "status": 200,
+        "cors": "*",
+        "revision": "6011386aea13fd7c",
+        "semantic_match": false
+      }
+    ],
+    "result": "partial: main raw still returns previous revision; commit-pinned raw matches"
+  }
 }
