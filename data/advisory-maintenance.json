@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-21T06:48:58.583437+00:00",
+  "checked_at": "2026-10-21T11:43:43.945165+00:00",
   "passed": [
-    "US",
     "GB",
+    "AU",
     "CA",
     "CN",
     "TW",
@@ -10,7 +10,7 @@
     "SG"
   ],
   "blocked": {
-    "AU": "HTTP Error 503: Service Unavailable"
+    "US": "HTTP Error 403: Forbidden"
   },
   "unconfigured": [
     "FR",
@@ -21,21 +21,5 @@
     "KR",
     "TH",
     "MY"
-  ],
-  "cloud_review": {
-    "checked_at": "2026-10-21T06:50:41.553967+00:00",
-    "official_page_text_verified": [
-      "AU"
-    ],
-    "pending_reasons": {
-      "FR": "Official DRC page inspected; no explicit unified grade and effective date were verified.",
-      "ES": "Official DRC recommendations are current at 2026-10-19, but no explicit grade/effective-date mapping was verified.",
-      "PT": "Official DRC destination page inspected; no explicit unified alert classification and effective date were verified.",
-      "HK": "Destination-specific OTA text remains in force and states issued 2026-05-21; unconfigured grade normalization remains pending.",
-      "MO": "Official page contains dated reminders, but no explicit unified alert classification; ungraded presentation requires owner confirmation.",
-      "KR": "Regional grades and adjustment dates remain separate; the 2026-10-20 safety notice is not a new unified grade or effective date.",
-      "TH": "Configured ministry homepage yielded no usable DRC-specific alert classification.",
-      "MY": "Official DRC-related advice was located, but no single explicit grade/effective-date mapping was verified."
-    }
-  }
+  ]
 }
