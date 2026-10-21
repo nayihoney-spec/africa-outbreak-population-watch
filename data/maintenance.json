@@ -260,7 +260,7 @@
       "static_build": "passed"
     },
     "publication_readback": {
-      "checked_at": "2026-10-21T06:53:04.976538+00:00",
+      "checked_at": "2026-10-21T06:55:42.939728+00:00",
       "github_commit": "89d17da69c11e0b8c3a73170abae534fb8f3edcc",
       "github_exact_semantic_match": true,
       "legacy_copies_exact_match": true,
@@ -273,12 +273,12 @@
         "semantic_match": true
       },
       "raw_main": {
-        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1792565554.9624133",
-        "checked_at": "2026-10-21T06:52:34.962424+00:00",
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json",
+        "checked_at": "2026-10-21T06:55:18.649641+00:00",
         "status": 200,
         "cors": "*",
-        "revision": "05507fb1f06b4db1",
-        "semantic_match": false
+        "revision": "83ca42082edefeb0",
+        "semantic_match": true
       },
       "propagation_checks": [
         {
@@ -312,9 +312,17 @@
           "cors": "*",
           "revision": "05507fb1f06b4db1",
           "semantic_match": false
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json",
+          "checked_at": "2026-10-21T06:55:18.649641+00:00",
+          "status": 200,
+          "cors": "*",
+          "revision": "83ca42082edefeb0",
+          "semantic_match": true
         }
       ],
-      "result": "partial: main raw still returns previous revision; commit-pinned raw matches"
+      "result": "passed"
     }
   },
   "last_successful_validation": {
