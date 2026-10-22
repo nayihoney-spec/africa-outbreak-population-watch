@@ -1,0 +1,225 @@
+{
+  "checked_at": "2026-10-22T18:47:46.544151+00:00",
+  "status": "partial",
+  "base_revision": "e450a0f2bc651d49",
+  "revision": "e450a0f2bc651d49",
+  "counts": {
+    "status": "blocked",
+    "retained": {
+      "cases": 9552,
+      "deaths": 4602,
+      "primary_date": "2026-10-20",
+      "verification_checked_at": "2026-10-21T17:08:21.781576+00:00"
+    },
+    "observed_sources": [
+      {
+        "name": "CDC",
+        "url": "https://www.cdc.gov/ebola/situation-summary/index.html",
+        "report_as_of": "2026-10-21",
+        "cases": 9704,
+        "deaths": 4687,
+        "evidence": "Democratic Republic of the Congo 9,704 confirmed cases 4,687 confirmed deaths",
+        "sha256": "46217e981076c452273600ce04f68d7c1fc57bc7e15dec7dd96ceedb482b192e"
+      },
+      {
+        "name": "ECDC",
+        "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+        "report_as_of": "2026-10-19",
+        "data_through": "2026-10-18",
+        "cases": 9552,
+        "deaths": 4602,
+        "evidence": "As of 19 October 2026, the Democratic Republic of the Congo (DRC) reported a total of 9 552 confirmed cases, including 4 602 related deaths (from data up until 18 October)",
+        "sha256": "9ed85a8c302139750795c5ef2b88590dfd03f17b4d6f95a6e9576f6f53f89e16"
+      }
+    ],
+    "observed_at": "2026-10-22T18:45:46.359831+00:00",
+    "unpublished_candidate": {
+      "cases": 9704,
+      "deaths": 4687,
+      "change_from_retained": {
+        "cases": 152,
+        "deaths": 85
+      }
+    },
+    "outcome": "Fresh direct extraction shows CDC 9,704/4,687 as of 2026-10-21 while ECDC remains 9,552/4,602 in its 2026-10-19 report with data through 2026-10-18. The required CDC/ECDC equality gate failed, so the complete prior canonical bundle was retained without advancing revision, publication time, outbreak dates, or verification.checked_at."
+  },
+  "source_delivery_review": {
+    "status": "counts-conflict-pending",
+    "outcome": "CDC direct parsing and current official-page content agree on 9,704/4,687 as of 2026-10-21. ECDC direct parsing and current official-page content agree on 9,552/4,602; its page says it was last updated 2026-10-20 at 15:00 but still uses DRC data through 2026-10-18. This is a widening cross-publisher synchronization conflict, not a connectivity-only check."
+  },
+  "who_review": {
+    "url": "https://www.afro.who.int/countries/nigeria/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation",
+    "report": "23",
+    "data_as_of": "2026-10-19",
+    "cases": 9637,
+    "deaths": 4646,
+    "outcome": "WHO External Situation Report 23 body content reports DRC 9,637 confirmed cases and 4,646 confirmed deaths as of 2026-10-19. It remains between the newer CDC value and stale ECDC value; no newer WHO report with 9,704/4,687 was content-verified. The mandatory CDC/ECDC equality gate therefore remains unsatisfied."
+  },
+  "drc_review": {
+    "outcome": "No newer INSP SitRep content could be independently retrieved and content-verified in this audit. A reachable or indexed URL alone was not treated as verified evidence. The previous verified DRC snapshot remains retained."
+  },
+  "research_history_review": {
+    "urls": [
+      "https://www.afro.who.int/health-topics/ebola-disease/outbreak-drc-26",
+      "https://www.cdc.gov/ebola/outbreaks/index.html"
+    ],
+    "outcome": "WHO's current outbreak overview still states there is no licensed Bundibugyo vaccine or specific treatment. No verified research/history wording change requiring publication was identified. Population/displacement remains unimplemented pending a versioned official dataset and definition."
+  },
+  "advisories": {
+    "automated_passed": [
+      "US",
+      "GB",
+      "CA",
+      "CN",
+      "TW",
+      "JP",
+      "SG"
+    ],
+    "automated_blocked": {
+      "AU": "HTTP Error 503: Service Unavailable"
+    },
+    "official_page_text_verified": [
+      "AU"
+    ],
+    "pending": {
+      "FR": "Official DRC page inspected previously; no explicit unified grade and effective date were verified.",
+      "ES": "Official DRC recommendations are current, but no explicit grade/effective-date mapping was verified.",
+      "PT": "Official DRC destination page inspected; no explicit unified alert classification and effective date were verified.",
+      "HK": "Destination-specific OTA text remains in force; unconfigured grade normalization remains pending.",
+      "MO": "Official page contains dated reminders, but no explicit unified alert classification; ungraded presentation requires owner confirmation.",
+      "KR": "Regional grades and adjustment dates remain separate; no new unified grade/effective date was verified.",
+      "TH": "Configured ministry homepage yielded no usable DRC-specific alert classification.",
+      "MY": "Official DRC-related advice was located, but no single explicit grade/effective-date mapping was verified."
+    },
+    "substantive_changes": [],
+    "australia_review": {
+      "url": "https://www.smartraveller.gov.au/destinations/africa/democratic-republic-congo",
+      "level": "Do not travel",
+      "source_updated_at": "2026-07-06",
+      "current_at": "2026-10-23",
+      "outcome": "Official destination page text was independently read after the direct adapter returned HTTP503; the alert wording and official update date are unchanged."
+    },
+    "boca_delivery_review": {
+      "checked_at": "2026-10-22T18:45:57.046234+00:00",
+      "observations": [
+        {
+          "url": "https://www.boca.gov.tw/sp-trwa-content-3100-f3f00-1.html",
+          "status": 200,
+          "final_url": "https://www.boca.gov.tw/sp-trwa-content-3100-f3f00-1.html",
+          "sha256": "936f4e73c32d33b5ff747d50fe041d9bc8224a7d9bf6ebfa3ef1c04ac331a3d8",
+          "parsed": {
+            "level": "第四級：紅色儘速離境",
+            "normalized": "Very high",
+            "source_published_at": null,
+            "source_updated_at": "2026-08-31",
+            "source_date_kind": "published_or_updated",
+            "source_language": "zh-Hant",
+            "source_field_labels": [
+              "發布/更新日期",
+              "警示等級"
+            ],
+            "evidence": "第四級：紅色儘速離境"
+          }
+        },
+        {
+          "url": "https://www.boca.gov.tw/sp-trwa-print-3100-f3f00-1.html",
+          "status": 200,
+          "final_url": "https://www.boca.gov.tw/sp-trwa-print-3100-f3f00-1.html",
+          "sha256": "b4f8b380b806f98287fadd792af5b4b81d9aa761b3d264caa7db0954ef41050b",
+          "parsed": {
+            "level": "第四級：紅色儘速離境",
+            "normalized": "Very high",
+            "source_published_at": null,
+            "source_updated_at": "2026-08-31",
+            "source_date_kind": "published_or_updated",
+            "source_language": "zh-Hant",
+            "source_field_labels": [
+              "發布/更新日期",
+              "警示等級"
+            ],
+            "evidence": "第四級：紅色儘速離境"
+          }
+        }
+      ]
+    }
+  },
+  "actions_review": {
+    "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/39819879022",
+    "conclusion": "failure",
+    "counts": "CDC/ECDC equality failed in the Action. Fresh audit then observed CDC 9,704/4,687 versus ECDC 9,552/4,602.",
+    "advisories": "US returned HTTP403 in the Action; all other configured adapters passed. Fresh cloud audit verified US directly and independently found only AU transport HTTP503; current official AU content was verified unchanged."
+  },
+  "live_path": {
+    "initial_http_checks": [
+      {
+        "name": "raw",
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1792694831.585136",
+        "checked_at": "2026-10-22T18:47:11.586002+00:00",
+        "status": 200,
+        "cors": "*",
+        "csp": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+        "revision": "e450a0f2bc651d49",
+        "semantic_match": true
+      },
+      {
+        "name": "site",
+        "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site",
+        "checked_at": "2026-10-22T18:47:11.587004+00:00",
+        "status": 200,
+        "cors": null,
+        "csp": null,
+        "loader_present": true,
+        "canonical_url_present": false
+      },
+      {
+        "name": "loader",
+        "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/assets/data-client.js",
+        "checked_at": "2026-10-22T18:47:11.587916+00:00",
+        "status": 200,
+        "cors": null,
+        "csp": null,
+        "loader_present": false,
+        "canonical_url_present": true
+      }
+    ],
+    "inspection": {
+      "html": {
+        "status": 200,
+        "content_type": "text/html",
+        "sha256": "aed49bed41807d5ba3e76796da3a86dc3df12bbfe720582382f597a0f45df1fa",
+        "csp_headers": {},
+        "csp_meta": [
+          "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\">"
+        ],
+        "source_exact_match": true,
+        "script_sources": [
+          "assets/i18n.js",
+          "assets/data-client.js",
+          "assets/app.js"
+        ]
+      },
+      "loader": {
+        "status": 200,
+        "content_type": "text/javascript",
+        "sha256": "2d6e552e0b6300007b53b1b7012b39f315115f90e6c7ab3a41a56a6af420e598",
+        "csp_headers": {},
+        "csp_meta": [],
+        "source_exact_match": true,
+        "canonical_url_present": true
+      }
+    },
+    "native_site_status": "active",
+    "audience": "public",
+    "deployed_version": 9,
+    "result": "Public HTML, loader and canonical raw data returned 200. Deployed source, canonical URL, raw CORS and CSP allowlist were verified. The retained canonical revision matched public main raw before this audit write."
+  },
+  "validation": {
+    "python_unit_tests": 15,
+    "javascript_syntax": "passed",
+    "data_client_behavior": "passed",
+    "advisory_filter_sort": "passed",
+    "outbreak_nine_languages_and_math": "passed",
+    "static_build": "passed"
+  },
+  "publication_readback": "pending"
+}
