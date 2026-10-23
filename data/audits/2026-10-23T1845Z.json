@@ -237,5 +237,49 @@
     "static_build": "passed",
     "canonical_no_markup": "passed"
   },
-  "publication_readback": "pending"
+  "publication_readback": {
+    "checked_at": "2026-10-23T18:55:19.528Z",
+    "initial_commit": "9f0a730baca25cead992e1288da7d2deb0b99b21",
+    "initial_github_files_exact": true,
+    "initial_commit_raw": {
+      "status": 200,
+      "revision": "3cb06cc46dbd9426",
+      "semantic_match": true
+    },
+    "superseded_by": {
+      "commit": "fb9ebfd8a04e5aeb15f2c2e56f3f705c2bd26199",
+      "revision": "5f1c7e9bbef0d8ad",
+      "reason": "Code change triggered Actions. Repaired collector passed 18 tests and independently republished identical counts with newer validation/advisory timestamps."
+    },
+    "github_canonical_and_legacy_semantic_match": true,
+    "raw_commit": {
+      "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/fb9ebfd8a04e5aeb15f2c2e56f3f705c2bd26199/data/published.json?t=1792781674.9574096",
+      "status": 200,
+      "cors": "*",
+      "revision": "5f1c7e9bbef0d8ad",
+      "semantic_match": true
+    },
+    "raw_main": {
+      "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1792781680.085987",
+      "status": 200,
+      "cors": "*",
+      "revision": "5f1c7e9bbef0d8ad",
+      "semantic_match": true
+    },
+    "result": "passed-current-superseding-canonical"
+  },
+  "final_publication_revision": "5f1c7e9bbef0d8ad",
+  "final_publication_commit": "fb9ebfd8a04e5aeb15f2c2e56f3f705c2bd26199",
+  "actions_after_fix": {
+    "run_id": 40007032587,
+    "job_id": 120597447668,
+    "count_status": "passed",
+    "python_tests": 18,
+    "counts": {
+      "cases": 9704,
+      "deaths": 4687
+    },
+    "overall_conclusion": "failure",
+    "remaining_blocker": "US HTTP403 in Action; retained freshly verified US record from cloud audit. Other configured adapters passed."
+  }
 }
