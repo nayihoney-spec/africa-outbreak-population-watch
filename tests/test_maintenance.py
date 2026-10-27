@@ -19,6 +19,12 @@ class Maintenance(unittest.TestCase):
  def test_ecdc_legacy_wording_remains_supported(self):
   x=u.parse_ecdc('As of 19 October 2026, the Democratic Republic of the Congo (DRC) reported a total of 9 552 confirmed cases, including 4 602 related deaths (from data up until 18 October)')
   self.assertEqual((x['cases'],x['deaths'],x['data_through']),(9552,4602,'2026-10-18'))
+ def test_ecdc_community_transmission_clause_preserves_scope_and_dates(self):
+  raw='As of 26 October, in Kenya, a total of nine confirmed cases, including two deaths. As of 26 October 2026, the Democratic Republic of the Congo (DRC), where community transmission is ongoing, has reported a total of 10 060 confirmed cases, including 4 887 related deaths (from data up until 25 October).'
+  x=u.parse_ecdc(raw)
+  self.assertEqual((x['cases'],x['deaths'],x['report_as_of'],x['data_through']),(10060,4887,'2026-10-26','2026-10-25'))
+  for bad in (raw.replace('Congo (DRC)','Congo (DRC) and Kenya'),raw.replace('confirmed cases, including 4 887','suspected cases, including 4 887')):
+   with self.assertRaises(ValueError):u.parse_ecdc(bad)
  def test_ecdc_foreign_and_unconfirmed_totals_are_rejected(self):
   for raw in ('As of 21 October 2026, Kenya has reported a total of 9 704 confirmed cases, including 4 687 related deaths', 'As of 21 October 2026, the Democratic Republic of the Congo (DRC) has reported a total of 9 704 suspected cases, including 4 687 related deaths'):
    with self.assertRaises(ValueError):u.parse_ecdc(raw)
@@ -38,3 +44,4 @@ class Maintenance(unittest.TestCase):
   self.assertEqual(result['latest']['outbreaks'][-1]['as_of'],self.sources[0]['report_as_of'])
  def test_published_consistent(self):self.assertTrue(u.validate(self.b))
 if __name__=='__main__':unittest.main()
+

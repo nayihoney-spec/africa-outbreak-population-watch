@@ -30,7 +30,7 @@ def parse_cdc(raw):
  return {'name':'CDC','url':CDC,'report_as_of':date(section[1]),'cases':number(m[1]),'deaths':number(m[2]),'evidence':m[0][:240],'sha256':hashlib.sha256(raw.encode()).hexdigest()}
 def parse_ecdc(raw):
  text=plain(raw)
- m=re.search(r'As of (\d{1,2} \w+ \d{4}), the Democratic Republic of the Congo \(DRC\) (?:has )?reported a total of ([\d,\s]+) confirmed cases, including ([\d,\s]+) related deaths(?: \(from data up until (\d{1,2} \w+)\))?',text,re.I)
+ m=re.search(r'As of (\d{1,2} \w+ \d{4}), the Democratic Republic of the Congo \(DRC\)(?:, where community transmission is ongoing,)? (?:has )?reported a total of ([\d,\s]+) confirmed cases, including ([\d,\s]+) related deaths(?: \(from data up until (\d{1,2} \w+)\))?',text,re.I)
  if not m:raise ValueError('ECDC DRC-specific confirmed counts missing')
  asof=date(m[1]);through=date(m[4]+' '+asof[:4]) if m[4] else asof
  return {'name':'ECDC','url':ECDC,'report_as_of':asof,'data_through':through,'cases':number(m[2]),'deaths':number(m[3]),'evidence':m[0][:350],'sha256':hashlib.sha256(raw.encode()).hexdigest()}
@@ -98,3 +98,4 @@ def main():
  print(json.dumps(status))
  return 0 if status['status']=='passed' else 1
 if __name__=='__main__':sys.exit(main())
+

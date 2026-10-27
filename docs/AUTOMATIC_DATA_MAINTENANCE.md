@@ -40,6 +40,8 @@ The configured ECDC URL redirects within the official domain to https://www.ecdc
 
 ## Official alert field extraction
 
+ECDC wording update verified 2026-10-28: the DRC sentence may include the exact clause ", where community transmission is ongoing," after "(DRC)". The collector accepts this optional clause while still requiring the DRC-only confirmed-case and related-death sentence. Regression tests reject mixed-country and suspected-count substitutions and retain report_as_of separately from data_through.
+
 Run `python scripts/update_advisories.py` after the counts collector. Validated destination-specific adapters cover TW (BOCA table rows), US (issued date versus page update), AU (overall advice and update), GB (regional warning and update), CA (destination risk header and last-updated date), SG (dated advisory section, not site footer), and JP (dated regional danger information). Network reads retry once. A failed adapter retains its last verified alert and marks the attempt blocked; the UI expires alerts after 48 hours without successful verification.
 
 BOCA 發布/更新日期 is a combined field: store source_updated_at and source_date_kind=published_or_updated, with source_published_at=null; do not infer a first-publication date. Preserve the exact 警示等級 text. The public UI has distinct official-date and verification-time columns and separate sorting. Source-language alert text is explicitly labeled original wording. Never use the BOCA footer date or Singapore site footer as an alert date.
@@ -49,4 +51,5 @@ Unconfigured authorities remain pending. In particular, a page offering dated re
 ## Confirmed China mainland field mapping (owner instruction)
 
 For China mainland, the owner confirmed 疫情风险等级 may populate the official alert-level column. The selected official document is https://cs.mfa.gov.cn/zyxx/202607/t20260723_11990742.html ; preserve https://cs.mfa.gov.cn/ as registry_url. Extract 极高风险 and 发布时间 2026-05-29 14:17 from the article body, not the July date embedded in its URL. Mark alert_type=epidemic-risk, keep the WHO quotation attribution and DRC geographic scope, and retain the separate risk-assessment date and original non-essential-travel advice. This mapping is approved for CN only; it does not authorize invented numeric or color grades for other jurisdictions.
+
 
