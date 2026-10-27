@@ -2,7 +2,7 @@
   "checked_at": "2026-10-27T18:43:44.659492+00:00",
   "status": "passed-with-source-limitations",
   "base_revision": "690ca9046379218a",
-  "revision": "39ce9ba8f99d0ddb",
+  "revision": "cf68e5c731694312",
   "counts": {
     "status": "passed",
     "cases": 10060,
@@ -34,7 +34,7 @@
     ],
     "verification": {
       "status": "verified",
-      "checked_at": "2026-10-27T18:42:38.881115+00:00",
+      "checked_at": "2026-10-27T18:44:21.871310+00:00",
       "scope": "DRC only; 2026 outbreak; confirmed cases and deaths",
       "method": "Two official publishers agree on counts; reporting dates retained separately. Shared upstream data is not independent epidemiological confirmation.",
       "sources": [
@@ -230,6 +230,31 @@
       "cases": 9964,
       "deaths": 4841,
       "outcome": "Prior audit quotation retained as history only. Fresh destination-specific registry inspected; regional grades remain separate, unconfigured normalization is not promoted."
+    },
+    "post_commit_automated": {
+      "checked_at": "2026-10-27T18:44:23.336559+00:00",
+      "passed": [
+        "GB",
+        "AU",
+        "CA",
+        "CN",
+        "TW",
+        "JP",
+        "SG"
+      ],
+      "blocked": {
+        "US": "HTTP Error 403: Forbidden"
+      },
+      "unconfigured": [
+        "FR",
+        "ES",
+        "PT",
+        "HK",
+        "MO",
+        "KR",
+        "TH",
+        "MY"
+      ]
     }
   },
   "actions_review": {
@@ -269,7 +294,33 @@
     "native_site_status": "active",
     "audience": "public",
     "deployed_version": 9,
-    "browser_interaction": "not performed"
+    "browser_interaction": "not performed",
+    "post_publication_inspection": {
+      "html": {
+        "status": 200,
+        "content_type": "text/html",
+        "sha256": "aed49bed41807d5ba3e76796da3a86dc3df12bbfe720582382f597a0f45df1fa",
+        "csp_headers": {},
+        "csp_meta": [
+          "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\">"
+        ],
+        "source_exact_match": true,
+        "script_sources": [
+          "assets/i18n.js",
+          "assets/data-client.js",
+          "assets/app.js"
+        ]
+      },
+      "loader": {
+        "status": 200,
+        "content_type": "text/javascript",
+        "sha256": "2d6e552e0b6300007b53b1b7012b39f315115f90e6c7ab3a41a56a6af420e598",
+        "csp_headers": {},
+        "csp_meta": [],
+        "source_exact_match": true,
+        "canonical_url_present": true
+      }
+    }
   },
   "validation": {
     "python_unit_tests": 19,
@@ -279,10 +330,49 @@
     "outbreak_nine_languages_and_math": "passed",
     "static_build": "passed"
   },
-  "publication_readback": "pending",
+  "publication_readback": {
+    "checked_at": "2026-10-27T18:46:11.842028+00:00",
+    "github_commit": "6aad9fac267d927d11fddbefed06f0706a9fe713",
+    "github_exact_semantic_match": true,
+    "all_seven_files_exact": true,
+    "legacy_copies_exact_match": true,
+    "raw_commit": {
+      "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/6aad9fac267d927d11fddbefed06f0706a9fe713/data/published.json?t=1793126750.8644614",
+      "checked_at": "2026-10-27T18:45:50.864475+00:00",
+      "status": 200,
+      "cors": "*",
+      "revision": "cf68e5c731694312",
+      "semantic_match": true
+    },
+    "raw_main": {
+      "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1793126754.1762714",
+      "checked_at": "2026-10-27T18:45:54.176278+00:00",
+      "status": 200,
+      "cors": "*",
+      "revision": "cf68e5c731694312",
+      "semantic_match": true
+    },
+    "propagation_checks": [
+      {
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1793126754.1762714",
+        "checked_at": "2026-10-27T18:45:54.176278+00:00",
+        "status": 200,
+        "cors": "*",
+        "revision": "cf68e5c731694312",
+        "semantic_match": true
+      }
+    ],
+    "result": "passed"
+  },
   "parser_repair": {
     "problem": "ECDC inserted the clause where community transmission is ongoing after DRC, causing a safe missing-counts failure.",
     "change": "Accept only this exact optional clause; retain explicit DRC-only confirmed-count sentence, reject mixed-country and suspected counts.",
     "tests": "New regression covers actual sentence, dates, foreign-country prefix and rejection of mixed-country/suspected counts."
+  },
+  "concurrent_refresh": {
+    "commit": "6aad9fac267d927d11fddbefed06f0706a9fe713",
+    "outcome": "Triggered Actions passed19 tests and CDC/ECDC equality. Newer canonical contains same counts and refreshed advisory timestamps. Adopted this latest writer base; did not overwrite its validated result. US403 remains a transient Actions-only fetch failure; US body verification from this audit retained.",
+    "run_id": 40562725324,
+    "job_id": 122395783762
   }
 }
