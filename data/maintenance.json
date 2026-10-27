@@ -1,9 +1,331 @@
 {
-  "checked_at": "2026-10-26T22:37:48.848585+00:00",
+  "checked_at": "2026-10-27T00:45:28.322300+00:00",
   "status": "failed",
   "published_changed": false,
   "error": "CDC/ECDC counts differ; retain published bundle for review",
   "revision": "33d0e63797df2ea2",
   "advisory_status": "blocked",
-  "advisory_checked_at": "2026-10-26T22:37:49.584804+00:00"
+  "advisory_checked_at": "2026-10-27T00:45:49.777813+00:00",
+  "cloud_audit": {
+    "checked_at": "2026-10-27T00:46:44.973463+00:00",
+    "status": "partial",
+    "base_revision": "33d0e63797df2ea2",
+    "revision": "33d0e63797df2ea2",
+    "counts": {
+      "status": "blocked",
+      "retained_cases": 9704,
+      "retained_deaths": 4687,
+      "primary_date": "2026-10-21",
+      "retained_verification": {
+        "status": "verified",
+        "checked_at": "2026-10-24T15:54:25.354199+00:00",
+        "scope": "DRC only; 2026 outbreak; confirmed cases and deaths",
+        "method": "Two official publishers agree on counts; reporting dates retained separately. Shared upstream data is not independent epidemiological confirmation.",
+        "sources": [
+          {
+            "name": "CDC",
+            "url": "https://www.cdc.gov/ebola/situation-summary/index.html",
+            "report_as_of": "2026-10-21",
+            "cases": 9704,
+            "deaths": 4687,
+            "evidence": "Democratic Republic of the Congo 9,704 confirmed cases 4,687 confirmed deaths",
+            "sha256": "b78cb0d68b74912db50adbe273038fed5fe0c6c1518b798d80a9d4774ec8039c"
+          },
+          {
+            "name": "ECDC",
+            "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+            "report_as_of": "2026-10-21",
+            "data_through": "2026-10-20",
+            "cases": 9704,
+            "deaths": 4687,
+            "evidence": "As of 21 October 2026, the Democratic Republic of the Congo (DRC) has reported a total of 9 704 confirmed cases, including 4 687 related deaths (from data up until 20 October)",
+            "sha256": "f3b8fb8b022016148b80433012a5088984dd78ed4d3a62b8f6654ee83a7aa532"
+          }
+        ]
+      },
+      "observed_sources": [
+        {
+          "name": "CDC",
+          "url": "https://www.cdc.gov/ebola/situation-summary/index.html",
+          "report_as_of": "2026-10-24",
+          "cases": 9964,
+          "deaths": 4841,
+          "evidence": "Democratic Republic of the Congo 9,964 confirmed cases 4,841 confirmed deaths",
+          "sha256": "1788f09050497550bc0727ff9ddc2e72594e7c741f368965c65557f7bb84ee4d"
+        },
+        {
+          "name": "ECDC",
+          "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+          "report_as_of": "2026-10-25",
+          "data_through": "2026-10-24",
+          "cases": 9964,
+          "deaths": 4851,
+          "evidence": "As of 25 October 2026, the Democratic Republic of the Congo (DRC) has reported a total of 9 964 confirmed cases, including 4 851 related deaths (from data up until 24 October)",
+          "sha256": "120f499c7df083824e9428444a03aa609789dde35bc5dd1e00a2a8cd80e649e0"
+        }
+      ],
+      "observed_at": "2026-10-27T00:45:58.727289+00:00",
+      "outcome": "CDC now labels its unchanged 9964/4841 snapshot as of 2026-10-24 (previous audit heading was 2026-10-25). ECDC remains 9964/4851, report2026-10-25, data through2026-10-24. Mortality difference10 remains unresolved; retain complete prior canonical, including all outbreak/publication timestamps.",
+      "unpublished_candidates": [
+        {
+          "source": "CDC",
+          "cases": 9964,
+          "deaths": 4841,
+          "report_as_of": "2026-10-24",
+          "data_through": null
+        },
+        {
+          "source": "ECDC",
+          "cases": 9964,
+          "deaths": 4851,
+          "report_as_of": "2026-10-25",
+          "data_through": "2026-10-24"
+        }
+      ],
+      "new_conflict_type": "existing mortality discrepancy persists; CDC report heading changed back to 2026-10-24"
+    },
+    "who_review": {
+      "url": "https://www.afro.who.int/countries/nigeria/publication/ebola-bundibugyo-virus-disease-outbreak-democratic-republic-congo-uganda-weekly-external-situation",
+      "report": 23,
+      "data_as_of": "2026-10-19",
+      "cases": 9637,
+      "deaths": 4646,
+      "outcome": "Older reporting snapshot; no same-date conflict with current CDC/ECDC figures.",
+      "additional_report": {
+        "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622",
+        "published_at": "2026-10-23",
+        "data_through": "2026-10-20",
+        "cases": 9704,
+        "deaths": 4687,
+        "scope": "DRC confirmed cases and deaths",
+        "outcome": "Older DRC snapshot as of 2026-10-20; cannot arbitrate current CDC/ECDC mortality discrepancy."
+      }
+    },
+    "drc_review": {
+      "url": "https://sante.gouv.cd/documents/sitreps",
+      "latest_ministry_listed_date": "2026-10-18",
+      "additional_registry": "https://insp.cd/ebola-17eme-epidemie/",
+      "latest_listed_data_date": "2026-10-24",
+      "latest_article_published_at": "2026-10-26",
+      "article_url": "https://insp.cd/sitrep-n163-mve-bdbv-24-10-2026/",
+      "pdf_url": "https://insp.cd/wp-content/uploads/2026/10/SitRep_MVEBDB_163_24_10_2026.pdf",
+      "outcome": "Latest registry verified. Linked PDF body not accessible via web; no unverified count adopted."
+    },
+    "reliefweb_review": {
+      "url": "https://reliefweb.int/report/democratic-republic-congo/multi-country-ebola-bundibugyo-outbreak-update-ndeg23",
+      "status": "blocked",
+      "error": "HTTP403 blocked report body; no unverified content adopted."
+    },
+    "research_history_review": {
+      "urls": [
+        "https://www.afro.who.int/health-topics/ebola-disease/outbreak-drc-26",
+        "https://www.cdc.gov/ebola/outbreaks/index.html",
+        "https://www.afro.who.int/countries/democratic-republic-of-congo/news/ebola-response-strengthening-treatment-and-preserving-essential-care"
+      ],
+      "outcome": "WHO continues to state no licensed Bundibugyo vaccine or specific treatment. Its 2026-10-23 article describes ERVEBO research vaccination of over 9000 frontline personnel, with Bundibugyo effectiveness still under investigation. This supports the existing candidates-under-study wording; no efficacy or approval claim added. No verified historical-count change. Population/displacement remains unimplemented pending versioned official definitions.",
+      "trial_review": {
+        "urls": [
+          "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622"
+        ],
+        "event_at": "2026-10-23",
+        "trial": "TUMAINI",
+        "phase": "2/3",
+        "location": "Bunia, DRC",
+        "outcome": "Fresh WHO DON622 still confirms TUMAINI Phase2/3 launch on 23 October in Bunia. No approved Bundibugyo vaccine or efficacy claim. Existing generic site wording remains accurate; no new substantive research change since preceding audit."
+      }
+    },
+    "advisories": {
+      "automated": {
+        "checked_at": "2026-10-27T00:45:49.777813+00:00",
+        "passed": [
+          "US",
+          "GB",
+          "CA",
+          "CN",
+          "TW",
+          "JP",
+          "SG"
+        ],
+        "blocked": {
+          "AU": "HTTP Error 503: Service Unavailable"
+        },
+        "unconfigured": [
+          "FR",
+          "ES",
+          "PT",
+          "HK",
+          "MO",
+          "KR",
+          "TH",
+          "MY"
+        ],
+        "cloud_review": {
+          "checked_at": "2026-10-27T00:46:44.973463+00:00",
+          "manual_content_verified": [
+            "AU"
+          ],
+          "pending_reasons": {
+            "FR": "Official DRC destination advisory inspected: updated 2026-10-16; no unified alert classification/effective-date mapping verified.",
+            "ES": "Configured official registry returned HTTP403; no DRC grade/effective date verified.",
+            "PT": "Configured official registry returned HTTP403; no DRC grade/effective date verified.",
+            "HK": "Destination-specific OTA remains in force, issued 2026-05-21; unconfigured grade normalization remains pending.",
+            "MO": "Dated DRC reminders remain available, but no explicit unified alert classification; ungraded presentation requires owner confirmation.",
+            "KR": "Official DRC regional warning areas verified separately; 2026-10-26 safety notice is not a unified grade/effective date.",
+            "TH": "Configured ministry homepage yielded no usable DRC-specific classification.",
+            "MY": "Configured ministry homepage timed out; no DRC grade/effective date verified."
+          },
+          "substantive_changes": []
+        }
+      },
+      "manual_content_verified": [
+        "AU"
+      ],
+      "australia": {
+        "url": "https://www.smartraveller.gov.au/destinations/africa/democratic-republic-congo",
+        "level": "Do not travel",
+        "updated_at": "2026-07-06",
+        "current_at": "2026-10-27",
+        "evidence": "Overall: Do not travel; Updated:06 July 2026"
+      },
+      "boca": {
+        "checked_at": "2026-10-27T00:45:58.805606+00:00",
+        "observations": [
+          {
+            "url": "https://www.boca.gov.tw/sp-trwa-content-3100-f3f00-1.html",
+            "status": 200,
+            "final_url": "https://www.boca.gov.tw/sp-trwa-content-3100-f3f00-1.html",
+            "sha256": "d405ea5e7df72b24ecbff8779d3c80bbfe1072ca01d0fe4dae9d3cb5f5a7b549",
+            "parsed": {
+              "level": "第四級：紅色儘速離境",
+              "normalized": "Very high",
+              "source_published_at": null,
+              "source_updated_at": "2026-08-31",
+              "source_date_kind": "published_or_updated",
+              "source_language": "zh-Hant",
+              "source_field_labels": [
+                "發布/更新日期",
+                "警示等級"
+              ],
+              "evidence": "第四級：紅色儘速離境"
+            }
+          },
+          {
+            "url": "https://www.boca.gov.tw/sp-trwa-print-3100-f3f00-1.html",
+            "status": 200,
+            "final_url": "https://www.boca.gov.tw/sp-trwa-print-3100-f3f00-1.html",
+            "sha256": "b4f8b380b806f98287fadd792af5b4b81d9aa761b3d264caa7db0954ef41050b",
+            "parsed": {
+              "level": "第四級：紅色儘速離境",
+              "normalized": "Very high",
+              "source_published_at": null,
+              "source_updated_at": "2026-08-31",
+              "source_date_kind": "published_or_updated",
+              "source_language": "zh-Hant",
+              "source_field_labels": [
+                "發布/更新日期",
+                "警示等級"
+              ],
+              "evidence": "第四級：紅色儘速離境"
+            }
+          }
+        ]
+      },
+      "pending": {
+        "FR": "Official DRC destination advisory inspected: updated 2026-10-16; no unified alert classification/effective-date mapping verified.",
+        "ES": "Configured official registry returned HTTP403; no DRC grade/effective date verified.",
+        "PT": "Configured official registry returned HTTP403; no DRC grade/effective date verified.",
+        "HK": "Destination-specific OTA remains in force, issued 2026-05-21; unconfigured grade normalization remains pending.",
+        "MO": "Dated DRC reminders remain available, but no explicit unified alert classification; ungraded presentation requires owner confirmation.",
+        "KR": "Official DRC regional warning areas verified separately; 2026-10-26 safety notice is not a unified grade/effective date.",
+        "TH": "Configured ministry homepage yielded no usable DRC-specific classification.",
+        "MY": "Configured ministry homepage timed out; no DRC grade/effective date verified."
+      },
+      "substantive_changes": [],
+      "publication_outcome": "All level/date observations unchanged. Successful advisory checks recorded only in audit; entire prior canonical retained due to counts conflict.",
+      "korea_notice_review": {
+        "url": "https://0404.go.kr/bbs/safetyNtc/1297239/detail2?ntnCd=215",
+        "published_at": "2026-10-26",
+        "attributed_authority": "DRC INSP",
+        "data_through": "2026-10-24",
+        "cases": 9964,
+        "deaths": 4841,
+        "outcome": "Prior audit read this official secondary quotation of INSP. This run destination registry remains unchanged, but notice body was unavailable through web retrieval; no renewed body verification or grade promotion claimed."
+      }
+    },
+    "actions_review": {
+      "run_id": 40413886366,
+      "job_id": 121891181635,
+      "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/40413886366",
+      "conclusion": "failure",
+      "outcome": "Latest source-refresh run40413886366 failed CDC/ECDC equality and US403/CN403.18 Python and all JS checks passed in Actions; this run also passes18 Python, JS syntax/behavior and static build. Fresh direct US/CN adapters pass; AU direct503 independently content-reviewed unchanged."
+    },
+    "live_path": {
+      "inspection": {
+        "html": {
+          "status": 200,
+          "content_type": "text/html",
+          "sha256": "aed49bed41807d5ba3e76796da3a86dc3df12bbfe720582382f597a0f45df1fa",
+          "csp_headers": {},
+          "csp_meta": [
+            "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\">"
+          ],
+          "source_exact_match": true,
+          "script_sources": [
+            "assets/i18n.js",
+            "assets/data-client.js",
+            "assets/app.js"
+          ]
+        },
+        "loader": {
+          "status": 200,
+          "content_type": "text/javascript",
+          "sha256": "2d6e552e0b6300007b53b1b7012b39f315115f90e6c7ab3a41a56a6af420e598",
+          "csp_headers": {},
+          "csp_meta": [],
+          "source_exact_match": true,
+          "canonical_url_present": true
+        }
+      },
+      "native_site_status": "active",
+      "audience": "public",
+      "deployed_version": 9,
+      "browser_interaction": "not performed"
+    },
+    "validation": {
+      "python_unit_tests": 18,
+      "javascript_syntax": "passed",
+      "data_client_behavior": "passed",
+      "advisory_filter_sort": "passed",
+      "outbreak_nine_languages_and_math": "passed",
+      "static_build": "passed"
+    },
+    "publication_readback": "pending"
+  },
+  "last_successful_validation": {
+    "status": "verified",
+    "checked_at": "2026-10-24T15:54:25.354199+00:00",
+    "scope": "DRC only; 2026 outbreak; confirmed cases and deaths",
+    "method": "Two official publishers agree on counts; reporting dates retained separately. Shared upstream data is not independent epidemiological confirmation.",
+    "sources": [
+      {
+        "name": "CDC",
+        "url": "https://www.cdc.gov/ebola/situation-summary/index.html",
+        "report_as_of": "2026-10-21",
+        "cases": 9704,
+        "deaths": 4687,
+        "evidence": "Democratic Republic of the Congo 9,704 confirmed cases 4,687 confirmed deaths",
+        "sha256": "b78cb0d68b74912db50adbe273038fed5fe0c6c1518b798d80a9d4774ec8039c"
+      },
+      {
+        "name": "ECDC",
+        "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+        "report_as_of": "2026-10-21",
+        "data_through": "2026-10-20",
+        "cases": 9704,
+        "deaths": 4687,
+        "evidence": "As of 21 October 2026, the Democratic Republic of the Congo (DRC) has reported a total of 9 704 confirmed cases, including 4 687 related deaths (from data up until 20 October)",
+        "sha256": "f3b8fb8b022016148b80433012a5088984dd78ed4d3a62b8f6654ee83a7aa532"
+      }
+    ]
+  }
 }
