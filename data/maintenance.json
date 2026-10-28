@@ -12,5 +12,357 @@
     "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda"
   ],
   "advisory_status": "blocked",
-  "advisory_checked_at": "2026-10-28T12:47:16.045641+00:00"
+  "advisory_checked_at": "2026-10-28T12:47:16.045641+00:00",
+  "cloud_audit": {
+    "checked_at": "2026-10-28T12:46:06.971656+00:00",
+    "status": "passed-with-existing-source-limitations",
+    "base_revision": "6bbbdfb3277dbd99",
+    "revision": "b071dbac62770920",
+    "counts": {
+      "status": "passed",
+      "substantive_change": false,
+      "observed_sources": [
+        {
+          "name": "CDC",
+          "url": "https://www.cdc.gov/ebola/situation-summary/index.html",
+          "report_as_of": "2026-10-25",
+          "cases": 10060,
+          "deaths": 4887,
+          "evidence": "Democratic Republic of the Congo 10,060 confirmed cases 4,887 confirmed deaths",
+          "sha256": "b7bc42109e26ea6d3bef476b754de081e98ad0883f199f9b2df335b1b4d6d93e"
+        },
+        {
+          "name": "ECDC",
+          "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+          "report_as_of": "2026-10-26",
+          "data_through": "2026-10-25",
+          "cases": 10060,
+          "deaths": 4887,
+          "evidence": "As of 26 October 2026, the Democratic Republic of the Congo (DRC), where community transmission is ongoing, has reported a total of 10 060 confirmed cases, including 4 887 related deaths (from data up until 25 October)",
+          "sha256": "a52dafe5fc2e712efefe59ccf1c178be6217478c285f0e1c3718605c35c1d748"
+        }
+      ],
+      "observed_at": "2026-10-28T12:44:55.675847+00:00",
+      "cases": 10060,
+      "deaths": 4887,
+      "primary_date": "2026-10-25",
+      "ecdc_report_date": "2026-10-26",
+      "ecdc_data_through": "2026-10-25",
+      "outcome": "Unchanged confirmed DRC snapshot; current official counts agree. Verification time renewed without advancing epidemiological dates.",
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-10-28T12:47:14.859558+00:00",
+        "scope": "DRC only; 2026 outbreak; confirmed cases and deaths",
+        "method": "Two official publishers agree on counts; reporting dates retained separately. Shared upstream data is not independent epidemiological confirmation.",
+        "sources": [
+          {
+            "name": "CDC",
+            "url": "https://www.cdc.gov/ebola/situation-summary/index.html",
+            "report_as_of": "2026-10-25",
+            "cases": 10060,
+            "deaths": 4887,
+            "evidence": "Democratic Republic of the Congo 10,060 confirmed cases 4,887 confirmed deaths",
+            "sha256": "b7bc42109e26ea6d3bef476b754de081e98ad0883f199f9b2df335b1b4d6d93e"
+          },
+          {
+            "name": "ECDC",
+            "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+            "report_as_of": "2026-10-26",
+            "data_through": "2026-10-25",
+            "cases": 10060,
+            "deaths": 4887,
+            "evidence": "As of 26 October 2026, the Democratic Republic of the Congo (DRC), where community transmission is ongoing, has reported a total of 10 060 confirmed cases, including 4 887 related deaths (from data up until 25 October)",
+            "sha256": "a52dafe5fc2e712efefe59ccf1c178be6217478c285f0e1c3718605c35c1d748"
+          }
+        ]
+      }
+    },
+    "who_review": {
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622",
+      "published_at": "2026-10-23",
+      "data_through": "2026-10-20",
+      "cases": 9704,
+      "deaths": 4687,
+      "outcome": "Older DRC snapshot; not a same-date conflict. TUMAINI phase2/3 launch2026-10-23 unchanged."
+    },
+    "drc_review": {
+      "registry_url": "https://insp.cd/ebola-17eme-epidemie/",
+      "latest_listed_data_date": "2026-10-26",
+      "article_published_at": "2026-10-28",
+      "ministry_registry_url": "https://sante.gouv.cd/documents/sitreps",
+      "ministry_latest_listed_date": "2026-10-24",
+      "pdf_url": "https://insp.cd/wp-content/uploads/2026/10/SitRep_MVEBDB_165_26_10_2026.pdf",
+      "outcome": "New report165 registry and article inspected; attachment body inaccessible via web. Listing is not count verification; no unverified national count adopted.",
+      "article_url": "https://insp.cd/sitrep-n165-mve-bdbv-26-10-2026/"
+    },
+    "reliefweb_review": {
+      "url": "https://reliefweb.int/report/democratic-republic-congo/multi-country-ebola-bundibugyo-outbreak-update-ndeg23",
+      "outcome": "HTTP403; body not verified, no content adopted."
+    },
+    "research_history_review": {
+      "urls": [
+        "https://www.afro.who.int/health-topics/ebola-disease/outbreak-drc-26",
+        "https://www.cdc.gov/ebola/outbreaks/index.html"
+      ],
+      "outcome": "No verified historical-count change. WHO research remains investigational; no licensed Bundibugyo vaccine/specific treatment claim added. Population/displacement remain pending versioned official definitions."
+    },
+    "advisories": {
+      "automated": {
+        "checked_at": "2026-10-28T12:45:04.477613+00:00",
+        "passed": [
+          "US",
+          "GB",
+          "CA",
+          "CN",
+          "TW",
+          "JP",
+          "SG"
+        ],
+        "blocked": {
+          "AU": "HTTP Error 503: Service Unavailable"
+        },
+        "unconfigured": [
+          "FR",
+          "ES",
+          "PT",
+          "HK",
+          "MO",
+          "KR",
+          "TH",
+          "MY"
+        ],
+        "cloud_review": {
+          "checked_at": "2026-10-28T12:45:38.912049+00:00",
+          "manual_content_verified": [
+            "AU"
+          ],
+          "pending_reasons": {
+            "FR": "Destination advisory updated2026-10-16; no configured unified grade/date mapping.",
+            "ES": "Official registry HTTP403; destination classification not verified.",
+            "PT": "Official registry HTTP403; destination classification not verified.",
+            "HK": "OTA issued2026-05-21 remains; grade normalization unconfigured.",
+            "MO": "Dated reminders, no unified classification verified.",
+            "KR": "Destination regional grades remain separate; no unified grade/date mapping configured.",
+            "TH": "Ministry homepage iframe yielded no destination-specific classification.",
+            "MY": "Ministry homepage HTTP502; no DRC classification verified."
+          },
+          "substantive_changes": []
+        }
+      },
+      "manual_content_verified": [
+        "AU"
+      ],
+      "australia": {
+        "url": "https://www.smartraveller.gov.au/destinations/africa/democratic-republic-congo",
+        "level": "Do not travel",
+        "updated_at": "2026-07-06",
+        "current_at": "2026-10-28",
+        "evidence": "Overall: Do not travel; Updated:06 July2026"
+      },
+      "boca": {
+        "checked_at": "2026-10-28T12:44:55.741786+00:00",
+        "observations": [
+          {
+            "url": "https://www.boca.gov.tw/sp-trwa-content-3100-f3f00-1.html",
+            "status": 200,
+            "final_url": "https://www.boca.gov.tw/sp-trwa-content-3100-f3f00-1.html",
+            "sha256": "9db96d7ca417141f81d310451a1cc066abd4b1eadfd30db037a59145fc79733a",
+            "parsed": {
+              "level": "第四級：紅色儘速離境",
+              "normalized": "Very high",
+              "source_published_at": null,
+              "source_updated_at": "2026-08-31",
+              "source_date_kind": "published_or_updated",
+              "source_language": "zh-Hant",
+              "source_field_labels": [
+                "發布/更新日期",
+                "警示等級"
+              ],
+              "evidence": "第四級：紅色儘速離境"
+            }
+          },
+          {
+            "url": "https://www.boca.gov.tw/sp-trwa-print-3100-f3f00-1.html",
+            "status": 200,
+            "final_url": "https://www.boca.gov.tw/sp-trwa-print-3100-f3f00-1.html",
+            "sha256": "b4f8b380b806f98287fadd792af5b4b81d9aa761b3d264caa7db0954ef41050b",
+            "parsed": {
+              "level": "第四級：紅色儘速離境",
+              "normalized": "Very high",
+              "source_published_at": null,
+              "source_updated_at": "2026-08-31",
+              "source_date_kind": "published_or_updated",
+              "source_language": "zh-Hant",
+              "source_field_labels": [
+                "發布/更新日期",
+                "警示等級"
+              ],
+              "evidence": "第四級：紅色儘速離境"
+            }
+          }
+        ]
+      },
+      "pending": {
+        "FR": "Destination advisory updated2026-10-16; no configured unified grade/date mapping.",
+        "ES": "Official registry HTTP403; destination classification not verified.",
+        "PT": "Official registry HTTP403; destination classification not verified.",
+        "HK": "OTA issued2026-05-21 remains; grade normalization unconfigured.",
+        "MO": "Dated reminders, no unified classification verified.",
+        "KR": "Destination regional grades remain separate; no unified grade/date mapping configured.",
+        "TH": "Ministry homepage iframe yielded no destination-specific classification.",
+        "MY": "Ministry homepage HTTP502; no DRC classification verified."
+      },
+      "substantive_changes": [],
+      "outcome": "Seven adapters read destination-specific level/date content; AU independently reviewed after direct503. All official levels/dates unchanged. Eight unconfigured authorities remain pending.",
+      "post_commit_automated": {
+        "checked_at": "2026-10-28T12:47:16.045641+00:00",
+        "passed": [
+          "GB",
+          "AU",
+          "CA",
+          "CN",
+          "TW",
+          "JP",
+          "SG"
+        ],
+        "blocked": {
+          "US": "HTTP Error 403: Forbidden"
+        },
+        "unconfigured": [
+          "FR",
+          "ES",
+          "PT",
+          "HK",
+          "MO",
+          "KR",
+          "TH",
+          "MY"
+        ]
+      }
+    },
+    "actions_review": {
+      "run_id": 40638956619,
+      "job_id": 122652344748,
+      "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/40638956619",
+      "conclusion": "failure",
+      "outcome": "Latest source-refresh run40645702316 passed20 Python tests, JS suites, and CDC/ECDC equality. US403 caused overall failure. No newer source-refresh run was returned in latest Actions listing. Fresh direct US check passes; AU503 independently content-reviewed unchanged."
+    },
+    "live_path": {
+      "inspection": {
+        "html": {
+          "status": 200,
+          "content_type": "text/html",
+          "sha256": "aed49bed41807d5ba3e76796da3a86dc3df12bbfe720582382f597a0f45df1fa",
+          "csp_headers": {},
+          "csp_meta": [
+            "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\">"
+          ],
+          "source_exact_match": true,
+          "script_sources": [
+            "assets/i18n.js",
+            "assets/data-client.js",
+            "assets/app.js"
+          ]
+        },
+        "loader": {
+          "status": 200,
+          "content_type": "text/javascript",
+          "sha256": "2d6e552e0b6300007b53b1b7012b39f315115f90e6c7ab3a41a56a6af420e598",
+          "csp_headers": {},
+          "csp_meta": [],
+          "source_exact_match": true,
+          "canonical_url_present": true
+        }
+      },
+      "native_site_status": "active",
+      "audience": "public",
+      "deployed_version": 9,
+      "browser_interaction": "not performed",
+      "post_publication_inspection": {
+        "html": {
+          "status": 200,
+          "content_type": "text/html",
+          "sha256": "aed49bed41807d5ba3e76796da3a86dc3df12bbfe720582382f597a0f45df1fa",
+          "csp_headers": {},
+          "csp_meta": [
+            "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\">"
+          ],
+          "source_exact_match": true,
+          "script_sources": [
+            "assets/i18n.js",
+            "assets/data-client.js",
+            "assets/app.js"
+          ]
+        },
+        "loader": {
+          "status": 200,
+          "content_type": "text/javascript",
+          "sha256": "2d6e552e0b6300007b53b1b7012b39f315115f90e6c7ab3a41a56a6af420e598",
+          "csp_headers": {},
+          "csp_meta": [],
+          "source_exact_match": true,
+          "canonical_url_present": true
+        }
+      }
+    },
+    "validation": {
+      "python_unit_tests": 20,
+      "javascript_syntax": "passed",
+      "data_client_behavior": "passed",
+      "advisory_filter_sort": "passed",
+      "outbreak_nine_languages_and_math": "passed",
+      "static_build": "passed"
+    },
+    "publication_readback": {
+      "checked_at": "2026-10-28T12:52:49.998780+00:00",
+      "github_commit": "70459f6fa6e20040ec070264b1cf687082a0f37b",
+      "github_exact_semantic_match": true,
+      "all_seven_files_exact": true,
+      "legacy_copies_exact_match": true,
+      "raw_commit": {
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/70459f6fa6e20040ec070264b1cf687082a0f37b/data/published.json?t=1793191940.820535",
+        "checked_at": "2026-10-28T12:52:20.820551+00:00",
+        "status": 200,
+        "cors": "*",
+        "revision": "b071dbac62770920",
+        "semantic_match": true
+      },
+      "raw_main": {
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1793191944.803147",
+        "checked_at": "2026-10-28T12:52:24.803153+00:00",
+        "status": 200,
+        "cors": "*",
+        "revision": "b071dbac62770920",
+        "semantic_match": true
+      },
+      "propagation_checks": [
+        {
+          "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1793191944.803147",
+          "checked_at": "2026-10-28T12:52:24.803153+00:00",
+          "status": 200,
+          "cors": "*",
+          "revision": "b071dbac62770920",
+          "semantic_match": true
+        }
+      ],
+      "result": "passed"
+    },
+    "publication_defect_recheck": {
+      "outcome": "Previously corrected failure-metadata issue remains resolved. Current canonical passes JS live-bundle validation and simulated network-failure retention regression."
+    },
+    "concurrent_refresh": {
+      "run_id": 40690696880,
+      "job_id": 122824412670,
+      "commit": "70459f6fa6e20040ec070264b1cf687082a0f37b",
+      "outcome": "Concurrent scheduled refresh passed count comparison, same10060/4887. US403 only advisory failure. Adopted latest validated canonical, preserving its timestamps and maintenance result."
+    },
+    "raw_cache_propagation": {
+      "first_observed_stale_at": "2026-10-28T12:48:22.766908+00:00",
+      "confirmed_current_at": "2026-10-28T12:52:24.803153+00:00",
+      "stale_revision": "2a6c0fec286562b0",
+      "current_revision": "b071dbac62770920",
+      "cache_max_age_seconds": 300,
+      "outcome": "Transient raw/main cache delay resolved. Both revisions contain same verified count snapshot. Latest GitHub and public raw exact semantic comparison now passes."
+    }
+  }
 }
