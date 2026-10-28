@@ -24,6 +24,8 @@ Successful runs validate latest/event mapping and publish one complete JSON bund
 
 ## Verification and rollback
 
+Failure-metadata correction verified 2026-10-28: urllib errors can contain angle brackets (for example, a urlopen timeout). Advisory failure messages in canonical JSON replace angle brackets with square brackets and remove NUL, preserving the error meaning and previous verified fields. The browser markup-rejection gate remains unchanged. A simulated network-failure regression checks last-good alert retention and browser-safe canonical strings.
+
 Run `python -m unittest discover -s tests -p 'test_*.py'`, `python scripts/update_data.py`, JS syntax checks, and build with `python scripts/build_static.py`. The collector uses only Python stdlib. To recover, restore a previously validated canonical bundle by a new commit; do not rewrite history. Keep original source timestamps.
 
 ## Limits
@@ -51,5 +53,6 @@ Unconfigured authorities remain pending. In particular, a page offering dated re
 ## Confirmed China mainland field mapping (owner instruction)
 
 For China mainland, the owner confirmed 疫情风险等级 may populate the official alert-level column. The selected official document is https://cs.mfa.gov.cn/zyxx/202607/t20260723_11990742.html ; preserve https://cs.mfa.gov.cn/ as registry_url. Extract 极高风险 and 发布时间 2026-05-29 14:17 from the article body, not the July date embedded in its URL. Mark alert_type=epidemic-risk, keep the WHO quotation attribution and DRC geographic scope, and retain the separate risk-assessment date and original non-essential-travel advice. This mapping is approved for CN only; it does not authorize invented numeric or color grades for other jurisdictions.
+
 
 

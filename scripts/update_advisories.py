@@ -99,7 +99,8 @@ def main():
    try:
     record=results[code].result();row.update(record,validation='verified',verified_at=now,checked=now,last_attempt_status='passed');row.pop('last_attempt_error',None);audit['passed'].append(code)
    except Exception as e:
-    row.update(last_attempt_status='blocked',last_attempt_error=str(e)[:250]);audit['blocked'][code]=str(e)[:250]
+    error=str(e).translate(str.maketrans({'<':'[','>':']','\x00':''}))[:250]
+    row.update(last_attempt_status='blocked',last_attempt_error=error);audit['blocked'][code]=error
    row['last_attempt_at']=now
  bundle['advisories']['updated_at']=now;bundle['published_at']=now;bundle['revision']=hashlib.sha256(json.dumps(bundle,sort_keys=True).encode()).hexdigest()[:16]
  validate(bundle);atomic(ROOT/'data/published.json',bundle);atomic(ROOT/'data/advisories.json',bundle['advisories']);atomic(ROOT/'data/advisory-maintenance.json',audit)
@@ -108,3 +109,4 @@ def main():
   status=json.loads(status_path.read_text());status['revision']=bundle['revision'];status['advisory_status']='blocked' if audit['blocked'] else 'passed';status['advisory_checked_at']=now;atomic(status_path,status)
  print(json.dumps(audit,ensure_ascii=False));return 1 if audit['blocked'] else 0
 if __name__=='__main__':sys.exit(main())
+
