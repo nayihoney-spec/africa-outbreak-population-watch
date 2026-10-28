@@ -1,0 +1,208 @@
+{
+  "checked_at": "2026-10-28T18:51:16.253850+00:00",
+  "status": "passed-with-existing-source-limitations",
+  "base_revision": "b071dbac62770920",
+  "revision": "c180d8db6cadfcd4",
+  "counts": {
+    "status": "passed",
+    "substantive_change": true,
+    "observed_sources": [
+      {
+        "name": "CDC",
+        "url": "https://www.cdc.gov/ebola/situation-summary/index.html",
+        "report_as_of": "2026-10-26",
+        "cases": 10141,
+        "deaths": 4928,
+        "evidence": "Democratic Republic of the Congo 10,141 confirmed cases 4,928 confirmed deaths",
+        "sha256": "7e0897a74ee9c37616195582a45207ff815682bfd8d724971eaf6e22c5f4167b"
+      },
+      {
+        "name": "ECDC",
+        "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+        "report_as_of": "2026-10-27",
+        "data_through": "2026-10-26",
+        "cases": 10141,
+        "deaths": 4928,
+        "evidence": "As of 27 October 2026, the Democratic Republic of the Congo (DRC), where community transmission is ongoing, has reported a total of 10 141 confirmed cases, including 4 928 related deaths (from data up until 26 October)",
+        "sha256": "4658eaeaef826b3fcc8d50575222a439f4b87c3766da55a0cb356866a28056d1"
+      }
+    ],
+    "observed_at": "2026-10-28T18:50:32.497297+00:00",
+    "cases": 10141,
+    "deaths": 4928,
+    "increase_cases": 81,
+    "increase_deaths": 41,
+    "primary_date": "2026-10-26",
+    "ecdc_report_date": "2026-10-27",
+    "ecdc_data_through": "2026-10-26",
+    "outcome": "DRC confirmed counts and data dates advanced. CDC and ECDC agree; shared upstream is not independent epidemiological confirmation."
+  },
+  "who_review": {
+    "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622",
+    "published_at": "2026-10-23",
+    "data_through": "2026-10-20",
+    "cases": 9704,
+    "deaths": 4687,
+    "outcome": "Older DRC snapshot; not a same-date conflict. TUMAINI phase2/3 launch2026-10-23 unchanged."
+  },
+  "drc_review": {
+    "registry_url": "https://insp.cd/ebola-17eme-epidemie/",
+    "registry_attempt": "timeout",
+    "article_url": "https://insp.cd/sitrep-n165-mve-bdbv-26-10-2026/",
+    "article_attempt": "inaccessible via web retrieval",
+    "ministry_registry_url": "https://sante.gouv.cd/documents/sitreps",
+    "ministry_latest_listed_date": "2026-10-24",
+    "outcome": "No newly verified national report body. Prior audit listed165 for26October; not claimed freshly verified. No unverified national count adopted."
+  },
+  "reliefweb_review": {
+    "url": "https://reliefweb.int/report/democratic-republic-congo/multi-country-ebola-bundibugyo-outbreak-update-ndeg23",
+    "outcome": "HTTP403; body not verified, no content adopted."
+  },
+  "research_history_review": {
+    "urls": [
+      "https://www.afro.who.int/health-topics/ebola-disease/outbreak-drc-26",
+      "https://www.cdc.gov/ebola/outbreaks/index.html"
+    ],
+    "outcome": "No verified historical-count change. WHO research remains investigational; no licensed Bundibugyo vaccine/specific treatment claim added. Population/displacement remain pending versioned official definitions."
+  },
+  "advisories": {
+    "automated": {
+      "checked_at": "2026-10-28T18:50:34.421193+00:00",
+      "passed": [
+        "US",
+        "GB",
+        "CA",
+        "CN",
+        "TW",
+        "JP",
+        "SG"
+      ],
+      "blocked": {
+        "AU": "HTTP Error 503: Service Unavailable"
+      },
+      "unconfigured": [
+        "FR",
+        "ES",
+        "PT",
+        "HK",
+        "MO",
+        "KR",
+        "TH",
+        "MY"
+      ]
+    },
+    "manual_content_verified": [
+      "AU"
+    ],
+    "australia": {
+      "url": "https://www.smartraveller.gov.au/destinations/africa/democratic-republic-congo",
+      "level": "Do not travel",
+      "updated_at": "2026-07-06",
+      "current_at": "2026-10-29",
+      "evidence": "Overall: Do not travel; Updated:06 July2026"
+    },
+    "boca": {
+      "checked_at": "2026-10-28T18:50:32.588125+00:00",
+      "observations": [
+        {
+          "url": "https://www.boca.gov.tw/sp-trwa-content-3100-f3f00-1.html",
+          "status": 200,
+          "final_url": "https://www.boca.gov.tw/sp-trwa-content-3100-f3f00-1.html",
+          "sha256": "3f6312f30765417da5f18d89f62e2c1b9e5beec5fb69091b7ab4ad37e9d36493",
+          "parsed": {
+            "level": "第四級：紅色儘速離境",
+            "normalized": "Very high",
+            "source_published_at": null,
+            "source_updated_at": "2026-08-31",
+            "source_date_kind": "published_or_updated",
+            "source_language": "zh-Hant",
+            "source_field_labels": [
+              "發布/更新日期",
+              "警示等級"
+            ],
+            "evidence": "第四級：紅色儘速離境"
+          }
+        },
+        {
+          "url": "https://www.boca.gov.tw/sp-trwa-print-3100-f3f00-1.html",
+          "status": 200,
+          "final_url": "https://www.boca.gov.tw/sp-trwa-print-3100-f3f00-1.html",
+          "sha256": "b4f8b380b806f98287fadd792af5b4b81d9aa761b3d264caa7db0954ef41050b",
+          "parsed": {
+            "level": "第四級：紅色儘速離境",
+            "normalized": "Very high",
+            "source_published_at": null,
+            "source_updated_at": "2026-08-31",
+            "source_date_kind": "published_or_updated",
+            "source_language": "zh-Hant",
+            "source_field_labels": [
+              "發布/更新日期",
+              "警示等級"
+            ],
+            "evidence": "第四級：紅色儘速離境"
+          }
+        }
+      ]
+    },
+    "pending": {
+      "FR": "Destination advisory updated2026-10-16; no configured unified grade/date mapping.",
+      "ES": "Official registry HTTP403; destination classification not verified.",
+      "PT": "Official registry HTTP403; destination classification not verified.",
+      "HK": "OTA issued2026-05-21 remains; grade normalization unconfigured.",
+      "MO": "Dated reminders, no unified classification verified.",
+      "KR": "Destination regional grades remain separate; no unified grade/date mapping configured.",
+      "TH": "Ministry homepage iframe yielded no destination-specific classification.",
+      "MY": "Ministry homepage HTTP502; no DRC classification verified."
+    },
+    "substantive_changes": [],
+    "outcome": "Seven adapters read destination-specific level/date content; AU independently reviewed after direct503. All official levels/dates unchanged. Eight unconfigured authorities remain pending."
+  },
+  "actions_review": {
+    "run_id": 40638956619,
+    "job_id": 122652344748,
+    "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/40638956619",
+    "conclusion": "failure",
+    "outcome": "Latest source-refresh run40690696880 passed20 Python tests, JS suites, and count comparison for10060/4887; US403 caused overall failure. Fresh audit parses matching10141/4928. US passes directly; AU503 independently content-reviewed unchanged."
+  },
+  "live_path": {
+    "inspection": {
+      "html": {
+        "status": 200,
+        "content_type": "text/html",
+        "sha256": "aed49bed41807d5ba3e76796da3a86dc3df12bbfe720582382f597a0f45df1fa",
+        "csp_headers": {},
+        "csp_meta": [
+          "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\">"
+        ],
+        "source_exact_match": true,
+        "script_sources": [
+          "assets/i18n.js",
+          "assets/data-client.js",
+          "assets/app.js"
+        ]
+      },
+      "loader": {
+        "status": 200,
+        "content_type": "text/javascript",
+        "sha256": "2d6e552e0b6300007b53b1b7012b39f315115f90e6c7ab3a41a56a6af420e598",
+        "csp_headers": {},
+        "csp_meta": [],
+        "source_exact_match": true,
+        "canonical_url_present": true
+      }
+    },
+    "native_site_status": "active",
+    "audience": "public",
+    "deployed_version": 9,
+    "browser_interaction": "not performed"
+  },
+  "validation": {
+    "python_unit_tests": 20,
+    "javascript_syntax": "passed",
+    "data_client_behavior": "passed",
+    "advisory_filter_sort": "passed",
+    "outbreak_nine_languages_and_math": "passed",
+    "static_build": "passed"
+  },
+  "publication_readback": "pending"
+}
