@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-10-28T00:43:25.461560+00:00",
+  "checked_at": "2026-10-28T05:36:24.403002+00:00",
   "passed": [
-    "US",
     "GB",
-    "CA",
+    "AU",
     "CN",
     "TW",
     "JP",
     "SG"
   ],
   "blocked": {
-    "AU": "HTTP Error 503: Service Unavailable"
+    "US": "HTTP Error 403: Forbidden",
+    "CA": "<urlopen error timed out>"
   },
   "unconfigured": [
     "FR",
@@ -21,22 +21,5 @@
     "KR",
     "TH",
     "MY"
-  ],
-  "cloud_review": {
-    "checked_at": "2026-10-28T00:44:15.614441+00:00",
-    "manual_content_verified": [
-      "AU"
-    ],
-    "pending_reasons": {
-      "FR": "Destination advisory updated2026-10-16; no configured unified grade/date mapping.",
-      "ES": "Official registry HTTP403; destination classification not verified.",
-      "PT": "Official registry HTTP403; destination classification not verified.",
-      "HK": "OTA issued2026-05-21 remains; grade normalization unconfigured.",
-      "MO": "Dated reminders, no unified classification verified.",
-      "KR": "Destination regional grades remain separate; no unified grade/date mapping configured.",
-      "TH": "Ministry homepage iframe yielded no destination-specific classification.",
-      "MY": "Ministry homepage timed out; no DRC classification verified."
-    },
-    "substantive_changes": []
-  }
+  ]
 }
