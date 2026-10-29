@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-29T06:49:13.266708+00:00",
+  "checked_at": "2026-10-29T12:47:53.647947+00:00",
   "passed": [
     "US",
     "GB",
@@ -23,7 +23,7 @@
     "MY"
   ],
   "cloud_review": {
-    "checked_at": "2026-10-29T06:50:01.781740+00:00",
+    "checked_at": "2026-10-29T12:48:37.532787+00:00",
     "manual_content_verified": [
       "AU"
     ],
@@ -35,7 +35,7 @@
       "MO": "Dated reminders, no unified classification verified.",
       "KR": "Destination regional grades remain separate; no unified grade/date mapping configured.",
       "TH": "Ministry homepage iframe yielded no destination-specific classification.",
-      "MY": "Ministry homepage HTTP502; no DRC classification verified."
+      "MY": "Ministry homepage timed out; no DRC classification verified."
     },
     "substantive_changes": []
   }
