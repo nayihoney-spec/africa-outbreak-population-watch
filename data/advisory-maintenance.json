@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-29T18:50:11.613116+00:00",
+  "checked_at": "2026-10-29T22:43:01.524426+00:00",
   "passed": [
-    "US",
     "GB",
+    "AU",
     "CA",
     "CN",
     "TW",
@@ -10,7 +10,7 @@
     "SG"
   ],
   "blocked": {
-    "AU": "HTTP Error 503: Service Unavailable"
+    "US": "HTTP Error 403: Forbidden"
   },
   "unconfigured": [
     "FR",
@@ -21,22 +21,5 @@
     "KR",
     "TH",
     "MY"
-  ],
-  "cloud_review": {
-    "checked_at": "2026-10-29T18:50:47.915224+00:00",
-    "manual_content_verified": [
-      "AU"
-    ],
-    "pending_reasons": {
-      "FR": "Destination page updated2026-10-29 with cholera advisory affecting21provinces; unified alert grade/date mapping remains unconfigured. No numerical/color grade assigned.",
-      "ES": "Official registry HTTP403; destination classification not verified.",
-      "PT": "Official registry HTTP403; destination classification not verified.",
-      "HK": "OTA issued2026-05-21 remains; grade normalization unconfigured.",
-      "MO": "Dated reminders, no unified classification verified.",
-      "KR": "Destination regional grades remain separate; no unified grade/date mapping configured.",
-      "TH": "Ministry homepage iframe yielded no destination-specific classification.",
-      "MY": "Ministry homepage timeout; no DRC classification verified."
-    },
-    "substantive_changes": []
-  }
+  ]
 }
