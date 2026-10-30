@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-30T06:42:40.115350+00:00",
+  "checked_at": "2026-10-30T12:41:57.243579+00:00",
   "passed": [
     "US",
     "GB",
@@ -23,12 +23,12 @@
     "MY"
   ],
   "cloud_review": {
-    "checked_at": "2026-10-30T06:43:20.173945+00:00",
+    "checked_at": "2026-10-30T12:42:41.674494+00:00",
     "manual_content_verified": [
       "AU"
     ],
     "pending_reasons": {
-      "FR": "Destination page remains updated2026-10-29; unified alert grade/date mapping unconfigured. No numerical/color grade assigned.",
+      "FR": "Destination page remains updated2026-10-29; unified alert grade/date mapping unconfigured, no numerical/color grade assigned.",
       "ES": "Official registry HTTP403; destination classification not verified.",
       "PT": "Official registry HTTP403; destination classification not verified.",
       "HK": "OTA issued2026-05-21 remains; grade normalization unconfigured.",
