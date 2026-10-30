@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T12:48:53.433606+00:00",
+  "updated_at": "2026-10-30T18:42:57.065494+00:00",
   "definition": "Event-level outbreak totals for DRC from 2016 onward. Cross-year outbreaks are stored as single events; missing years are not converted to zero.",
   "events": [
     {
@@ -125,10 +125,10 @@
       "end": "2026",
       "location": "DRC multi-province",
       "species": "Orthoebolavirus bundibugyoense",
-      "cases": 10193,
-      "deaths": 4960,
+      "cases": 10274,
+      "deaths": 4992,
       "source": "CDC / ECDC",
-      "as_of": "2026-10-27",
+      "as_of": "2026-10-28",
       "source_url": "https://www.cdc.gov/ebola/situation-summary/index.html",
       "case_basis": "laboratory-confirmed cases and deaths; DRC only"
     }
