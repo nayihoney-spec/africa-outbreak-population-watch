@@ -420,7 +420,33 @@
       "native_site_status": "active",
       "audience": "public",
       "deployed_version": 9,
-      "browser_interaction": "not performed"
+      "browser_interaction": "not performed",
+      "post_publication_inspection": {
+        "html": {
+          "status": 200,
+          "content_type": "text/html",
+          "sha256": "aed49bed41807d5ba3e76796da3a86dc3df12bbfe720582382f597a0f45df1fa",
+          "csp_headers": {},
+          "csp_meta": [
+            "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\">"
+          ],
+          "source_exact_match": true,
+          "script_sources": [
+            "assets/i18n.js",
+            "assets/data-client.js",
+            "assets/app.js"
+          ]
+        },
+        "loader": {
+          "status": 200,
+          "content_type": "text/javascript",
+          "sha256": "2d6e552e0b6300007b53b1b7012b39f315115f90e6c7ab3a41a56a6af420e598",
+          "csp_headers": {},
+          "csp_meta": [],
+          "source_exact_match": true,
+          "canonical_url_present": true
+        }
+      }
     },
     "validation": {
       "python_unit_tests": 20,
@@ -431,7 +457,40 @@
       "static_build": "passed"
     },
     "retrieval_limitations": "AU direct503 independently content-reviewed through official web retrieval. INSP168 article and embedded PDF successfully retrieved directly after web retrieval failed. ReliefWeb202 empty body; PT403 and MY503 remain unverified. No newer counts promoted from a single source.",
-    "publication_readback": "pending",
+    "publication_readback": {
+      "checked_at": "2026-10-31T18:46:25.129654+00:00",
+      "github_commit": "fa621818123c4c71d946778ede175f6f577d98e3",
+      "github_exact_semantic_match": true,
+      "all_seven_files_exact": true,
+      "legacy_copies_exact_match": true,
+      "raw_commit": {
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/fa621818123c4c71d946778ede175f6f577d98e3/data/published.json?t=1793472359.4107773",
+        "checked_at": "2026-10-31T18:45:59.410792+00:00",
+        "status": 200,
+        "cors": "*",
+        "revision": "6b17745908c8d7c1",
+        "semantic_match": true
+      },
+      "raw_main": {
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1793472362.815898",
+        "checked_at": "2026-10-31T18:46:02.815904+00:00",
+        "status": 200,
+        "cors": "*",
+        "revision": "6b17745908c8d7c1",
+        "semantic_match": true
+      },
+      "propagation_checks": [
+        {
+          "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1793472362.815898",
+          "checked_at": "2026-10-31T18:46:02.815904+00:00",
+          "status": 200,
+          "cors": "*",
+          "revision": "6b17745908c8d7c1",
+          "semantic_match": true
+        }
+      ],
+      "result": "passed"
+    },
     "owner_notification": {
       "required": true,
       "reason": "New official INSP PDF content verified; more recent snapshot awaits configured CDC/ECDC agreement."
