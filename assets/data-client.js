@@ -18,6 +18,24 @@ function validate(d){
 async function read(url){const r=await fetch(url+'?t='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(10000)});if(!r.ok)throw Error('Data HTTP '+r.status);return validate(await r.json())}
 function lang(){return document.documentElement.lang||'en'}
 const labels={en:['Data verified','Bundled fallback','Data through','Source checked','Data snapshot is over 48 hours old; check official sources','History uses reported event totals; current outbreak uses confirmed counts.'], 'zh-Hant':['資料已核對','備援快照','數據截至','來源檢查時間','資料快照已超過 48 小時，請查看官方來源','歷史事件採報告總數；目前疫情採確診數，統計口徑不同。'],'zh-Hans':['数据已核对','备用快照','数据截至','来源检查时间','数据快照已超过48小时，请查看官方来源','历史事件采用报告总数；当前疫情采用确诊数，统计口径不同。'],ja:['データ照合済み','保存済みデータ','データ基準日','確認日時','48時間以上経過：公式情報をご確認ください','過去は報告総数、現在の流行は確定例です。'],ko:['자료 대조 완료','저장된 자료','자료 기준일','확인 시간','48시간 경과: 공식 출처를 확인하세요','과거는 보고 총계, 현재 유행은 확진 건수입니다.'],th:['ตรวจสอบข้อมูลแล้ว','ข้อมูลสำรอง','ข้อมูลถึงวันที่','ตรวจสอบเมื่อ','ข้อมูลเกิน 48 ชั่วโมง โปรดตรวจสอบแหล่งทางการ','ข้อมูลในอดีตเป็นยอดรายงาน ส่วนการระบาดปัจจุบันเป็นผู้ป่วยยืนยัน'],fr:['Données comparées','Copie de secours','Données au','Vérifié le','Plus de 48 heures : consulter les sources officielles','Historique : totaux signalés ; épidémie actuelle : cas confirmés.'],es:['Datos cotejados','Copia de respaldo','Datos hasta','Verificado','Más de 48 horas: consulte fuentes oficiales','Histórico: totales notificados; brote actual: casos confirmados.'],pt:['Dados comparados','Cópia de segurança','Dados até','Verificado','Mais de 48 horas: consulte fontes oficiais','Histórico: totais notificados; surto atual: casos confirmados.']};
+
+const advisoryLabels={
+ en:['Travel advisory checks','Blocked','last verified records retained','Not configured','Configured checks passed'],
+ 'zh-Hant':['旅遊警示檢查','受阻','保留上次核實資料','未配置','已配置來源檢查通過'],
+ 'zh-Hans':['旅游警示检查','受阻','保留上次核实资料','未配置','已配置来源检查通过'],
+ ja:['渡航情報の確認','取得失敗','前回の確認済み情報を保持','未設定','設定済み情報源の確認完了'],
+ ko:['여행 경보 확인','차단됨','이전 검증 기록 유지','미설정','설정된 출처 확인 완료'],
+ th:['การตรวจคำแนะนำเดินทาง','ตรวจไม่ได้','เก็บข้อมูลที่ตรวจสอบครั้งก่อน','ยังไม่ตั้งค่า','ตรวจแหล่งที่ตั้งค่าแล้วสำเร็จ'],
+ fr:['Contrôle des conseils aux voyageurs','Bloqué','dernières données vérifiées conservées','Non configuré','Sources configurées vérifiées'],
+ es:['Verificación de avisos de viaje','Bloqueado','se conservan los últimos datos verificados','Sin configurar','Fuentes configuradas verificadas'],
+ pt:['Verificação de avisos de viagem','Bloqueado','últimos dados verificados mantidos','Não configurado','Fontes configuradas verificadas']
+};
+const outbreakLabels={en:'Outbreak data','zh-Hant':'疫情資料','zh-Hans':'疫情数据',ja:'流行データ',ko:'발병 자료',th:'ข้อมูลการระบาด',fr:'Données épidémiques',es:'Datos del brote',pt:'Dados do surto'};
+function advisoryHealth(d){
+ const rows=d.advisories.items;
+ return {blocked:rows.filter(x=>x.last_attempt_status==='blocked'&&(!x.verified_at||!x.last_attempt_at||Date.parse(x.last_attempt_at)>=Date.parse(x.verified_at))).map(x=>x.code),unconfigured:rows.filter(x=>x.validation!=='verified').map(x=>x.code)};
+}
+
 function notice(d,fallback){
  let el=document.getElementById('dataHealth');if(!el){el=document.createElement('aside');el.id='dataHealth';el.className='notice';el.setAttribute('role','status');document.querySelector('main')?.prepend(el)}
  const render=()=>{
@@ -26,15 +44,19 @@ function notice(d,fallback){
   const version=({en:'Version','zh-Hant':'資料版本','zh-Hans':'数据版本',ja:'データ版',th:'รุ่นข้อมูล',ko:'자료 버전',fr:'Version',es:'Versión',pt:'Versão'}[lang()]||'Version');
   const checked=new Intl.DateTimeFormat(lang(),{year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(d.verification.checked_at));
   el.replaceChildren();
-  const line=document.createElement('p');line.className='data-health-row';line.textContent=[fallback?t[1]:t[0],t[2]+': '+current.as_of,t[3]+': '+checked].join(' · ');line.title=line.textContent+' · '+d.verification.checked_at;el.append(line);
+  const line=document.createElement('p');line.className='data-health-row';line.textContent=[(outbreakLabels[lang()]||outbreakLabels.en)+': '+(fallback?t[1]:t[0]),t[2]+': '+current.as_of,t[3]+': '+checked].join(' · ');line.title=line.textContent+' · '+d.verification.checked_at;el.append(line);
   const sources=document.createElement('p');sources.className='data-health-row';
   d.verification.sources.forEach((s,i)=>{if(i)sources.append(document.createTextNode(' · '));const a=document.createElement('a');a.href=s.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=s.name+' ('+s.report_as_of+')';sources.append(a)});
   const revision=document.createElement('span');revision.textContent=' · '+version+': '+d.revision.slice(0,8);revision.title=version+': '+d.revision;sources.append(revision);el.append(sources);
+  const a=advisoryHealth(d),at=advisoryLabels[lang()]||advisoryLabels.en;
+  const advisory=document.createElement('p');advisory.className='data-health-row';
+  advisory.textContent=at[0]+': '+(a.blocked.length?'⚠ '+at[1]+' ('+a.blocked.join(', ')+') — '+at[2]:at[4])+(a.unconfigured.length?' · '+at[3]+': '+a.unconfigured.join(', '):'');
+  advisory.title=advisory.textContent;el.append(advisory);
   const noteText=healthFailure?'⚠ '+t[1]+' · '+healthFailure:stale?t[4]:location.pathname.includes('outbreak')?t[5]:'';
   if(noteText){const note=document.createElement('p');note.className='data-health-row';note.textContent=noteText;note.title=[noteText,location.pathname.includes('outbreak')?t[5]:''].filter(Boolean).join(' ');note.tabIndex=0;el.append(note)}
  };
  refreshNotice=render;render();window.addEventListener('aopw-language',render);
 }
 async function load(){let d,fallback=false;try{d=await read(REMOTE)}catch(e){fallback=true;d=await read(LOCAL)}notice(d,fallback);try{const r=await fetch(REMOTE.replace('published.json','maintenance.json')+'?t='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(5000)});if(r.ok){const h=await r.json();if(h.status!=='passed'&&Date.parse(h.checked_at)>=Date.parse(d.verification.checked_at)){healthFailure=h.checked_at;refreshNotice()}}}catch(e){}return d}
-global.AOPWData={load:()=>promise||(promise=load()),validate};
+global.AOPWData={advisoryHealth,load:()=>promise||(promise=load()),validate};
 })(globalThis);

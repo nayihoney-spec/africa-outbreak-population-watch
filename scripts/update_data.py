@@ -82,8 +82,22 @@ def promote(bundle,sources,now):
  out['verification']={'status':'verified','checked_at':now,'scope':'DRC only; 2026 outbreak; confirmed cases and deaths','method':'Two official publishers agree on counts; reporting dates retained separately. Shared upstream data is not independent epidemiological confirmation.','sources':sources}
  out['published_at']=now;out['revision']=hashlib.sha256(json.dumps(out,sort_keys=True).encode()).hexdigest()[:16]
  validate(out);return out
+def maintenance_status(previous, attempt, verification=None):
+ # Keep historical/cloud evidence (including pending national reports) distinct
+ # from this automated attempt. Never relabel historical evidence as current.
+ result=copy.deepcopy(previous)
+ for key in ('error','counts','sources','revision'):
+  result.pop(key,None)
+ result.update(attempt)
+ if verification is not None and attempt['status']=='passed':
+  result['last_successful_validation']=copy.deepcopy(verification)
+ return result
+
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--fixtures',type=pathlib.Path);args=parser.parse_args()
+ status_path=ROOT/'data/maintenance.json'
+ previous=json.loads(status_path.read_text()) if status_path.exists() else {}
+ verification=None
  now=dt.datetime.now(dt.timezone.utc).isoformat();status={'checked_at':now,'status':'failed','published_changed':False}
  try:
   bundle=json.loads((ROOT/'data/published.json').read_text())
@@ -91,10 +105,12 @@ def main():
   candidate=promote(bundle,sources,now)
   # All validation completed before publication; readers fetch this single atomic object.
   atomic(ROOT/'data/published.json',candidate)
+  verification=candidate['verification']
   for key,name in [('latest','latest'),('outbreaks','outbreaks'),('advisories','advisories')]:atomic(ROOT/f'data/{name}.json',candidate[key])
   status.update(status='passed',published_changed=True,revision=candidate['revision'],counts={'cases':sources[0]['cases'],'deaths':sources[0]['deaths']},sources=[x['url'] for x in sources])
  except Exception as e:status['error']=str(e)[:400]
- atomic(ROOT/'data/maintenance.json',status)
+ status=maintenance_status(previous,status,verification)
+ atomic(status_path,status)
  print(json.dumps(status))
  return 0 if status['status']=='passed' else 1
 if __name__=='__main__':sys.exit(main())

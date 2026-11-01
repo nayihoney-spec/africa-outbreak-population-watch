@@ -89,6 +89,12 @@ def extract(code):
   if record[key] and dt.date.fromisoformat(record[key])>dt.datetime.now(dt.timezone.utc).date()+dt.timedelta(days=1):raise ValueError('Future official date')
  record['source_content_sha256']=hashlib.sha256(raw.encode()).hexdigest();return record
 
+def preserve_review(attempt):
+ path=ROOT/'data/advisory-maintenance.json'
+ previous=json.loads(path.read_text()) if path.exists() else {}
+ previous.update(attempt)
+ return previous
+
 def main():
  bundle=json.loads((ROOT/'data/published.json').read_text());now=dt.datetime.now(dt.timezone.utc).isoformat();audit={'checked_at':now,'passed':[],'blocked':{},'unconfigured':[]}
  with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
@@ -103,7 +109,7 @@ def main():
     row.update(last_attempt_status='blocked',last_attempt_error=error);audit['blocked'][code]=error
    row['last_attempt_at']=now
  bundle['advisories']['updated_at']=now;bundle['published_at']=now;bundle['revision']=hashlib.sha256(json.dumps(bundle,sort_keys=True).encode()).hexdigest()[:16]
- validate(bundle);atomic(ROOT/'data/published.json',bundle);atomic(ROOT/'data/advisories.json',bundle['advisories']);atomic(ROOT/'data/advisory-maintenance.json',audit)
+ validate(bundle);atomic(ROOT/'data/published.json',bundle);atomic(ROOT/'data/advisories.json',bundle['advisories']);atomic(ROOT/'data/advisory-maintenance.json',preserve_review(audit))
  status_path=ROOT/'data/maintenance.json'
  if status_path.exists():
   status=json.loads(status_path.read_text());status['revision']=bundle['revision'];status['advisory_status']='blocked' if audit['blocked'] else 'passed';status['advisory_checked_at']=now;atomic(status_path,status)
