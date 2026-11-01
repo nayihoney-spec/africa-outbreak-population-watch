@@ -396,7 +396,7 @@
       "job_id": 124779812945,
       "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/41283426911",
       "conclusion": "failure",
-      "outcome": "20Python and JS checks passed; 10274/4992 comparison passed. US403 and AUtimeout caused failure. Fresh US adapter passes. Latest Pages deployment41283426666 succeeded."
+      "outcome": "Latest Actions tests and10274/4992 count comparison passed; US403 and AU timeout caused workflow failure. Fresh US adapter passes; AU official web content independently verified. Latest Pages41283426666 succeeded."
     },
     "live_path": {
       "inspection": {
@@ -429,7 +429,33 @@
       "audience": "public",
       "deployed_version": 10,
       "browser_interaction": "not performed",
-      "source_version_review": "Site10 loader matches pinned GitHub source exactly; separates outbreak verification and advisory fetch status. Canonical raw URL and CSP unchanged; latest24 Python and JS suites pass. Initial homepage comparison discrepancy was an added local trailing newline; corrected local copy to exact GitHub content and rechecked."
+      "source_version_review": "Site10 loader matches pinned GitHub source exactly; separates outbreak verification and advisory fetch status. Canonical raw URL and CSP unchanged; latest24 Python and JS suites pass. Initial homepage comparison discrepancy was an added local trailing newline; corrected local copy to exact GitHub content and rechecked.",
+      "post_publication_inspection": {
+        "html": {
+          "status": 200,
+          "content_type": "text/html",
+          "sha256": "aed49bed41807d5ba3e76796da3a86dc3df12bbfe720582382f597a0f45df1fa",
+          "csp_headers": {},
+          "csp_meta": [
+            "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\">"
+          ],
+          "source_exact_match": true,
+          "script_sources": [
+            "assets/i18n.js",
+            "assets/data-client.js",
+            "assets/app.js"
+          ]
+        },
+        "loader": {
+          "status": 200,
+          "content_type": "text/javascript",
+          "sha256": "a9b5fdbbfa9dd23f9a8ae2d7af73463b4e0876d196f107d2c81387b4ca6da3f9",
+          "csp_headers": {},
+          "csp_meta": [],
+          "source_exact_match": true,
+          "canonical_url_present": true
+        }
+      }
     },
     "validation": {
       "python_unit_tests": 24,
@@ -440,7 +466,40 @@
       "static_build": "passed"
     },
     "retrieval_limitations": "AU direct503 resolved by fresh official web content review. INSP169 PDF re-fetched unchanged by SHA256. ReliefWeb202 empty body, PT403, MY503 remain unverified. No unverified counts promoted.",
-    "publication_readback": "pending",
+    "publication_readback": {
+      "checked_at": "2026-11-01T12:53:53.577561+00:00",
+      "github_commit": "24937200809b8d7c3ec1efe798f25d569c027215",
+      "github_exact_semantic_match": true,
+      "all_seven_files_exact": true,
+      "legacy_copies_exact_match": true,
+      "raw_commit": {
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/24937200809b8d7c3ec1efe798f25d569c027215/data/published.json?t=1793537605.573596",
+        "checked_at": "2026-11-01T12:53:25.573608+00:00",
+        "status": 200,
+        "cors": "*",
+        "revision": "5ee3c73a576c508d",
+        "semantic_match": true
+      },
+      "raw_main": {
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1793537608.4794054",
+        "checked_at": "2026-11-01T12:53:28.479412+00:00",
+        "status": 200,
+        "cors": "*",
+        "revision": "5ee3c73a576c508d",
+        "semantic_match": true
+      },
+      "propagation_checks": [
+        {
+          "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1793537608.4794054",
+          "checked_at": "2026-11-01T12:53:28.479412+00:00",
+          "status": 200,
+          "cors": "*",
+          "revision": "5ee3c73a576c508d",
+          "semantic_match": true
+        }
+      ],
+      "result": "passed"
+    },
     "owner_notification": {
       "required": false,
       "reason": "No substantive count, source-date or alert-level change; INSP169 pending state unchanged. Site10 update verified with no publication anomaly."
