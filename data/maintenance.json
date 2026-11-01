@@ -1,18 +1,9 @@
 {
-  "checked_at": "2026-11-01T06:45:46.845642+00:00",
+  "checked_at": "2026-11-01T07:06:22.432761+00:00",
   "status": "passed",
   "published_changed": true,
-  "revision": "1619d5077ab56ba8",
-  "counts": {
-    "cases": 10274,
-    "deaths": 4992
-  },
-  "sources": [
-    "https://www.cdc.gov/ebola/situation-summary/index.html",
-    "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda"
-  ],
   "advisory_status": "blocked",
-  "advisory_checked_at": "2026-11-01T06:46:12.177890+00:00",
+  "advisory_checked_at": "2026-11-01T07:06:23.855277+00:00",
   "cloud_audit": {
     "checked_at": "2026-11-01T06:46:45.615879+00:00",
     "status": "passed-with-existing-source-limitations",
@@ -498,7 +489,7 @@
   },
   "last_successful_validation": {
     "status": "verified",
-    "checked_at": "2026-11-01T06:45:46.845642+00:00",
+    "checked_at": "2026-11-01T07:06:22.432761+00:00",
     "scope": "DRC only; 2026 outbreak; confirmed cases and deaths",
     "method": "Two official publishers agree on counts; reporting dates retained separately. Shared upstream data is not independent epidemiological confirmation.",
     "sources": [
@@ -519,8 +510,17 @@
         "cases": 10274,
         "deaths": 4992,
         "evidence": "As of 29 October 2026, the Democratic Republic of the Congo (DRC), where community transmission is ongoing, has reported a total of 10 274 confirmed cases, including 4 992 related deaths (from data up until 28 October)",
-        "sha256": "b96d72150b2bd5d455f6c98e1900ccd359af909ee1daa863f18e7c0c23d1d510"
+        "sha256": "4b5a40b322e91f8708adca5bc06fa54449e8e8218e62dad73aa9f6eeff85e7fe"
       }
     ]
-  }
+  },
+  "revision": "de9821653417d22e",
+  "counts": {
+    "cases": 10274,
+    "deaths": 4992
+  },
+  "sources": [
+    "https://www.cdc.gov/ebola/situation-summary/index.html",
+    "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda"
+  ]
 }
