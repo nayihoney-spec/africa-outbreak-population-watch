@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-11-02T12:45:05.697389+00:00",
-  "status": "passed",
-  "published_changed": true,
+  "checked_at": "2026-11-02T15:42:44.242634+00:00",
+  "status": "failed",
+  "published_changed": false,
   "advisory_status": "blocked",
-  "advisory_checked_at": "2026-11-02T12:45:42.415316+00:00",
+  "advisory_checked_at": "2026-11-02T15:42:45.445484+00:00",
   "cloud_audit": {
     "checked_at": "2026-11-02T12:46:27.360287+00:00",
     "status": "blocked-newer-national-series-promotion",
@@ -574,13 +574,6 @@
       }
     ]
   },
-  "revision": "fd36a424782c9b5b",
-  "counts": {
-    "cases": 10274,
-    "deaths": 4992
-  },
-  "sources": [
-    "https://www.cdc.gov/ebola/situation-summary/index.html",
-    "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda"
-  ]
+  "error": "CDC/ECDC counts differ; retain published bundle for review",
+  "revision": "8e72eaead5f640df"
 }
