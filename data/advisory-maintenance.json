@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-02T18:46:39.248799+00:00",
+  "checked_at": "2026-11-03T00:47:23.358216+00:00",
   "passed": [
     "US",
     "GB",
@@ -23,14 +23,14 @@
     "MY"
   ],
   "cloud_review": {
-    "checked_at": "2026-11-02T18:47:47.896516+00:00",
+    "checked_at": "2026-11-03T00:48:37.503394+00:00",
     "manual_content_verified": [
       "AU"
     ],
     "pending_reasons": {
       "FR": "Destination notice updated29October; no configured unified classification mapping.",
       "ES": "Official registry content retrieved, including DRC entry; destination classification/date not validated by a configured adapter.",
-      "PT": "HTTP403; classification not verified.",
+      "PT": "HTTP503; classification not verified.",
       "HK": "Destination advice and current OTA issued21May2026 read; grade normalization unconfigured.",
       "MO": "Dated reminders read, no unified classification verified.",
       "KR": "Regional levels read separately; no unified grade/date mapping.",
