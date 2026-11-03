@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-11-03T12:48:31.219950+00:00",
+  "checked_at": "2026-11-03T14:06:32.731315+00:00",
   "status": "failed",
   "published_changed": false,
   "advisory_status": "blocked",
-  "advisory_checked_at": "2026-11-03T12:49:19.328571+00:00",
+  "advisory_checked_at": "2026-11-03T14:06:34.712564+00:00",
   "cloud_audit": {
     "checked_at": "2026-11-03T12:50:33.414636+00:00",
     "status": "blocked-CDC-ECDC-count-mismatch",
@@ -687,5 +687,5 @@
     ]
   },
   "error": "CDC/ECDC counts differ; retain published bundle for review",
-  "revision": "bc073b3e4139f604"
+  "revision": "27c7dfe7c8cd0ba8"
 }
