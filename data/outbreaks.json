@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T18:42:38.692544+00:00",
+  "updated_at": "2026-11-06T19:21:06.996574+00:00",
   "definition": "Event-level outbreak totals for DRC from 2016 onward. Cross-year outbreaks are stored as single events; missing years are not converted to zero.",
   "events": [
     {
