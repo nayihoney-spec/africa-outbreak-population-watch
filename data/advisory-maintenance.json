@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-06T06:51:10.609577+00:00",
+  "checked_at": "2026-11-06T12:48:30.934920+00:00",
   "passed": [
     "US",
     "GB",
@@ -23,7 +23,7 @@
     "MY"
   ],
   "cloud_review": {
-    "checked_at": "2026-11-06T06:52:42.513244+00:00",
+    "checked_at": "2026-11-06T12:49:59.915908+00:00",
     "manual_content_verified": [
       "AU"
     ],
@@ -32,7 +32,7 @@
       "ES": "Official registry content retrieved, including DRC entry; destination classification/date not validated by a configured adapter.",
       "PT": "HTTP Error 403: Forbidden; classification not verified.",
       "HK": "Destination advice and current OTA issued21May2026 read; grade normalization unconfigured.",
-      "MO": "Dated reminders read, no unified classification verified.",
+      "MO": "Official registry added5November evacuation/relocation title; linked WeChat page returns Site Unavailable. Body/geographic scope/classification remain unverified.",
       "KR": "Regional grades remain unmapped. Notice published2November reiterates INSP10467/5103 as of31October and hygiene/avoid-affected-area advice; no new unified grade assigned.",
       "TH": "Homepage has no destination-specific alert text.",
       "MY": "HTTP503; no DRC classification verified."
