@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-11-07T00:51:24.256118+00:00",
+  "checked_at": "2026-11-07T05:54:27.583981+00:00",
   "passed": [
-    "US",
     "GB",
+    "AU",
     "CA",
     "CN",
-    "TW",
     "JP",
     "SG"
   ],
   "blocked": {
-    "AU": "HTTP Error 503: Service Unavailable"
+    "US": "HTTP Error 403: Forbidden",
+    "TW": "Wrong BOCA destination"
   },
   "unconfigured": [
     "FR",
