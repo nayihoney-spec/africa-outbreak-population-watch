@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-11-07T06:51:09.406644+00:00",
+  "checked_at": "2026-11-07T12:49:55.296897+00:00",
   "passed": [
     "US",
     "GB",
     "CA",
     "CN",
+    "TW",
     "JP",
     "SG"
   ],
   "blocked": {
-    "AU": "HTTP Error 503: Service Unavailable",
-    "TW": "Wrong BOCA destination"
+    "AU": "HTTP Error 503: Service Unavailable"
   },
   "unconfigured": [
     "FR",
@@ -23,7 +23,7 @@
     "MY"
   ],
   "cloud_review": {
-    "checked_at": "2026-11-07T06:52:16.594926+00:00",
+    "checked_at": "2026-11-07T12:51:38.684448+00:00",
     "manual_content_verified": [
       "AU"
     ],
