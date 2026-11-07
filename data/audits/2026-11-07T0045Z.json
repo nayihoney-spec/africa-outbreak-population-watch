@@ -1,0 +1,920 @@
+{
+  "checked_at": "2026-11-07T00:52:14.164252+00:00",
+  "status": "passed-current-consensus-historical-daily-ambiguities-pending",
+  "base_revision": "84a914b79ccf62a8",
+  "revision": "ba5f2e585a0081f9",
+  "counts": {
+    "status": "passed",
+    "substantive_change": false,
+    "source_change": false,
+    "observed_sources": [
+      {
+        "name": "CDC",
+        "url": "https://www.cdc.gov/ebola/situation-summary/index.html",
+        "report_as_of": "2026-11-04",
+        "cases": 10741,
+        "deaths": 5230,
+        "evidence": "Democratic Republic of the Congo 10,741 confirmed cases 5,230 confirmed deaths",
+        "sha256": "7453f93e0d0fe1e3a2fea3297239cdd50896d2d90e9ebb983bfd3961f1eba115"
+      },
+      {
+        "name": "ECDC",
+        "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+        "report_as_of": "2026-11-05",
+        "data_through": "2026-11-04",
+        "cases": 10741,
+        "deaths": 5230,
+        "evidence": "As of 5 November 2026, the Democratic Republic of the Congo (DRC), where community transmission is ongoing, has reported a total of 10 741 confirmed cases, including 5 230 related deaths (from data up until 4 November)",
+        "sha256": "a68e48397ba5fc9a4a49a89f53ad087fb64f3571ad622d8ed6038d95a8b6a2fb"
+      }
+    ],
+    "observed_at": "2026-11-07T00:52:14.164252+00:00",
+    "published_cases": 10741,
+    "published_deaths": 5230,
+    "published_primary_date": "2026-11-04",
+    "published_verification_checked_at": "2026-11-07T00:50:44.592419+00:00",
+    "observed_CDC_date": "2026-11-04",
+    "observed_ECDC_report_date": "2026-11-05",
+    "observed_ECDC_data_through": "2026-11-04",
+    "outcome": "Configured CDC/ECDC now agree10741/5230 through4November, corroborated byWHO and INSP174. Collector passes; current counts remain unchanged10741/5230 through4November. ECDC report5November retained separately. Historical169and172/173daily ambiguities remain; no daily series newly published."
+  },
+  "who_review": {
+    "current_table": {
+      "url": "https://www.who.int/emergencies/alert-and-response",
+      "checked_at": "2026-11-07T00:50:44.610702+00:00",
+      "status": 200,
+      "final_url": "https://www.who.int/emergencies/alert-and-response",
+      "sha256": "8ae346aae897002466e3469e6cf5fcad9930ca9d955b7216086064df61d04660",
+      "text_length": 6686,
+      "data_through": "2026-11-04",
+      "cases": 10741,
+      "deaths": 5230,
+      "scope": "DRC confirmed only; excludes539suspected and global10772/5234",
+      "evidence": "DRC row data4November2026:539suspected,10741confirmed,5230confirmed deaths",
+      "content_type": "text/html",
+      "outcome": "Matches current configured CDC/ECDC and INSP174; current confirmed totals promoted."
+    },
+    "DON": {
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622",
+      "checked_at": "2026-11-07T00:50:44.611558+00:00",
+      "status": 200,
+      "final_url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622",
+      "sha256": "d581186d4e3168717de4f2339283fc8e39bf2d3648e0e8467911a507bd04c651",
+      "text_length": 22286,
+      "published_at": "2026-10-23",
+      "data_through": "2026-10-20",
+      "cases": 9704,
+      "deaths": 4687,
+      "outcome": "Older snapshot, no same-date conflict. TUMAINI phase2/3 launch23October read.",
+      "content_type": "text/html"
+    },
+    "other_countries_note": "Kenya and Nigeria dates5/4November separate. WHO footnote now includes four DRC-initially-confirmed cases treated in Netherlands/UK/Germany; these remain in DRC total, no duplicate or imported-country addition. Global10772/5234 not substituted."
+  },
+  "drc_review": {
+    "registry": {
+      "url": "https://insp.cd/ebola-17eme-epidemie/",
+      "checked_at": "2026-11-07T00:50:44.613709+00:00",
+      "status": 200,
+      "final_url": "https://insp.cd/ebola-17eme-epidemie/",
+      "sha256": "2ae9df36a949aec13767a3e2c87a22b5adada53cab09b80634f747ea7193bf1d",
+      "content_type": "text/html",
+      "text_length": 3942
+    },
+    "article": {
+      "url": "https://insp.cd/sitrep-n171-mve-bdbv-01-11-2026/",
+      "checked_at": "2026-11-07T00:50:57.448957+00:00",
+      "status": 200,
+      "final_url": "https://insp.cd/sitrep-n171-mve-bdbv-01-11-2026/",
+      "sha256": "b5b09a89f66d3680706a8a2211f256b59bb0214e27d04387d1b20f390c4dbd38",
+      "content_type": "text/html",
+      "text_length": 3211
+    },
+    "latest_listed_report": 174,
+    "latest_listed_data_date": "2026-11-04",
+    "article_date": "2026-11-06",
+    "ministry_registry": {
+      "url": "https://sante.gouv.cd/documents/sitreps",
+      "checked_at": "2026-11-07T00:50:44.616528+00:00",
+      "status": 200,
+      "final_url": "https://sante.gouv.cd/documents/sitreps",
+      "sha256": "5ba252f2acd0a9a3a67c0f54c39a5c832228aac9446b8251d5a027172f9dcbee",
+      "content_type": "text/html",
+      "text_length": 2012
+    },
+    "ministry_latest_listed_date": "2026-11-03",
+    "outcome": "Current CDC/ECDC/WHO agree with unchanged INSP17410741/5230 through4November. Prior PDFs unchanged; historical169and172/173daily ambiguities remain recorded.",
+    "verified_report": {
+      "article_url": "https://insp.cd/sitrep-n174-mve-bdbv-04-11-2026/",
+      "checked_at": "2026-11-07T00:51:03.036803+00:00",
+      "article_status": 200,
+      "article_sha256": "01b0920ba03d667b04e9a06e215b9376dbe8b5916658a7eb0e41e07086d614f5",
+      "url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_174_04-11-2026.pdf",
+      "status": 200,
+      "pdf_checked_at": "2026-11-07T00:51:00.325489+00:00",
+      "sha256": "a5fbce42535e9ab4b5348aa61f69a3c541d041353d293d44bc1df263383e7ec3",
+      "report_number": 174,
+      "data_through": "2026-11-04",
+      "published_at": "2026-11-05",
+      "index_article_date": "2026-11-06",
+      "cases": 10741,
+      "deaths": 5230,
+      "daily_cases": 73,
+      "daily_deaths": 32,
+      "scope": "DRC confirmed cumulative cases/deaths",
+      "evidence": "Pages1-2 headline, prose and province totals agree10741/5230. Daily73/32 equals increment from17310668/5198. Reporting4November, PDFpublication5November and index6November distinct.",
+      "visual_review": "Page1 rendered and inspected",
+      "publication_status": "promoted-current-configured-consensus",
+      "outcome": "Fresh PDF byte-identical to previously reviewed174. Configured CDC/ECDC and WHO now agree10741/5230 through4November; current bundle promoted. No historical169or172/173daily reconciliation inferred."
+    },
+    "ministry_report": {
+      "url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N_169_30-10-2026.pdf",
+      "checked_at": "2026-11-07T00:50:56.384732+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "sha256": "3ac8ef4ca2c51d81c71824dab6acb04b039b0258fa49324df16a0385fff4f283",
+      "report_number": 169,
+      "data_through": "2026-10-30",
+      "published_at": "2026-10-31",
+      "cases": 10414,
+      "headline_and_table_deaths": 5058,
+      "commentary_deaths": 5372,
+      "headline_cfr": "48.6%",
+      "body_cfr": "51.6%",
+      "ituri_table_deaths": 3455,
+      "reconciliation_status": "Report says Ituri harmonization ongoing; meeting to validate will be held; adjusted consolidated data to follow.",
+      "evidence": "Pages1-2 main totals10414/5058, province deaths sum5058. Page2 commentary retains5372. INSP same-date PDF reports5372 and Ituri3769. Difference314 corresponds to disputed retrospective adjustment.",
+      "visual_review": "Page1 rendered and visually inspected",
+      "publication_status": "blocked-internal-and-cross-publisher-inconsistency",
+      "content_unchanged_since_prior_audit": true,
+      "unchanged": true,
+      "final_url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N_169_30-10-2026.pdf"
+    },
+    "prior_conflicting_report169": {
+      "checked_at": "2026-11-07T00:50:56.942248+00:00",
+      "url": "https://insp.cd/wp-content/uploads/2026/10/final_draft_SitRep_MVE_RDC_N_169_30-10-2026.pdf",
+      "pdf_url": "https://insp.cd/wp-content/uploads/2026/10/final_draft_SitRep_MVE_RDC_N_169_30-10-2026.pdf",
+      "content_type": "application/pdf",
+      "status": 200,
+      "sha256": "8e2cd47248423d71341536e26671abfeb08364094334d2cee548dcb457532fa5",
+      "report_number": 169,
+      "data_through": "2026-10-30",
+      "published_at": "2026-10-31",
+      "cases": 10414,
+      "deaths": 5372,
+      "scope": "DRC cumulative confirmed cases and deaths",
+      "evidence": "Page1 and page2 totals10414/5372; date30October, published31October. Province totals cross-checked.",
+      "visual_review": "Page1 rendered and inspected",
+      "daily_cases": 63,
+      "daily_deaths": 32,
+      "retrospective_deaths_correction": 314,
+      "correction_note": "Page1: Ituri death series corrected3436 to3750 after harmonization29October. Page2 adds19 daily deaths to3769. National cumulative increase346=314 retrospective correction+32 daily deaths; do not label346 as incident daily deaths.",
+      "content_unchanged_since_prior_audit": true,
+      "publication_status": "blocked-source-conflict",
+      "unchanged": true,
+      "final_url": "https://insp.cd/wp-content/uploads/2026/10/final_draft_SitRep_MVE_RDC_N_169_30-10-2026.pdf"
+    },
+    "ministry_report170": {
+      "url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/10/SitRep_MVE_RDC_N_170_31-10-2026.pdf",
+      "checked_at": "2026-11-07T00:50:57.132258+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "sha256": "f019995fe1c9998f0d7c54da6a297e876761979ad5d8bb3e4a88fa85d8f2de4d",
+      "report_number": 170,
+      "data_through": "2026-10-31",
+      "published_at": "2026-11-01",
+      "cases": 10467,
+      "deaths": 5103,
+      "daily_cases": 53,
+      "daily_deaths": 45,
+      "scope": "DRC confirmed only",
+      "evidence": "Pages1-2 headline, prose and province table agree10467/5103. Province totals summed. Page1 says Ituri harmonization ongoing, validation meeting to be held; no explicit correction resolving169.",
+      "visual_review": "Page1 rendered and inspected",
+      "publication_status": "pending-configured-CDC-ECDC-agreement",
+      "final_url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/10/SitRep_MVE_RDC_N_170_31-10-2026.pdf",
+      "content_unchanged_since_prior_audit": true
+    },
+    "prior_verified_report170": {
+      "checked_at": "2026-11-07T00:50:57.594391+00:00",
+      "url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_170_31-10-2026.pdf",
+      "pdf_url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_170_31-10-2026.pdf",
+      "content_type": "application/pdf",
+      "status": 200,
+      "sha256": "5a578aaf36248ea1f24df6cd35618a9e2c0ad751b194bf3f1a55f7bf275ef156",
+      "report_number": 170,
+      "data_through": "2026-10-31",
+      "published_at": "2026-11-01",
+      "cases": 10467,
+      "deaths": 5103,
+      "daily_cases": 53,
+      "daily_deaths": 45,
+      "scope": "DRC cumulative confirmed cases and deaths",
+      "evidence": "Pages1-2:10467 confirmed cases and5103 confirmed deaths; province totals independently summed; daily53 cases and45 deaths. Report dates31October/1November distinct from index article2November.",
+      "visual_review": "Page1 rendered and inspected",
+      "publication_status": "pending-configured-two-source-agreement-and-series-review",
+      "content_unchanged_since_prior_audit": true,
+      "unchanged": true,
+      "final_url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_170_31-10-2026.pdf"
+    },
+    "latest_article": {
+      "article_url": "https://insp.cd/sitrep-n174-mve-bdbv-04-11-2026/",
+      "checked_at": "2026-11-07T00:51:03.036803+00:00",
+      "article_status": 200,
+      "article_sha256": "01b0920ba03d667b04e9a06e215b9376dbe8b5916658a7eb0e41e07086d614f5",
+      "url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_174_04-11-2026.pdf",
+      "status": 200,
+      "pdf_checked_at": "2026-11-07T00:51:00.325489+00:00",
+      "sha256": "a5fbce42535e9ab4b5348aa61f69a3c541d041353d293d44bc1df263383e7ec3",
+      "report_number": 174,
+      "data_through": "2026-11-04",
+      "published_at": "2026-11-05",
+      "index_article_date": "2026-11-06",
+      "cases": 10741,
+      "deaths": 5230,
+      "daily_cases": 73,
+      "daily_deaths": 32,
+      "scope": "DRC confirmed cumulative cases/deaths",
+      "evidence": "Pages1-2 headline, prose and province totals agree10741/5230. Daily73/32 equals increment from17310668/5198. Reporting4November, PDFpublication5November and index6November distinct.",
+      "visual_review": "Page1 rendered and inspected",
+      "publication_status": "promoted-current-configured-consensus",
+      "outcome": "Fresh PDF byte-identical to previously reviewed174. Configured CDC/ECDC and WHO now agree10741/5230 through4November; current bundle promoted. No historical169or172/173daily reconciliation inferred."
+    },
+    "prior_verified_report171": {
+      "article_url": "https://insp.cd/sitrep-n171-mve-bdbv-01-11-2026/",
+      "url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N_171_01-11-2026_1.pdf",
+      "status": 200,
+      "checked_at": "2026-11-05T18:43:06.972778+00:00",
+      "sha256": "c6ded47362da0707fd88f0ed5d1beb2ef7858dc59e85adb8fe8b75b0c462898f",
+      "pdf_url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N_171_01-11-2026_1.pdf",
+      "report_number": 171,
+      "data_through": "2026-11-01",
+      "published_at": "2026-11-02",
+      "index_article_date": "2026-11-03",
+      "cases": 10532,
+      "deaths": 5126,
+      "daily_cases": 65,
+      "daily_deaths": 23,
+      "scope": "DRC cumulative confirmed cases and deaths",
+      "evidence": "Pages1-2 headline, prose and province totals agree10532/5126. Province totals summed. Daily65/23 reconciles with17010467/5103. Reporting1November, PDF publication2November, index3November kept distinct.",
+      "visual_review": "Page1 rendered and inspected",
+      "publication_status": "promoted-current-configured-consensus",
+      "content_unchanged_since_prior_audit": true,
+      "harmonization_note": "Below table2, report171 states a29October harmonization exercise involving data management, SGI and Ituri resulted in provincial data adjustments. It does not explicitly reconcile or withdraw the two169 death totals5058/5372. Consistency5126=5103+23 supports later series arithmetically, not a formal resolution of169.",
+      "final_url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N_171_01-11-2026_1.pdf",
+      "content_type": "application/pdf",
+      "publication_review_checked_at": "2026-11-05T18:44:42.846386+00:00"
+    },
+    "new_ministry_reports": {
+      "173": {
+        "url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N_173_03-11-2026.pdf",
+        "checked_at": "2026-11-07T00:51:07.781987+00:00",
+        "status": 200,
+        "sha256": "ee7155c8603837be7c821d2a1d8c0c0caa1201559d323db2e8ad476f8bc3030b",
+        "report_number": 173,
+        "data_through": "2026-11-03",
+        "published_at": "2026-11-04",
+        "cases": 10668,
+        "deaths": 5198,
+        "scope": "DRC cumulative confirmed cases/deaths",
+        "content_review": "Pages1-2 headline/prose/province table compared",
+        "visual_review": "Pages1 of172/173 rendered and inspected;171text inspected",
+        "daily_cases": 62,
+        "daily_deaths": 34,
+        "increment_from172_cases": 65,
+        "increment_from172_deaths": 35,
+        "content_unchanged_since_prior_audit": true
+      },
+      "172": {
+        "url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N_172_02-11-2026.pdf",
+        "checked_at": "2026-11-07T00:51:07.783010+00:00",
+        "status": 200,
+        "sha256": "4c7a9240f16c778031cb57b09440a03b016d29484ca79b786255175e3982222b",
+        "report_number": 172,
+        "data_through": "2026-11-02",
+        "published_at": "2026-11-03",
+        "cases": 10603,
+        "deaths": 5163,
+        "scope": "DRC cumulative confirmed cases/deaths",
+        "content_review": "Pages1-2 headline/prose/province table compared",
+        "visual_review": "Pages1 of172/173 rendered and inspected;171text inspected",
+        "daily_cases": 71,
+        "daily_deaths": 37,
+        "content_unchanged_since_prior_audit": true
+      },
+      "171": {
+        "url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N_171_01-11-2026.pdf",
+        "checked_at": "2026-11-07T00:51:07.783685+00:00",
+        "status": 200,
+        "sha256": "43e0a3279d7c5127b0ac1ad08bccf8e4c8eb9d05ff3dd86cd7a2470892b4d3b5",
+        "report_number": 171,
+        "data_through": "2026-11-01",
+        "published_at": "2026-11-02",
+        "cases": 10532,
+        "deaths": 5126,
+        "scope": "DRC cumulative confirmed cases/deaths",
+        "content_review": "Pages1-2 headline/prose/province table compared",
+        "visual_review": "Pages1 of172/173 rendered and inspected;171text inspected",
+        "content_unchanged_since_prior_audit": true
+      }
+    },
+    "daily_series_review": {
+      "status": "pending-source-reconciliation",
+      "reports": [
+        172,
+        173
+      ],
+      "cumulative_increment": {
+        "cases": 65,
+        "deaths": 35
+      },
+      "reported_daily173": {
+        "cases": 62,
+        "deaths": 34
+      },
+      "difference": {
+        "cases": 3,
+        "deaths": 1
+      },
+      "date_wording": "Ministry172/173 highlights still say29October although report/table dates are2/3November; original wording preserved.",
+      "outcome": "Current national confirmed totals10668/5198 agree across CDC/ECDC/WHO/INSP/ministry173. New ministry172 supplies preceding day10603/5163; its difference to173 does not equal reported62/34 daily. No explicit arithmetic reconciliation found. Do not substitute cumulative differences for incident daily data, silently correct official wording, or publish a new daily series. Historical169ambiguity remains."
+    },
+    "prior_verified_report173": {
+      "article_url": "https://insp.cd/sitrep-n173-mve-bdbv-03-11-2026/",
+      "checked_at": "2026-11-07T00:51:54.735116+00:00",
+      "status": 200,
+      "sha256": "7027c7bfd3d63cb8c08ae8317a9fd979c390eec63b2f1c2e0fcdc9ba4916dd02",
+      "report_number": 173,
+      "data_through_from_title": "2026-11-03",
+      "article_date": "2026-11-05",
+      "pdf_validation": "verified-content-published",
+      "url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_173_03-11-2026.pdf",
+      "pdf_checked_at": "2026-11-07T00:51:54.735116+00:00",
+      "pdf_status": 200,
+      "pdf_sha256": "7027c7bfd3d63cb8c08ae8317a9fd979c390eec63b2f1c2e0fcdc9ba4916dd02",
+      "url_discovery": "Decoded pdfemb-data JSON from official article iframe",
+      "data_through": "2026-11-03",
+      "published_at": "2026-11-04",
+      "index_article_date": "2026-11-05",
+      "cases": 10668,
+      "deaths": 5198,
+      "daily_cases": 62,
+      "daily_deaths": 34,
+      "evidence": "Pages1-2 headline, prose and province totals agree10668/5198. Reporting3November; PDFpublication4November; index5November distinct. Province case/death sums checked.",
+      "visual_review": "Page1 rendered and inspected",
+      "publication_status": "promoted-current-configured-consensus",
+      "outcome": "Fresh PDF byte-identical to reviewed report173. WHO and configured CDC/ECDC agree10668/5198 through3November; current figures promoted. Historical169ambiguity retained.",
+      "final_url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_173_03-11-2026.pdf",
+      "content_type": "application/pdf",
+      "publication_review_checked_at": "2026-11-07T00:52:14.164252+00:00"
+    },
+    "report174": {
+      "article_url": "https://insp.cd/sitrep-n174-mve-bdbv-04-11-2026/",
+      "checked_at": "2026-11-07T00:51:03.036803+00:00",
+      "article_status": 200,
+      "article_sha256": "01b0920ba03d667b04e9a06e215b9376dbe8b5916658a7eb0e41e07086d614f5",
+      "url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_174_04-11-2026.pdf",
+      "status": 200,
+      "pdf_checked_at": "2026-11-07T00:51:00.325489+00:00",
+      "sha256": "a5fbce42535e9ab4b5348aa61f69a3c541d041353d293d44bc1df263383e7ec3",
+      "report_number": 174,
+      "data_through": "2026-11-04",
+      "published_at": "2026-11-05",
+      "index_article_date": "2026-11-06",
+      "cases": 10741,
+      "deaths": 5230,
+      "daily_cases": 73,
+      "daily_deaths": 32,
+      "scope": "DRC confirmed cumulative cases/deaths",
+      "evidence": "Pages1-2 headline, prose and province totals agree10741/5230. Daily73/32 equals increment from17310668/5198. Reporting4November, PDFpublication5November and index6November distinct.",
+      "visual_review": "Page1 rendered and inspected",
+      "publication_status": "promoted-current-configured-consensus",
+      "outcome": "Fresh PDF byte-identical to previously reviewed174. Configured CDC/ECDC and WHO now agree10741/5230 through4November; current bundle promoted. No historical169or172/173daily reconciliation inferred."
+    }
+  },
+  "reliefweb_review": {
+    "url": "https://reliefweb.int/report/democratic-republic-congo/multi-country-ebola-bundibugyo-outbreak-update-ndeg23",
+    "checked_at": "2026-11-07T00:50:44.617876+00:00",
+    "status": 202,
+    "final_url": "https://reliefweb.int/report/democratic-republic-congo/multi-country-ebola-bundibugyo-outbreak-update-ndeg23",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "content_type": "text/html",
+    "text_length": 0,
+    "outcome": "HTTP202 empty body, content not verified."
+  },
+  "research_history_review": {
+    "WHO": {
+      "url": "https://www.afro.who.int/health-topics/ebola-disease/outbreak-drc-26",
+      "checked_at": "2026-11-07T00:50:44.612339+00:00",
+      "status": 200,
+      "final_url": "https://www.afro.who.int/health-topics/ebola-disease/outbreak-drc-26",
+      "sha256": "4e4d57b6f14e0955356e31c535721b30dfee950d954e2e7b404e988da4c17750",
+      "content_type": "text/html",
+      "text_length": 15065
+    },
+    "CDC": {
+      "url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+      "checked_at": "2026-11-07T00:50:44.613030+00:00",
+      "status": 200,
+      "final_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+      "sha256": "6524ff251c27425e6522c93488362f3c9ff45b668188f38fd5c50c8f10491af9",
+      "content_type": "text/html",
+      "text_length": 41376
+    },
+    "outcome": "Fresh content read: no licensed Bundibugyo vaccine/approved specific therapeutic. DON622 TUMAINI phase2/3 launch23October; older DRC snapshot9704/4687 through20October. CDC historical content byte unchanged. Population/displacement remain pending.",
+    "community_survey_feature": {
+      "url": "https://www.afro.who.int/countries/democratic-republic-of-congo/news/community-surveys-contribute-behaviour-change-response-bundibugyo-virus-disease",
+      "checked_at": "2026-11-07T00:50:46.129333+00:00",
+      "status": 200,
+      "sha256": "ec72114e00a056b3c8664aad93a75e3d844d01b1b4703c2e281f34e16620a084",
+      "text_length": 9044,
+      "published_at": "2026-11-04",
+      "scope": "Nizi health zone, Ituri; community engagement feature, not national current-count report",
+      "outcome": "Read in full. August10-18 rapid survey in four health areas informed risk communication, earlier care seeking and safe burials. July827cases/488deaths versus October119cases/51community deaths have different time periods and death definitions; not merged with national confirmed cumulative series. No change to approved vaccine/therapeutic status. Recorded for future editorial review; no canonical research field or national totals changed."
+    },
+    "trust_feature": {
+      "url": "https://www.afro.who.int/countries/democratic-republic-of-congo/news/alain-alithum-restoring-trust-communities-affected-bundibugyo-virus-disease",
+      "checked_at": "2026-11-07T00:50:46.131378+00:00",
+      "status": 200,
+      "sha256": "948badc0bf4ac03d16e4bbc835d81da40a97737b33d8432df2692cf0ae7b5ecd",
+      "text_length": 8808,
+      "published_at": "2026-11-05",
+      "scope": "Mongbwalu community engagement feature; narrative report, not a new national confirmed-count table",
+      "outcome": "Read full article. Describes trust-building, care seeking and survivor engagement during26August-29October. Approximate48percent fatality wording has no matching national as-of/definition; not substituted for confirmed-count series or site-calculated ratio. No treatment or vaccine approval change; no canonical fields changed."
+    }
+  },
+  "advisories": {
+    "automated": {
+      "checked_at": "2026-11-07T00:51:24.256118+00:00",
+      "passed": [
+        "US",
+        "GB",
+        "CA",
+        "CN",
+        "TW",
+        "JP",
+        "SG"
+      ],
+      "blocked": {
+        "AU": "HTTP Error 503: Service Unavailable"
+      },
+      "unconfigured": [
+        "FR",
+        "ES",
+        "PT",
+        "HK",
+        "MO",
+        "KR",
+        "TH",
+        "MY"
+      ]
+    },
+    "manual_content_verified": [
+      "AU"
+    ],
+    "boca": {
+      "checked_at": "2026-11-07T00:52:14.164252+00:00",
+      "print_page": {
+        "url": "https://www.boca.gov.tw/sp-trwa-print-3100-f3f00-1.html",
+        "checked_at": "2026-11-07T00:50:56.086375+00:00",
+        "status": 200,
+        "final_url": "https://www.boca.gov.tw/sp-trwa-print-3100-f3f00-1.html",
+        "sha256": "b4f8b380b806f98287fadd792af5b4b81d9aa761b3d264caa7db0954ef41050b",
+        "content_type": "text/html",
+        "text_length": 1063
+      },
+      "parsed": {
+        "level": "第四級：紅色儘速離境",
+        "normalized": "Very high",
+        "source_published_at": null,
+        "source_updated_at": "2026-08-31",
+        "source_date_kind": "published_or_updated",
+        "source_language": "zh-Hant",
+        "source_field_labels": [
+          "發布/更新日期",
+          "警示等級"
+        ],
+        "evidence": "第四級：紅色儘速離境"
+      },
+      "matches_canonical_original_page_extraction": true
+    },
+    "pending": {
+      "FR": "Destination notice updated29October; no configured unified classification mapping.",
+      "ES": "Official registry content retrieved, including DRC entry; destination classification/date not validated by a configured adapter.",
+      "PT": "HTTP Error 403: Forbidden; classification not verified.",
+      "HK": "Destination advice and current OTA issued21May2026 read; grade normalization unconfigured.",
+      "MO": "Official registry added5November evacuation/relocation title; linked WeChat page returns Site Unavailable. Body/geographic scope/classification remain unverified.",
+      "KR": "Regional grades remain unmapped. Notice published2November reiterates INSP10467/5103 as of31October and hygiene/avoid-affected-area advice; no new unified grade assigned.",
+      "TH": "Homepage has no destination-specific alert text.",
+      "MY": "HTTP503; no DRC classification verified."
+    },
+    "substantive_changes": [],
+    "outcome": "Seven configured adapters verified; AU503 bypassed only for independently read official destination content: Do not travel, updated6July2026, current7November2026. Eight unconfigured grades remain pending.",
+    "manual_evidence": {
+      "AU": {
+        "url": "https://www.smartraveller.gov.au/destinations/africa/democratic-republic-congo",
+        "level": "Do not travel",
+        "source_updated_at": "2026-07-06",
+        "still_current_at": "2026-11-07",
+        "method": "Fresh official web content review",
+        "checked_at": "2026-11-07T00:52:14.164252+00:00",
+        "retrieval_reference": "turn343view0"
+      }
+    },
+    "KR_notice_review": {
+      "url": "https://0404.go.kr/bbs/safetyNtc/1297240/detail2?ntnCd=215",
+      "checked_at": "2026-11-07T00:50:46.128455+00:00",
+      "status": 200,
+      "sha256": "141a24a7c36f4297de16cef0127acf6f2a54b8d382c8cae3cc77ec9e7410c8af",
+      "text_length": 4233,
+      "published_at": "2026-11-02",
+      "data_through": "2026-10-31",
+      "cases": 10467,
+      "deaths": 5103,
+      "attribution": "INSP",
+      "outcome": "Freshly re-read corroborating notice; advises avoid affected areas/contact with bodily fluids, seek telephone medical/embassy guidance for symptoms. Not an alert-grade change or independent count confirmation."
+    },
+    "MO_notice_review": {
+      "registry": {
+        "url": "https://ep.macaotourism.gov.mo/travelAlert/travelalert.php?country_code=CD&lang=en",
+        "checked_at": "2026-11-07T00:50:51.162464+00:00",
+        "status": 200,
+        "final_url": "https://ep.macaotourism.gov.mo/travelAlert/travelalert.php?country_code=CD&lang=en",
+        "sha256": "9bbf4b4927c1f2652ee5b2160293cccb574a4c1ed737b30c449891abbf216192",
+        "content_type": "text/html",
+        "text_length": 1338
+      },
+      "registry_notice_date": "2026-11-05",
+      "registry_title": "Chinese citizens should evacuate or relocate as soon as possible! Urgent reminder from the Chinese Embassy",
+      "linked_notice": {
+        "url": "https://mp.weixin.qq.com/s/oWnVFRNf_oNqpf6B5QeNqw",
+        "checked_at": "2026-11-07T00:50:46.132307+00:00",
+        "status": 200,
+        "sha256": "5b131ca14aa96311d3432b0062c7443d3b0e6346ec279bd376a75f0a76bcd5d7",
+        "text_length": 61,
+        "content_verified": false,
+        "outcome": "HTTP200 contains only Site Unavailable; no substantive content verified. Official Macau registry title/date only verified; linked reminder scope and issuer content remain pending."
+      },
+      "outcome": "Retain official registry link, no new alert classification or date inserted into verified grade fields; do not conflate with configured China epidemic-risk advisory."
+    }
+  },
+  "official_source_reads": {
+    "WHO_current": {
+      "url": "https://www.who.int/emergencies/alert-and-response",
+      "checked_at": "2026-11-07T00:50:44.610702+00:00",
+      "status": 200,
+      "final_url": "https://www.who.int/emergencies/alert-and-response",
+      "sha256": "8ae346aae897002466e3469e6cf5fcad9930ca9d955b7216086064df61d04660",
+      "content_type": "text/html",
+      "text_length": 6686
+    },
+    "WHO_DON": {
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622",
+      "checked_at": "2026-11-07T00:50:44.611558+00:00",
+      "status": 200,
+      "final_url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622",
+      "sha256": "d581186d4e3168717de4f2339283fc8e39bf2d3648e0e8467911a507bd04c651",
+      "content_type": "text/html",
+      "text_length": 22286
+    },
+    "WHO_research": {
+      "url": "https://www.afro.who.int/health-topics/ebola-disease/outbreak-drc-26",
+      "checked_at": "2026-11-07T00:50:44.612339+00:00",
+      "status": 200,
+      "final_url": "https://www.afro.who.int/health-topics/ebola-disease/outbreak-drc-26",
+      "sha256": "4e4d57b6f14e0955356e31c535721b30dfee950d954e2e7b404e988da4c17750",
+      "content_type": "text/html",
+      "text_length": 15065
+    },
+    "CDC_history": {
+      "url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+      "checked_at": "2026-11-07T00:50:44.613030+00:00",
+      "status": 200,
+      "final_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
+      "sha256": "6524ff251c27425e6522c93488362f3c9ff45b668188f38fd5c50c8f10491af9",
+      "content_type": "text/html",
+      "text_length": 41376
+    },
+    "INSP": {
+      "url": "https://insp.cd/ebola-17eme-epidemie/",
+      "checked_at": "2026-11-07T00:50:44.613709+00:00",
+      "status": 200,
+      "final_url": "https://insp.cd/ebola-17eme-epidemie/",
+      "sha256": "2ae9df36a949aec13767a3e2c87a22b5adada53cab09b80634f747ea7193bf1d",
+      "content_type": "text/html",
+      "text_length": 3942
+    },
+    "INSP167": {
+      "url": "https://insp.cd/sitrep-n167-mve-bdbv-28-10-2026/",
+      "checked_at": "2026-11-07T00:50:44.614719+00:00",
+      "status": 200,
+      "final_url": "https://insp.cd/sitrep-n167-mve-bdbv-28-10-2026/",
+      "sha256": "7db19240babc65c47491a199fd26b25b1b29a51fcab51499855339673c8da338",
+      "content_type": "text/html",
+      "text_length": 3233
+    },
+    "DRC_ministry": {
+      "url": "https://sante.gouv.cd/documents/sitreps",
+      "checked_at": "2026-11-07T00:50:44.616528+00:00",
+      "status": 200,
+      "final_url": "https://sante.gouv.cd/documents/sitreps",
+      "sha256": "5ba252f2acd0a9a3a67c0f54c39a5c832228aac9446b8251d5a027172f9dcbee",
+      "content_type": "text/html",
+      "text_length": 2012
+    },
+    "ReliefWeb": {
+      "url": "https://reliefweb.int/report/democratic-republic-congo/multi-country-ebola-bundibugyo-outbreak-update-ndeg23",
+      "checked_at": "2026-11-07T00:50:44.617876+00:00",
+      "status": 202,
+      "final_url": "https://reliefweb.int/report/democratic-republic-congo/multi-country-ebola-bundibugyo-outbreak-update-ndeg23",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "content_type": "text/html",
+      "text_length": 0
+    },
+    "FR": {
+      "url": "https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/republique-democratique-du-congo/",
+      "checked_at": "2026-11-07T00:50:44.620287+00:00",
+      "status": 200,
+      "final_url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/republique-democratique-du-congo/dernieres-minutes-et-alertes",
+      "sha256": "8edd0d6f84938f0a82ccf1fa0ce480618f386c5dc5c56a5ef222ab22835b9169",
+      "content_type": "text/html",
+      "text_length": 9288
+    },
+    "ES": {
+      "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Recomendaciones-de-viaje.aspx",
+      "checked_at": "2026-11-07T00:50:44.621490+00:00",
+      "status": 200,
+      "final_url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Recomendaciones-de-viaje.aspx",
+      "sha256": "bb507547749612300bc05063ac9d6d74f205b684fd0c1d1ffcd23f523a6b2fee",
+      "content_type": "text/html",
+      "text_length": 387938
+    },
+    "PT": {
+      "url": "https://portaldascomunidades.mne.gov.pt/pt/conselhos-aos-viajantes",
+      "checked_at": "2026-11-07T00:50:50.612940+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "HK": {
+      "url": "https://www.sb.gov.hk/eng/ota/note-Congo.html",
+      "checked_at": "2026-11-07T00:50:51.074127+00:00",
+      "status": 200,
+      "final_url": "https://www.sb.gov.hk/eng/ota/note-Congo.html",
+      "sha256": "fc1bcfd47aa746b42e016a49872fee12dd0ae31818f063a2167455490bd19a18",
+      "content_type": "text/html",
+      "text_length": 10705
+    },
+    "MO": {
+      "url": "https://ep.macaotourism.gov.mo/travelAlert/travelalert.php?country_code=CD&lang=en",
+      "checked_at": "2026-11-07T00:50:51.162464+00:00",
+      "status": 200,
+      "final_url": "https://ep.macaotourism.gov.mo/travelAlert/travelalert.php?country_code=CD&lang=en",
+      "sha256": "9bbf4b4927c1f2652ee5b2160293cccb574a4c1ed737b30c449891abbf216192",
+      "content_type": "text/html",
+      "text_length": 1338
+    },
+    "KR": {
+      "url": "https://0404.go.kr/ntnSafetyInfo/215/detail",
+      "checked_at": "2026-11-07T00:50:51.371638+00:00",
+      "status": 200,
+      "final_url": "https://0404.go.kr/ntnSafetyInfo/215/detail",
+      "sha256": "ec97a6e89fa74b8b28208ac0175890ea7a52d021858ee0ed94d26052970d185c",
+      "content_type": "text/html",
+      "text_length": 13263
+    },
+    "TH": {
+      "url": "https://www.mfa.go.th/",
+      "checked_at": "2026-11-07T00:50:51.508152+00:00",
+      "status": 200,
+      "final_url": "https://www.mfa.go.th/",
+      "sha256": "a47be2bc1143ad98500bcf49009cd615671d31cbe6c6c5e7e71e0029aa6a40db",
+      "content_type": "text/html",
+      "text_length": 41
+    },
+    "MY": {
+      "url": "https://www.kln.gov.my/",
+      "checked_at": "2026-11-07T00:50:52.252516+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    "CDC": {
+      "url": "https://www.cdc.gov/ebola/situation-summary/index.html",
+      "checked_at": "2026-11-07T00:50:55.000073+00:00",
+      "status": 200,
+      "final_url": "https://www.cdc.gov/ebola/situation-summary/index.html",
+      "sha256": "7453f93e0d0fe1e3a2fea3297239cdd50896d2d90e9ebb983bfd3961f1eba115",
+      "content_type": "text/html",
+      "text_length": 12368,
+      "parsed": {
+        "name": "CDC",
+        "url": "https://www.cdc.gov/ebola/situation-summary/index.html",
+        "report_as_of": "2026-11-04",
+        "cases": 10741,
+        "deaths": 5230,
+        "evidence": "Democratic Republic of the Congo 10,741 confirmed cases 5,230 confirmed deaths",
+        "sha256": "7453f93e0d0fe1e3a2fea3297239cdd50896d2d90e9ebb983bfd3961f1eba115"
+      }
+    },
+    "ECDC": {
+      "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+      "checked_at": "2026-11-07T00:50:55.714070+00:00",
+      "status": 200,
+      "final_url": "https://www.ecdc.europa.eu/en/ebola-disease-multi-country-outbreak-2026",
+      "sha256": "a68e48397ba5fc9a4a49a89f53ad087fb64f3571ad622d8ed6038d95a8b6a2fb",
+      "content_type": "text/html",
+      "text_length": 8045,
+      "parsed": {
+        "name": "ECDC",
+        "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
+        "report_as_of": "2026-11-05",
+        "data_through": "2026-11-04",
+        "cases": 10741,
+        "deaths": 5230,
+        "evidence": "As of 5 November 2026, the Democratic Republic of the Congo (DRC), where community transmission is ongoing, has reported a total of 10 741 confirmed cases, including 5 230 related deaths (from data up until 4 November)",
+        "sha256": "a68e48397ba5fc9a4a49a89f53ad087fb64f3571ad622d8ed6038d95a8b6a2fb"
+      }
+    },
+    "TW_print": {
+      "url": "https://www.boca.gov.tw/sp-trwa-print-3100-f3f00-1.html",
+      "checked_at": "2026-11-07T00:50:56.086375+00:00",
+      "status": 200,
+      "final_url": "https://www.boca.gov.tw/sp-trwa-print-3100-f3f00-1.html",
+      "sha256": "b4f8b380b806f98287fadd792af5b4b81d9aa761b3d264caa7db0954ef41050b",
+      "content_type": "text/html",
+      "text_length": 1063
+    },
+    "PDF_verified_report": {
+      "url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_174_04-11-2026.pdf",
+      "checked_at": "2026-11-07T00:50:56.107993+00:00",
+      "status": 200,
+      "final_url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_174_04-11-2026.pdf",
+      "sha256": "a5fbce42535e9ab4b5348aa61f69a3c541d041353d293d44bc1df263383e7ec3",
+      "content_type": "application/pdf"
+    },
+    "PDF_ministry_report": {
+      "url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N_169_30-10-2026.pdf",
+      "checked_at": "2026-11-07T00:50:56.384732+00:00",
+      "status": 200,
+      "final_url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N_169_30-10-2026.pdf",
+      "sha256": "3ac8ef4ca2c51d81c71824dab6acb04b039b0258fa49324df16a0385fff4f283",
+      "content_type": "application/pdf"
+    },
+    "PDF_prior_conflicting_report169": {
+      "url": "https://insp.cd/wp-content/uploads/2026/10/final_draft_SitRep_MVE_RDC_N_169_30-10-2026.pdf",
+      "checked_at": "2026-11-07T00:50:56.942248+00:00",
+      "status": 200,
+      "final_url": "https://insp.cd/wp-content/uploads/2026/10/final_draft_SitRep_MVE_RDC_N_169_30-10-2026.pdf",
+      "sha256": "8e2cd47248423d71341536e26671abfeb08364094334d2cee548dcb457532fa5",
+      "content_type": "application/pdf"
+    },
+    "PDF_ministry_report170": {
+      "url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/10/SitRep_MVE_RDC_N_170_31-10-2026.pdf",
+      "checked_at": "2026-11-07T00:50:57.132258+00:00",
+      "status": 200,
+      "final_url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/10/SitRep_MVE_RDC_N_170_31-10-2026.pdf",
+      "sha256": "f019995fe1c9998f0d7c54da6a297e876761979ad5d8bb3e4a88fa85d8f2de4d",
+      "content_type": "application/pdf"
+    },
+    "INSP170_article": {
+      "url": "https://insp.cd/sitrep-n171-mve-bdbv-01-11-2026/",
+      "checked_at": "2026-11-07T00:50:57.448957+00:00",
+      "status": 200,
+      "final_url": "https://insp.cd/sitrep-n171-mve-bdbv-01-11-2026/",
+      "sha256": "b5b09a89f66d3680706a8a2211f256b59bb0214e27d04387d1b20f390c4dbd38",
+      "content_type": "text/html",
+      "text_length": 3211
+    },
+    "PDF_prior_verified_report170": {
+      "url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_170_31-10-2026.pdf",
+      "checked_at": "2026-11-07T00:50:57.594391+00:00",
+      "status": 200,
+      "final_url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_170_31-10-2026.pdf",
+      "sha256": "5a578aaf36248ea1f24df6cd35618a9e2c0ad751b194bf3f1a55f7bf275ef156",
+      "content_type": "application/pdf"
+    },
+    "INSP173_article": {
+      "url": "https://insp.cd/sitrep-n173-mve-bdbv-03-11-2026/",
+      "status": 200,
+      "checked_at": "2026-11-07T00:52:03.404008+00:00",
+      "sha256": "ce9158216ffd8ec625441f05caaef2f7ee602abf8db40802be76ab7d9a1c7759"
+    },
+    "PDF_report173": {
+      "url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_173_03-11-2026.pdf",
+      "status": 200,
+      "checked_at": "2026-11-07T00:51:54.735116+00:00",
+      "sha256": "7027c7bfd3d63cb8c08ae8317a9fd979c390eec63b2f1c2e0fcdc9ba4916dd02"
+    },
+    "PDF_report174": {
+      "url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_174_04-11-2026.pdf",
+      "checked_at": "2026-11-07T00:51:00.325489+00:00",
+      "status": 200,
+      "final_url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_174_04-11-2026.pdf",
+      "sha256": "a5fbce42535e9ab4b5348aa61f69a3c541d041353d293d44bc1df263383e7ec3",
+      "content_type": "application/pdf"
+    },
+    "INSP174_article": {
+      "url": "https://insp.cd/sitrep-n174-mve-bdbv-04-11-2026/",
+      "checked_at": "2026-11-07T00:51:03.036803+00:00",
+      "status": 200,
+      "final_url": "https://insp.cd/sitrep-n174-mve-bdbv-04-11-2026/",
+      "sha256": "01b0920ba03d667b04e9a06e215b9376dbe8b5916658a7eb0e41e07086d614f5",
+      "content_type": "text/html",
+      "text_length": 3172
+    }
+  },
+  "actions_review": {
+    "run_id": 42278827042,
+    "job_id": 128102111386,
+    "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/42278827042",
+    "conclusion": "failure",
+    "outcome": "Job logs reviewed:24 tests passed; count comparison passed, US403 retained last verified alert; AU passed. Latest successful Pages42273679961; fresh cloud count collector passes with unchanged counts. Fresh cloud advisory adapters7passed and AU manually content-verified."
+  },
+  "live_path": {
+    "inspection": {
+      "html": {
+        "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/",
+        "checked_at": "2026-11-07T00:50:52.695664+00:00",
+        "status": 200,
+        "cors": null,
+        "sha256": "aed49bed41807d5ba3e76796da3a86dc3df12bbfe720582382f597a0f45df1fa",
+        "source_exact_match": true,
+        "canonical_url_present": false,
+        "csp_meta": [
+          "[meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\"]"
+        ]
+      },
+      "loader": {
+        "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/assets/data-client.js",
+        "checked_at": "2026-11-07T00:50:56.607404+00:00",
+        "status": 200,
+        "cors": null,
+        "sha256": "a9b5fdbbfa9dd23f9a8ae2d7af73463b4e0876d196f107d2c81387b4ca6da3f9",
+        "source_exact_match": true,
+        "canonical_url_present": true
+      }
+    },
+    "native_site_status": "active",
+    "audience": "public",
+    "deployed_version": 11,
+    "browser_interaction": "not performed"
+  },
+  "validation": {
+    "python_unit_tests": 24,
+    "javascript_syntax": "passed",
+    "data_client_behavior": "passed",
+    "advisory_filter_sort": "passed",
+    "outbreak_nine_languages_and_math": "passed",
+    "static_build": "passed",
+    "entry_requirements_nine_languages_dates_expiry_independence": "passed"
+  },
+  "retrieval_limitations": "Current configured counts synchronized and promoted. Historical169and172/173daily ambiguities retained. AUdirect503 independently content-verified; ReliefWeb202empty, PT403, MY503 unverified. Macau5November linked notice still Site Unavailable; no grade promotion.",
+  "publication_readback": {
+    "result": "pending"
+  },
+  "owner_notification": {
+    "required": false,
+    "reason": "Current counts10741/5230 through4November, official travel alert grades/dates and CDC air-order rules unchanged. Existing source ambiguities and unavailable Macau notice retained; no new publication anomaly."
+  },
+  "entry_requirement_review": {
+    "checked_at": "2026-11-07T00:52:14.164252+00:00",
+    "page": {
+      "url": "https://www.cdc.gov/port-health/legal-authorities/attestation-order.html",
+      "checked_at": "2026-11-07T00:50:46.129889+00:00",
+      "status": 200,
+      "sha256": "8884e33f5b7bb139131a9ebc4edae741991295d7d55745665597e41840f44524",
+      "text_length": 21609
+    },
+    "signed_order": {
+      "url": "https://www.cdc.gov/port-health/media/pdfs/2026/10/CDC-Ebola-Attestation-Order-Signed.pdf",
+      "checked_at": "2026-11-07T00:50:46.130385+00:00",
+      "status": 200,
+      "sha256": "39758a9a1aba1d1fa90310ed13bf1a7300ae27ba7bc1e9f9d0d4698d4b8cc97c"
+    },
+    "page_updated_at": "2026-11-03",
+    "effective_at": "2026-11-03T23:59:00-05:00",
+    "expires_on": "2026-12-18",
+    "component_checked_at_preserved": "2026-11-04",
+    "scope": "All persons including citizens/crew boarding foreign-to-US aircraft; US air transit included, DRC airport transit counts; no landing overflights excluded. Air travel only.",
+    "exceptions": "US-government-authorized Ebola medical transport underCDC guidance, or individual CDC humanitarian/important-government exemption; not automatic.",
+    "waiting_rule": "DRC departureDay0, first full day outsideDay1, earliest boardingDay22.",
+    "outcome": "Official updated page and signed28October amended order reviewed. No newer amendment/rescission/extension found in current official content; expiry not extended. Component and all nine translations preserved.",
+    "live_assets": {
+      "assets/entry-requirements.js": {
+        "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/assets/entry-requirements.js",
+        "status": 200,
+        "checked_at": "2026-11-07T00:51:10.899274+00:00",
+        "sha256": "c2b5631a282d8bdcaf2bf3fccf65de92a24e9e23d895df1abb05eeba8bf9523e",
+        "source_exact_match": true
+      },
+      "assets/advisories.js": {
+        "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/assets/advisories.js",
+        "status": 200,
+        "checked_at": "2026-11-07T00:51:15.563604+00:00",
+        "sha256": "ebc6a6c22e748caff1b9d6e6fa7f5294b237039bc08800ce3f98df99e8e194af",
+        "source_exact_match": true
+      }
+    },
+    "form_language_update": {
+      "observed_at": "2026-11-07T00:52:14.164252+00:00",
+      "page_sha256": "8884e33f5b7bb139131a9ebc4edae741991295d7d55745665597e41840f44524",
+      "signed_order_unchanged": true,
+      "evidence": "CDC now states attestation available in English, Spanish and French; previously French was forthcoming. No scope/waiting/exception/effective/expiry change observed. Existing site component makes no form-language-availability claim, so component/translations/check date preserved."
+    }
+  }
+}
