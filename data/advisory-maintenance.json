@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-11-07T21:46:09.371020+00:00",
+  "checked_at": "2026-11-08T00:50:18.489453+00:00",
   "passed": [
+    "US",
     "GB",
-    "AU",
     "CA",
     "CN",
     "TW",
@@ -10,7 +10,7 @@
     "SG"
   ],
   "blocked": {
-    "US": "HTTP Error 403: Forbidden"
+    "AU": "HTTP Error 503: Service Unavailable"
   },
   "unconfigured": [
     "FR",
@@ -23,7 +23,7 @@
     "MY"
   ],
   "cloud_review": {
-    "checked_at": "2026-11-07T18:50:48.208278+00:00",
+    "checked_at": "2026-11-08T00:50:50.179991+00:00",
     "manual_content_verified": [
       "AU"
     ],
