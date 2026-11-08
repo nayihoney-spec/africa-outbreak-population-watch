@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-11-08T12:43:55.519268+00:00",
+  "checked_at": "2026-11-08T13:18:09.706827+00:00",
   "status": "passed",
   "published_changed": true,
   "advisory_status": "blocked",
-  "advisory_checked_at": "2026-11-08T12:44:25.661057+00:00",
+  "advisory_checked_at": "2026-11-08T13:18:11.311342+00:00",
   "cloud_audit": {
     "checked_at": "2026-11-08T12:44:40.607790+00:00",
     "status": "passed-current-counts-INSP175-pending-existing-ambiguities",
@@ -1021,7 +1021,7 @@
   },
   "last_successful_validation": {
     "status": "verified",
-    "checked_at": "2026-11-08T12:43:55.519268+00:00",
+    "checked_at": "2026-11-08T13:18:09.706827+00:00",
     "scope": "DRC only; 2026 outbreak; confirmed cases and deaths",
     "method": "Two official publishers agree on counts; reporting dates retained separately. Shared upstream data is not independent epidemiological confirmation.",
     "sources": [
@@ -1042,11 +1042,11 @@
         "cases": 10741,
         "deaths": 5230,
         "evidence": "As of 5 November 2026, the Democratic Republic of the Congo (DRC), where community transmission is ongoing, has reported a total of 10 741 confirmed cases, including 5 230 related deaths (from data up until 4 November)",
-        "sha256": "a5da9decd1d13ba1424d0bf18a243605fb481278b14b75e2ebcdc274f9b8374a"
+        "sha256": "a81a34cc5f38c3f522e2e341b1d89ab7b1075c1070d9b352ceaab2eeacd29ebc"
       }
     ]
   },
-  "revision": "177c83a9f2bdae8b",
+  "revision": "939613d6ee7dc9a6",
   "counts": {
     "cases": 10741,
     "deaths": 5230
