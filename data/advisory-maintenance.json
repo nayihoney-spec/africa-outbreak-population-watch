@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-11-09T22:17:10.210053+00:00",
+  "checked_at": "2026-11-10T00:46:04.422939+00:00",
   "passed": [
+    "US",
     "GB",
-    "AU",
     "CA",
     "CN",
     "TW",
@@ -10,7 +10,7 @@
     "SG"
   ],
   "blocked": {
-    "US": "HTTP Error 403: Forbidden"
+    "AU": "HTTP Error 503: Service Unavailable"
   },
   "unconfigured": [
     "FR",
@@ -23,14 +23,14 @@
     "MY"
   ],
   "cloud_review": {
-    "checked_at": "2026-11-09T18:47:13.676514+00:00",
+    "checked_at": "2026-11-10T00:47:30.781763+00:00",
     "manual_content_verified": [
       "AU"
     ],
     "pending_reasons": {
       "FR": "Destination notice updated29October; no configured unified classification mapping.",
       "ES": "Current configured registry fetchHTTP503; no destination content/grade/date verified. Previous retrieved content not treated as fresh.",
-      "PT": "HTTP Error 403: Forbidden; no classification verified.",
+      "PT": "HTTP Error 503: Service Unavailable; no classification verified.",
       "HK": "Destination advice and current OTA issued21May2026 read; grade normalization unconfigured.",
       "MO": "Official registry added5November evacuation/relocation title; linked WeChat page returns Site Unavailable. Body/geographic scope/classification remain unverified.",
       "KR": "Regional grades remain unmapped. Notice published2November reiterates INSP10467/5103 as of31October and hygiene/avoid-affected-area advice; no new unified grade assigned.",
