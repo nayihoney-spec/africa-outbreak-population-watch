@@ -1,18 +1,18 @@
 {
-  "checked_at": "2026-11-12T06:49:27.989134+00:00",
+  "checked_at": "2026-11-12T12:45:16.532350+00:00",
   "status": "failed",
   "published_changed": false,
   "advisory_status": "blocked",
-  "advisory_checked_at": "2026-11-12T06:49:45.806885+00:00",
+  "advisory_checked_at": "2026-11-12T12:45:35.768569+00:00",
   "cloud_audit": {
-    "checked_at": "2026-11-12T06:52:06.314924+00:00",
+    "checked_at": "2026-11-12T12:47:36.509476+00:00",
     "status": "blocked-CDC-ECDC-mismatch-and-ministry176-one-case-conflict",
-    "base_revision": "db2ef06b0c7d3641",
-    "revision": "e899affa7f7f15a7",
+    "base_revision": "e899affa7f7f15a7",
+    "revision": "839552aac5458906",
     "counts": {
       "status": "blocked",
       "substantive_change": false,
-      "source_change": false,
+      "source_change": true,
       "observed_sources": [
         {
           "name": "CDC",
@@ -26,74 +26,74 @@
         {
           "name": "ECDC",
           "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
-          "report_as_of": "2026-11-05",
-          "data_through": "2026-11-04",
-          "cases": 10741,
-          "deaths": 5230,
-          "evidence": "As of 5 November 2026, the Democratic Republic of the Congo (DRC), where community transmission is ongoing, has reported a total of 10 741 confirmed cases, including 5 230 related deaths (from data up until 4 November)",
-          "sha256": "1cd35286ce76bdc4e127dfff53c84c208fc6f689d302cb1aca1988e476024fde"
+          "report_as_of": "2026-11-10",
+          "data_through": "2026-11-09",
+          "cases": 11042,
+          "deaths": 5387,
+          "evidence": "As of 10 November 2026, the Democratic Republic of the Congo (DRC), where community transmission is ongoing, has reported a total of 11 042 confirmed cases, including 5 387 related deaths (from data up until 9 November)",
+          "sha256": "a81f64d1130cc2b4cb071cd138b2e1b6f7cd3888b16c564833fddc4d3a3f62d3"
         }
       ],
-      "observed_at": "2026-11-12T06:52:06.314924+00:00",
+      "observed_at": "2026-11-12T12:47:36.509476+00:00",
       "published_cases": 10741,
       "published_deaths": 5230,
       "published_primary_date": "2026-11-04",
       "published_verification_checked_at": "2026-11-09T12:50:26.402352+00:00",
       "observed_CDC_date": "2026-11-08",
-      "observed_ECDC_report_date": "2026-11-05",
-      "observed_ECDC_data_through": "2026-11-04",
-      "outcome": "CDC 10990/5354 through8November and ECDC 10741/5230 through4November(report5November) remain unequal. Failed collector retains complete outbreak bundle, dates, evidence and last successful verification. Advisory maintenance does not renew outbreak clock."
+      "observed_ECDC_report_date": "2026-11-10",
+      "observed_ECDC_data_through": "2026-11-09",
+      "outcome": "ECDC advanced to11042/5387 through9November, report_as_of10November, webpageupdated12November10:10 distinct. CDC remains10990/5354 through8November. Configured mismatch persists; complete prior outbreak bundle, dates, evidence andlast successful clock retained. WHO now10November11114/5433, not substituted for configured ECDC."
     },
     "who_review": {
       "current_table": {
         "url": "https://www.who.int/emergencies/alert-and-response",
-        "checked_at": "2026-11-12T06:49:27.666097+00:00",
+        "checked_at": "2026-11-12T12:45:16.344366+00:00",
         "status": 200,
         "final_url": "https://www.who.int/emergencies/alert-and-response",
-        "sha256": "c9a6a4da82581c37077ce614f507adf0772622e2bddbbac627b4e5f7c6b3527b",
-        "text_length": 6688,
-        "data_through": "2026-11-09",
-        "cases": 11042,
-        "deaths": 5387,
-        "scope": "DRCconfirmedonly;503suspectedandglobal11073/5391excluded",
-        "evidence": "Dataasof9November2026DRC503suspected,11042confirmedcases,5387confirmeddeaths,2990recovered",
+        "sha256": "a5ff43ab24bee9cea719ed825a393c1e8b57fd435822366f4462d5990b5b52d4",
+        "text_length": 6689,
+        "data_through": "2026-11-10",
+        "cases": 11114,
+        "deaths": 5433,
+        "scope": "DRC confirmed only;562suspected andglobal11145/5437 excluded",
+        "evidence": "Dataasof10November2026 DRC562suspected,11114confirmed,5433confirmeddeaths,3031recovered",
         "content_type": "text/html",
-        "outcome": "DRC confirmed11042/5387 through9November unchanged;503 suspected and global11073/5391 excluded. Agrees INSP179 but does not bypass configured CDC/ECDC gate.",
-        "source_change": false
+        "outcome": "WHO DRC row advanced9to10November andagreesunchangedINSP180. ECDCnow9November,CDC8November;no mixed-date promotion orconfiguredgatebypass.",
+        "source_change": true
       },
       "DON": {
         "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622",
-        "checked_at": "2026-11-12T06:49:27.667414+00:00",
+        "checked_at": "2026-11-12T12:45:16.345462+00:00",
         "published_at": "2026-10-23",
         "data_through": "2026-10-20",
         "cases": 9704,
         "deaths": 4687,
         "status": 200,
         "final_url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622",
-        "sha256": "6d63fcc88da8fd6a488f5a6254485a2333964d25233065ab2fa21b0652fd23a6",
+        "sha256": "afb7da57446cbf2660337e3ebd07a5da607a0698e56bba8ba9c0e56a329903c0",
         "content_type": "text/html",
         "text_length": 22286,
         "outcome": "Direct official body retrieved successfully this run; text unchanged from prior verified DON622. Published23October, DRC9704/4687 through20October; research/approved-treatment wording unchanged. Historical report is not current-count substitution.",
         "retrieval_method": "direct official body read"
       },
-      "other_countries_note": "Kenya10November andNigeria5November datesseparate;global11073/5391notDRC. FourinitiallyDRCconfirmedpatientstreatedinEuropealreadyinDRCtotal,noduplicateaddition."
+      "other_countries_note": "Kenya11November9cases/2deaths/7recovered separate fromDRC. Nigeria5November separate. Global11145/5437 not substituted;four initiallyDRCconfirmedpatients treatedinEurope alreadyinDRCtotal,no doublecounting."
     },
     "drc_review": {
       "registry": {
         "url": "https://insp.cd/ebola-17eme-epidemie/",
-        "checked_at": "2026-11-12T06:49:27.669573+00:00",
+        "checked_at": "2026-11-12T12:45:16.347619+00:00",
         "status": 200,
         "final_url": "https://insp.cd/ebola-17eme-epidemie/",
-        "sha256": "d6e401152edacff44f753163196ff00341ee5061599daa327c5f415e5844b9bd",
+        "sha256": "b37d0acc12441084b6c89ea1fd87e4f199dc05fad31d1229a31c08f0d622f44e",
         "content_type": "text/html",
         "text_length": 3928
       },
       "article": {
         "url": "https://insp.cd/sitrep-n171-mve-bdbv-01-11-2026/",
-        "checked_at": "2026-11-12T06:49:41.784768+00:00",
+        "checked_at": "2026-11-12T12:45:31.530596+00:00",
         "status": 200,
         "final_url": "https://insp.cd/sitrep-n171-mve-bdbv-01-11-2026/",
-        "sha256": "8a6e634dea5f02c1f35122a3746efd05d5d878f6787678d3dc96163fd6595198",
+        "sha256": "04de59fd9b441b882ef73b415aedbc37735cbfd750ff006d692068176fe00828",
         "content_type": "text/html",
         "text_length": 3211
       },
@@ -102,7 +102,7 @@
       "article_date": "2026-11-12",
       "ministry_registry": {
         "url": "https://sante.gouv.cd/documents/sitreps",
-        "checked_at": "2026-11-12T06:49:27.671286+00:00",
+        "checked_at": "2026-11-12T12:45:16.349527+00:00",
         "status": 200,
         "final_url": "https://sante.gouv.cd/documents/sitreps",
         "sha256": "070f25c1bb74599b57565698cd764f3cd97833cd3e06d6f79aff68fd78af4ba1",
@@ -110,15 +110,15 @@
         "text_length": 2014
       },
       "ministry_latest_listed_date": "2026-11-07",
-      "outcome": "NewINSP180 verified11114/5433through10November,PDFpublished11November,index12November. Confirmedheadline/narrative/province/zone totals agree;72/46incrementfrom179agrees. CDC8November10990/5354,ECDC4November10741/5230,WHO9November11042/5387not synchronized. Completecanonicaloutbreakretained. Existingnationalhistoricalambiguities andnew180operationaldeparture arithmetic discrepancies remainpending;nooperationalmetricpromoted.",
+      "outcome": "INSP180latest11114/5433through10November unchanged;PDFs freshbyte-identical. WHO newlyagrees180;ECDCadvanced9November11042/5387whileCDCremains8November10990/5354. Configuredgate blocks currentpromotion. Existing176one-case,historicaldaily and179/180operational ambiguities retained;no correctioninferred.",
       "verified_report": {
         "article_url": "https://insp.cd/sitrep-n174-mve-bdbv-04-11-2026/",
-        "checked_at": "2026-11-12T06:49:44.813046+00:00",
+        "checked_at": "2026-11-12T12:45:36.059970+00:00",
         "article_status": 200,
-        "article_sha256": "d43da05381d607d19a235472cb8c2391c72310600569dce0546ae2227f0a08d9",
+        "article_sha256": "393233faf4be57ca0f935e366cd8eebc81a7e577c9b91cccb5cececdd0a15e86",
         "url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_174_04-11-2026.pdf",
         "status": 200,
-        "pdf_checked_at": "2026-11-12T06:49:44.813046+00:00",
+        "pdf_checked_at": "2026-11-12T12:45:36.059970+00:00",
         "sha256": "a5fbce42535e9ab4b5348aa61f69a3c541d041353d293d44bc1df263383e7ec3",
         "report_number": 174,
         "data_through": "2026-11-04",
@@ -135,12 +135,12 @@
         "outcome": "Fresh PDF byte-identical10741/5230 through4November. Retained last-good published snapshot; newer CDC differs from ECDC. No formal historical/daily reconciliation inferred.",
         "final_url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_174_04-11-2026.pdf",
         "content_type": "application/pdf",
-        "article_checked_at": "2026-11-12T06:49:44.846246+00:00",
+        "article_checked_at": "2026-11-12T12:45:36.214543+00:00",
         "content_unchanged_since_prior_audit": true
       },
       "ministry_report": {
         "url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N_169_30-10-2026.pdf",
-        "checked_at": "2026-11-12T06:49:40.876060+00:00",
+        "checked_at": "2026-11-12T12:45:30.062483+00:00",
         "status": 200,
         "content_type": "application/pdf",
         "sha256": "3ac8ef4ca2c51d81c71824dab6acb04b039b0258fa49324df16a0385fff4f283",
@@ -162,7 +162,7 @@
         "final_url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N_169_30-10-2026.pdf"
       },
       "prior_conflicting_report169": {
-        "checked_at": "2026-11-12T06:49:40.927412+00:00",
+        "checked_at": "2026-11-12T12:45:30.601577+00:00",
         "url": "https://insp.cd/wp-content/uploads/2026/10/final_draft_SitRep_MVE_RDC_N_169_30-10-2026.pdf",
         "pdf_url": "https://insp.cd/wp-content/uploads/2026/10/final_draft_SitRep_MVE_RDC_N_169_30-10-2026.pdf",
         "content_type": "application/pdf",
@@ -187,7 +187,7 @@
       },
       "ministry_report170": {
         "url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/10/SitRep_MVE_RDC_N_170_31-10-2026.pdf",
-        "checked_at": "2026-11-12T06:49:41.373087+00:00",
+        "checked_at": "2026-11-12T12:45:31.348362+00:00",
         "status": 200,
         "content_type": "application/pdf",
         "sha256": "f019995fe1c9998f0d7c54da6a297e876761979ad5d8bb3e4a88fa85d8f2de4d",
@@ -206,7 +206,7 @@
         "content_unchanged_since_prior_audit": true
       },
       "prior_verified_report170": {
-        "checked_at": "2026-11-12T06:49:42.365681+00:00",
+        "checked_at": "2026-11-12T12:45:32.637591+00:00",
         "url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_170_31-10-2026.pdf",
         "pdf_url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_170_31-10-2026.pdf",
         "content_type": "application/pdf",
@@ -229,12 +229,12 @@
       },
       "latest_article": {
         "article_url": "https://insp.cd/sitrep-n180-mve-bdbv-10-11-2026/",
-        "article_checked_at": "2026-11-12T06:51:37.409926+00:00",
-        "article_sha256": "638da8d74a613ef32bd6bb1e84e530b8d2aeee0f8252f0bd86e6e1d4475879b7",
+        "article_checked_at": "2026-11-12T12:45:37.360785+00:00",
+        "article_sha256": "f08b99a49567095134c489cf180ef22170973345453caf296c430c6fd5e17d36",
         "pdf_urls": [],
         "url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_N180_10-11-2026_corrige-1.pdf",
         "status": 200,
-        "pdf_checked_at": "2026-11-12T06:52:18.355588+00:00",
+        "pdf_checked_at": "2026-11-12T12:45:37.362698+00:00",
         "sha256": "93943776b57b3190f04d012c59c01b67d898852a252fbdc03625c9f100fb5c04",
         "report_number": 180,
         "data_through": "2026-11-10",
@@ -269,7 +269,12 @@
         ],
         "visual_review": "Page1 rendered and inspected;full PDF text read includingprovince/zone totals onpages2-4",
         "evidence": "Headline,narrative,province table andhealth-zone grandtotal agree11114confirmed/5433confirmed deaths. Incrementfrom17911042/5387equals72/46;daily72versus52prior equals38.5percentincrease rounded. Data10November,PDFpublication11November,index12November distinct.",
-        "limitations": "Operational data not promoted:page8 Ituri77departures versus74recoveries+61noncases+12deaths=147;NordKivu33departures versus36recoveries+10deaths=46. Page5 surveillance prose563validated suspects versusTable3 416+147=563 but printed investigated562; definitions/reconciliation pending. Existinghistoricalambiguities retained;vaccinationactivity not proof of licensed Bundibugyo protection."
+        "limitations": "Operational data not promoted:page8 Ituri77departures versus74recoveries+61noncases+12deaths=147;NordKivu33departures versus36recoveries+10deaths=46. Page5 surveillance prose563validated suspects versusTable3 416+147=563 but printed investigated562; definitions/reconciliation pending. Existinghistoricalambiguities retained;vaccinationactivity not proof of licensed Bundibugyo protection.",
+        "checked_at": "2026-11-12T12:45:37.362698+00:00",
+        "final_url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_N180_10-11-2026_corrige-1.pdf",
+        "content_type": "application/pdf",
+        "content_unchanged_since_prior_audit": true,
+        "outcome": "Fresh PDF byte-identical to previous complete content review:11114/5433 through10November,published11November/index12November. WHO now agrees;configuredCDC/ECDCstillmismatch. Operational departure ambiguities retainedwithoutmetricpromotion."
       },
       "prior_verified_report171": {
         "article_url": "https://insp.cd/sitrep-n171-mve-bdbv-01-11-2026/",
@@ -299,7 +304,7 @@
       "new_ministry_reports": {
         "173": {
           "url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N_173_03-11-2026.pdf",
-          "checked_at": "2026-11-12T06:49:34.249684+00:00",
+          "checked_at": "2026-11-12T12:45:23.496365+00:00",
           "status": 200,
           "sha256": "ee7155c8603837be7c821d2a1d8c0c0caa1201559d323db2e8ad476f8bc3030b",
           "report_number": 173,
@@ -318,7 +323,7 @@
         },
         "172": {
           "url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N_172_02-11-2026.pdf",
-          "checked_at": "2026-11-12T06:49:34.297185+00:00",
+          "checked_at": "2026-11-12T12:45:23.497360+00:00",
           "status": 200,
           "sha256": "4c7a9240f16c778031cb57b09440a03b016d29484ca79b786255175e3982222b",
           "report_number": 172,
@@ -335,7 +340,7 @@
         },
         "171": {
           "url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N_171_01-11-2026.pdf",
-          "checked_at": "2026-11-12T06:49:34.391698+00:00",
+          "checked_at": "2026-11-12T12:45:23.537899+00:00",
           "status": 200,
           "sha256": "43e0a3279d7c5127b0ac1ad08bccf8e4c8eb9d05ff3dd86cd7a2470892b4d3b5",
           "report_number": 171,
@@ -380,7 +385,7 @@
         "article_date": "2026-11-05",
         "pdf_validation": "verified-content-published",
         "url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_173_03-11-2026.pdf",
-        "pdf_checked_at": "2026-11-12T06:49:44.574496+00:00",
+        "pdf_checked_at": "2026-11-12T12:45:34.217988+00:00",
         "pdf_status": 200,
         "pdf_sha256": "7027c7bfd3d63cb8c08ae8317a9fd979c390eec63b2f1c2e0fcdc9ba4916dd02",
         "url_discovery": "Decoded pdfemb-data JSON from official article iframe",
@@ -398,17 +403,17 @@
         "final_url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_173_03-11-2026.pdf",
         "content_type": "application/pdf",
         "publication_review_checked_at": "2026-11-09T12:51:31.864720+00:00",
-        "article_checked_at": "2026-11-12T06:49:43.387012+00:00",
+        "article_checked_at": "2026-11-12T12:45:33.067527+00:00",
         "content_unchanged_since_prior_audit": true
       },
       "report174": {
         "article_url": "https://insp.cd/sitrep-n174-mve-bdbv-04-11-2026/",
-        "checked_at": "2026-11-12T06:49:44.813046+00:00",
+        "checked_at": "2026-11-12T12:45:36.059970+00:00",
         "article_status": 200,
-        "article_sha256": "d43da05381d607d19a235472cb8c2391c72310600569dce0546ae2227f0a08d9",
+        "article_sha256": "393233faf4be57ca0f935e366cd8eebc81a7e577c9b91cccb5cececdd0a15e86",
         "url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_174_04-11-2026.pdf",
         "status": 200,
-        "pdf_checked_at": "2026-11-12T06:49:44.813046+00:00",
+        "pdf_checked_at": "2026-11-12T12:45:36.059970+00:00",
         "sha256": "a5fbce42535e9ab4b5348aa61f69a3c541d041353d293d44bc1df263383e7ec3",
         "report_number": 174,
         "data_through": "2026-11-04",
@@ -425,16 +430,16 @@
         "outcome": "Fresh PDF byte-identical10741/5230 through4November. Retained last-good published snapshot; newer CDC differs from ECDC. No formal historical/daily reconciliation inferred.",
         "final_url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_174_04-11-2026.pdf",
         "content_type": "application/pdf",
-        "article_checked_at": "2026-11-12T06:49:44.846246+00:00"
+        "article_checked_at": "2026-11-12T12:45:36.214543+00:00"
       },
       "pending_report175": {
         "url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_175_05-11-2026.pdf",
-        "checked_at": "2026-11-12T06:49:54.447376+00:00",
+        "checked_at": "2026-11-12T12:45:55.013514+00:00",
         "status": 200,
         "sha256": "c60742d222a37f6e733d0240841883f219ab0c852d31aff04e70d6e5d69042e5",
         "article_url": "https://insp.cd/sitrep-n175-mve-bdbv-05-11-2026/",
-        "article_sha256": "5697b9034f1ff013bb7bdad95b619454c5d12940a5b1b4bd904cc9689ef5ff63",
-        "pdf_checked_at": "2026-11-12T06:50:00.630694+00:00",
+        "article_sha256": "a848cfa56fa2bac4651d22dec90c874af5d07722e0800b078c2641df6078f637",
+        "pdf_checked_at": "2026-11-12T12:46:01.624707+00:00",
         "report_number": 175,
         "data_through": "2026-11-05",
         "published_at": "2026-11-06",
@@ -450,16 +455,16 @@
         "visual_review": "Page1 rendered and inspected; page2 province table text reviewed",
         "outcome": "Fresh PDF byte-identical to prior content review. Printed confirmed totals remain audit-only pending configured CDC/ECDC agreement; historical/daily/operational ambiguities unchanged.",
         "content_unchanged_since_prior_audit": true,
-        "article_checked_at": "2026-11-12T06:49:54.447376+00:00"
+        "article_checked_at": "2026-11-12T12:45:55.013514+00:00"
       },
       "pending_report176": {
         "article_url": "https://insp.cd/sitrep-n176-mve-bdbv-06-11-2026/",
-        "checked_at": "2026-11-12T06:50:14.922579+00:00",
-        "article_sha256": "33986493c2d2fe1236d67a1e27d220c89466de156f85b7ca635d30a422741740",
+        "checked_at": "2026-11-12T12:46:29.730887+00:00",
+        "article_sha256": "2a92b010720c9b1ad2bb16c197bdce8e39991252c273749a5d20ecf337834059",
         "url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N176_06-11-2026_vf.pdf",
         "status": 200,
         "sha256": "50ffae3d64b8963994fc46d0ecaf01708ced6748e8152ff85eb0393f5fdde604",
-        "pdf_checked_at": "2026-11-12T06:50:26.751875+00:00",
+        "pdf_checked_at": "2026-11-12T12:46:34.467076+00:00",
         "report_number": 176,
         "data_through": "2026-11-06",
         "published_at": "2026-11-07",
@@ -475,16 +480,16 @@
         "evidence": "PDFpages1-2 headline,narrative and province totals agree10879/5302through6November. Daily76/35equals increment from17510803/5267. PDFpublication7November,index8November distinct.",
         "outcome": "Fresh PDF byte-identical to prior content review. Printed confirmed totals remain audit-only pending configured CDC/ECDC agreement; historical/daily/operational ambiguities unchanged.",
         "content_unchanged_since_prior_audit": true,
-        "article_checked_at": "2026-11-12T06:50:14.922579+00:00"
+        "article_checked_at": "2026-11-12T12:46:29.730887+00:00"
       },
       "pending_report177": {
         "article_url": "https://insp.cd/sitrep-n177-mve-bdbv-07-11-2026/",
-        "checked_at": "2026-11-12T06:50:41.055613+00:00",
-        "article_sha256": "6c208bab7543a29541882c650d711e632a34b4ee26b7cc1ea28bbde76d88b218",
+        "checked_at": "2026-11-12T12:46:46.789462+00:00",
+        "article_sha256": "2521072f148ff961252864f3fa24a1ff6c6427a1586f5a6f039247b74888ba30",
         "url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N177_07-11-2026_final_corrige.pdf",
         "status": 200,
         "sha256": "f56726240e052241f19de5d68b4afd6d8b33033d8b532cb39ae651a178fd5c39",
-        "pdf_checked_at": "2026-11-12T06:50:46.502987+00:00",
+        "pdf_checked_at": "2026-11-12T12:46:51.415039+00:00",
         "report_number": 177,
         "data_through": "2026-11-07",
         "published_at": "2026-11-08",
@@ -501,7 +506,7 @@
         "limitations": "Narrative daily decline42.3percent differs from(76-41)/76=46.0526percent against176. Header also retains editorial marker[À équipe:Q2]beside423samples. Do not silently repair original wording or promote incident trend/diagnostic metrics. Corrected filename alone is not evidence of resolution.",
         "outcome": "Fresh PDF byte-identical to prior content review. Printed confirmed totals remain audit-only pending configured CDC/ECDC agreement; historical/daily/operational ambiguities unchanged.",
         "content_unchanged_since_prior_audit": true,
-        "article_checked_at": "2026-11-12T06:50:41.055613+00:00"
+        "article_checked_at": "2026-11-12T12:46:46.789462+00:00"
       },
       "report177_narrative_review": {
         "status": "pending-source-clarification",
@@ -515,7 +520,7 @@
       "recent_ministry_reports": {
         "177": {
           "url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N177_07-11-2026.pdf",
-          "checked_at": "2026-11-12T06:49:59.200064+00:00",
+          "checked_at": "2026-11-12T12:45:59.890875+00:00",
           "status": 200,
           "sha256": "ea577a86ad1065476ba016f8cff0d0c8a21d742942e61ccd8fd57a4eb1c77b30",
           "report_number": 177,
@@ -534,7 +539,7 @@
         },
         "176": {
           "url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/11/SitRep_MVEBDB_175_06_11_2026.pdf",
-          "checked_at": "2026-11-12T06:49:59.200900+00:00",
+          "checked_at": "2026-11-12T12:45:59.891689+00:00",
           "status": 200,
           "sha256": "58578df3a1fbfc365885518aeedd1ca254be31b6b91fff609b0e49ce75a49cc1",
           "report_number": 176,
@@ -574,7 +579,7 @@
         },
         "175": {
           "url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N_175_05-11-2026.pdf",
-          "checked_at": "2026-11-12T06:49:59.201809+00:00",
+          "checked_at": "2026-11-12T12:45:59.892355+00:00",
           "status": 200,
           "sha256": "283b0c98e4758371562386c02b1dccd2e4d27faf8f8e5ce68a77ec4bfa9d7fc7",
           "report_number": 175,
@@ -592,7 +597,7 @@
         },
         "174": {
           "url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/11/SitRep_MVEBDB_174_04-11-2026.pdf",
-          "checked_at": "2026-11-12T06:49:59.202503+00:00",
+          "checked_at": "2026-11-12T12:45:59.893043+00:00",
           "status": 200,
           "sha256": "e20efd64bca1b3e8632b3761b5c2890b47c01c900a558c479e04e3bc5495da18",
           "report_number": 174,
@@ -656,12 +661,12 @@
         },
         "INSP": {
           "article_url": "https://insp.cd/sitrep-n176-mve-bdbv-06-11-2026/",
-          "checked_at": "2026-11-12T06:50:14.922579+00:00",
-          "article_sha256": "33986493c2d2fe1236d67a1e27d220c89466de156f85b7ca635d30a422741740",
+          "checked_at": "2026-11-12T12:46:29.730887+00:00",
+          "article_sha256": "2a92b010720c9b1ad2bb16c197bdce8e39991252c273749a5d20ecf337834059",
           "url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N176_06-11-2026_vf.pdf",
           "status": 200,
           "sha256": "50ffae3d64b8963994fc46d0ecaf01708ced6748e8152ff85eb0393f5fdde604",
-          "pdf_checked_at": "2026-11-12T06:50:26.751875+00:00",
+          "pdf_checked_at": "2026-11-12T12:46:34.467076+00:00",
           "report_number": 176,
           "data_through": "2026-11-06",
           "published_at": "2026-11-07",
@@ -677,7 +682,7 @@
           "evidence": "PDFpages1-2 headline,narrative and province totals agree10879/5302through6November. Daily76/35equals increment from17510803/5267. PDFpublication7November,index8November distinct.",
           "outcome": "Fresh PDF byte-identical to prior content review. Printed confirmed totals remain audit-only pending configured CDC/ECDC agreement; historical/daily/operational ambiguities unchanged.",
           "content_unchanged_since_prior_audit": true,
-          "article_checked_at": "2026-11-12T06:50:14.922579+00:00"
+          "article_checked_at": "2026-11-12T12:46:29.730887+00:00"
         },
         "CDC": {
           "url": "https://www.cdc.gov/ebola/situation-summary/index.html",
@@ -703,7 +708,7 @@
         "outcome": "Same-date official national publications differ by1confirmed case. No authority-side reconciliation found. Do not repair ministry figure, substitute incident difference, or promote pending values.",
         "current_CDC": {
           "url": "https://www.cdc.gov/ebola/situation-summary/index.html",
-          "checked_at": "2026-11-12T06:49:37.564381+00:00",
+          "checked_at": "2026-11-12T12:45:26.403058+00:00",
           "status": 200,
           "final_url": "https://www.cdc.gov/ebola/situation-summary/index.html",
           "sha256": "f8c379a4f01a3ad320a81614d2c0ea5ebfc3898a0416e9934ebb3d266c6c0e04",
@@ -723,12 +728,12 @@
       },
       "pending_report178": {
         "url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N178_08-11-2026_corrige.pdf",
-        "checked_at": "2026-11-12T06:51:05.003991+00:00",
+        "checked_at": "2026-11-12T12:47:04.608858+00:00",
         "status": 200,
         "sha256": "d58582670841f28df2e9b8a00453c8f9fb3706c3efbef6a4526e74481faad580",
         "article_url": "https://insp.cd/sitrep-n178-mve-bdbv-08-11-2026/",
-        "article_checked_at": "2026-11-12T06:51:05.003991+00:00",
-        "article_sha256": "5a712513748e08856a83f40c7d2db7fac1239e80add71178cd176ed1b518630b",
+        "article_checked_at": "2026-11-12T12:47:04.608858+00:00",
+        "article_sha256": "dcf4659a1ff62736f3e347d5ec8fee8de8935a43f49d2a70d2472647663eef12",
         "report_number": 178,
         "data_through": "2026-11-08",
         "published_at": "2026-11-09",
@@ -744,17 +749,17 @@
         "evidence": "Headline,narrative,province totals andzone grandtotal10990/5354agree. Daily70/31equals increment from17710920/5323. Reported70.7percent case increase agrees41to70arithmetic. PDFpublication9November distinct fromdata8November/index10November.",
         "limitations": "No formal reconciliation of prior169,172/173daily,176ministryone-case or177narrative ambiguity inferred from corrected filename or new report.",
         "outcome": "Fresh PDF byte-identical to prior content review. Printed confirmed totals remain audit-only pending configured CDC/ECDC agreement; historical/daily/operational ambiguities unchanged.",
-        "pdf_checked_at": "2026-11-12T06:51:09.687228+00:00",
+        "pdf_checked_at": "2026-11-12T12:47:10.323358+00:00",
         "content_unchanged_since_prior_audit": true
       },
       "pending_report179": {
         "url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_N179_09-11-2026_corrige.pdf",
         "status": 200,
-        "checked_at": "2026-11-12T06:51:19.405627+00:00",
+        "checked_at": "2026-11-12T12:47:19.713742+00:00",
         "sha256": "2d97dc6fe282c5ec5dfc7c309f1c302d7fd23aaff7b224e4723c0074546bb044",
         "article_url": "https://insp.cd/sitrep-n179-mve-bdbv-09-11-2026/",
-        "article_checked_at": "2026-11-12T06:51:19.405627+00:00",
-        "article_sha256": "41174dae0106c3c91d01459d6acb47b71ef1cb175340cb41c7e14b19f14bd660",
+        "article_checked_at": "2026-11-12T12:47:19.713742+00:00",
+        "article_sha256": "4176c7bb7565b1dc546b856caa2fa8209b60d8bff4087a961459d4afc5415cbc",
         "report_number": 179,
         "data_through": "2026-11-09",
         "published_at": "2026-11-10",
@@ -770,17 +775,17 @@
         "evidence": "Headline,narrative,province table andzone grandtotal agree11042/5387. Daily52/33equals increment from17810990/5354. Reported25.7percent decline matches70to52arithmetic. Data9November,PDFpublication10November,index10November retained separately.",
         "limitations": "No formal reconciliation of169,172/173daily,176ministryone-case or177narrative issues inferred. Operational section separately lists NordKivu118departures with15recoveries+100noncases+14deaths=129; wording retained pending clarification, no hospitalization metric published. Compassionate vaccination/experimental treatment activity is not regulatory approval evidence.",
         "outcome": "Fresh PDF byte-identical to prior content review. Printed confirmed totals remain audit-only pending configured CDC/ECDC agreement; historical/daily/operational ambiguities unchanged.",
-        "pdf_checked_at": "2026-11-12T06:51:24.251371+00:00",
+        "pdf_checked_at": "2026-11-12T12:47:24.627033+00:00",
         "content_unchanged_since_prior_audit": true
       },
       "pending_report180": {
         "article_url": "https://insp.cd/sitrep-n180-mve-bdbv-10-11-2026/",
-        "article_checked_at": "2026-11-12T06:51:37.409926+00:00",
-        "article_sha256": "638da8d74a613ef32bd6bb1e84e530b8d2aeee0f8252f0bd86e6e1d4475879b7",
+        "article_checked_at": "2026-11-12T12:45:37.360785+00:00",
+        "article_sha256": "f08b99a49567095134c489cf180ef22170973345453caf296c430c6fd5e17d36",
         "pdf_urls": [],
         "url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_N180_10-11-2026_corrige-1.pdf",
         "status": 200,
-        "pdf_checked_at": "2026-11-12T06:52:18.355588+00:00",
+        "pdf_checked_at": "2026-11-12T12:45:37.362698+00:00",
         "sha256": "93943776b57b3190f04d012c59c01b67d898852a252fbdc03625c9f100fb5c04",
         "report_number": 180,
         "data_through": "2026-11-10",
@@ -815,12 +820,17 @@
         ],
         "visual_review": "Page1 rendered and inspected;full PDF text read includingprovince/zone totals onpages2-4",
         "evidence": "Headline,narrative,province table andhealth-zone grandtotal agree11114confirmed/5433confirmed deaths. Incrementfrom17911042/5387equals72/46;daily72versus52prior equals38.5percentincrease rounded. Data10November,PDFpublication11November,index12November distinct.",
-        "limitations": "Operational data not promoted:page8 Ituri77departures versus74recoveries+61noncases+12deaths=147;NordKivu33departures versus36recoveries+10deaths=46. Page5 surveillance prose563validated suspects versusTable3 416+147=563 but printed investigated562; definitions/reconciliation pending. Existinghistoricalambiguities retained;vaccinationactivity not proof of licensed Bundibugyo protection."
+        "limitations": "Operational data not promoted:page8 Ituri77departures versus74recoveries+61noncases+12deaths=147;NordKivu33departures versus36recoveries+10deaths=46. Page5 surveillance prose563validated suspects versusTable3 416+147=563 but printed investigated562; definitions/reconciliation pending. Existinghistoricalambiguities retained;vaccinationactivity not proof of licensed Bundibugyo protection.",
+        "checked_at": "2026-11-12T12:45:37.362698+00:00",
+        "final_url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_N180_10-11-2026_corrige-1.pdf",
+        "content_type": "application/pdf",
+        "content_unchanged_since_prior_audit": true,
+        "outcome": "Fresh PDF byte-identical to previous complete content review:11114/5433 through10November,published11November/index12November. WHO now agrees;configuredCDC/ECDCstillmismatch. Operational departure ambiguities retainedwithoutmetricpromotion."
       }
     },
     "reliefweb_review": {
       "url": "https://reliefweb.int/report/democratic-republic-congo/multi-country-ebola-bundibugyo-outbreak-update-ndeg23",
-      "checked_at": "2026-11-12T06:49:27.671885+00:00",
+      "checked_at": "2026-11-12T12:45:16.352362+00:00",
       "status": 202,
       "final_url": "https://reliefweb.int/report/democratic-republic-congo/multi-country-ebola-bundibugyo-outbreak-update-ndeg23",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -831,71 +841,83 @@
     "research_history_review": {
       "WHO": {
         "url": "https://www.afro.who.int/health-topics/ebola-disease/outbreak-drc-26",
-        "checked_at": "2026-11-12T06:49:27.668321+00:00",
+        "checked_at": "2026-11-12T12:45:16.346447+00:00",
         "status": 200,
         "final_url": "https://www.afro.who.int/health-topics/ebola-disease/outbreak-drc-26",
-        "sha256": "94bc42e555c56b6a55daa9aade487709585f0a4cc8571b3b754f2cb8ba4b6ad8",
+        "sha256": "74d1f2313cff5c1cc872887c0bda370e97a9fc694ebaf32ebaf35358ac6b86fe",
         "content_type": "text/html",
-        "text_length": 14849
+        "text_length": 14968
       },
       "CDC": {
         "url": "https://www.cdc.gov/ebola/outbreaks/index.html",
-        "checked_at": "2026-11-12T06:49:27.668903+00:00",
+        "checked_at": "2026-11-12T12:45:16.347007+00:00",
         "status": 200,
         "final_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
         "sha256": "6524ff251c27425e6522c93488362f3c9ff45b668188f38fd5c50c8f10491af9",
         "content_type": "text/html",
         "text_length": 41376
       },
-      "outcome": "Fresh article bodies/history unchanged; navigation/latest-news changes only. Kenya11November discharge and conditional42daycountdown do not establish DRC outbreak end or travel grade. No change to approved Bundibugyo vaccine/specific-treatment status verified; no population estimates inferred.",
+      "outcome": "Previouslyreviewedarticlebodies/historyunchanged;newWHO12NovemberSouthSudanpreparednessfeature separatelyreviewed. No verifiedlicensedBundibugyovaccine/specific-treatment change. No population/displacementestimate inferred.",
       "community_survey_feature": {
         "url": "https://www.afro.who.int/countries/democratic-republic-of-congo/news/community-surveys-contribute-behaviour-change-response-bundibugyo-virus-disease",
-        "checked_at": "2026-11-12T06:49:27.699945+00:00",
+        "checked_at": "2026-11-12T12:45:16.368720+00:00",
         "status": 200,
-        "sha256": "7e17df6ccc722f02b7b20c2c9305c7fb9cb5b427256293f36554c0a90e50fc77",
-        "text_length": 8853,
+        "sha256": "5dd37618e4a725096c8a30aff800705a0375fd210625a629f34e0a3b88af6a42",
+        "text_length": 8971,
         "published_at": "2026-11-04",
         "scope": "Nizi health zone, Ituri; community engagement feature, not national current-count report",
         "outcome": "Read in full. August10-18 rapid survey in four health areas informed risk communication, earlier care seeking and safe burials. July827cases/488deaths versus October119cases/51community deaths have different time periods and death definitions; not merged with national confirmed cumulative series. No change to approved vaccine/therapeutic status. Recorded for future editorial review; no canonical research field or national totals changed."
       },
       "trust_feature": {
         "url": "https://www.afro.who.int/countries/democratic-republic-of-congo/news/alain-alithum-restoring-trust-communities-affected-bundibugyo-virus-disease",
-        "checked_at": "2026-11-12T06:49:27.700649+00:00",
+        "checked_at": "2026-11-12T12:45:16.369328+00:00",
         "status": 200,
-        "sha256": "664dcf5c810ac4f9b9fa8a64843442d224bddf78faae03e943710b7bf559b7c3",
-        "text_length": 8611,
+        "sha256": "b9ce80500148986f51337b127e0381589858f2fdf4fcd04750143cedef7bf4dc",
+        "text_length": 8730,
         "published_at": "2026-11-05",
         "scope": "Mongbwalu community engagement feature; narrative report, not a new national confirmed-count table",
         "outcome": "Read full article. Describes trust-building, care seeking and survivor engagement during26August-29October. Approximate48percent fatality wording has no matching national as-of/definition; not substituted for confirmed-count series or site-calculated ratio. No treatment or vaccine approval change; no canonical fields changed."
       },
       "cross_border_collaboration": {
         "url": "https://www.afro.who.int/countries/uganda/news/uganda-and-democratic-republic-congo-strengthen-cross-border-collaboration-health-security",
-        "checked_at": "2026-11-12T06:49:27.706677+00:00",
+        "checked_at": "2026-11-12T12:45:16.373687+00:00",
         "status": 200,
-        "sha256": "a43f68aca08d68ce190de82786d6b9d546fc6f868833aad71f351d7ef5018ffe",
+        "sha256": "9d3605ea7c6417d6f82018077c160058f1ceec3e107ef06785515230b8e3b67e",
         "published_at": "2026-11-04",
         "content_verified": true,
         "scope": "Uganda/DRC healthsecurity coordination,not national confirmed-count table",
         "outcome": "Full official article read:June2026MoU,4NovemberKampalameeting,3treatmentunits/fourthunderconstruction and3mobilelabs/over5000tests across3months. Operational measures notapprovedtherapeutics or nationalcasecounts;no population/displacement/riskclassification inferred. No canonicalresearch field changed.",
-        "text_length": 9111
+        "text_length": 9230
       },
       "Kenya_response_milestone": {
         "url": "https://www.afro.who.int/countries/kenya/news/kenyas-last-ebola-patient-goes-home-42-day-countdown-begins",
-        "checked_at": "2026-11-12T06:49:46.120580+00:00",
+        "checked_at": "2026-11-12T12:45:36.491234+00:00",
         "status": 200,
-        "sha256": "994f0a96ccff4f1c4197228b673933004d9b97f334941b8bae820a17722ca583",
+        "sha256": "3c5a5fc8bcb2a26a6807501a3e717ffe0d299c2875b6a8c9090d8fb515ae8419",
         "published_at": "2026-11-11",
         "scope": "Kenyaresponsemilestone;notDRCnationalcounttable",
         "content_verified": true,
         "outcome": "Freshofficialarticlebodyunchanged;KenyamilestonenotendofDRCoutbreakorofficialtravelgrade. Country-specifictimecutoffsretained.",
         "final_url": "https://www.afro.who.int/countries/kenya/news/kenyas-last-ebola-patient-goes-home-42-day-countdown-begins",
         "content_type": "text/html",
-        "text_length": 8280
+        "text_length": 8399
+      },
+      "SouthSudan_preparedness_feature": {
+        "url": "https://www.afro.who.int/countries/south-sudan/news/first-case-who-helps-south-sudan-prepare-ebola-bundibugyo-virus-disease",
+        "checked_at": "2026-11-12T12:46:56.764351+00:00",
+        "status": 200,
+        "sha256": "440a485e9e980c2529ee042ab65d21a7901deb1ff59f48319f1aade800842522",
+        "text_length": 10607,
+        "published_at": "2026-11-12",
+        "scope": "SouthSudan preparedness, notDRCcount or travelalertclassification",
+        "content_verified": true,
+        "evidence": "Officialfeature states SouthSudan hasnotreportedconfirmedBVDcases;readiness/screening/isolation/referralwork described.99percentimportationriskis attributed October2026modelestimate,notconfirmedcaseoralertgrade.",
+        "outcome": "Context-only officialsource;doesnotauthorizepopulation/displacementtime-series ordrugapproval claim. No numericalrisk mapping orsitecounts changed."
       }
     },
     "advisories": {
       "automated": {
-        "checked_at": "2026-11-12T06:49:45.806885+00:00",
+        "checked_at": "2026-11-12T12:45:35.768569+00:00",
         "passed": [
           "US",
           "GB",
@@ -923,10 +945,10 @@
         "AU"
       ],
       "boca": {
-        "checked_at": "2026-11-12T06:52:06.314924+00:00",
+        "checked_at": "2026-11-12T12:47:36.509476+00:00",
         "print_page": {
           "url": "https://www.boca.gov.tw/sp-trwa-print-3100-f3f00-1.html",
-          "checked_at": "2026-11-12T06:49:40.561756+00:00",
+          "checked_at": "2026-11-12T12:45:29.819002+00:00",
           "status": 200,
           "final_url": "https://www.boca.gov.tw/sp-trwa-print-3100-f3f00-1.html",
           "sha256": "b4f8b380b806f98287fadd792af5b4b81d9aa761b3d264caa7db0954ef41050b",
@@ -950,14 +972,14 @@
         "content_verified": true,
         "original_page": {
           "url": "https://www.boca.gov.tw/sp-trwa-content-3100-f3f00-1.html",
-          "checked_at": "2026-11-12T06:49:45.806885+00:00",
-          "sha256": "e06f23ce6abbfbd6b61df45dcd2f2e7d42bdd324bd30523bc4ef1e9c093ec8f8"
+          "checked_at": "2026-11-12T12:45:35.768569+00:00",
+          "sha256": "6575ba03ae2b856021f09bd2ab42964f3e7f11cd3b8d3de6e468fd672086a645"
         },
         "outcome": "Fresh original and print destination tables agree exact fourth-level text and combined31August2026 date; first-publication date not inferred."
       },
       "pending": {
         "FR": "Destination notice updated29October; no configured unified classification mapping.",
-        "ES": "Fresh officialregistry retrieved;no configured destination-specific grade/date mapping verified. Remains pending.",
+        "ES": "Fresh officialregistry contentunchanged;destination-specificgrade/datemapping unconfigured. Remains pending.",
         "PT": "HTTP Error 403: Forbidden;destination grade/date not verified.",
         "HK": "Destination advice and current OTA issued21May2026 read; grade normalization unconfigured.",
         "MO": "Official registry added5November evacuation/relocation title; linked WeChat page returns Site Unavailable. Body/geographic scope/classification remain unverified.",
@@ -974,17 +996,17 @@
           "source_updated_at": "2026-07-06",
           "still_current_at": "2026-11-12",
           "method": "Fresh official web content review",
-          "checked_at": "2026-11-12T06:52:06.314924+00:00",
-          "retrieval_reference": "turn367view0",
+          "checked_at": "2026-11-12T12:47:36.509476+00:00",
+          "retrieval_reference": "turn368view0",
           "evidence": "Overall Do not travel; Updated06July2026; Still current12November2026. Destination body reviewed fresh.",
           "direct_adapter_error": "HTTP Error 503: Service Unavailable"
         }
       },
       "KR_notice_review": {
         "url": "https://0404.go.kr/bbs/safetyNtc/1297240/detail2?ntnCd=215",
-        "checked_at": "2026-11-12T06:49:27.698933+00:00",
+        "checked_at": "2026-11-12T12:45:16.367751+00:00",
         "status": 200,
-        "sha256": "7f72e9802dafb4bf3575bdaad1a05b3c00b68190a56cd7e7ffd42ffa25b997d7",
+        "sha256": "7b1f6350ce6e6a5439caded57194fefe2f7c244454e21a8d80cb4e3c0ec50592",
         "text_length": 4233,
         "published_at": "2026-11-02",
         "data_through": "2026-10-31",
@@ -996,7 +1018,7 @@
       "MO_notice_review": {
         "registry": {
           "url": "https://ep.macaotourism.gov.mo/travelAlert/travelalert.php?country_code=CD&lang=en",
-          "checked_at": "2026-11-12T06:49:34.462749+00:00",
+          "checked_at": "2026-11-12T12:45:23.066900+00:00",
           "status": 200,
           "final_url": "https://ep.macaotourism.gov.mo/travelAlert/travelalert.php?country_code=CD&lang=en",
           "sha256": "9bbf4b4927c1f2652ee5b2160293cccb574a4c1ed737b30c449891abbf216192",
@@ -1007,7 +1029,7 @@
         "registry_title": "Chinese citizens should evacuate or relocate as soon as possible! Urgent reminder from the Chinese Embassy",
         "linked_notice": {
           "url": "https://mp.weixin.qq.com/s/oWnVFRNf_oNqpf6B5QeNqw",
-          "checked_at": "2026-11-12T06:49:27.704278+00:00",
+          "checked_at": "2026-11-12T12:45:16.373222+00:00",
           "status": 200,
           "sha256": "5b131ca14aa96311d3432b0062c7443d3b0e6346ec279bd376a75f0a76bcd5d7",
           "text_length": 61,
@@ -1018,9 +1040,9 @@
       },
       "KR_new_notice_review": {
         "url": "https://0404.go.kr/bbs/safetyNtc/1297241/detail2?ntnCd=215",
-        "checked_at": "2026-11-12T06:49:27.708679+00:00",
+        "checked_at": "2026-11-12T12:45:16.375157+00:00",
         "status": 200,
-        "sha256": "ec86edc0f751d90ce4fba545dc162ffcab4ca9a99edda7587c7a9ad25249e9d1",
+        "sha256": "5f8da8191d5273f96d34bf299da70bb1cf1f70ae3cbc5a58501c083ff78ed5d1",
         "text_length": 13882,
         "published_at": "2026-11-09",
         "data_through": "2026-11-07",
@@ -1036,34 +1058,34 @@
     "official_source_reads": {
       "WHO_current": {
         "url": "https://www.who.int/emergencies/alert-and-response",
-        "checked_at": "2026-11-12T06:49:27.666097+00:00",
+        "checked_at": "2026-11-12T12:45:16.344366+00:00",
         "status": 200,
         "final_url": "https://www.who.int/emergencies/alert-and-response",
-        "sha256": "c9a6a4da82581c37077ce614f507adf0772622e2bddbbac627b4e5f7c6b3527b",
+        "sha256": "a5ff43ab24bee9cea719ed825a393c1e8b57fd435822366f4462d5990b5b52d4",
         "content_type": "text/html",
-        "text_length": 6688
+        "text_length": 6689
       },
       "WHO_DON": {
         "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622",
-        "checked_at": "2026-11-12T06:49:27.667414+00:00",
+        "checked_at": "2026-11-12T12:45:16.345462+00:00",
         "status": 200,
         "final_url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622",
-        "sha256": "6d63fcc88da8fd6a488f5a6254485a2333964d25233065ab2fa21b0652fd23a6",
+        "sha256": "afb7da57446cbf2660337e3ebd07a5da607a0698e56bba8ba9c0e56a329903c0",
         "content_type": "text/html",
         "text_length": 22286
       },
       "WHO_research": {
         "url": "https://www.afro.who.int/health-topics/ebola-disease/outbreak-drc-26",
-        "checked_at": "2026-11-12T06:49:27.668321+00:00",
+        "checked_at": "2026-11-12T12:45:16.346447+00:00",
         "status": 200,
         "final_url": "https://www.afro.who.int/health-topics/ebola-disease/outbreak-drc-26",
-        "sha256": "94bc42e555c56b6a55daa9aade487709585f0a4cc8571b3b754f2cb8ba4b6ad8",
+        "sha256": "74d1f2313cff5c1cc872887c0bda370e97a9fc694ebaf32ebaf35358ac6b86fe",
         "content_type": "text/html",
-        "text_length": 14849
+        "text_length": 14968
       },
       "CDC_history": {
         "url": "https://www.cdc.gov/ebola/outbreaks/index.html",
-        "checked_at": "2026-11-12T06:49:27.668903+00:00",
+        "checked_at": "2026-11-12T12:45:16.347007+00:00",
         "status": 200,
         "final_url": "https://www.cdc.gov/ebola/outbreaks/index.html",
         "sha256": "6524ff251c27425e6522c93488362f3c9ff45b668188f38fd5c50c8f10491af9",
@@ -1072,25 +1094,25 @@
       },
       "INSP": {
         "url": "https://insp.cd/ebola-17eme-epidemie/",
-        "checked_at": "2026-11-12T06:49:27.669573+00:00",
+        "checked_at": "2026-11-12T12:45:16.347619+00:00",
         "status": 200,
         "final_url": "https://insp.cd/ebola-17eme-epidemie/",
-        "sha256": "d6e401152edacff44f753163196ff00341ee5061599daa327c5f415e5844b9bd",
+        "sha256": "b37d0acc12441084b6c89ea1fd87e4f199dc05fad31d1229a31c08f0d622f44e",
         "content_type": "text/html",
         "text_length": 3928
       },
       "INSP167": {
         "url": "https://insp.cd/sitrep-n167-mve-bdbv-28-10-2026/",
-        "checked_at": "2026-11-12T06:49:27.670305+00:00",
+        "checked_at": "2026-11-12T12:45:16.348600+00:00",
         "status": 200,
         "final_url": "https://insp.cd/sitrep-n167-mve-bdbv-28-10-2026/",
-        "sha256": "2ac55bee7375d652613a720bec09e83b26507fca0cf42cfaaaf6711e1a68eafc",
+        "sha256": "a85f9dfc9101bb9131064868e81dba308fefeb28f083ee5fe8867e7bc76b96b2",
         "content_type": "text/html",
         "text_length": 3233
       },
       "DRC_ministry": {
         "url": "https://sante.gouv.cd/documents/sitreps",
-        "checked_at": "2026-11-12T06:49:27.671286+00:00",
+        "checked_at": "2026-11-12T12:45:16.349527+00:00",
         "status": 200,
         "final_url": "https://sante.gouv.cd/documents/sitreps",
         "sha256": "070f25c1bb74599b57565698cd764f3cd97833cd3e06d6f79aff68fd78af4ba1",
@@ -1099,7 +1121,7 @@
       },
       "ReliefWeb": {
         "url": "https://reliefweb.int/report/democratic-republic-congo/multi-country-ebola-bundibugyo-outbreak-update-ndeg23",
-        "checked_at": "2026-11-12T06:49:27.671885+00:00",
+        "checked_at": "2026-11-12T12:45:16.352362+00:00",
         "status": 202,
         "final_url": "https://reliefweb.int/report/democratic-republic-congo/multi-country-ebola-bundibugyo-outbreak-update-ndeg23",
         "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -1108,7 +1130,7 @@
       },
       "FR": {
         "url": "https://www.diplomatie.gouv.fr/fr/conseils-aux-voyageurs/conseils-par-pays-destination/republique-democratique-du-congo/",
-        "checked_at": "2026-11-12T06:49:27.672917+00:00",
+        "checked_at": "2026-11-12T12:45:16.354484+00:00",
         "status": 200,
         "final_url": "https://www.diplomatie.gouv.fr/fr/information-par-pays/republique-democratique-du-congo/dernieres-minutes-et-alertes",
         "sha256": "1094c29d4b2858fed5f38ad516e294de2ab67f2325e7a41b092f2e26458ac414",
@@ -1117,30 +1139,30 @@
       },
       "ES": {
         "url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Recomendaciones-de-viaje.aspx",
-        "checked_at": "2026-11-12T06:49:27.673657+00:00",
+        "checked_at": "2026-11-12T12:45:16.357301+00:00",
         "status": 200,
         "final_url": "https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/Recomendaciones-de-viaje.aspx",
-        "sha256": "3e84ae6f0db68258c3a421b4f16d74d59f3c671cba6eb050b89d41166ab97108",
+        "sha256": "ed4fbcb17b304c745647edd89086278dce19eb88449dbd53966e549092c82b0e",
         "content_type": "text/html",
         "text_length": 387938
       },
       "PT": {
         "url": "https://portaldascomunidades.mne.gov.pt/pt/conselhos-aos-viajantes",
-        "checked_at": "2026-11-12T06:49:34.165810+00:00",
+        "checked_at": "2026-11-12T12:45:22.244737+00:00",
         "error": "HTTP Error 403: Forbidden"
       },
       "HK": {
         "url": "https://www.sb.gov.hk/eng/ota/note-Congo.html",
-        "checked_at": "2026-11-12T06:49:34.271472+00:00",
+        "checked_at": "2026-11-12T12:45:22.719644+00:00",
         "status": 200,
         "final_url": "https://www.sb.gov.hk/eng/ota/note-Congo.html",
-        "sha256": "b98c3159943fe0d5a65c9be1b3a4260744d1e470d7a990d4406dc24c472edbaf",
+        "sha256": "fc772329e7605368b9abef74c6d22c7d8ec7fc01c634c1ce3a39e3b1cbaaa4e5",
         "content_type": "text/html",
         "text_length": 10705
       },
       "MO": {
         "url": "https://ep.macaotourism.gov.mo/travelAlert/travelalert.php?country_code=CD&lang=en",
-        "checked_at": "2026-11-12T06:49:34.462749+00:00",
+        "checked_at": "2026-11-12T12:45:23.066900+00:00",
         "status": 200,
         "final_url": "https://ep.macaotourism.gov.mo/travelAlert/travelalert.php?country_code=CD&lang=en",
         "sha256": "9bbf4b4927c1f2652ee5b2160293cccb574a4c1ed737b30c449891abbf216192",
@@ -1149,16 +1171,16 @@
       },
       "KR": {
         "url": "https://0404.go.kr/ntnSafetyInfo/215/detail",
-        "checked_at": "2026-11-12T06:49:34.648716+00:00",
+        "checked_at": "2026-11-12T12:45:23.794866+00:00",
         "status": 200,
         "final_url": "https://0404.go.kr/ntnSafetyInfo/215/detail",
-        "sha256": "ee63d295ae95ece16d55aa0326c17b2711d389ab5c68fd710a5cba8474fd7be9",
+        "sha256": "44c40192b883d0573fbb0893e58eb39148198e57ee7acd3403e0f9f70b962fd6",
         "content_type": "text/html",
-        "text_length": 13248
+        "text_length": 17111
       },
       "TH": {
         "url": "https://www.mfa.go.th/",
-        "checked_at": "2026-11-12T06:49:34.723087+00:00",
+        "checked_at": "2026-11-12T12:45:24.064023+00:00",
         "status": 200,
         "final_url": "https://www.mfa.go.th/",
         "sha256": "431d6286040ec5b41054dc3003d015f38e5801127c559af25a9a456a6e99cc22",
@@ -1167,12 +1189,12 @@
       },
       "MY": {
         "url": "https://www.kln.gov.my/",
-        "checked_at": "2026-11-12T06:49:37.506520+00:00",
+        "checked_at": "2026-11-12T12:45:25.039741+00:00",
         "error": "HTTP Error 503: Service Unavailable"
       },
       "CDC": {
         "url": "https://www.cdc.gov/ebola/situation-summary/index.html",
-        "checked_at": "2026-11-12T06:49:37.564381+00:00",
+        "checked_at": "2026-11-12T12:45:26.403058+00:00",
         "status": 200,
         "final_url": "https://www.cdc.gov/ebola/situation-summary/index.html",
         "sha256": "f8c379a4f01a3ad320a81614d2c0ea5ebfc3898a0416e9934ebb3d266c6c0e04",
@@ -1190,26 +1212,26 @@
       },
       "ECDC": {
         "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
-        "checked_at": "2026-11-12T06:49:39.768047+00:00",
+        "checked_at": "2026-11-12T12:45:29.783944+00:00",
         "status": 200,
         "final_url": "https://www.ecdc.europa.eu/en/ebola-disease-multi-country-outbreak-2026",
-        "sha256": "1cd35286ce76bdc4e127dfff53c84c208fc6f689d302cb1aca1988e476024fde",
+        "sha256": "a81f64d1130cc2b4cb071cd138b2e1b6f7cd3888b16c564833fddc4d3a3f62d3",
         "content_type": "text/html",
-        "text_length": 8021,
+        "text_length": 7790,
         "parsed": {
           "name": "ECDC",
           "url": "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda",
-          "report_as_of": "2026-11-05",
-          "data_through": "2026-11-04",
-          "cases": 10741,
-          "deaths": 5230,
-          "evidence": "As of 5 November 2026, the Democratic Republic of the Congo (DRC), where community transmission is ongoing, has reported a total of 10 741 confirmed cases, including 5 230 related deaths (from data up until 4 November)",
-          "sha256": "1cd35286ce76bdc4e127dfff53c84c208fc6f689d302cb1aca1988e476024fde"
+          "report_as_of": "2026-11-10",
+          "data_through": "2026-11-09",
+          "cases": 11042,
+          "deaths": 5387,
+          "evidence": "As of 10 November 2026, the Democratic Republic of the Congo (DRC), where community transmission is ongoing, has reported a total of 11 042 confirmed cases, including 5 387 related deaths (from data up until 9 November)",
+          "sha256": "a81f64d1130cc2b4cb071cd138b2e1b6f7cd3888b16c564833fddc4d3a3f62d3"
         }
       },
       "TW_print": {
         "url": "https://www.boca.gov.tw/sp-trwa-print-3100-f3f00-1.html",
-        "checked_at": "2026-11-12T06:49:40.561756+00:00",
+        "checked_at": "2026-11-12T12:45:29.819002+00:00",
         "status": 200,
         "final_url": "https://www.boca.gov.tw/sp-trwa-print-3100-f3f00-1.html",
         "sha256": "b4f8b380b806f98287fadd792af5b4b81d9aa761b3d264caa7db0954ef41050b",
@@ -1218,7 +1240,7 @@
       },
       "PDF_verified_report": {
         "url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_174_04-11-2026.pdf",
-        "checked_at": "2026-11-12T06:49:40.810157+00:00",
+        "checked_at": "2026-11-12T12:45:29.965200+00:00",
         "status": 200,
         "final_url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_174_04-11-2026.pdf",
         "sha256": "a5fbce42535e9ab4b5348aa61f69a3c541d041353d293d44bc1df263383e7ec3",
@@ -1226,7 +1248,7 @@
       },
       "PDF_ministry_report": {
         "url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N_169_30-10-2026.pdf",
-        "checked_at": "2026-11-12T06:49:40.876060+00:00",
+        "checked_at": "2026-11-12T12:45:30.062483+00:00",
         "status": 200,
         "final_url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/11/SitRep_MVE_RDC_N_169_30-10-2026.pdf",
         "sha256": "3ac8ef4ca2c51d81c71824dab6acb04b039b0258fa49324df16a0385fff4f283",
@@ -1234,7 +1256,7 @@
       },
       "PDF_prior_conflicting_report169": {
         "url": "https://insp.cd/wp-content/uploads/2026/10/final_draft_SitRep_MVE_RDC_N_169_30-10-2026.pdf",
-        "checked_at": "2026-11-12T06:49:40.927412+00:00",
+        "checked_at": "2026-11-12T12:45:30.601577+00:00",
         "status": 200,
         "final_url": "https://insp.cd/wp-content/uploads/2026/10/final_draft_SitRep_MVE_RDC_N_169_30-10-2026.pdf",
         "sha256": "8e2cd47248423d71341536e26671abfeb08364094334d2cee548dcb457532fa5",
@@ -1242,7 +1264,7 @@
       },
       "PDF_ministry_report170": {
         "url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/10/SitRep_MVE_RDC_N_170_31-10-2026.pdf",
-        "checked_at": "2026-11-12T06:49:41.373087+00:00",
+        "checked_at": "2026-11-12T12:45:31.348362+00:00",
         "status": 200,
         "final_url": "https://administration.sante.gouv.cd/wp-content/uploads/2026/10/SitRep_MVE_RDC_N_170_31-10-2026.pdf",
         "sha256": "f019995fe1c9998f0d7c54da6a297e876761979ad5d8bb3e4a88fa85d8f2de4d",
@@ -1250,16 +1272,16 @@
       },
       "INSP170_article": {
         "url": "https://insp.cd/sitrep-n171-mve-bdbv-01-11-2026/",
-        "checked_at": "2026-11-12T06:49:41.784768+00:00",
+        "checked_at": "2026-11-12T12:45:31.530596+00:00",
         "status": 200,
         "final_url": "https://insp.cd/sitrep-n171-mve-bdbv-01-11-2026/",
-        "sha256": "8a6e634dea5f02c1f35122a3746efd05d5d878f6787678d3dc96163fd6595198",
+        "sha256": "04de59fd9b441b882ef73b415aedbc37735cbfd750ff006d692068176fe00828",
         "content_type": "text/html",
         "text_length": 3211
       },
       "PDF_prior_verified_report170": {
         "url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_170_31-10-2026.pdf",
-        "checked_at": "2026-11-12T06:49:42.365681+00:00",
+        "checked_at": "2026-11-12T12:45:32.637591+00:00",
         "status": 200,
         "final_url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_170_31-10-2026.pdf",
         "sha256": "5a578aaf36248ea1f24df6cd35618a9e2c0ad751b194bf3f1a55f7bf275ef156",
@@ -1267,16 +1289,16 @@
       },
       "INSP173_article": {
         "url": "https://insp.cd/sitrep-n173-mve-bdbv-03-11-2026/",
-        "checked_at": "2026-11-12T06:49:43.387012+00:00",
+        "checked_at": "2026-11-12T12:45:33.067527+00:00",
         "status": 200,
         "final_url": "https://insp.cd/sitrep-n173-mve-bdbv-03-11-2026/",
-        "sha256": "4944bf7d5d92def499c02d0a070fbac326701268846075ff900e236c7b014a68",
+        "sha256": "c02c87a0a82ed35ca985ed7e895e2f97f7a1688ed9a64ecd0a02529f277464fa",
         "content_type": "text/html",
         "text_length": 3211
       },
       "PDF_report173": {
         "url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_173_03-11-2026.pdf",
-        "checked_at": "2026-11-12T06:49:44.574496+00:00",
+        "checked_at": "2026-11-12T12:45:34.217988+00:00",
         "status": 200,
         "final_url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_173_03-11-2026.pdf",
         "sha256": "7027c7bfd3d63cb8c08ae8317a9fd979c390eec63b2f1c2e0fcdc9ba4916dd02",
@@ -1284,7 +1306,7 @@
       },
       "PDF_report174": {
         "url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_174_04-11-2026.pdf",
-        "checked_at": "2026-11-12T06:49:44.813046+00:00",
+        "checked_at": "2026-11-12T12:45:36.059970+00:00",
         "status": 200,
         "final_url": "https://insp.cd/wp-content/uploads/2026/11/final_draft_SitRep_MVE_RDC_N_174_04-11-2026.pdf",
         "sha256": "a5fbce42535e9ab4b5348aa61f69a3c541d041353d293d44bc1df263383e7ec3",
@@ -1292,33 +1314,38 @@
       },
       "INSP174_article": {
         "url": "https://insp.cd/sitrep-n174-mve-bdbv-04-11-2026/",
-        "checked_at": "2026-11-12T06:49:44.846246+00:00",
+        "checked_at": "2026-11-12T12:45:36.214543+00:00",
         "status": 200,
         "final_url": "https://insp.cd/sitrep-n174-mve-bdbv-04-11-2026/",
-        "sha256": "d43da05381d607d19a235472cb8c2391c72310600569dce0546ae2227f0a08d9",
+        "sha256": "393233faf4be57ca0f935e366cd8eebc81a7e577c9b91cccb5cececdd0a15e86",
         "content_type": "text/html",
         "text_length": 3211
       },
       "WHO_Kenya": {
         "url": "https://www.afro.who.int/countries/kenya/news/kenyas-last-ebola-patient-goes-home-42-day-countdown-begins",
-        "checked_at": "2026-11-12T06:49:46.120580+00:00",
+        "checked_at": "2026-11-12T12:45:36.491234+00:00",
         "status": 200,
         "final_url": "https://www.afro.who.int/countries/kenya/news/kenyas-last-ebola-patient-goes-home-42-day-countdown-begins",
-        "sha256": "994f0a96ccff4f1c4197228b673933004d9b97f334941b8bae820a17722ca583",
+        "sha256": "3c5a5fc8bcb2a26a6807501a3e717ffe0d299c2875b6a8c9090d8fb515ae8419",
         "content_type": "text/html",
-        "text_length": 8280
+        "text_length": 8399
       },
       "INSP180_article": {
         "url": "https://insp.cd/sitrep-n180-mve-bdbv-10-11-2026/",
-        "checked_at": "2026-11-12T06:51:37.409926+00:00",
+        "checked_at": "2026-11-12T12:45:37.360785+00:00",
         "status": 200,
-        "sha256": "638da8d74a613ef32bd6bb1e84e530b8d2aeee0f8252f0bd86e6e1d4475879b7"
+        "final_url": "https://insp.cd/sitrep-n180-mve-bdbv-10-11-2026/",
+        "sha256": "f08b99a49567095134c489cf180ef22170973345453caf296c430c6fd5e17d36",
+        "content_type": "text/html",
+        "text_length": 3156
       },
       "PDF_report180": {
         "url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_N180_10-11-2026_corrige-1.pdf",
-        "checked_at": "2026-11-12T06:52:18.355588+00:00",
+        "checked_at": "2026-11-12T12:45:37.362698+00:00",
         "status": 200,
-        "sha256": "93943776b57b3190f04d012c59c01b67d898852a252fbdc03625c9f100fb5c04"
+        "final_url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_N180_10-11-2026_corrige-1.pdf",
+        "sha256": "93943776b57b3190f04d012c59c01b67d898852a252fbdc03625c9f100fb5c04",
+        "content_type": "application/pdf"
       }
     },
     "actions_review": {
@@ -1326,7 +1353,7 @@
       "job_id": 130887178707,
       "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/43128692899",
       "conclusion": "failure",
-      "latest_pages_run_id": 43130250743,
+      "latest_pages_run_id": 43171441930,
       "latest_pages_conclusion": "success",
       "outcome": "Latest job logs:24tests passed; configured count mismatch retains last-good. Seven advisory adapters includingAU passed,US403blocked. Current cloud rerun:count mismatch persists,USrecovered,AU503 separately manually verified. Collector and audit results distinct."
     },
@@ -1334,7 +1361,7 @@
       "inspection": {
         "html": {
           "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/",
-          "checked_at": "2026-11-12T06:51:29.816421+00:00",
+          "checked_at": "2026-11-12T12:47:30.234520+00:00",
           "status": 200,
           "cors": null,
           "sha256": "aed49bed41807d5ba3e76796da3a86dc3df12bbfe720582382f597a0f45df1fa",
@@ -1346,7 +1373,7 @@
         },
         "loader": {
           "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/assets/data-client.js",
-          "checked_at": "2026-11-12T06:51:35.210694+00:00",
+          "checked_at": "2026-11-12T12:47:34.186645+00:00",
           "status": 200,
           "cors": null,
           "sha256": "a9b5fdbbfa9dd23f9a8ae2d7af73463b4e0876d196f107d2c81387b4ca6da3f9",
@@ -1358,34 +1385,11 @@
       "audience": "public",
       "deployed_version": 11,
       "browser_interaction": "not performed",
-      "snapshot_age_hours": 66.0277559375,
+      "snapshot_age_hours": 71.9528102,
       "snapshot_over_48_hours": true,
       "snapshot_stale_threshold_hours": 48,
       "previous_snapshot_over_48_hours": true,
-      "stale_transition": "Already over48hours in preceding audit; outbreak clock preserved.",
-      "post_publication_inspection": {
-        "html": {
-          "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/",
-          "checked_at": "2026-11-12T06:54:06.350220+00:00",
-          "status": 200,
-          "cors": null,
-          "sha256": "aed49bed41807d5ba3e76796da3a86dc3df12bbfe720582382f597a0f45df1fa",
-          "source_exact_match": true,
-          "canonical_url_present": false,
-          "csp_meta": [
-            "[meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\"]"
-          ]
-        },
-        "loader": {
-          "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/assets/data-client.js",
-          "checked_at": "2026-11-12T06:54:13.426195+00:00",
-          "status": 200,
-          "cors": null,
-          "sha256": "a9b5fdbbfa9dd23f9a8ae2d7af73463b4e0876d196f107d2c81387b4ca6da3f9",
-          "source_exact_match": true,
-          "canonical_url_present": true
-        }
-      }
+      "stale_transition": "Already over48hours in preceding audit; outbreak clock preserved."
     },
     "validation": {
       "python_unit_tests": {
@@ -1409,49 +1413,28 @@
         "result": "seven-passed-AU503-blocked",
         "manual_AU_content_review": "verified separately"
       },
-      "source_tree_comparison": "CurrentGitHubtree confirms unchangedassets/tests/build sources relativetopriorverifiedtext;freshcollectorsreadfrommain. Newlinenormalizationonlyinfourfetch-textfiles.Noapplicationcodechanged."
+      "source_tree_comparison": "CurrentGitHubtree confirms unchangedassets/tests/buildsources;freshcollectors frommain. Four known fetch-text newline-normalization differences only;no applicationcodechanged."
     },
-    "retrieval_limitations": "ConfiguredCDC/ECDCmismatch persists;newINSP18011114/5433through10November is audit-only. Existingministry176/historicaldaily/179operationalambiguities retained. New180operationaldepartures do notadd up;nooperationalmetricpromoted. AU503manuallybodyverified;PT403/MY503/ReliefWeb202empty/MacauSiteUnavailableunverified. Spainregistryretrieved butclassificationpending;WHO DONdirectbodyunchanged.",
+    "retrieval_limitations": "ConfiguredCDC/ECDCmismatch persists afterECDCadvance9November;WHOadvanced10November alignsINSP180. Existingministry176one-case,historicaldaily and179/180operational ambiguities unchanged. AU503manuallyofficialbodyverified;PT403/MY503/ReliefWeb202empty/MacauSiteUnavailableunverified. Spainregistry retrievedbutgrademappingpending. No uncertaincountsorgradespromoted.",
     "publication_readback": {
-      "checked_at": "2026-11-12T06:54:39.611945+00:00",
-      "github_commit": "e1c1f891fe38d0ed6253a86ebd376286d8946d26",
-      "github_exact_semantic_match": true,
-      "all_seven_files_exact": true,
-      "legacy_copies_exact_match": true,
-      "raw_commit": {
-        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/e1c1f891fe38d0ed6253a86ebd376286d8946d26/data/published.json?t=1794466437.0196548",
-        "checked_at": "2026-11-12T06:54:06.674128+00:00",
-        "status": 200,
-        "cors": "*",
-        "revision": "e899affa7f7f15a7",
-        "semantic_match": true
-      },
-      "raw_main": {
-        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1794466446.6748638",
-        "checked_at": "2026-11-12T06:54:11.574595+00:00",
-        "status": 200,
-        "cors": "*",
-        "revision": "e899affa7f7f15a7",
-        "semantic_match": true
-      },
-      "result": "passed"
+      "result": "pending"
     },
     "owner_notification": {
       "required": true,
-      "reason": "NewverifiedINSP18011114/5433through10November retainedaudit-only pendingconfiguredCDC/ECDCagreement;operationaldeparturearithmeticdiscrepanciesrecordedwithoutpublishingthosemetrics."
+      "reason": "ECDC newly11042/5387through9November(report10November) andWHOnewly11114/5433through10November aligningINSP180;CDC8November remainsdifferent,complete last-goodoutbreakretained."
     },
     "entry_requirement_review": {
-      "checked_at": "2026-11-12T06:52:06.314924+00:00",
+      "checked_at": "2026-11-12T12:47:36.509476+00:00",
       "page": {
         "url": "https://www.cdc.gov/port-health/legal-authorities/attestation-order.html",
-        "checked_at": "2026-11-12T06:49:27.701488+00:00",
+        "checked_at": "2026-11-12T12:45:16.370452+00:00",
         "status": 200,
         "sha256": "8884e33f5b7bb139131a9ebc4edae741991295d7d55745665597e41840f44524",
         "text_length": 21609
       },
       "signed_order": {
         "url": "https://www.cdc.gov/port-health/media/pdfs/2026/10/CDC-Ebola-Attestation-Order-Signed.pdf",
-        "checked_at": "2026-11-12T06:49:27.703060+00:00",
+        "checked_at": "2026-11-12T12:45:16.372498+00:00",
         "status": 200,
         "sha256": "39758a9a1aba1d1fa90310ed13bf1a7300ae27ba7bc1e9f9d0d4698d4b8cc97c"
       },
@@ -1462,18 +1445,18 @@
       "scope": "All persons including citizens/crew boarding foreign-to-US aircraft; US air transit included, DRC airport transit counts; no landing overflights excluded. Air travel only.",
       "exceptions": "US-government-authorized Ebola medical transport underCDC guidance, or individual CDC humanitarian/important-government exemption; not automatic.",
       "waiting_rule": "DRC departureDay0, first full day outsideDay1, earliest boardingDay22.",
-      "outcome": "Officialpageandsignedorder freshbyte-identical;noamendment,rescissionorextension verified. Independentcomponent4Novemberclock,ninelanguagesand18Decemberexpiry preserved.",
+      "outcome": "Fresh official page and signed order byte-identical to previous content review; no amendment/rescission/extension verified. Independent component date4November and nine translations preserved, expiry18December not extended.",
       "live_assets": {
         "assets/entry-requirements.js": {
           "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/assets/entry-requirements.js",
-          "checked_at": "2026-11-12T06:49:34.449360+00:00",
+          "checked_at": "2026-11-12T12:45:23.770389+00:00",
           "status": 200,
           "sha256": "c2b5631a282d8bdcaf2bf3fccf65de92a24e9e23d895df1abb05eeba8bf9523e",
           "source_exact_match": true
         },
         "assets/advisories.js": {
           "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/assets/advisories.js",
-          "checked_at": "2026-11-12T06:49:34.795495+00:00",
+          "checked_at": "2026-11-12T12:45:24.266272+00:00",
           "status": 200,
           "sha256": "ebc6a6c22e748caff1b9d6e6fa7f5294b237039bc08800ce3f98df99e8e194af",
           "source_exact_match": true
@@ -1515,5 +1498,5 @@
     ]
   },
   "error": "CDC/ECDC counts differ; retain published bundle for review",
-  "revision": "e899affa7f7f15a7"
+  "revision": "839552aac5458906"
 }
