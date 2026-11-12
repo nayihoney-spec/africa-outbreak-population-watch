@@ -1278,7 +1278,30 @@
     "snapshot_over_48_hours": true,
     "snapshot_stale_threshold_hours": 48,
     "previous_snapshot_over_48_hours": true,
-    "stale_transition": "Already over48hours in preceding audit; outbreak clock preserved."
+    "stale_transition": "Already over48hours in preceding audit; outbreak clock preserved.",
+    "post_publication_inspection": {
+      "html": {
+        "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/",
+        "checked_at": "2026-11-12T00:49:59.644762+00:00",
+        "status": 200,
+        "cors": null,
+        "sha256": "aed49bed41807d5ba3e76796da3a86dc3df12bbfe720582382f597a0f45df1fa",
+        "source_exact_match": true,
+        "canonical_url_present": false,
+        "csp_meta": [
+          "[meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\"]"
+        ]
+      },
+      "loader": {
+        "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/assets/data-client.js",
+        "checked_at": "2026-11-12T00:50:04.802057+00:00",
+        "status": 200,
+        "cors": null,
+        "sha256": "a9b5fdbbfa9dd23f9a8ae2d7af73463b4e0876d196f107d2c81387b4ca6da3f9",
+        "source_exact_match": true,
+        "canonical_url_present": true
+      }
+    }
   },
   "validation": {
     "python_unit_tests": {
@@ -1301,11 +1324,33 @@
       "exit_code": 1,
       "result": "seven-passed-AU503-blocked",
       "manual_AU_content_review": "verified separately"
-    }
+    },
+    "source_tree_comparison": "GitHub current tree matched local assets/tests/build source; fresh connector reads confirmed text matches for app/i18n after newline normalization. Collector scripts fresh-read from current main, trailing newline normalization only. No application code changed."
   },
   "retrieval_limitations": "Existing CDC/ECDC mismatch, ministry176 one-case and historical/daily/operational ambiguities persist. Snapshot remains over48hours with original last-success time. AU503 manually content-verified; ES403/PT403/MY503/ReliefWeb202empty/Macau SiteUnavailable unverified. WHO DON direct read recovered; actual body unchanged. No uncertain counts or grades promoted.",
   "publication_readback": {
-    "result": "pending"
+    "checked_at": "2026-11-12T00:50:20.256830+00:00",
+    "github_commit": "c18cadd6415e679d05f0ebb10f8616cdf2540116",
+    "github_exact_semantic_match": true,
+    "all_seven_files_exact": true,
+    "legacy_copies_exact_match": true,
+    "raw_commit": {
+      "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/c18cadd6415e679d05f0ebb10f8616cdf2540116/data/published.json?t=1794444592.199056",
+      "checked_at": "2026-11-12T00:49:59.490795+00:00",
+      "status": 200,
+      "cors": "*",
+      "revision": "db2ef06b0c7d3641",
+      "semantic_match": true
+    },
+    "raw_main": {
+      "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1794444599.4913254",
+      "checked_at": "2026-11-12T00:50:05.170351+00:00",
+      "status": 200,
+      "cors": "*",
+      "revision": "db2ef06b0c7d3641",
+      "semantic_match": true
+    },
+    "result": "passed"
   },
   "owner_notification": {
     "required": false,
