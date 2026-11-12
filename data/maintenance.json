@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-11-12T12:45:16.532350+00:00",
+  "checked_at": "2026-11-12T15:07:34.246712+00:00",
   "status": "failed",
   "published_changed": false,
   "advisory_status": "blocked",
-  "advisory_checked_at": "2026-11-12T12:45:35.768569+00:00",
+  "advisory_checked_at": "2026-11-12T15:07:35.930284+00:00",
   "cloud_audit": {
     "checked_at": "2026-11-12T12:47:36.509476+00:00",
     "status": "blocked-CDC-ECDC-mismatch-and-ministry176-one-case-conflict",
@@ -1554,5 +1554,5 @@
     ]
   },
   "error": "CDC/ECDC counts differ; retain published bundle for review",
-  "revision": "839552aac5458906"
+  "revision": "3a082411aaea0a24"
 }
