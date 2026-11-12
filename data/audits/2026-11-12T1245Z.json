@@ -1340,6 +1340,18 @@
       "final_url": "https://insp.cd/wp-content/uploads/2026/11/SitRep_N180_10-11-2026_corrige-1.pdf",
       "sha256": "93943776b57b3190f04d012c59c01b67d898852a252fbdc03625c9f100fb5c04",
       "content_type": "application/pdf"
+    },
+    "WHO_SouthSudan": {
+      "url": "https://www.afro.who.int/countries/south-sudan/news/first-case-who-helps-south-sudan-prepare-ebola-bundibugyo-virus-disease",
+      "checked_at": "2026-11-12T12:46:56.764351+00:00",
+      "status": 200,
+      "sha256": "440a485e9e980c2529ee042ab65d21a7901deb1ff59f48319f1aade800842522",
+      "text_length": 10607,
+      "published_at": "2026-11-12",
+      "scope": "SouthSudan preparedness, notDRCcount or travelalertclassification",
+      "content_verified": true,
+      "evidence": "Officialfeature states SouthSudan hasnotreportedconfirmedBVDcases;readiness/screening/isolation/referralwork described.99percentimportationriskis attributed October2026modelestimate,notconfirmedcaseoralertgrade.",
+      "outcome": "Context-only officialsource;doesnotauthorizepopulation/displacementtime-series ordrugapproval claim. No numericalrisk mapping orsitecounts changed."
     }
   },
   "actions_review": {
@@ -1383,7 +1395,30 @@
     "snapshot_over_48_hours": true,
     "snapshot_stale_threshold_hours": 48,
     "previous_snapshot_over_48_hours": true,
-    "stale_transition": "Already over48hours in preceding audit; outbreak clock preserved."
+    "stale_transition": "Already over48hours in preceding audit; outbreak clock preserved.",
+    "post_publication_inspection": {
+      "html": {
+        "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/",
+        "checked_at": "2026-11-12T12:48:17.366748+00:00",
+        "status": 200,
+        "cors": null,
+        "sha256": "aed49bed41807d5ba3e76796da3a86dc3df12bbfe720582382f597a0f45df1fa",
+        "source_exact_match": true,
+        "canonical_url_present": false,
+        "csp_meta": [
+          "[meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\"]"
+        ]
+      },
+      "loader": {
+        "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/assets/data-client.js",
+        "checked_at": "2026-11-12T12:48:22.351223+00:00",
+        "status": 200,
+        "cors": null,
+        "sha256": "a9b5fdbbfa9dd23f9a8ae2d7af73463b4e0876d196f107d2c81387b4ca6da3f9",
+        "source_exact_match": true,
+        "canonical_url_present": true
+      }
+    }
   },
   "validation": {
     "python_unit_tests": {
@@ -1411,7 +1446,28 @@
   },
   "retrieval_limitations": "ConfiguredCDC/ECDCmismatch persists afterECDCadvance9November;WHOadvanced10November alignsINSP180. Existingministry176one-case,historicaldaily and179/180operational ambiguities unchanged. AU503manuallyofficialbodyverified;PT403/MY503/ReliefWeb202empty/MacauSiteUnavailableunverified. Spainregistry retrievedbutgrademappingpending. No uncertaincountsorgradespromoted.",
   "publication_readback": {
-    "result": "pending"
+    "checked_at": "2026-11-12T12:48:45.830201+00:00",
+    "github_commit": "ee89f6f221535531c953431bb06aeca0a3358b95",
+    "github_exact_semantic_match": true,
+    "all_seven_files_exact": true,
+    "legacy_copies_exact_match": true,
+    "raw_commit": {
+      "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/ee89f6f221535531c953431bb06aeca0a3358b95/data/published.json?t=1794487691.1260498",
+      "checked_at": "2026-11-12T12:48:15.662569+00:00",
+      "status": 200,
+      "cors": "*",
+      "revision": "839552aac5458906",
+      "semantic_match": true
+    },
+    "raw_main": {
+      "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1794487695.663187",
+      "checked_at": "2026-11-12T12:48:19.346514+00:00",
+      "status": 200,
+      "cors": "*",
+      "revision": "839552aac5458906",
+      "semantic_match": true
+    },
+    "result": "passed"
   },
   "owner_notification": {
     "required": true,
