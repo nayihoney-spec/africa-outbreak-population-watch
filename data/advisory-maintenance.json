@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-12T00:46:41.939402+00:00",
+  "checked_at": "2026-11-12T06:49:45.806885+00:00",
   "passed": [
     "US",
     "GB",
@@ -23,13 +23,13 @@
     "MY"
   ],
   "cloud_review": {
-    "checked_at": "2026-11-12T00:48:53.916110+00:00",
+    "checked_at": "2026-11-12T06:52:06.314924+00:00",
     "manual_content_verified": [
       "AU"
     ],
     "pending_reasons": {
       "FR": "Destination notice updated29October; no configured unified classification mapping.",
-      "ES": "HTTP Error 403: Forbidden;destination grade/date not verified.",
+      "ES": "Fresh officialregistry retrieved;no configured destination-specific grade/date mapping verified. Remains pending.",
       "PT": "HTTP Error 403: Forbidden;destination grade/date not verified.",
       "HK": "Destination advice and current OTA issued21May2026 read; grade normalization unconfigured.",
       "MO": "Official registry added5November evacuation/relocation title; linked WeChat page returns Site Unavailable. Body/geographic scope/classification remain unverified.",
