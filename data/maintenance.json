@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-11-13T00:41:41.745554+00:00",
+  "checked_at": "2026-11-13T06:37:40.148668+00:00",
   "status": "passed",
   "published_changed": true,
   "advisory_status": "blocked",
-  "advisory_checked_at": "2026-11-13T00:41:59.550336+00:00",
+  "advisory_checked_at": "2026-11-13T06:37:42.197373+00:00",
   "cloud_audit": {
     "checked_at": "2026-11-13T00:44:25.057356+00:00",
     "status": "passed-current-count-comparison-with-historical-ambiguities-pending",
@@ -1578,7 +1578,7 @@
   },
   "last_successful_validation": {
     "status": "verified",
-    "checked_at": "2026-11-13T00:41:41.745554+00:00",
+    "checked_at": "2026-11-13T06:37:40.148668+00:00",
     "scope": "DRC only; 2026 outbreak; confirmed cases and deaths",
     "method": "Two official publishers agree on counts; reporting dates retained separately. Shared upstream data is not independent epidemiological confirmation.",
     "sources": [
@@ -1603,7 +1603,7 @@
       }
     ]
   },
-  "revision": "90ef36ce3fd35ba3",
+  "revision": "9b02d13347fdad52",
   "counts": {
     "cases": 11114,
     "deaths": 5433
