@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-11-13T19:38:20.355168+00:00",
+  "checked_at": "2026-11-14T00:48:32.500112+00:00",
   "passed": [
+    "US",
     "GB",
-    "AU",
     "CA",
     "CN",
     "TW",
@@ -10,7 +10,7 @@
     "SG"
   ],
   "blocked": {
-    "US": "HTTP Error 403: Forbidden"
+    "AU": "HTTP Error 503: Service Unavailable"
   },
   "unconfigured": [
     "FR",
@@ -23,12 +23,12 @@
     "MY"
   ],
   "cloud_review": {
-    "checked_at": "2026-11-13T18:45:03.130316+00:00",
+    "checked_at": "2026-11-14T00:49:36.317713+00:00",
     "manual_content_verified": [
       "AU"
     ],
     "pending_reasons": {
-      "FR": "HTTP Error 503: Service Unavailable;no classificationverified.",
+      "FR": "Freshofficialdestinationbodyunchanged;gradeclassificationmappingunconfigured,remainspending.",
       "ES": "Freshofficialregistry contentretrieved;no configureddestinationgrade/datemappingverified.Remainspending.",
       "PT": "HTTP Error 403: Forbidden;destination grade/date not verified.",
       "HK": "Destination advice and current OTA issued21May2026 read; grade normalization unconfigured.",
