@@ -1611,7 +1611,30 @@
     "snapshot_over_48_hours": false,
     "snapshot_stale_threshold_hours": 48,
     "previous_snapshot_over_48_hours": false,
-    "stale_transition": "Countgatefailedthisrun;priorrealvalidationclockpreserved,snapshotstillwithin48hours."
+    "stale_transition": "Countgatefailedthisrun;priorrealvalidationclockpreserved,snapshotstillwithin48hours.",
+    "post_publication_inspection": {
+      "html": {
+        "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/",
+        "checked_at": "2026-11-14T00:50:24.667365+00:00",
+        "status": 200,
+        "cors": null,
+        "sha256": "aed49bed41807d5ba3e76796da3a86dc3df12bbfe720582382f597a0f45df1fa",
+        "source_exact_match": true,
+        "canonical_url_present": false,
+        "csp_meta": [
+          "[meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\"]"
+        ]
+      },
+      "loader": {
+        "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/assets/data-client.js",
+        "checked_at": "2026-11-14T00:50:28.399825+00:00",
+        "status": 200,
+        "cors": null,
+        "sha256": "a9b5fdbbfa9dd23f9a8ae2d7af73463b4e0876d196f107d2c81387b4ca6da3f9",
+        "source_exact_match": true,
+        "canonical_url_present": true
+      }
+    }
   },
   "validation": {
     "python_unit_tests": {
@@ -1639,7 +1662,28 @@
   },
   "retrieval_limitations": "ExistingCDC/ECDCmismatchandhistorical/daily/operationalambiguitiesunchanged;lastgoodcounts/evidence/successfulclockretained.AU503manuallyofficialbodyverified;PT403/MY503/ReliefWeb202empty/MacauSiteUnavailableunverified.FRregistry/destinationbodyretrievedbutgrademappingunconfigured.No newpublicationanomalyoruncertainpromotion.",
   "publication_readback": {
-    "result": "pending"
+    "checked_at": "2026-11-14T00:50:49.689029+00:00",
+    "github_commit": "f82ba36063eed35891187791a5dec8a12c36ef53",
+    "github_exact_semantic_match": true,
+    "all_seven_files_exact": true,
+    "legacy_copies_exact_match": true,
+    "raw_commit": {
+      "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/f82ba36063eed35891187791a5dec8a12c36ef53/data/published.json?t=1794617417.024968",
+      "checked_at": "2026-11-14T00:50:21.379758+00:00",
+      "status": 200,
+      "cors": "*",
+      "revision": "a1d650645e552efb",
+      "semantic_match": true
+    },
+    "raw_main": {
+      "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1794617421.3801951",
+      "checked_at": "2026-11-14T00:50:25.203887+00:00",
+      "status": 200,
+      "cors": "*",
+      "revision": "a1d650645e552efb",
+      "semantic_match": true
+    },
+    "result": "passed"
   },
   "owner_notification": {
     "required": false,
