@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-11-14T12:44:04.879030+00:00",
+  "checked_at": "2026-11-14T13:30:52.546010+00:00",
   "passed": [
-    "US",
     "GB",
+    "AU",
     "CA",
     "CN",
     "TW",
@@ -10,7 +10,7 @@
     "SG"
   ],
   "blocked": {
-    "AU": "HTTP Error 503: Service Unavailable"
+    "US": "HTTP Error 403: Forbidden"
   },
   "unconfigured": [
     "FR",
