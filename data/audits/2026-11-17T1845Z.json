@@ -1968,9 +1968,9 @@
     "job_id": 133643037486,
     "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/43965299390",
     "conclusion": "failure",
-    "latest_pages_run_id": 44086877516,
+    "latest_pages_run_id": 44152718662,
     "latest_pages_conclusion": "success",
-    "outcome": "Latestcollector44041798403stillfailedconfiguredcountmismatch;24tests passed,7adapters passed,US403blocked.CloudUSpasses/AU503manualbodyverified.LatestPages44086877516success."
+    "outcome": "Latestcollector44041798403failedconfiguredcountmismatch;24tests passed,7adapters passed,US403blocked.CloudUSpasses/AU503manualbodyverified.ThisrunPages44152718662success."
   },
   "live_path": {
     "inspection": {
@@ -2004,7 +2004,30 @@
     "snapshot_over_48_hours": true,
     "snapshot_stale_threshold_hours": 48,
     "previous_snapshot_over_48_hours": true,
-    "stale_transition": "Still over48hours;previously reported;preserved successful verification clock and last-good bundle"
+    "stale_transition": "Still over48hours;previously reported;preserved successful verification clock and last-good bundle",
+    "post_publication_inspection": {
+      "html": {
+        "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/",
+        "checked_at": "2026-11-17T18:53:57.806042+00:00",
+        "status": 200,
+        "cors": null,
+        "sha256": "aed49bed41807d5ba3e76796da3a86dc3df12bbfe720582382f597a0f45df1fa",
+        "source_exact_match": true,
+        "canonical_url_present": false,
+        "csp_meta": [
+          "[meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\"]"
+        ]
+      },
+      "loader": {
+        "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/assets/data-client.js",
+        "checked_at": "2026-11-17T18:54:03.768044+00:00",
+        "status": 200,
+        "cors": null,
+        "sha256": "a9b5fdbbfa9dd23f9a8ae2d7af73463b4e0876d196f107d2c81387b4ca6da3f9",
+        "source_exact_match": true,
+        "canonical_url_present": true
+      }
+    }
   },
   "validation": {
     "python_unit_tests": {
@@ -2024,7 +2047,28 @@
   },
   "retrieval_limitations": "Configured CDC/ECDC mismatchpersistsafterbothadvanced;lastgoodstalesnapshot/clockretained.AU503manualbodyverified;PT403/MY503/ReliefWeb202empty/MacauSiteUnavailableunverified.Newministry182internalwordingdate/dailycountconflicts;185zoneharmonizationpending.No uncertainpromotion.",
   "publication_readback": {
-    "status": "pending-after-write"
+    "checked_at": "2026-11-17T18:54:29.265775+00:00",
+    "github_commit": "1fcef718947700828c92b88af98f840b69d71d46",
+    "github_all_seven_semantic_match": true,
+    "public_raw_commit_and_main": [
+      {
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/1fcef718947700828c92b88af98f840b69d71d46/data/published.json?t=1794941631.8082569",
+        "checked_at": "2026-11-17T18:53:57.328723+00:00",
+        "status": 200,
+        "cors": "*",
+        "revision": "974823e6542f9ca6",
+        "semantic_match": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1794941637.3290434",
+        "checked_at": "2026-11-17T18:54:02.364428+00:00",
+        "status": 200,
+        "cors": "*",
+        "revision": "974823e6542f9ca6",
+        "semantic_match": true
+      }
+    ],
+    "status": "passed"
   },
   "owner_notification": {
     "required": true,
@@ -2101,12 +2145,12 @@
     "evidence": "Fresh INSPregistrylatest185unchanged;ministryregistrynew178,180-185reviewed;INSP182-185PDFsbyte-identical."
   },
   "github_pages_review": {
-    "checked_at": "2026-11-17T18:51:49.347549+00:00",
-    "run_id": 44086877516,
+    "checked_at": "2026-11-17T18:54:29.265775+00:00",
+    "run_id": 44152718662,
     "conclusion": "success",
-    "commit": "2834abb13bfa64f13ac71ce82ebdea74d27d9c5b",
-    "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/44086877516",
-    "outcome": "Latest completed deployment successful; no Sites redeploy required."
+    "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/44152718662",
+    "commit": "1fcef718947700828c92b88af98f840b69d71d46",
+    "outcome": "This run data/audit deployment successful;Sites active/public version11,live HTML/loader source exact match,CSP/raw connectivity verified."
   },
   "current_run_review": {
     "checked_at": "2026-11-17T18:51:49.347549+00:00",
