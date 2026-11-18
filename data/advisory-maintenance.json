@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-11-18T07:21:23.138040+00:00",
+  "checked_at": "2026-11-18T12:44:44.091571+00:00",
   "passed": [
+    "US",
     "GB",
-    "AU",
     "CA",
     "CN",
     "TW",
@@ -10,7 +10,7 @@
     "SG"
   ],
   "blocked": {
-    "US": "HTTP Error 403: Forbidden"
+    "AU": "HTTP Error 503: Service Unavailable"
   },
   "unconfigured": [
     "FR",
@@ -23,7 +23,7 @@
     "MY"
   ],
   "cloud_review": {
-    "checked_at": "2026-11-18T06:53:08.936362+00:00",
+    "checked_at": "2026-11-18T12:45:53.941560+00:00",
     "manual_content_verified": [
       "AU"
     ],
@@ -33,7 +33,7 @@
       "PT": "HTTP Error 403: Forbidden;destination grade/date not verified.",
       "HK": "Destination advice and current OTA issued21May2026 read; grade normalization unconfigured.",
       "MO": "Official registry added5November evacuation/relocation title; linked WeChat page returns Site Unavailable. Body/geographic scope/classification remain unverified.",
-      "KR": "New17November suspected-symptom fieldchecklist read. No explicit numeric/color travelgrade orentryrequirement;mapping remains pending.",
+      "KR": "New18Novembernoticequotesolder16OctoberINSPfigures;noexplicitnumeric/colorgrade ornewentrymandate.Mappingremainsunconfigured;retainpending.",
       "TH": "Homepage has no destination-specific alert text.",
       "MY": "HTTP Error 503: Service Unavailable;destination grade/date not verified."
     },
