@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "9ddac36ab35b551f",
+  "revision": "9bd77ab83bcadd23",
   "published_at": "2026-11-19T18:49:55.020021+00:00",
   "latest": {
     "generated_at": "2026-11-13T12:43:37.271146+00:00",
@@ -494,7 +494,7 @@
         "verified_at": "2026-11-19T18:49:55.020021+00:00",
         "last_attempt_status": "passed",
         "last_attempt_at": "2026-11-19T18:49:55.020021+00:00",
-        "verification_method": "Fresh same-record official print table extraction after original-page destination validation failed",
+        "verification_method": "destination-specific official page extraction; same-record print table cross-check",
         "verification_source_url": "https://www.boca.gov.tw/sp-trwa-print-3100-f3f00-1.html",
         "evidence_sha256": "fa4bfacea7bb7fa49b68dd85bd469765f3bda2e2833c110c85289c451a373142"
       },
