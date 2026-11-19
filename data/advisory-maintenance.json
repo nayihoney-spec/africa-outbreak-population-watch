@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-11-19T12:47:56.113167+00:00",
+  "checked_at": "2026-11-19T18:47:06.849166+00:00",
   "passed": [
     "GB",
     "AU",
     "CA",
     "CN",
+    "TW",
     "JP",
     "SG"
   ],
   "blocked": {
-    "US": "HTTP Error 403: Forbidden",
-    "TW": "Wrong BOCA destination"
+    "US": "HTTP Error 403: Forbidden"
   },
   "unconfigured": [
     "FR",
@@ -23,10 +23,9 @@
     "MY"
   ],
   "cloud_review": {
-    "checked_at": "2026-11-19T12:51:37.730114+00:00",
+    "checked_at": "2026-11-19T18:49:55.020021+00:00",
     "manual_content_verified": [
-      "US",
-      "TW"
+      "US"
     ],
     "pending_reasons": {
       "FR": "Fresh official DRC alerts page matches prior reviewed response; classification/date mapping remains unconfigured.",

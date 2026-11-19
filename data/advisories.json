@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T12:51:37.730114+00:00",
+  "updated_at": "2026-11-19T18:49:55.020021+00:00",
   "mode": "validated snapshot; official source link remains the authority",
   "items": [
     {
@@ -9,16 +9,16 @@
       "normalized": "Very high",
       "source_name": "U.S. Department of State",
       "url": "https://travel.state.gov/en/international-travel/travel-advisories/destination.cod.html",
-      "checked": "2026-11-19T12:51:37.730114+00:00",
+      "checked": "2026-11-19T18:49:55.020021+00:00",
       "validation": "verified",
       "source_published_at": "2026-07-15",
       "evidence": "Level 4 - Do not travel",
-      "verified_at": "2026-11-19T12:51:37.730114+00:00",
+      "verified_at": "2026-11-19T18:49:55.020021+00:00",
       "source_updated_at": "2026-09-17",
       "source_date_kind": "separate",
       "source_language": "en",
       "last_attempt_status": "passed",
-      "last_attempt_at": "2026-11-19T12:51:37.730114+00:00",
+      "last_attempt_at": "2026-11-19T18:49:55.020021+00:00",
       "verification_method": "Fresh official destination body review via web retrieval after direct HTTP403",
       "evidence_sha256": "36776536c2d3bcdaf6b0b48ad323231a10628a4d12a6f6d2f3d12a6ad8a5516c",
       "verification_source_url": "https://travel.state.gov/en/international-travel/travel-advisories/destination.cod.html",
@@ -35,17 +35,17 @@
       "normalized": "Region-dependent",
       "source_name": "UK FCDO",
       "url": "https://www.gov.uk/foreign-travel-advice/democratic-republic-of-the-congo",
-      "checked": "2026-11-19T12:47:56.113167+00:00",
+      "checked": "2026-11-19T18:47:06.849166+00:00",
       "validation": "verified",
       "source_published_at": null,
       "evidence": "FCDO regional warnings apply.",
-      "verified_at": "2026-11-19T12:47:56.113167+00:00",
+      "verified_at": "2026-11-19T18:47:06.849166+00:00",
       "source_updated_at": "2026-10-08",
       "source_date_kind": "updated",
       "source_language": "en",
-      "source_content_sha256": "c560e80decfca310df0808cb4b003f3377e568707cf9a19b02891b2314a30ca0",
+      "source_content_sha256": "42d856cef9d51220b56d8c504aee1853d109fd1fdcd5888fac59a74715ae13fc",
       "last_attempt_status": "passed",
-      "last_attempt_at": "2026-11-19T12:47:56.113167+00:00",
+      "last_attempt_at": "2026-11-19T18:47:06.849166+00:00",
       "verification_method": "destination-specific official page extraction",
       "evidence_sha256": "da840e4988aeefc7edc483c3e91fd7d9ba63f99726248e0e278eb21b2b3b908b"
     },
@@ -56,19 +56,19 @@
       "normalized": "Very high",
       "source_name": "Smartraveller",
       "url": "https://www.smartraveller.gov.au/destinations/africa/democratic-republic-congo",
-      "checked": "2026-11-19T12:47:56.113167+00:00",
+      "checked": "2026-11-19T18:47:06.849166+00:00",
       "validation": "verified",
       "source_published_at": null,
       "evidence": "Do not travel",
-      "verified_at": "2026-11-19T12:47:56.113167+00:00",
+      "verified_at": "2026-11-19T18:47:06.849166+00:00",
       "last_attempt_status": "passed",
-      "last_attempt_at": "2026-11-19T12:47:56.113167+00:00",
+      "last_attempt_at": "2026-11-19T18:47:06.849166+00:00",
       "source_updated_at": "2026-07-06",
       "source_date_kind": "updated",
       "source_language": "en",
       "verification_method": "destination-specific official page extraction",
       "evidence_sha256": "e6a97447ada0b2b49ebc42900fe4ee0c4bd16420fd8164852546e038239decec",
-      "source_content_sha256": "9f1dc40f2f1f2b1ae79df94f23d1c04c77a9348259fed6ac1a3c913757c063ef",
+      "source_content_sha256": "2f989ca0cefdcf1a5d47ec17d145935333da4a590c2cadfa88ddcaa52d5ab5e3",
       "verification_source_url": "https://www.smartraveller.gov.au/destinations/africa/democratic-republic-congo"
     },
     {
@@ -78,7 +78,7 @@
       "normalized": "Very high",
       "source_name": "Government of Canada",
       "url": "https://travel.gc.ca/destinations/congo-kinshasa",
-      "checked": "2026-11-19T12:47:56.113167+00:00",
+      "checked": "2026-11-19T18:47:06.849166+00:00",
       "validation": "verified",
       "source_published_at": null,
       "source_updated_at": "2026-09-28",
@@ -86,9 +86,9 @@
       "source_language": "en",
       "evidence": "AVOID ALL TRAVEL",
       "source_content_sha256": "c14e973aef9379e946d7d0c7ec1c8669d3de053939049f003af6e4c15af64c77",
-      "verified_at": "2026-11-19T12:47:56.113167+00:00",
+      "verified_at": "2026-11-19T18:47:06.849166+00:00",
       "last_attempt_status": "passed",
-      "last_attempt_at": "2026-11-19T12:47:56.113167+00:00",
+      "last_attempt_at": "2026-11-19T18:47:06.849166+00:00",
       "verification_method": "destination-specific official page extraction",
       "evidence_sha256": "10c1091dda10f9936fb0ca7b4475df9e5f4a3d79f515889ddad31a1cd35099f6"
     },
@@ -102,7 +102,7 @@
       "checked": "Not yet verified by automated maintenance",
       "validation": "pending",
       "last_attempt_status": "pending",
-      "last_attempt_at": "2026-11-19T12:51:37.730114+00:00",
+      "last_attempt_at": "2026-11-19T18:49:55.020021+00:00",
       "last_attempt_error": "Fresh official DRC alerts page matches prior reviewed response; classification/date mapping remains unconfigured."
     },
     {
@@ -115,7 +115,7 @@
       "checked": "Not yet verified by automated maintenance",
       "validation": "pending",
       "last_attempt_status": "pending",
-      "last_attempt_at": "2026-11-19T12:51:37.730114+00:00",
+      "last_attempt_at": "2026-11-19T18:49:55.020021+00:00",
       "last_attempt_error": "Fresh official registry contains DRC selector and generic disclaimer; no destination-specific grade/date extracted. Mapping remains unconfigured."
     },
     {
@@ -128,7 +128,7 @@
       "checked": "Not yet verified by automated maintenance",
       "validation": "pending",
       "last_attempt_status": "pending",
-      "last_attempt_at": "2026-11-19T12:51:37.730114+00:00",
+      "last_attempt_at": "2026-11-19T18:49:55.020021+00:00",
       "last_attempt_error": "HTTP 503; no DRC grade/date verified."
     },
     {
@@ -139,7 +139,7 @@
       "normalized": "Very high",
       "source_name": "中国领事服务网",
       "url": "https://cs.mfa.gov.cn/zyxx/202607/t20260723_11990742.html",
-      "checked": "2026-11-19T12:47:56.113167+00:00",
+      "checked": "2026-11-19T18:47:06.849166+00:00",
       "validation": "verified",
       "source_published_at": "2026-05-29",
       "source_published_raw": "2026-05-29 14:17",
@@ -153,11 +153,11 @@
       "travel_advice": "谨慎前往，非必要不前往",
       "evidence": "疫情风险等级：极高风险",
       "registry_url": "https://cs.mfa.gov.cn/",
-      "verified_at": "2026-11-19T12:47:56.113167+00:00",
+      "verified_at": "2026-11-19T18:47:06.849166+00:00",
       "verification_method": "destination-specific official page extraction",
       "source_content_sha256": "b9148f3283f59b377d8cb8897fc030f0c7e79b279d36fe0a73cb5de8b9a096dd",
       "last_attempt_status": "passed",
-      "last_attempt_at": "2026-11-19T12:47:56.113167+00:00",
+      "last_attempt_at": "2026-11-19T18:47:06.849166+00:00",
       "evidence_sha256": "0ae15f31bf0867dc34b5941897dbaec2f3fdf1e78fecbfa69f4a1811aa8a2ec2"
     },
     {
@@ -171,7 +171,7 @@
       "checked": "Not yet verified by automated maintenance",
       "validation": "pending",
       "last_attempt_status": "pending",
-      "last_attempt_at": "2026-11-19T12:51:37.730114+00:00",
+      "last_attempt_at": "2026-11-19T18:49:55.020021+00:00",
       "last_attempt_error": "Destination advice and current OTA issued21May2026 read; grade normalization unconfigured."
     },
     {
@@ -185,7 +185,7 @@
       "checked": "Not yet verified by automated maintenance",
       "validation": "pending",
       "last_attempt_status": "pending",
-      "last_attempt_at": "2026-11-19T12:51:37.730114+00:00",
+      "last_attempt_at": "2026-11-19T18:49:55.020021+00:00",
       "last_attempt_error": "Official registry added5November evacuation/relocation title; linked WeChat page returns Site Unavailable. Body/geographic scope/classification remain unverified."
     },
     {
@@ -196,7 +196,7 @@
       "normalized": "Very high",
       "source_name": "Bureau of Consular Affairs, MOFA Taiwan",
       "url": "https://www.boca.gov.tw/sp-trwa-content-3100-f3f00-1.html",
-      "checked": "2026-11-19T12:51:37.730114+00:00",
+      "checked": "2026-11-19T18:49:55.020021+00:00",
       "validation": "verified",
       "source_published_at": null,
       "source_updated_at": "2026-08-31",
@@ -208,9 +208,9 @@
       ],
       "evidence": "第四級：紅色儘速離境",
       "source_content_sha256": "b4f8b380b806f98287fadd792af5b4b81d9aa761b3d264caa7db0954ef41050b",
-      "verified_at": "2026-11-19T12:51:37.730114+00:00",
+      "verified_at": "2026-11-19T18:49:55.020021+00:00",
       "last_attempt_status": "passed",
-      "last_attempt_at": "2026-11-19T12:51:37.730114+00:00",
+      "last_attempt_at": "2026-11-19T18:49:55.020021+00:00",
       "verification_method": "Fresh same-record official print table extraction after original-page destination validation failed",
       "verification_source_url": "https://www.boca.gov.tw/sp-trwa-print-3100-f3f00-1.html",
       "evidence_sha256": "fa4bfacea7bb7fa49b68dd85bd469765f3bda2e2833c110c85289c451a373142"
@@ -223,7 +223,7 @@
       "normalized": "Region-dependent",
       "source_name": "MOFA Japan Overseas Safety",
       "url": "https://www.anzen.mofa.go.jp/info/pcinfectionspothazardinfo_103.html",
-      "checked": "2026-11-19T12:47:56.113167+00:00",
+      "checked": "2026-11-19T18:47:06.849166+00:00",
       "validation": "verified",
       "source_published_at": null,
       "source_updated_at": "2026-04-08",
@@ -231,9 +231,9 @@
       "source_language": "ja",
       "evidence": "地域別の危険情報",
       "source_content_sha256": "95cb0d3418953173570b828ec7841d17eaca9848e4528b3dc5669451d33c53bc",
-      "verified_at": "2026-11-19T12:47:56.113167+00:00",
+      "verified_at": "2026-11-19T18:47:06.849166+00:00",
       "last_attempt_status": "passed",
-      "last_attempt_at": "2026-11-19T12:47:56.113167+00:00",
+      "last_attempt_at": "2026-11-19T18:47:06.849166+00:00",
       "verification_method": "destination-specific official page extraction",
       "evidence_sha256": "cd525cdfd7a7930d1c492fe5e3cf56d085afb30ab1b15ca305b8d311f3fcc490"
     },
@@ -248,7 +248,7 @@
       "checked": "Not yet verified by automated maintenance",
       "validation": "pending",
       "last_attempt_status": "pending",
-      "last_attempt_at": "2026-11-19T12:51:37.730114+00:00",
+      "last_attempt_at": "2026-11-19T18:49:55.020021+00:00",
       "last_attempt_error": "Fresh country registry still lists18/17/16November notices;18November body quotes16October9415/4536,not current counts. No explicit unified grade or new entry mandate. Checklist PDF redirect loop remains blocked."
     },
     {
@@ -262,7 +262,7 @@
       "checked": "Not yet verified by automated maintenance",
       "validation": "pending",
       "last_attempt_status": "pending",
-      "last_attempt_at": "2026-11-19T12:51:37.730114+00:00",
+      "last_attempt_at": "2026-11-19T18:49:55.020021+00:00",
       "last_attempt_error": "Fresh ministry response contains only navigation/title; no usable destination-specific body or grade."
     },
     {
@@ -276,7 +276,7 @@
       "checked": "Not yet verified by automated maintenance",
       "validation": "pending",
       "last_attempt_status": "pending",
-      "last_attempt_at": "2026-11-19T12:51:37.730114+00:00",
+      "last_attempt_at": "2026-11-19T18:49:55.020021+00:00",
       "last_attempt_error": "HTTP 503; no DRC grade/date verified."
     },
     {
@@ -287,7 +287,7 @@
       "normalized": "High",
       "source_name": "Ministry of Foreign Affairs Singapore",
       "url": "https://www.mfa.gov.sg/travelling-overseas/travel-advisories-notices-and-visa-information/democratic-republic-of-congo/",
-      "checked": "2026-11-19T12:47:56.113167+00:00",
+      "checked": "2026-11-19T18:47:06.849166+00:00",
       "validation": "verified",
       "source_published_at": "2026-05-25",
       "source_updated_at": null,
@@ -295,9 +295,9 @@
       "source_language": "en",
       "evidence": "Defer all non-essential travel to the DRC",
       "source_content_sha256": "058db6e5efa45aad43d98fc9e8f15dfca9ac982173979a5f0ee7620b5e4b1652",
-      "verified_at": "2026-11-19T12:47:56.113167+00:00",
+      "verified_at": "2026-11-19T18:47:06.849166+00:00",
       "last_attempt_status": "passed",
-      "last_attempt_at": "2026-11-19T12:47:56.113167+00:00",
+      "last_attempt_at": "2026-11-19T18:47:06.849166+00:00",
       "verification_method": "destination-specific official page extraction",
       "evidence_sha256": "15c3c2f7fdc8206116da4f5b2d86cbb1c9c122ed8d456e3b04bdd841285cd960"
     }
