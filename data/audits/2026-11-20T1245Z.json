@@ -2748,7 +2748,7 @@
     "job_id": 136142130981,
     "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/44692724139",
     "conclusion": "failure",
-    "latest_pages_run_id": 44690311102,
+    "latest_pages_run_id": 44738360516,
     "latest_pages_conclusion": "success",
     "outcome": "Fresh run/job summaries:collector validation passed; Surface blocked update failed due configured count mismatch. Latest Pages succeeded."
   },
@@ -2785,7 +2785,32 @@
     "snapshot_age_hours": 168.01,
     "snapshot_over_48_hours": true,
     "snapshot_stale_threshold_hours": 48,
-    "stale_transition": false
+    "stale_transition": false,
+    "post_publication_inspection": {
+      "html": {
+        "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/",
+        "checked_at": "2026-11-20T12:45:05.751605+00:00",
+        "status": 200,
+        "cors": null,
+        "sha256": "7214b4bdfa18d8f019f4bb5d0e80280f514b5cc91ea2ba9bd1be46276737eb06",
+        "source_exact_match": false,
+        "canonical_url_present": false,
+        "platform_challenge_script_only": true,
+        "source_document_preserved": true,
+        "csp_meta": [
+          "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\">"
+        ]
+      },
+      "loader": {
+        "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/assets/data-client.js",
+        "checked_at": "2026-11-20T12:45:09.569068+00:00",
+        "status": 200,
+        "cors": null,
+        "sha256": "a9b5fdbbfa9dd23f9a8ae2d7af73463b4e0876d196f107d2c81387b4ca6da3f9",
+        "source_exact_match": true,
+        "canonical_url_present": true
+      }
+    }
   },
   "validation": {
     "python_unit_tests": "24 passed",
@@ -2878,11 +2903,11 @@
     "evidence": "INSPregistrylatest186unchanged;ministryregistrylatest15Novemberunchanged.KnownrecentPDFsbyte-identical."
   },
   "github_pages_review": {
-    "checked_at": "2026-11-20T12:44:30.447668+00:00",
-    "run_id": 44690311102,
+    "run_id": 44738360516,
     "conclusion": "success",
-    "commit": "8450785daa534e174adc4cf3fee6019f16385d22",
-    "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/44690311102"
+    "commit": "fda116428fdb9ce95a3685d37dbdf7f71fc7a982",
+    "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/44738360516",
+    "outcome": "New canonical commit built/deployed successfully; no Sites redeployment needed."
   },
   "current_run_review": {
     "checked_at": "2026-11-20T12:44:30.447668+00:00",
@@ -3701,5 +3726,31 @@
       "content_type": "text/html",
       "text_length": 3181
     }
+  },
+  "publication_readback": {
+    "checked_at": "2026-11-20T12:45:35.865365+00:00",
+    "github_commit": "fda116428fdb9ce95a3685d37dbdf7f71fc7a982",
+    "github_all_seven_semantic_match": true,
+    "public_raw_commit_and_main": [
+      {
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/fda116428fdb9ce95a3685d37dbdf7f71fc7a982/data/published.json?t=1795178692.515598",
+        "checked_at": "2026-11-20T12:44:58.483710+00:00",
+        "status": 200,
+        "cors": "*",
+        "sha256": "223f3bff96d1e54e7a2d754b73c245c602dfa11b71eb7a4ca3c1de4cdb83f827",
+        "revision": "a1a3f84dd29e6c82",
+        "semantic_match": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1795178698.4844108",
+        "checked_at": "2026-11-20T12:45:02.110915+00:00",
+        "status": 200,
+        "cors": "*",
+        "sha256": "223f3bff96d1e54e7a2d754b73c245c602dfa11b71eb7a4ca3c1de4cdb83f827",
+        "revision": "a1a3f84dd29e6c82",
+        "semantic_match": true
+      }
+    ],
+    "status": "passed"
   }
 }
