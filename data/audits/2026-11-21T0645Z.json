@@ -2644,7 +2644,7 @@
     "job_id": 136539509209,
     "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/44808746904",
     "conclusion": "failure",
-    "latest_pages_run_id": 44846581759,
+    "latest_pages_run_id": 44877264703,
     "latest_pages_conclusion": "success",
     "outcome": "Fresh Actions listing:latest collector44808746904 failed on known configured mismatch;latest Pages44846581759 succeeded. No newer collector run listed."
   },
@@ -2681,7 +2681,32 @@
     "snapshot_age_hours": 186.07,
     "snapshot_over_48_hours": true,
     "snapshot_stale_threshold_hours": 48,
-    "stale_transition": false
+    "stale_transition": false,
+    "post_publication_inspection": {
+      "html": {
+        "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/",
+        "checked_at": "2026-11-21T06:48:21.426400+00:00",
+        "status": 200,
+        "cors": null,
+        "sha256": "00c9ec376c71b067dab866d2058672bc2c85a52dc12708b1a2245700635bcf24",
+        "source_exact_match": false,
+        "canonical_url_present": false,
+        "platform_challenge_script_only": true,
+        "source_document_preserved": true,
+        "csp_meta": [
+          "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\">"
+        ]
+      },
+      "loader": {
+        "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/assets/data-client.js",
+        "checked_at": "2026-11-21T06:48:24.469285+00:00",
+        "status": 200,
+        "cors": null,
+        "sha256": "a9b5fdbbfa9dd23f9a8ae2d7af73463b4e0876d196f107d2c81387b4ca6da3f9",
+        "source_exact_match": true,
+        "canonical_url_present": true
+      }
+    }
   },
   "validation": {
     "python_unit_tests": "24 passed",
@@ -2777,11 +2802,11 @@
     "evidence": "INSPregistrylatest186unchanged;ministryregistrylatest15Novemberunchanged.KnownrecentPDFsbyte-identical."
   },
   "github_pages_review": {
-    "checked_at": "2026-11-21T06:47:43.513168+00:00",
-    "run_id": 44846581759,
+    "run_id": 44877264703,
     "conclusion": "success",
-    "commit": "eac008592fb9b05d7da659e703fc85038c0ed056",
-    "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/44846581759"
+    "commit": "104a0ce685b80e90e46baf465bae415b95db452f",
+    "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/44877264703",
+    "outcome": "New canonical commit built/deployed successfully; no Sites redeployment needed."
   },
   "current_run_review": {
     "checked_at": "2026-11-21T06:47:43.513168+00:00",
@@ -3637,5 +3662,31 @@
       }
     ],
     "status": "resolved; fresh canonical main and commit raw semantically match base revision with CORS*"
+  },
+  "publication_readback": {
+    "checked_at": "2026-11-21T06:48:49.207124+00:00",
+    "github_commit": "104a0ce685b80e90e46baf465bae415b95db452f",
+    "github_all_seven_semantic_match": true,
+    "public_raw_commit_and_main": [
+      {
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/104a0ce685b80e90e46baf465bae415b95db452f/data/published.json?t=1795243696.4396682",
+        "checked_at": "2026-11-21T06:48:19.973386+00:00",
+        "status": 200,
+        "cors": "*",
+        "sha256": "4733190b6b613b8b4a5a1ac033e9d4c7f352f3f36ed2035284a4b75928cd98b8",
+        "revision": "bb0d202076e83e2e",
+        "semantic_match": true
+      },
+      {
+        "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1795243699.9738069",
+        "checked_at": "2026-11-21T06:48:24.369342+00:00",
+        "status": 200,
+        "cors": "*",
+        "sha256": "4733190b6b613b8b4a5a1ac033e9d4c7f352f3f36ed2035284a4b75928cd98b8",
+        "revision": "bb0d202076e83e2e",
+        "semantic_match": true
+      }
+    ],
+    "status": "passed"
   }
 }
