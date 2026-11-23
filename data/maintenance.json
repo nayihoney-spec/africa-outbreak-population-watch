@@ -3016,7 +3016,7 @@
       "job_id": 137547756783,
       "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/45131479645",
       "conclusion": "failure",
-      "latest_pages_run_id": 45178790992,
+      "latest_pages_run_id": 45241581056,
       "latest_pages_conclusion": "success",
       "outcome": "Latest collector failed only at Surface blocked update;validation,source fetching,advisory extraction and persistence succeeded. Latest Pages succeeded."
     },
@@ -3053,7 +3053,32 @@
       "snapshot_age_hours": 246.01,
       "snapshot_over_48_hours": true,
       "snapshot_stale_threshold_hours": 48,
-      "stale_transition": false
+      "stale_transition": false,
+      "post_publication_inspection": {
+        "html": {
+          "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/",
+          "checked_at": "2026-11-23T18:44:34.882812+00:00",
+          "status": 200,
+          "cors": null,
+          "sha256": "47294a5aef12beb26be644b7107e6ac6026d6936f67d52add5ac90df01a536fe",
+          "source_exact_match": false,
+          "canonical_url_present": false,
+          "platform_challenge_script_only": true,
+          "source_document_preserved": true,
+          "csp_meta": [
+            "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\">"
+          ]
+        },
+        "loader": {
+          "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/assets/data-client.js",
+          "checked_at": "2026-11-23T18:44:38.039264+00:00",
+          "status": 200,
+          "cors": null,
+          "sha256": "a9b5fdbbfa9dd23f9a8ae2d7af73463b4e0876d196f107d2c81387b4ca6da3f9",
+          "source_exact_match": true,
+          "canonical_url_present": true
+        }
+      }
     },
     "validation": {
       "python_unit_tests": "24 passed",
@@ -3146,11 +3171,11 @@
       "evidence": "INSPregistrylatest186unchanged;ministryregistrylatest15Novemberunchanged.KnownrecentPDFsbyte-identical."
     },
     "github_pages_review": {
-      "checked_at": "2026-11-23T18:44:10.574413+00:00",
-      "run_id": 45178790992,
+      "run_id": 45241581056,
       "conclusion": "success",
-      "commit": "9d24081646292a1161356373fad17c846307b5cf",
-      "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/45178790992"
+      "commit": "37eee20cd4368a4906b012c7586f24cfcfeaf829",
+      "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/45241581056",
+      "outcome": "New canonical commit built/deployed successfully; no Sites redeployment needed."
     },
     "current_run_review": {
       "checked_at": "2026-11-23T18:44:10.574413+00:00",
@@ -4066,6 +4091,32 @@
         }
       ],
       "status": "resolved; fresh canonical main and commit raw semantically match base revision with CORS*"
+    },
+    "publication_readback": {
+      "checked_at": "2026-11-23T18:45:04.868142+00:00",
+      "github_commit": "37eee20cd4368a4906b012c7586f24cfcfeaf829",
+      "github_all_seven_semantic_match": true,
+      "public_raw_commit_and_main": [
+        {
+          "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/37eee20cd4368a4906b012c7586f24cfcfeaf829/data/published.json?t=1795459471.4510686",
+          "checked_at": "2026-11-23T18:44:34.878946+00:00",
+          "status": 200,
+          "cors": "*",
+          "sha256": "254eb94bfa40032ea1627c01397e35668f2e3da6db2f59641fa8e8af9139878a",
+          "revision": "f8413de43396bcaa",
+          "semantic_match": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1795459474.8794684",
+          "checked_at": "2026-11-23T18:44:37.718876+00:00",
+          "status": 200,
+          "cors": "*",
+          "sha256": "254eb94bfa40032ea1627c01397e35668f2e3da6db2f59641fa8e8af9139878a",
+          "revision": "f8413de43396bcaa",
+          "semantic_match": true
+        }
+      ],
+      "status": "passed"
     }
   },
   "last_successful_validation": {
