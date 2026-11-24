@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-24T12:46:47.832786+00:00",
+  "checked_at": "2026-11-24T18:47:09.449405+00:00",
   "passed": [
     "US",
     "GB",
@@ -23,19 +23,19 @@
     "MY"
   ],
   "cloud_review": {
-    "checked_at": "2026-11-24T12:49:01.311136+00:00",
+    "checked_at": "2026-11-24T18:48:42.115364+00:00",
     "manual_content_verified": [
       "AU"
     ],
     "pending_reasons": {
       "FR": "Fresh official DRC alerts page matches prior reviewed response; classification/date mapping remains unconfigured.",
       "ES": "Fresh official registry contains DRC selector and generic disclaimer; no destination-specific grade/date extracted. Mapping remains unconfigured.",
-      "PT": "HTTP 503;no DRC destination grade/date verified.",
+      "PT": "HTTP 403;no DRC destination grade/date verified.",
       "HK": "Destination advice and current OTA issued21May2026 read; grade normalization unconfigured.",
       "MO": "Official registry added5November evacuation/relocation title; linked WeChat page returns Site Unavailable. Body/geographic scope/classification remain unverified.",
       "KR": "New23November official destination notice reviewed:INSP cumulative11316confirmed/5532deaths/3069recovered through13November;province sums agree,but different cutoff.Not an explicit alert classification.No new grade or entry requirement verified;checklist PDF redirect loop unverified.",
       "TH": "Fresh ministry response contains only navigation/title; no usable destination-specific body or grade.",
-      "MY": "HTTP 503;no DRC destination grade/date verified."
+      "MY": "Officialhomepage recovered and fullbodyread;generaltraveladvisory/consularlinks and latestnews only.No DRCdestinationgrade/dateverified;remainpending."
     },
     "substantive_changes": []
   }
