@@ -3120,7 +3120,7 @@
       "job_id": 138103318938,
       "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/45292142597",
       "conclusion": "failure",
-      "latest_pages_run_id": 45299856833,
+      "latest_pages_run_id": 45343307237,
       "latest_pages_conclusion": "success",
       "outcome": "Latestcollectorhasno successor;failedonlySurfaceblockedupdate.Allvalidation/source/advisory/persiststepssucceeded."
     },
@@ -3155,7 +3155,30 @@
       "snapshot_age_hours": 258.09,
       "snapshot_over_48_hours": true,
       "snapshot_stale_threshold_hours": 48,
-      "stale_transition": false
+      "stale_transition": false,
+      "post_publication_inspection": {
+        "html": {
+          "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/",
+          "checked_at": "2026-11-24T06:49:25.147044+00:00",
+          "status": 200,
+          "cors": null,
+          "sha256": "aed49bed41807d5ba3e76796da3a86dc3df12bbfe720582382f597a0f45df1fa",
+          "source_exact_match": true,
+          "canonical_url_present": false,
+          "csp_meta": [
+            "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\">"
+          ]
+        },
+        "loader": {
+          "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/assets/data-client.js",
+          "checked_at": "2026-11-24T06:49:28.671198+00:00",
+          "status": 200,
+          "cors": null,
+          "sha256": "a9b5fdbbfa9dd23f9a8ae2d7af73463b4e0876d196f107d2c81387b4ca6da3f9",
+          "source_exact_match": true,
+          "canonical_url_present": true
+        }
+      }
     },
     "validation": {
       "python_unit_tests": "24passed",
@@ -3248,10 +3271,11 @@
       "evidence": "INSPregistrylatest186unchanged;ministryregistrylatest15Novemberunchanged.KnownrecentPDFsbyte-identical."
     },
     "github_pages_review": {
-      "checked_at": "2026-11-24T06:48:53.338386+00:00",
-      "run_id": 45299856833,
+      "run_id": 45343307237,
       "conclusion": "success",
-      "commit": "e6e2dd89f028365ff4b494d538a9b3e26093db62"
+      "commit": "da1af11b817e0835ffdd1a88698ccab76e039e45",
+      "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/45343307237",
+      "outcome": "New canonical commit built/deployed successfully; no Sites redeployment needed."
     },
     "current_run_review": {
       "checked_at": "2026-11-24T06:48:53.338386+00:00",
@@ -4165,6 +4189,39 @@
         }
       ],
       "status": "resolved; fresh canonical main and commit raw semantically match base revision with CORS*"
+    },
+    "deployment_retry": {
+      "run_id": 45343307237,
+      "initial_conclusion": "failure",
+      "initial_job_id": 138271821628,
+      "upload_artifact_id": 14896124499,
+      "initial_error": "Upload succeeded but deploy-pages artifact metadata returned0artifacts;failedjob rerun requested."
+    },
+    "publication_readback": {
+      "checked_at": "2026-11-24T06:51:07.736890+00:00",
+      "github_commit": "da1af11b817e0835ffdd1a88698ccab76e039e45",
+      "github_all_seven_semantic_match": true,
+      "public_raw_commit_and_main": [
+        {
+          "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/da1af11b817e0835ffdd1a88698ccab76e039e45/data/published.json?t=1795502961.469297",
+          "checked_at": "2026-11-24T06:49:27.231342+00:00",
+          "status": 200,
+          "cors": "*",
+          "sha256": "5da77f33df9685247b8a5256805ffc860c1dbac59647fcdb4c9cc4472cd55214",
+          "revision": "7ad186115dac2a39",
+          "semantic_match": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1795502967.2320712",
+          "checked_at": "2026-11-24T06:49:30.819686+00:00",
+          "status": 200,
+          "cors": "*",
+          "sha256": "5da77f33df9685247b8a5256805ffc860c1dbac59647fcdb4c9cc4472cd55214",
+          "revision": "7ad186115dac2a39",
+          "semantic_match": true
+        }
+      ],
+      "status": "passed"
     }
   },
   "last_successful_validation": {
