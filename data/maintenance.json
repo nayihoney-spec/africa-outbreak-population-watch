@@ -3137,7 +3137,7 @@
       "job_id": 138357517152,
       "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/45368838804",
       "conclusion": "failure",
-      "latest_pages_run_id": 45397364141,
+      "latest_pages_run_id": 45463580987,
       "latest_pages_conclusion": "success",
       "outcome": "No newercollectorvisible.LatestcollectorfailedonlySurfaceblockedupdate;validation/source/advisory/persiststepssucceeded."
     },
@@ -3172,7 +3172,30 @@
       "snapshot_age_hours": 270.08,
       "snapshot_over_48_hours": true,
       "snapshot_stale_threshold_hours": 48,
-      "stale_transition": false
+      "stale_transition": false,
+      "post_publication_inspection": {
+        "html": {
+          "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/",
+          "checked_at": "2026-11-24T18:49:08.144045+00:00",
+          "status": 200,
+          "cors": null,
+          "sha256": "aed49bed41807d5ba3e76796da3a86dc3df12bbfe720582382f597a0f45df1fa",
+          "source_exact_match": true,
+          "canonical_url_present": false,
+          "csp_meta": [
+            "<meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://ipwho.is https://raw.githubusercontent.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\">"
+          ]
+        },
+        "loader": {
+          "url": "https://africa-outbreak-population-watch.nayihoney.chatgpt.site/assets/data-client.js",
+          "checked_at": "2026-11-24T18:49:11.826595+00:00",
+          "status": 200,
+          "cors": null,
+          "sha256": "a9b5fdbbfa9dd23f9a8ae2d7af73463b4e0876d196f107d2c81387b4ca6da3f9",
+          "source_exact_match": true,
+          "canonical_url_present": true
+        }
+      }
     },
     "validation": {
       "python_unit_tests": "24passed",
@@ -3265,10 +3288,11 @@
       "evidence": "INSPregistrylatest186unchanged;ministryregistrylatest15Novemberunchanged.KnownrecentPDFsbyte-identical."
     },
     "github_pages_review": {
-      "checked_at": "2026-11-24T18:48:42.115364+00:00",
-      "run_id": 45397364141,
+      "run_id": 45463580987,
       "conclusion": "success",
-      "commit": "66c7c56c2a9631ac1d28979a817f1b7c7f8d356b"
+      "commit": "600cbfd18b7f8cc363085338a222784781b36c6c",
+      "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/45463580987",
+      "outcome": "New canonical commit built/deployed successfully; no Sites redeployment needed."
     },
     "current_run_review": {
       "checked_at": "2026-11-24T18:48:42.115364+00:00",
@@ -4181,6 +4205,32 @@
         }
       ],
       "status": "resolved; fresh canonical main and commit raw semantically match base revision with CORS*"
+    },
+    "publication_readback": {
+      "checked_at": "2026-11-24T18:49:44.162094+00:00",
+      "github_commit": "600cbfd18b7f8cc363085338a222784781b36c6c",
+      "github_all_seven_semantic_match": true,
+      "public_raw_commit_and_main": [
+        {
+          "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/600cbfd18b7f8cc363085338a222784781b36c6c/data/published.json?t=1795546143.7341578",
+          "checked_at": "2026-11-24T18:49:08.262338+00:00",
+          "status": 200,
+          "cors": "*",
+          "sha256": "5a9b20555b57fa1df16eab0afd16500c84a35abc79041021bdfaf81d65a6e201",
+          "revision": "da9d712f3035a3e8",
+          "semantic_match": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/nayihoney-spec/africa-outbreak-population-watch/main/data/published.json?t=1795546148.2628562",
+          "checked_at": "2026-11-24T18:49:12.246642+00:00",
+          "status": 200,
+          "cors": "*",
+          "sha256": "5a9b20555b57fa1df16eab0afd16500c84a35abc79041021bdfaf81d65a6e201",
+          "revision": "da9d712f3035a3e8",
+          "semantic_match": true
+        }
+      ],
+      "status": "passed"
     }
   },
   "last_successful_validation": {
