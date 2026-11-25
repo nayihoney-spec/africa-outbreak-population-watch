@@ -3325,8 +3325,8 @@
     "job_id": 138821380855,
     "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/45500270281",
     "conclusion": "failure",
-    "latest_pages_run_id": 45563980265,
-    "latest_pages_conclusion": "success",
+    "latest_pages_run_id": 45564090761,
+    "latest_pages_conclusion": "failure",
     "outcome": "Freshjobsreview confirmscollectorfailedonlySurfaceblockedupdate;otherstepssuccess. LatestreceiptPagesattempt2successafterartifactvisibilitytransientfailure."
   },
   "live_path": {
@@ -3392,10 +3392,10 @@
     "javascript_behavior_and_build": "4JSsuites,allassetJSsyntaxandstaticbuildpassed",
     "source_comparison": "All executableGitblobshashesmatch;liveHTML/loaderexact;rawallowedinCSP;allreviewedPDFhashesunchanged"
   },
-  "retrieval_limitations": "KnownconfiguredCDC/ECDCdate/countmismatch.PT403,MOlinkednotice403,KRchecklistredirectloopremainunverified.KR17November503recoveredbyfreshretry.AU503recoveredofficialbodyreview.KnownWHO39versus38andreport192positivityissuesretainedpending.No newmaterialblocker.",
+  "retrieval_limitations": "KnownconfiguredCDC/ECDCdate/countmismatch.PT403,MOlinkednotice403,KRchecklistredirectloopremainunverified.KR17November503recoveredbyfreshretry.AU503recoveredofficialbodyreview.KnownWHO39versus38andreport192positivityissuesretainedpending.No newmaterialblocker. Finalmetadata-onlyPagesrun45564090761failedafterretry;lastsuccessfuldeployment45563980265retained. Thisreceiptuses skipci toavoidtriggeringanothermetadata-onlydeployment.",
   "owner_notification": {
-    "required": false,
-    "reason": "No newmaterialsourcechangeorongoingblocker;transientPagesartifactfailure recovered byfreshreceiptdeployment. Counts/alertsunchanged."
+    "required": true,
+    "reason": "Pagesartifactmetadataerrorsrecurredonfinalmetadata-onlycommitdespiteretry;canonicalGitHub/rawandSiteslivepathpass.LastsuccessfulPagesdeployment6b2b68d remainsavailable.Data unaffected."
   },
   "entry_requirement_review": {
     "checked_at": "2026-11-25T06:51:31.595402+00:00",
@@ -3499,7 +3499,19 @@
       ],
       "outcome": "Transientartifactvisibilitythen duplicateartifactmetadatafailure. CanonicalGitHub/rawandSitesHTTPloader/CSPpass. ReceiptcommitwilltriggerfreshPagesrun;do notmislabelthisrunassuccess."
     },
-    "outcome": "FreshreceiptcommitPagesdeploymentsucceeded;priorartifactmetadatafailure resolved. Canonicalandrawreadbackpass;Siteslivepathhealthy."
+    "outcome": "FreshreceiptcommitPagesdeploymentsucceeded;priorartifactmetadatafailure resolved. Canonicalandrawreadbackpass;Siteslivepathhealthy.",
+    "subsequent_metadata_run": {
+      "run_id": 45564090761,
+      "commit": "93534a7e214c8e7dca3a5f3f78fe25b76d3f0c85",
+      "conclusion": "failure",
+      "attempt": 2,
+      "errors": [
+        "2026-11-25T06:55:25.9324727Z Found 2 artifact(s)",
+        "2026-11-25T06:55:25.9344144Z ##[error]Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time.",
+        "2026-11-25T06:55:26.1035103Z ##[error]Error: Multiple artifacts named \"github-pages\" were unexpectedly found for this workflow run. Artifact count is 2.",
+        "2026-11-25T06:55:26.1040877Z ##[error]Error: Multiple artifacts named \"github-pages\" were unexpectedly found for this workflow run. Artifact count is 2."
+      ]
+    }
   },
   "current_run_review": {
     "checked_at": "2026-11-25T06:51:31.595402+00:00",
