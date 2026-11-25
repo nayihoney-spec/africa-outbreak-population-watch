@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-25T12:43:36.089419+00:00",
+  "checked_at": "2026-11-25T18:51:13.647013+00:00",
   "passed": [
     "US",
     "GB",
@@ -23,19 +23,19 @@
     "MY"
   ],
   "cloud_review": {
-    "checked_at": "2026-11-25T12:45:22.885005+00:00",
+    "checked_at": "2026-11-25T18:53:12.002030+00:00",
     "manual_content_verified": [
       "AU"
     ],
     "pending_reasons": {
       "FR": "Fresh official DRC alerts page matches prior reviewed response; classification/date mapping remains unconfigured.",
-      "ES": "Fresh official registry contains DRC selector and generic disclaimer; no destination-specific grade/date extracted. Mapping remains unconfigured.",
-      "PT": "HTTP503;no destination-specificgrade/dateverified;lastpendingstatepreserved.",
+      "ES": "Initialtimeoutrecoveredviafreshretry;officialregistryselector/genericdisclaimerread,no configuredDRCgrade/datemapping;remainpending.",
+      "PT": "HTTP403;noDRCgrade/dateverified;retainpending.",
       "HK": "Destination advice and current OTA issued21May2026 read; grade normalization unconfigured.",
       "MO": "Official registry added5November evacuation/relocation title; linked WeChat page returns Site Unavailable. Body/geographic scope/classification remain unverified.",
       "KR": "New23November official destination notice reviewed:INSP cumulative11316confirmed/5532deaths/3069recovered through13November;province sums agree,but different cutoff.Not an explicit alert classification.No new grade or entry requirement verified;checklist PDF redirect loop unverified.",
       "TH": "Fresh ministry response contains only navigation/title; no usable destination-specific body or grade.",
-      "MY": "Freshministryhomepagebodyreviewed;genericnewsandconsularregistryonly,noDRCdestinationgrade/dateverified;remainpending."
+      "MY": "Freshministrygenericnews/consularbodyread;noDRCgrade/dateverified;remainpending."
     },
     "substantive_changes": []
   }
