@@ -3325,8 +3325,8 @@
     "job_id": 138821380855,
     "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/45500270281",
     "conclusion": "failure",
-    "latest_pages_run_id": 45563770830,
-    "latest_pages_conclusion": "failure",
+    "latest_pages_run_id": 45563980265,
+    "latest_pages_conclusion": "success",
     "outcome": "Freshjobsreview confirmscollectorfailedonlySurfaceblockedupdate;otherstepssuccess. LatestreceiptPagesattempt2successafterartifactvisibilitytransientfailure."
   },
   "live_path": {
@@ -3394,8 +3394,8 @@
   },
   "retrieval_limitations": "KnownconfiguredCDC/ECDCdate/countmismatch.PT403,MOlinkednotice403,KRchecklistredirectloopremainunverified.KR17November503recoveredbyfreshretry.AU503recoveredofficialbodyreview.KnownWHO39versus38andreport192positivityissuesretainedpending.No newmaterialblocker.",
   "owner_notification": {
-    "required": true,
-    "reason": "NewPagesartifactmetadataerror persistedafterretry;maincanonicalrawandSitesremainhealthy. Freshreceiptcommitdeploymentpending."
+    "required": false,
+    "reason": "No newmaterialsourcechangeorongoingblocker;transientPagesartifactfailure recovered byfreshreceiptdeployment. Counts/alertsunchanged."
   },
   "entry_requirement_review": {
     "checked_at": "2026-11-25T06:51:31.595402+00:00",
@@ -3476,23 +3476,30 @@
     "evidence": "INSPregistrylatest186unchanged;ministryregistrylatest15Novemberunchanged.KnownrecentPDFsbyte-identical."
   },
   "github_pages_review": {
-    "run_id": 45563770830,
-    "conclusion": "failure",
-    "commit": "52d4888c76382af639c3a508c9751d1c9f08e4c7",
-    "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/45563770830",
-    "attempts": [
-      {
-        "attempt": 1,
-        "upload": "success",
-        "deploy_error": "No artifacts named github-pages found immediately after successful upload"
-      },
-      {
-        "attempt": 2,
-        "upload": "success",
-        "deploy_error": "Multiple artifacts named github-pages found;count2"
-      }
-    ],
-    "outcome": "Transientartifactvisibilitythen duplicateartifactmetadatafailure. CanonicalGitHub/rawandSitesHTTPloader/CSPpass. ReceiptcommitwilltriggerfreshPagesrun;do notmislabelthisrunassuccess."
+    "run_id": 45563980265,
+    "conclusion": "success",
+    "commit": "6b2b68d9170491246f87568e33c66647ad2b63d7",
+    "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/45563980265",
+    "recovered_prior_failure": {
+      "run_id": 45563770830,
+      "conclusion": "failure",
+      "commit": "52d4888c76382af639c3a508c9751d1c9f08e4c7",
+      "url": "https://github.com/nayihoney-spec/africa-outbreak-population-watch/actions/runs/45563770830",
+      "attempts": [
+        {
+          "attempt": 1,
+          "upload": "success",
+          "deploy_error": "No artifacts named github-pages found immediately after successful upload"
+        },
+        {
+          "attempt": 2,
+          "upload": "success",
+          "deploy_error": "Multiple artifacts named github-pages found;count2"
+        }
+      ],
+      "outcome": "Transientartifactvisibilitythen duplicateartifactmetadatafailure. CanonicalGitHub/rawandSitesHTTPloader/CSPpass. ReceiptcommitwilltriggerfreshPagesrun;do notmislabelthisrunassuccess."
+    },
+    "outcome": "FreshreceiptcommitPagesdeploymentsucceeded;priorartifactmetadatafailure resolved. Canonicalandrawreadbackpass;Siteslivepathhealthy."
   },
   "current_run_review": {
     "checked_at": "2026-11-25T06:51:31.595402+00:00",
