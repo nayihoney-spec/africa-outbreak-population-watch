@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-27T12:52:05.258728+00:00",
+  "checked_at": "2026-11-27T18:44:21.350301+00:00",
   "passed": [
     "US",
     "GB",
@@ -23,23 +23,22 @@
     "MY"
   ],
   "cloud_review": {
-    "checked_at": "2026-11-27T12:55:48.885718+00:00",
+    "checked_at": "2026-11-27T18:47:40.370974+00:00",
     "manual_content_verified": [
       "AU"
     ],
     "manual_evidence": {
       "AU": {
         "url": "https://www.smartraveller.gov.au/destinations/africa/democratic-republic-congo",
-        "checked_at": "2026-11-27T12:55:48.885718+00:00",
-        "method": "Fresh official destination body review via web retrieval after directHTTP503",
-        "retrieval_reference": "turn314459868view0",
-        "evidence": "OverallDoNotTravel;Updated6July2026;Stillcurrent27November2026 is verification freshness,not publicationdate. Destination health/security wording read.",
-        "direct_adapter_error": "HTTP Error 503: Service Unavailable"
+        "checked_at": "2026-11-27T18:47:40.370974+00:00",
+        "retrieval_reference": "turn804411913view0",
+        "method": "Fresh destination-specific official web body after directHTTP503",
+        "evidence": "Overall Do not travel; Updated6July2026. Still current28November2026 is separate from publication/update date. Security and health scope reviewed."
       }
     },
     "pending_reasons": {
       "FR": "FreshofficialDRCbodyunchanged;classification/date mapping remains unconfigured.",
-      "ES": "Initialtimeoutrecoveredonretry;registryselector/genericdisclaimer read,no configuredDRCgrade/date mapping.",
+      "ES": "Fresh official registry body read; DRC grade/date mapping remains unconfigured.",
       "PT": "HTTP403;noDRCgrade/dateverified.",
       "HK": "DestinationadviceandOTAissued21May2026read;gradenormalisationunconfigured.",
       "MO": "Registrynew26NovembertitleSecuritySituationUpdate25Novemberobserved;linkedWeChatHTTP403. Noticebody/geography/classificationunverified;no levelpublished.",
@@ -47,6 +46,13 @@
       "TH": "Freshministryresponseonlynavigation/title;no usableDRCbody/grade.",
       "MY": "Freshgenericministryhomepage;noDRCgrade/dateverified."
     },
-    "substantive_changes": []
+    "substantive_changes": [
+      {
+        "code": "CA",
+        "field": "source_updated_at",
+        "before": "2026-09-28",
+        "after": "2026-11-27"
+      }
+    ]
   }
 }
