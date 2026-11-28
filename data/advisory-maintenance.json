@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-11-27T21:12:34.162597+00:00",
+  "checked_at": "2026-11-28T00:49:36.891659+00:00",
   "passed": [
+    "US",
     "GB",
-    "AU",
     "CA",
     "CN",
     "TW",
@@ -10,7 +10,7 @@
     "SG"
   ],
   "blocked": {
-    "US": "HTTP Error 403: Forbidden"
+    "AU": "HTTP Error 503: Service Unavailable"
   },
   "unconfigured": [
     "FR",
@@ -23,17 +23,17 @@
     "MY"
   ],
   "cloud_review": {
-    "checked_at": "2026-11-27T18:47:40.370974+00:00",
+    "checked_at": "2026-11-28T00:51:49.790051+00:00",
     "manual_content_verified": [
       "AU"
     ],
     "manual_evidence": {
       "AU": {
         "url": "https://www.smartraveller.gov.au/destinations/africa/democratic-republic-congo",
-        "checked_at": "2026-11-27T18:47:40.370974+00:00",
-        "retrieval_reference": "turn804411913view0",
+        "checked_at": "2026-11-28T00:51:49.790051+00:00",
+        "retrieval_reference": "turn155387354view0",
         "method": "Fresh destination-specific official web body after directHTTP503",
-        "evidence": "Overall Do not travel; Updated6July2026. Still current28November2026 is separate from publication/update date. Security and health scope reviewed."
+        "evidence": "OverallDoNotTravel;Updated6July2026;Stillcurrent28November2026 is a separate verification date. Destination security and health wording reviewed."
       }
     },
     "pending_reasons": {
@@ -46,13 +46,6 @@
       "TH": "Freshministryresponseonlynavigation/title;no usableDRCbody/grade.",
       "MY": "Freshgenericministryhomepage;noDRCgrade/dateverified."
     },
-    "substantive_changes": [
-      {
-        "code": "CA",
-        "field": "source_updated_at",
-        "before": "2026-09-28",
-        "after": "2026-11-27"
-      }
-    ]
+    "substantive_changes": []
   }
 }
