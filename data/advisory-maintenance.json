@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-28T12:49:46.762976+00:00",
+  "checked_at": "2026-11-28T18:42:43.352471+00:00",
   "passed": [
     "US",
     "GB",
@@ -23,23 +23,23 @@
     "MY"
   ],
   "cloud_review": {
-    "checked_at": "2026-11-28T12:51:07.189466+00:00",
+    "checked_at": "2026-11-28T18:44:56.900524+00:00",
     "manual_content_verified": [
       "AU"
     ],
     "manual_evidence": {
       "AU": {
         "url": "https://www.smartraveller.gov.au/destinations/africa/democratic-republic-congo",
-        "checked_at": "2026-11-28T12:51:07.189466+00:00",
-        "retrieval_reference": "turn973286350view0",
+        "checked_at": "2026-11-28T18:44:56.900524+00:00",
+        "retrieval_reference": "turn633646477view0",
         "method": "Fresh destination-specific official web body after directHTTP503",
-        "evidence": "OverallDoNotTravel;Updated6July2026;Stillcurrent28November2026 is a separate verification date. Destination security/health wording reviewed."
+        "evidence": "OverallDoNotTravel;Updated6July2026;Stillcurrent29November2026 is separate from publication date. Destination security/health wording reviewed."
       }
     },
     "pending_reasons": {
       "FR": "FreshofficialDRCbodyunchanged;classification/date mapping remains unconfigured.",
       "ES": "Fresh official registry body read; DRC grade/date mapping remains unconfigured.",
-      "PT": "HTTP403;noDRCgrade/dateverified.",
+      "PT": "HTTP503 this attempt;no DRC grade/date verified;remainpending.",
       "HK": "DestinationadviceandOTAissued21May2026read;gradenormalisationunconfigured.",
       "MO": "Registrynew26NovembertitleSecuritySituationUpdate25Novemberobserved;linkedWeChatHTTP403. Noticebody/geography/classificationunverified;no levelpublished.",
       "KR": "23NovembernoticequotesolderINSP13November11316/5532/3069;notexplicitgradeornewentrymandate. ChecklistPDFredirectloopunverified.",
